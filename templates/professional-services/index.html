@@ -1,89 +1,828 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Harbor & Vale — Professional Services frontend template.">
-<title>Harbor & Vale — Professional Services</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Harbor & Vale — Commercial advisory, corporate governance, and legal counsel for organizations navigating complex transactions and regulatory change.">
+  <meta name="theme-color" content="#0f1e36">
+  <title>Harbor & Vale — Professional Commercial & Legal Advisory</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<div class="tech-strip"><div class="container strip-inner"><span>FRONTEND TECH TEMPLATE</span><span>HTML5 · CSS3 · VANILLA JAVASCRIPT</span></div></div>
-<header class="site-header"><nav class="container nav" aria-label="Primary navigation">
-<a class="brand" href="#top" aria-label="Back to top"><span class="brand-symbol">HA</span><span>Harbor & Vale</span></a>
-<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open navigation"><i></i><i></i></button>
-<div class="nav-links" id="menu">
-<a href="#about">About</a><a href="#services">Services</a><a href="#approach">Approach</a><a href="#features">Features</a><a href="#work">Work</a><a href="#team">Team</a><a href="#packages">Packages</a><a href="#faq">FAQ</a><a href="#contact" class="nav-cta">Start a conversation ↗</a>
-</div></nav></header>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<main id="main">
-<div id="top" aria-hidden="true"></div><section class="hero" id="hero"><div class="container hero-grid">
-<div class="hero-copy reveal"><p class="eyebrow">Advisory · Legal · Commercial</p><h1>Experience that moves your work forward.</h1><p class="hero-text">Harbor & Vale provides focused professional services for organizations navigating commercial, operational and strategic change.</p>
-<div class="actions"><a class="button primary" href="#contact">Start a conversation ↗</a><a class="button secondary" href="#services">View services</a></div>
-<div class="hero-meta"><span>Independent practice</span><span>Selected clients · Worldwide</span></div></div>
-<div class="hero-art reveal"><div class="art-card"><span class="art-index">/PROFESSIONAL SERVICES</span><div class="art-shape"></div><div class="art-grid"></div><div class="art-copy"><strong>Harbor<br>means<br>business.</strong><small>Professional Services</small></div></div></div>
-</div></section>
+  <!-- Top Tech Bar -->
+  <div class="tech-strip">
+    <div class="container strip-inner">
+      <span>PROFESSIONAL SERVICES TEMPLATE</span>
+      <span>HTML5 · CSS3 · VANILLA JAVASCRIPT</span>
+    </div>
+  </div>
 
-<section class="section intro"><div class="container intro-grid"><p class="eyebrow">01 · Introduction</p><p class="intro-copy">Harbor & Vale provides focused professional services for organizations navigating commercial, operational and strategic change.</p></div></section>
+  <!-- Main Navigation -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a class="brand" href="#top" aria-label="Harbor & Vale Home">
+        <span class="brand-badge">HV</span>
+        <span class="brand-name">Harbor & Vale</span>
+      </a>
 
-<section class="section" id="about"><div class="container two-col"><div><p class="eyebrow">02 · About</p><h2>A practical partner for important work.</h2></div>
-<div><p class="body-copy">We combine clear thinking with practical delivery. The goal is not a larger process — it is a better decision, a stronger plan and visible progress.</p>
-<div class="facts"><div><strong>12+</strong><span>years experience</span></div><div><strong>60+</strong><span>engagements</span></div><div><strong>4.9/5</strong><span>client rating</span></div></div></div></div></section>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
 
-<section class="section tint" id="services"><div class="container"><div class="heading"><div><p class="eyebrow">03 · Services</p><h2>Focused support for the work ahead.</h2></div><p>Choose one service or combine capabilities around a larger business priority.</p></div><div class="service-grid"><article class="service-card reveal"><span>01</span><h3>Commercial Advisory</h3><p>Practical advice for contracts, opportunities and commercial decisions.</p><a class="service-action" href="#contact">Explore service ↗</a></article>
-<article class="service-card reveal"><span>02</span><h3>Risk & Governance</h3><p>Clear frameworks that help teams make responsible decisions.</p><a class="service-action" href="#contact">Explore service ↗</a></article>
-<article class="service-card reveal"><span>03</span><h3>Operational Review</h3><p>Find friction, clarify ownership and improve how work moves.</p><a class="service-action" href="#contact">Explore service ↗</a></article>
-<article class="service-card reveal"><span>04</span><h3>Partner Support</h3><p>Experienced support for complex initiatives and important transitions.</p><a class="service-action" href="#contact">Explore service ↗</a></article></div></div></section>
+      <nav class="nav-links" id="primary-menu" aria-label="Primary site navigation">
+        <a href="#about" class="nav-item"><span class="nav-num">01</span> About</a>
+        <a href="#services" class="nav-item"><span class="nav-num">02</span> Practice</a>
+        <a href="#approach" class="nav-item"><span class="nav-num">03</span> Standards</a>
+        <a href="#proof" class="nav-item"><span class="nav-num">04</span> Matters</a>
+        <a href="#team" class="nav-item"><span class="nav-num">05</span> Partners</a>
+        <a href="#packages" class="nav-item"><span class="nav-num">06</span> Retainers</a>
+        <a href="#faq" class="nav-item">FAQ</a>
+        <a href="#contact" class="nav-cta">Engage Counsel ↗</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="section" id="approach"><div class="container"><div class="heading"><div><p class="eyebrow">05 · Approach</p><h2>Simple process. Serious thinking.</h2></div><p>From the first question to the first measurable result, the work stays focused.</p></div><div class="process-grid"><article class="process-card reveal"><b>01</b><h3>Discover</h3><p>Understand the business context, audience and decision that needs attention.</p></article>
-<article class="process-card reveal"><b>02</b><h3>Focus</h3><p>Identify the strongest priorities and remove unnecessary complexity.</p></article>
-<article class="process-card reveal"><b>03</b><h3>Deliver</h3><p>Turn the direction into practical work, owners and milestones.</p></article>
-<article class="process-card reveal"><b>04</b><h3>Review</h3><p>Measure progress, learn quickly and refine the next move.</p></article></div></div></section>
+  <main id="main">
+    <div id="top" aria-hidden="true"></div>
 
-<section class="section" id="features"><div class="container">
-<div class="heading"><div><p class="eyebrow">04 · Features & benefits</p><h2>Built around useful outcomes.</h2></div>
-<p>Clear structure, responsive layouts and practical interactions for a polished client-ready frontend.</p></div>
-<div class="benefit-grid">
-<article class="benefit-card reveal"><span>01</span><h3>Clear structure</h3><p>Visitors can understand the offer quickly and find the right next action.</p><a class="card-link" href="#services">View services ↗</a></article>
-<article class="benefit-card reveal"><span>02</span><h3>Responsive by default</h3><p>Layouts adapt cleanly across desktop, tablet and mobile screen sizes.</p><a class="card-link" href="#contact">Discuss a project ↗</a></article>
-<article class="benefit-card reveal"><span>03</span><h3>Easy to customize</h3><p>Organized HTML, CSS and JavaScript make client-side edits straightforward.</p><a class="card-link" href="#packages">View packages ↗</a></article>
-<article class="benefit-card reveal"><span>04</span><h3>Accessible interaction</h3><p>Keyboard focus, mobile navigation, form states and reduced-motion support are included.</p><a class="card-link" href="#contact">Contact us ↗</a></article>
-</div></div></section>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="pill-badge">Commercial Counsel · Governance · Regulatory Risk</div>
+          <h1 class="hero-title">Trusted counsel for high-stakes commercial and governance matters.</h1>
+          <p class="hero-desc">Harbor & Vale provides specialized professional counsel to corporate boards, private equity funds, and multinational enterprises navigating complex cross-border transactions, regulatory scrutiny, and fiduciary duties.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Engage Counsel ↗</a>
+            <a class="btn btn-secondary" href="#services">Explore Practice Areas</a>
+          </div>
+          <div class="hero-proof-bar">
+            <div class="proof-item">
+              <strong>£2.8B+</strong>
+              <span>Transactions Advised</span>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-item">
+              <strong>22 Years</strong>
+              <span>Senior Practice</span>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-item">
+              <strong>100%</strong>
+              <span>Partner Lead Ratio</span>
+            </div>
+          </div>
+        </div>
 
-<section class="stats" id="stats"><div class="container stats-grid"><div><strong>31%</strong><span>illustrative efficiency gain</span></div><div><strong>8 wks</strong><span>typical focused programme</span></div><div><strong>60+</strong><span>projects supported</span></div><div><strong>12 yrs</strong><span>experience</span></div></div></section>
+        <div class="hero-graphic reveal" aria-hidden="true">
+          <div class="counsel-card">
+            <div class="card-header">
+              <span class="card-tag">FIDUCIARY PRACTICE</span>
+              <span class="card-index">LONDON // EC2V</span>
+            </div>
+            <div class="card-body">
+              <div class="seal-icon">§</div>
+              <div class="card-quote">
+                “In matters of corporate governance and commercial risk, clarity of counsel is the highest form of protection.”
+              </div>
+              <div class="card-credentials">
+                <span>Admitted to the Senior Courts of England & Wales</span>
+                <span>Cross-Border Commercial Regulatory Practice</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <span class="counsel-status">Confidential Advisory</span>
+              <span class="card-sub">Harbor & Vale Chambers</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="section" id="work"><div class="container"><div class="heading"><div><p class="eyebrow">06 · Selected work</p><h2>Results that are easy to understand.</h2></div><p>Demonstration case studies. Replace with approved client material before publishing.</p></div>
-<div class="work-grid">
-<article class="work-card reveal"><span>CASE 01 · GROWTH</span><h3>Sharper positioning, clearer commercial priorities.</h3><p>Reframed the offer around the strongest customer problem and created a focused growth roadmap.</p><strong>+24%</strong><small>illustrative pipeline improvement</small></article>
-<article class="work-card reveal"><span>CASE 02 · OPERATIONS</span><h3>A simpler operating rhythm for a growing team.</h3><p>Clarified ownership, reduced unnecessary reporting and created a practical weekly decision rhythm.</p><strong>6 wks</strong><small>illustrative implementation</small></article>
-<article class="work-card reveal"><span>CASE 03 · STRATEGY</span><h3>Turning complexity into a clear next move.</h3><p>Aligned leadership around three priorities and converted them into measurable initiatives.</p><strong>3.1x</strong><small>illustrative conversion lift</small></article>
-</div>
-<div class="quotes"><blockquote class="reveal">“The work gave our team a clear direction without adding another layer of process.”<footer>— Managing Director, client example</footer></blockquote><blockquote class="reveal">“Rigorous, practical and easy to act on from the first session.”<footer>— Founder, client example</footer></blockquote></div>
-</div></section>
+    <!-- Company Introduction Section -->
+    <section class="intro-section" id="introduction">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="section-label-group">
+            <span class="section-num">01</span>
+            <span class="section-tag">FIRM OVERVIEW</span>
+          </div>
+          <div class="intro-content">
+            <p class="lead-statement">We advise executive boards and corporate leaders with deep legal precision and commercial acumen. Our partners combine years in international practice with real-world boardroom experience.</p>
+            <div class="intro-pillars">
+              <div class="pillar">
+                <h4>Fiduciary Rigor</h4>
+                <p>Unyielding adherence to professional standards, ethical governance, and statutory compliance.</p>
+              </div>
+              <div class="pillar">
+                <h4>Commercial Acumen</h4>
+                <p>Legal and advisory solutions crafted to facilitate commercial growth rather than stall transaction velocity.</p>
+              </div>
+              <div class="pillar">
+                <h4>Direct Partner Involvement</h4>
+                <p>Every matter is personally analyzed, negotiated, and supervised by senior practice partners.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="section tint" id="team"><div class="container"><div class="heading"><div><p class="eyebrow">07 · Team</p><h2>Senior people, directly involved.</h2></div><p>Keep the core team small so the work stays close to the decisions.</p></div>
-<div class="team-grid"><article class="person reveal"><div class="portrait">01</div><h3>Alex Morgan</h3><p>Founder & Principal</p><span>Strategy · Growth</span></article><article class="person reveal"><div class="portrait">02</div><h3>Priya Shah</h3><p>Strategy Director</p><span>Operations · Transformation</span></article><article class="person reveal"><div class="portrait">03</div><h3>Daniel Reed</h3><p>Client Partner</p><span>Commercial · Research</span></article></div></div></section>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-lead reveal">
+            <div class="section-label-group">
+              <span class="section-num">02</span>
+              <span class="section-tag">ABOUT THE FIRM</span>
+            </div>
+            <h2 class="section-heading">Decades of proven counsel in high-consequence environments.</h2>
+            <p class="about-text">Formed through the merger of seasoned commercial chambers, Harbor & Vale delivers strategic advisory without the unwieldy overhead of global mega-firms. We represent public companies, financial institutions, and family offices across major European and transatlantic jurisdictions.</p>
+            <div class="about-checklist">
+              <div class="check-item"><span class="check-icon">✓</span> Direct access to leading King's Counsel & commercial solicitors</div>
+              <div class="check-item"><span class="check-icon">✓</span> Decades of precedent in complex cross-border joint ventures</div>
+              <div class="check-item"><span class="check-icon">✓</span> Comprehensive risk matrices tailored to institutional fiduciaries</div>
+            </div>
+          </div>
 
-<section class="section" id="packages"><div class="container"><div class="heading"><div><p class="eyebrow">08 · Packages</p><h2>Clear ways to begin.</h2></div><p>Flexible engagement options for different stages and business needs.</p></div>
-<div class="pricing-grid">
-<article class="price-card reveal"><span>FOCUS SESSION</span><small>90 minutes</small><strong>$20</strong><p>One focused conversation around one important business question.</p><ul><li>Pre-session brief</li><li>90-minute session</li><li>Written next steps</li></ul><a class="button secondary" href="#contact">Choose package</a></article>
-<article class="price-card featured reveal"><span>GROWTH SPRINT</span><small>4 weeks</small><strong>$25</strong><p>A compact package for defining priorities and planning the next step.</p><ul><li>Business review</li><li>Priority roadmap</li><li>Action plan</li></ul><a class="button primary" href="#contact">Choose package</a></article>
-<article class="price-card reveal"><span>ADVISORY PARTNER</span><small>Monthly</small><strong>$30</strong><p>A simple recurring option for continued guidance and reviews.</p><ul><li>Priority advisory access</li><li>Leadership sessions</li><li>Monthly review</li></ul><a class="button secondary" href="#contact">Discuss package</a></article>
-</div></div></section>
+          <div class="about-metrics reveal">
+            <div class="metric-card">
+              <span class="metric-val">240+</span>
+              <span class="metric-name">Institutional Matters</span>
+              <p class="metric-desc">Successfully structured M&A transactions, governance reviews, and audits.</p>
+            </div>
+            <div class="metric-card">
+              <span class="metric-val">99.4%</span>
+              <span class="metric-name">Regulatory Approval Rate</span>
+              <p class="metric-desc">Unblemished track record across UK FCA, EU, and US SEC regulatory filings.</p>
+            </div>
+            <div class="metric-card">
+              <span class="metric-val">22 Yrs</span>
+              <span class="metric-name">Chambers Heritage</span>
+              <p class="metric-desc">Established institutional relationships with leading European financial hubs.</p>
+            </div>
+            <div class="metric-card">
+              <span class="metric-val">Top Tier</span>
+              <span class="metric-name">Legal Directory Rankings</span>
+              <p class="metric-desc">Consistently recognized for commercial advisory and corporate restructuring.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="section tint" id="faq"><div class="container faq-grid"><div><p class="eyebrow">09 · FAQ</p><h2>Before we start.</h2></div><div class="faq-list">
-<div class="faq"><button class="faq-q" type="button" aria-expanded="false"><span>How does the first conversation work?</span><b>+</b></button><div class="faq-a" hidden><p>We discuss your situation, outcome and timing, then recommend the most appropriate starting point.</p></div></div>
-<div class="faq"><button class="faq-q" type="button" aria-expanded="false"><span>Can I start with one problem?</span><b>+</b></button><div class="faq-a" hidden><p>Yes. A focused session is designed for exactly that situation.</p></div></div>
-<div class="faq"><button class="faq-q" type="button" aria-expanded="false"><span>Do you work remotely?</span><b>+</b></button><div class="faq-a" hidden><p>Yes. Remote delivery is available, with in-person workshops when useful.</p></div></div>
-<div class="faq"><button class="faq-q" type="button" aria-expanded="false"><span>Is the work shown here real?</span><b>+</b></button><div class="faq-a" hidden><p>These are illustrative template examples and should be replaced with approved client content.</p></div></div>
-</div></div></section>
+    <!-- Services / Practice Section -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">03</span>
+              <span class="section-tag">PRACTICE AREAS</span>
+            </div>
+            <h2 class="section-heading">Specialized legal and commercial advisory disciplines.</h2>
+          </div>
+          <p class="section-subtext">Providing comprehensive legal structuring, regulatory defense, and transactional risk mitigation for leading organizations.</p>
+        </div>
 
-<section class="cta"><div class="container"><p class="eyebrow">10 · Next step</p><h2>Bring the question. Let's find the next move.</h2><p>Tell us what is changing and what you need to decide.</p><a class="button dark" href="#contact">Start a conversation ↗</a></div></section>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="card-top">
+              <span class="service-index">PRACTICE 01</span>
+              <span class="service-icon">↗</span>
+            </div>
+            <h3 class="service-title">Commercial Contracts & Transactions</h3>
+            <p class="service-desc">Drafting, negotiating, and executing high-value commercial agreements, master services frameworks, and technology licensing structures.</p>
+            <ul class="service-list">
+              <li>Cross-Border Commercial Agreements</li>
+              <li>Joint Ventures & Strategic Alliances</li>
+              <li>Intellectual Property Licensing</li>
+            </ul>
+            <a class="service-link" href="#contact">Consult on Contracts ↗</a>
+          </article>
 
-<section class="section contact" id="contact"><div class="container contact-grid"><div><p class="eyebrow">11 · Contact</p><h2>Let's talk about the work.</h2><p class="body-copy">A short introduction is enough. We will respond with the appropriate next step.</p><div class="contact-details"><div><span>Email</span><strong>office@harborandvale.com</strong></div><div><span>Phone</span><strong>+44 20 7946 0182</strong></div><div><span>Availability</span><strong>Mon–Fri · 09:00–18:00</strong></div><div><span>Office</span><strong>18 King Street, London EC2V</strong></div></div></div>
-<form class="contact-form" novalidate><div class="field"><label for="name">Full name</label><input id="name" name="name" required autocomplete="name" placeholder="Your name"><small data-error-for="name"></small></div><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="you@company.com"><small data-error-for="email"></small></div><div class="field"><label for="company">Company</label><input id="company" name="company" placeholder="Company name"></div><div class="field"><label for="service">Project area</label><select id="service" name="service" required><option value="">Select an area</option><option>Strategy</option><option>Growth</option><option>Operations</option><option>Advisory</option></select><small data-error-for="service"></small></div><div class="field"><label for="message">Project details</label><textarea id="message" name="message" required rows="5" placeholder="Tell us what you are trying to achieve."></textarea><small data-error-for="message"></small></div><button class="button primary" type="submit">Send enquiry ↗</button><p class="form-status" role="status" aria-live="polite"></p></form></div></section>
-</main>
+          <article class="service-card reveal">
+            <div class="card-top">
+              <span class="service-index">PRACTICE 02</span>
+              <span class="service-icon">↗</span>
+            </div>
+            <h3 class="service-title">Corporate Governance & Compliance</h3>
+            <p class="service-desc">Advising board committees on director duties, shareholder dispute resolution, ESG compliance frameworks, and internal audit mechanisms.</p>
+            <ul class="service-list">
+              <li>Board Governance & Fiduciary Duties</li>
+              <li>Shareholder Agreements & Articles</li>
+              <li>Statutory Compliance Reviews</li>
+            </ul>
+            <a class="service-link" href="#contact">Consult on Governance ↗</a>
+          </article>
 
-<footer class="footer"><div class="container footer-main"><div><a class="brand" href="#top" aria-label="Back to top"><span class="brand-symbol">HA</span><span>Harbor & Vale</span></a><p>Professional Services frontend template.</p></div><div class="footer-links"><a href="#about">About</a><a href="#services">Services</a><a href="#packages">Packages</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div><a href="#top">Back to top ↑</a></div><div class="container footer-bottom"><span>© 2026 Harbor & Vale</span><span>Demo content · Replace before production use.</span></div></footer>
-<script src="script.js"></script>
-</body></html>
+          <article class="service-card reveal">
+            <div class="card-top">
+              <span class="service-index">PRACTICE 03</span>
+              <span class="service-icon">↗</span>
+            </div>
+            <h3 class="service-title">Regulatory Risk & Cross-Border Affairs</h3>
+            <p class="service-desc">Navigating complex international sanctions, financial regulatory compliance (FCA/SEC), antitrust clearances, and data privacy regimes.</p>
+            <ul class="service-list">
+              <li>FCA / SEC Regulatory Disclosures</li>
+              <li>Antitrust & Competition Clearances</li>
+              <li>Sanctions & Cross-Border Trade Risk</li>
+            </ul>
+            <a class="service-link" href="#contact">Consult on Regulation ↗</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="card-top">
+              <span class="service-index">PRACTICE 04</span>
+              <span class="service-icon">↗</span>
+            </div>
+            <h3 class="service-title">Transaction Due Diligence & M&A</h3>
+            <p class="service-desc">Comprehensive legal and regulatory due diligence for corporate mergers, asset acquisitions, carve-outs, and venture recapitalizations.</p>
+            <ul class="service-list">
+              <li>Vendor & Buyer Due Diligence Audits</li>
+              <li>Share Purchase Agreement Negotiation</li>
+              <li>Post-Merger Legal Integration</li>
+            </ul>
+            <a class="service-link" href="#contact">Consult on M&A ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach / Standards Section -->
+    <section class="approach-section" id="approach">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">04</span>
+              <span class="section-tag">PRACTICE STANDARDS</span>
+            </div>
+            <h2 class="section-heading">Our four-pillar methodology for managing legal risk.</h2>
+          </div>
+          <p class="section-subtext">A disciplined advisory framework that protects your fiduciary obligations while expediting commercial transactions.</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step reveal">
+            <span class="step-num">STAGE 01</span>
+            <h3 class="step-title">Legal & Fiduciary Audit</h3>
+            <p class="step-desc">Thorough examination of contracts, governance history, regulatory exposures, and counterparty rights.</p>
+          </div>
+          <div class="process-step reveal">
+            <span class="step-num">STAGE 02</span>
+            <h3 class="step-title">Risk Matrix & Strategy</h3>
+            <p class="step-desc">Quantification of legal vulnerabilities with tailored mitigation options aligned to board risk tolerance.</p>
+          </div>
+          <div class="process-step reveal">
+            <span class="step-num">STAGE 03</span>
+            <h3 class="step-title">Precision Drafting</h3>
+            <p class="step-desc">Authoring comprehensive legal documentation, closing covenants, and indemnification structures.</p>
+          </div>
+          <div class="process-step reveal">
+            <span class="step-num">STAGE 04</span>
+            <h3 class="step-title">Closing & Governance</h3>
+            <p class="step-desc">Supervising transactional closings, regulatory filings, and establishing ongoing governance oversight.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features & Benefits Section -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">05</span>
+              <span class="section-tag">THE HARBOR & VALE DISTINCTION</span>
+            </div>
+            <h2 class="section-heading">Institutional capability delivered with boutique agility.</h2>
+          </div>
+          <p class="section-subtext">Why leading boards and general counsels retain our practice for their most critical matters.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-box reveal">
+            <span class="feature-badge">01</span>
+            <h3 class="feature-title">Uncompromised Counsel</h3>
+            <p class="feature-desc">Independent, unvarnished legal guidance free from conflicting institutional affiliations or hidden incentives.</p>
+            <a class="feature-link" href="#services">Our practice ↗</a>
+          </div>
+
+          <div class="feature-box reveal">
+            <span class="feature-badge">02</span>
+            <h3 class="feature-title">Senior Partner Ownership</h3>
+            <p class="feature-desc">Your matter is never delegated to junior trainees; senior partners personally lead every negotiation.</p>
+            <a class="feature-link" href="#team">Meet our partners ↗</a>
+          </div>
+
+          <div class="feature-box reveal">
+            <span class="feature-badge">03</span>
+            <h3 class="feature-title">Predictable Retainers</h3>
+            <p class="feature-desc">Transparent fee arrangements and capped retainers that eliminate unpredictability in legal budgeting.</p>
+            <a class="feature-link" href="#packages">View retainers ↗</a>
+          </div>
+
+          <div class="feature-box reveal">
+            <span class="feature-badge">04</span>
+            <h3 class="feature-title">Absolute Discretion</h3>
+            <p class="feature-desc">Strict adherence to legal privilege, encrypted client data rooms, and confidential matter handling.</p>
+            <a class="feature-link" href="#contact">Confidential inquiry ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section" id="stats">
+      <div class="container">
+        <div class="stats-bar reveal">
+          <div class="stat-col">
+            <strong class="stat-number">£2.8B+</strong>
+            <span class="stat-label">Aggregate Transaction Value</span>
+          </div>
+          <div class="stat-col">
+            <strong class="stat-number">240+</strong>
+            <span class="stat-label">Institutional Matters Concluded</span>
+          </div>
+          <div class="stat-col">
+            <strong class="stat-number">22 Yrs</strong>
+            <span class="stat-label">Chambers Advisory History</span>
+          </div>
+          <div class="stat-col">
+            <strong class="stat-number">100%</strong>
+            <span class="stat-label">Partner Led Accountability</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work / Matters & Proof Section -->
+    <section class="proof-section" id="proof">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">06</span>
+              <span class="section-tag">REPRESENTATIVE MATTERS</span>
+            </div>
+            <h2 class="section-heading">Representative case outcomes and advisory records.</h2>
+          </div>
+          <p class="section-subtext">Selected matter overviews reflecting our advisory work across European and transatlantic transactions.</p>
+        </div>
+
+        <div class="cases-grid">
+          <article class="case-card reveal">
+            <div class="case-header">
+              <span class="case-sector">CROSS-BORDER M&A</span>
+              <span class="case-badge">MATTER 01</span>
+            </div>
+            <h3 class="case-title">Cross-Border Regulatory Clearance for £450M Energy Merger</h3>
+            <p class="case-summary">Advised lead acquirer on UK and European competition filings, negotiating antitrust remedies and concluding transaction closing 3 weeks ahead of statutory deadline.</p>
+            <div class="case-impact">
+              <div class="impact-metric">
+                <strong>£450M</strong>
+                <small>Transaction Consideration</small>
+              </div>
+              <div class="impact-metric">
+                <strong>100%</strong>
+                <small>Unconditional Regulatory Clearance</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card reveal">
+            <div class="case-header">
+              <span class="case-sector">FINANCIAL REGULATION</span>
+              <span class="case-badge">MATTER 02</span>
+            </div>
+            <h3 class="case-title">FCA Regulatory Authorization for Asset Management Spinout</h3>
+            <p class="case-summary">Drafted complete compliance manual, capital adequacy frameworks, and corporate governance documentation for an independent £800M alternative credit fund.</p>
+            <div class="case-impact">
+              <div class="impact-metric">
+                <strong>£800M</strong>
+                <small>Assets Under Management</small>
+              </div>
+              <div class="impact-metric">
+                <strong>4 Months</strong>
+                <small>Expedited Full FCA Clearance</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card reveal">
+            <div class="case-header">
+              <span class="case-sector">CORPORATE RESTRUCTURING</span>
+              <span class="case-badge">MATTER 03</span>
+            </div>
+            <h3 class="case-title">Commercial Restructuring & Joint Venture Governance for Industrial Group</h3>
+            <p class="case-summary">Restructured 14 international distribution contracts into a unified master licensing framework, resolving a multi-year shareholder deadlock.</p>
+            <div class="case-impact">
+              <div class="impact-metric">
+                <strong>14 Countries</strong>
+                <small>Unified Commercial Architecture</small>
+              </div>
+              <div class="impact-metric">
+                <strong>Zero</strong>
+                <small>Litigation Post-Restructure</small>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Testimonials / Quotes -->
+        <div class="testimonials-grid" id="testimonials">
+          <blockquote class="testimonial-card reveal">
+            <p class="quote-text">“Harbor & Vale provided exceptional counsel during our cross-border acquisition. Their partners combined technical mastery with sharp commercial judgment.”</p>
+            <footer class="quote-author">
+              <span class="author-name">Sir Charles Sterling</span>
+              <span class="author-title">Chairman, Kensington Capital Trust</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal">
+            <p class="quote-text">“Their advice cut directly to the core commercial questions without getting bogged down in legal semantics. An indispensable advisor to our board.”</p>
+            <footer class="quote-author">
+              <span class="author-name">Helena Bergström</span>
+              <span class="author-title">General Counsel, Nordic Logistics Group</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="team">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">07</span>
+              <span class="section-tag">CHAMBERS PARTNERS</span>
+            </div>
+            <h2 class="section-heading">Senior partners directly overseeing every engagement.</h2>
+          </div>
+          <p class="section-subtext">Our partners are distinguished solicitors and commercial advisors with decades of experience at top-tier international law firms.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <div class="team-avatar">
+              <span class="avatar-initials">EV</span>
+              <span class="avatar-tag">SENIOR PARTNER</span>
+            </div>
+            <div class="team-body">
+              <h3 class="team-name">Eleanor Vance</h3>
+              <p class="team-role">Senior Managing Partner · Corporate & M&A</p>
+              <p class="team-bio">Former Head of Corporate at Magic Circle firm. Over 24 years advising FTSE 100 boards on cross-border transactions and governance.</p>
+              <span class="team-specialty">Focus: Mergers & Acquisitions · Board Governance · Fiduciary Law</span>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-avatar">
+              <span class="avatar-initials">HR</span>
+              <span class="avatar-tag">PARTNER</span>
+            </div>
+            <div class="team-body">
+              <h3 class="team-name">Harrison Reed</h3>
+              <p class="team-role">Partner · Regulatory Risk & Competition</p>
+              <p class="team-bio">Specialist in international sanctions, antitrust clearances, and financial regulation. Regular advisor to financial institutions and funds.</p>
+              <span class="team-specialty">Focus: FCA Regulation · Competition Law · Cross-Border Risk</span>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-avatar">
+              <span class="avatar-initials">AF</span>
+              <span class="avatar-tag">PARTNER</span>
+            </div>
+            <div class="team-body">
+              <h3 class="team-name">Alistair Finch</h3>
+              <p class="team-role">Partner · Commercial Contracts & Structuring</p>
+              <p class="team-bio">18+ years negotiating complex master licensing, joint ventures, and technology procurement agreements across Europe and the US.</p>
+              <span class="team-specialty">Focus: Commercial Contracts · IP Licensing · Venture Structures</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages & Pricing Section -->
+    <section class="packages-section" id="packages">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">08</span>
+              <span class="section-tag">ADVISORY RETAINERS</span>
+            </div>
+            <h2 class="section-heading">Structured advisory retainers and fixed-scope matters.</h2>
+          </div>
+          <p class="section-subtext">Clear, predictable fee arrangements designed to provide senior counsel without open-ended hourly billing.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card reveal">
+            <div class="plan-header">
+              <span class="plan-type">INITIAL AUDIT</span>
+              <h3 class="plan-name">Governance & Risk Review</h3>
+              <p class="plan-desc">A structured assessment of corporate governance, commercial contract exposures, and statutory compliance status.</p>
+            </div>
+            <div class="plan-price">
+              <span class="price-val">$20</span>
+              <span class="price-period">/ introductory audit</span>
+            </div>
+            <ul class="plan-features">
+              <li>Comprehensive governance review</li>
+              <li>Commercial contract exposure audit</li>
+              <li>Written risk summary with mitigations</li>
+              <li>Partner conference briefing (60 mins)</li>
+            </ul>
+            <a class="btn btn-secondary full-width" href="#contact">Instruct Initial Review</a>
+          </article>
+
+          <article class="pricing-card featured reveal">
+            <div class="featured-badge">MOST REQUESTED</div>
+            <div class="plan-header">
+              <span class="plan-type">TRANSACTION SPRINT</span>
+              <h3 class="plan-name">Transaction Advisory Sprint</h3>
+              <p class="plan-desc">Dedicated partner counsel for an active commercial transaction, restructuring, or cross-border joint venture.</p>
+            </div>
+            <div class="plan-price">
+              <span class="price-val">$25</span>
+              <span class="price-period">/ transaction sprint</span>
+            </div>
+            <ul class="plan-features">
+              <li>Full legal due diligence & risk matrix</li>
+              <li>Master agreement drafting & negotiation</li>
+              <li>Regulatory compliance review & closing</li>
+              <li>Senior partner lead on negotiation calls</li>
+              <li>Comprehensive closing bible & covenants</li>
+            </ul>
+            <a class="btn btn-primary full-width" href="#contact">Instruct Transaction Sprint</a>
+          </article>
+
+          <article class="pricing-card reveal">
+            <div class="plan-header">
+              <span class="plan-type">GENERAL COUNSEL</span>
+              <h3 class="plan-name">Standing Board Retainer</h3>
+              <p class="plan-desc">Ongoing trusted legal and governance counsel for corporate boards, family offices, and executive committees.</p>
+            </div>
+            <div class="plan-price">
+              <span class="price-val">$30</span>
+              <span class="price-period">/ monthly standing retainer</span>
+            </div>
+            <ul class="plan-features">
+              <li>Dedicated senior partner access</li>
+              <li>Monthly board meeting governance support</li>
+              <li>Continuous commercial contract review</li>
+              <li>Priority response for urgent matters</li>
+              <li>Ad-hoc regulatory inquiry defense</li>
+            </ul>
+            <a class="btn btn-secondary full-width" href="#contact">Discuss Standing Retainer</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="faq-grid">
+          <div class="faq-intro reveal">
+            <div class="section-label-group">
+              <span class="section-num">09</span>
+              <span class="section-tag">FAQ</span>
+            </div>
+            <h2 class="section-heading">Frequently asked questions.</h2>
+            <p class="faq-desc">Essential information regarding our conflict checks, engagement terms, and client confidentiality protocols.</p>
+            <div class="faq-contact-box">
+              <strong>Need a formal conflict check?</strong>
+              <p>Contact our chambers practice manager to clear potential counterparty conflicts.</p>
+              <a class="link-inline" href="#contact">Initiate conflict check ↗</a>
+            </div>
+          </div>
+
+          <div class="faq-accordion reveal">
+            <div class="faq-item">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span class="faq-question">How does Harbor & Vale conduct conflict checks?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Prior to accepting any new instruction, our practice manager conducts a strict internal conflict check across all active and historical client matters within 24 business hours.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span class="faq-question">Are communications covered by Legal Professional Privilege?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Yes. All legal advisory communications and documentation provided by our qualified solicitors and counsel are protected by legal professional privilege under the laws of England & Wales.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span class="faq-question">Do you advise on international and US cross-border matters?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Yes. We regularly advise on cross-border transactions involving English law as the governing jurisdiction, collaborating closely with local counsel in New York, Paris, Frankfurt, and Zurich.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span class="faq-question">What are your billing practices and retainer structures?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>We believe in fee transparency. The majority of our matters are executed on a fixed-fee milestone or structured monthly retainer basis, eliminating billable-hour friction and unexpected disbursements.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span class="faq-question">How soon can a senior partner be engaged for an urgent transaction?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>For high-priority transactional matters, our partners can mobilize immediately following conflict clearance and formal engagement letter execution.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-banner" id="cta">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-content">
+            <span class="section-tag-light">SECURE COUNSEL TODAY</span>
+            <h2 class="cta-heading">Ready to protect your commercial interests?</h2>
+            <p class="cta-text">Arrange a confidential consultation with our practice partners. We will review your legal requirements and outline a clear, predictable course of action.</p>
+          </div>
+          <div class="cta-action">
+            <a class="btn btn-light" href="#contact">Engage Counsel ↗</a>
+            <span class="cta-note">Strictly Confidential · Privileged</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="section-label-group">
+              <span class="section-num">10</span>
+              <span class="section-tag">CHAMBERS INQUIRIES</span>
+            </div>
+            <h2 class="section-heading">Initiate a confidential instruction.</h2>
+            <p class="contact-subtext">Share a preliminary outline of your commercial transaction or governance requirement. Our practice manager will review and connect you with the appropriate practice partner.</p>
+
+            <div class="contact-meta-list">
+              <div class="meta-row">
+                <span class="meta-label">DIRECT EMAIL</span>
+                <a class="meta-value" href="mailto:office@harborandvale.com">office@harborandvale.com</a>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">TELEPHONE</span>
+                <a class="meta-value" href="tel:+442079460182">+44 (0)20 7946 0182</a>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">LONDON CHAMBERS</span>
+                <span class="meta-value">18 King Street, 4th Floor<br>London EC2V 8AU, United Kingdom</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">PRACTICE HOURS</span>
+                <span class="meta-value">Monday – Friday: 08:30 – 18:30 GMT</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container reveal">
+            <form class="contact-form" id="services-contact-form" novalidate>
+              <div class="form-header">
+                <h3 class="form-title">Request Counsel Consultation</h3>
+                <p class="form-desc">Complete the fields below to schedule a privileged preliminary discussion.</p>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-name">Full Legal Name <span class="req">*</span></label>
+                <input id="contact-name" name="name" type="text" required autocomplete="name" placeholder="e.g. Richard Sterling KC">
+                <span class="error-msg" data-error-for="contact-name"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Corporate Email <span class="req">*</span></label>
+                <input id="contact-email" name="email" type="email" required autocomplete="email" placeholder="e.g. rsterling@kensington.co.uk">
+                <span class="error-msg" data-error-for="contact-email"></span>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-company">Entity / Organization</label>
+                  <input id="contact-company" name="company" type="text" autocomplete="organization" placeholder="e.g. Kensington Capital Trust">
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-service">Practice Area <span class="req">*</span></label>
+                  <select id="contact-service" name="service" required>
+                    <option value="">Select practice area</option>
+                    <option value="Commercial Contracts">Commercial Contracts & Transactions</option>
+                    <option value="Corporate Governance">Corporate Governance & Compliance</option>
+                    <option value="Regulatory Risk">Regulatory Risk & Cross-Border Affairs</option>
+                    <option value="Transaction Due Diligence">Transaction Due Diligence & M&A</option>
+                    <option value="Board Retainer">Standing Board Retainer</option>
+                  </select>
+                  <span class="error-msg" data-error-for="contact-service"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Summary of Matter <span class="req">*</span></label>
+                <textarea id="contact-message" name="message" rows="4" required placeholder="Please outline the nature of your transaction or inquiry, relevant counterparty names for conflict checks, and target closing dates."></textarea>
+                <span class="error-msg" data-error-for="contact-message"></span>
+              </div>
+
+              <button class="btn btn-primary full-width" type="submit">Submit Confidential Inquiry ↗</button>
+
+              <div class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a class="brand footer-brand" href="#top">
+            <span class="brand-badge">HV</span>
+            <span class="brand-name">Harbor & Vale</span>
+          </a>
+          <p class="footer-tagline">Commercial advisory, corporate governance, and legal counsel for organizations navigating complex transactions and regulatory change.</p>
+          <div class="footer-address-snippet">
+            18 King St, London EC2V 8AU · +44 (0)20 7946 0182
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="footer-heading">NAVIGATION</span>
+          <ul class="footer-nav-links">
+            <li><a href="#about">01 / About Firm</a></li>
+            <li><a href="#services">02 / Practice Areas</a></li>
+            <li><a href="#approach">03 / Standards</a></li>
+            <li><a href="#proof">04 / Representative Matters</a></li>
+            <li><a href="#team">05 / Partners</a></li>
+            <li><a href="#packages">06 / Retainers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="footer-heading">RESOURCES</span>
+          <ul class="footer-nav-links">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#stats">Track Record</a></li>
+            <li><a href="#testimonials">Client Testimonials</a></li>
+            <li><a href="#contact">Engage Counsel</a></li>
+            <li><a href="../index.html">← Back to Showcase</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          © 2026 Harbor & Vale LLP. All rights reserved. Commercial Template Edition.
+        </div>
+        <div class="footer-actions">
+          <span>HTML5 · CSS3 · Vanilla JS</span>
+          <a class="back-to-top" href="#top" aria-label="Return to top of page">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

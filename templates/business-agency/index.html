@@ -1,89 +1,824 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Form & Foundry — Business Agency frontend template.">
-<title>Form & Foundry — Business Agency</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Form & Foundry — Multidisciplinary creative agency building distinct brand systems, digital experiences, and high-impact campaigns for ambitious companies.">
+  <meta name="theme-color" content="#121316">
+  <title>Form & Foundry — Creative & Business Agency</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<div class="tech-strip"><div class="container strip-inner"><span>FRONTEND TECH TEMPLATE</span><span>HTML5 · CSS3 · VANILLA JAVASCRIPT</span></div></div>
-<header class="site-header"><nav class="container nav" aria-label="Primary navigation">
-<a class="brand" href="#top" aria-label="Back to top"><span class="brand-symbol">FO</span><span>Form & Foundry</span></a>
-<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open navigation"><i></i><i></i></button>
-<div class="nav-links" id="menu">
-<a href="#about">About</a><a href="#services">Services</a><a href="#approach">Approach</a><a href="#features">Features</a><a href="#work">Work</a><a href="#team">Team</a><a href="#packages">Packages</a><a href="#faq">FAQ</a><a href="#contact" class="nav-cta">Start a conversation ↗</a>
-</div></nav></header>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<main id="main">
-<div id="top" aria-hidden="true"></div><section class="hero" id="hero"><div class="container hero-grid">
-<div class="hero-copy reveal"><p class="eyebrow">Brand · Digital · Campaigns</p><h1>Build a business people remember.</h1><p class="hero-text">Form & Foundry is a multidisciplinary agency creating clear brands, digital experiences and campaigns for ambitious companies.</p>
-<div class="actions"><a class="button primary" href="#contact">Start a conversation ↗</a><a class="button secondary" href="#services">View services</a></div>
-<div class="hero-meta"><span>Independent practice</span><span>Selected clients · Worldwide</span></div></div>
-<div class="hero-art reveal"><div class="art-card"><span class="art-index">/BUSINESS AGENCY</span><div class="art-shape"></div><div class="art-grid"></div><div class="art-copy"><strong>Form<br>means<br>business.</strong><small>Business Agency</small></div></div></div>
-</div></section>
+  <!-- Top Tech Bar -->
+  <div class="tech-strip">
+    <div class="container strip-inner">
+      <span>CREATIVE AGENCY TEMPLATE</span>
+      <span>HTML5 · CSS3 · VANILLA JAVASCRIPT</span>
+    </div>
+  </div>
 
-<section class="section intro"><div class="container intro-grid"><p class="eyebrow">01 · Introduction</p><p class="intro-copy">Form & Foundry is a multidisciplinary agency creating clear brands, digital experiences and campaigns for ambitious companies.</p></div></section>
+  <!-- Main Navigation -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a class="brand" href="#top" aria-label="Form & Foundry Home">
+        <span class="brand-badge">FF</span>
+        <span class="brand-name">Form & Foundry</span>
+      </a>
 
-<section class="section" id="about"><div class="container two-col"><div><p class="eyebrow">02 · About</p><h2>A practical partner for important work.</h2></div>
-<div><p class="body-copy">We combine clear thinking with practical delivery. The goal is not a larger process — it is a better decision, a stronger plan and visible progress.</p>
-<div class="facts"><div><strong>12+</strong><span>years experience</span></div><div><strong>60+</strong><span>engagements</span></div><div><strong>4.9/5</strong><span>client rating</span></div></div></div></div></section>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
 
-<section class="section tint" id="services"><div class="container"><div class="heading"><div><p class="eyebrow">03 · Services</p><h2>Focused support for the work ahead.</h2></div><p>Choose one service or combine capabilities around a larger business priority.</p></div><div class="service-grid"><article class="service-card reveal"><span>01</span><h3>Brand Systems</h3><p>Identity, positioning and visual systems built to stay consistent.</p><a class="service-action" href="#contact">Explore service ↗</a></article>
-<article class="service-card reveal"><span>02</span><h3>Digital Experiences</h3><p>Web experiences designed around clarity, conversion and character.</p><a class="service-action" href="#contact">Explore service ↗</a></article>
-<article class="service-card reveal"><span>03</span><h3>Campaigns</h3><p>Ideas and campaigns that give a business something worth talking about.</p><a class="service-action" href="#contact">Explore service ↗</a></article>
-<article class="service-card reveal"><span>04</span><h3>Content Direction</h3><p>Editorial direction and content systems for consistent communication.</p><a class="service-action" href="#contact">Explore service ↗</a></article></div></div></section>
+      <nav class="nav-links" id="primary-menu" aria-label="Primary site navigation">
+        <a href="#about" class="nav-item"><span class="nav-num">01</span> About</a>
+        <a href="#services" class="nav-item"><span class="nav-num">02</span> Services</a>
+        <a href="#approach" class="nav-item"><span class="nav-num">03</span> Approach</a>
+        <a href="#proof" class="nav-item"><span class="nav-num">04</span> Work</a>
+        <a href="#team" class="nav-item"><span class="nav-num">05</span> Team</a>
+        <a href="#packages" class="nav-item"><span class="nav-num">06</span> Packages</a>
+        <a href="#faq" class="nav-item">FAQ</a>
+        <a href="#contact" class="nav-cta">Start a Project ↗</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="section" id="approach"><div class="container"><div class="heading"><div><p class="eyebrow">05 · Approach</p><h2>Simple process. Serious thinking.</h2></div><p>From the first question to the first measurable result, the work stays focused.</p></div><div class="process-grid"><article class="process-card reveal"><b>01</b><h3>Discover</h3><p>Understand the business context, audience and decision that needs attention.</p></article>
-<article class="process-card reveal"><b>02</b><h3>Focus</h3><p>Identify the strongest priorities and remove unnecessary complexity.</p></article>
-<article class="process-card reveal"><b>03</b><h3>Deliver</h3><p>Turn the direction into practical work, owners and milestones.</p></article>
-<article class="process-card reveal"><b>04</b><h3>Review</h3><p>Measure progress, learn quickly and refine the next move.</p></article></div></div></section>
+  <main id="main">
+    <div id="top" aria-hidden="true"></div>
 
-<section class="section" id="features"><div class="container">
-<div class="heading"><div><p class="eyebrow">04 · Features & benefits</p><h2>Built around useful outcomes.</h2></div>
-<p>Clear structure, responsive layouts and practical interactions for a polished client-ready frontend.</p></div>
-<div class="benefit-grid">
-<article class="benefit-card reveal"><span>01</span><h3>Clear structure</h3><p>Visitors can understand the offer quickly and find the right next action.</p><a class="card-link" href="#services">View services ↗</a></article>
-<article class="benefit-card reveal"><span>02</span><h3>Responsive by default</h3><p>Layouts adapt cleanly across desktop, tablet and mobile screen sizes.</p><a class="card-link" href="#contact">Discuss a project ↗</a></article>
-<article class="benefit-card reveal"><span>03</span><h3>Easy to customize</h3><p>Organized HTML, CSS and JavaScript make client-side edits straightforward.</p><a class="card-link" href="#packages">View packages ↗</a></article>
-<article class="benefit-card reveal"><span>04</span><h3>Accessible interaction</h3><p>Keyboard focus, mobile navigation, form states and reduced-motion support are included.</p><a class="card-link" href="#contact">Contact us ↗</a></article>
-</div></div></section>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="pill-badge">Brand Systems · Digital Experiences · Campaigns</div>
+          <h1 class="hero-title">We craft brand identities and digital worlds that demand attention.</h1>
+          <p class="hero-desc">Form & Foundry is a creative agency partnering with trailblazing brands. We unite bold visual craft, commercial clarity, and modern digital engineering to build work people remember.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Start a Project ↗</a>
+            <a class="btn btn-secondary" href="#proof">Explore Selected Work</a>
+          </div>
+          <div class="hero-proof-bar">
+            <div class="proof-item">
+              <strong>48+</strong>
+              <span>Design Awards</span>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-item">
+              <strong>9 Yrs</strong>
+              <span>Studio Practice</span>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-item">
+              <strong>140M+</strong>
+              <span>Audiences Reached</span>
+            </div>
+          </div>
+        </div>
 
-<section class="stats" id="stats"><div class="container stats-grid"><div><strong>31%</strong><span>illustrative efficiency gain</span></div><div><strong>8 wks</strong><span>typical focused programme</span></div><div><strong>60+</strong><span>projects supported</span></div><div><strong>12 yrs</strong><span>experience</span></div></div></section>
+        <div class="hero-graphic reveal" aria-hidden="true">
+          <div class="agency-showcase-card">
+            <div class="card-tag-row">
+              <span class="agency-tag">STUDIO SHOWCASE</span>
+              <span class="agency-year">2026 EDITION</span>
+            </div>
+            <div class="agency-visual-block">
+              <div class="agency-graphic-pattern"></div>
+              <div class="agency-statement">
+                <strong>Form creates meaning.<br>Foundry drives scale.</strong>
+              </div>
+            </div>
+            <div class="card-caption-row">
+              <span class="caption-title">Multidisciplinary Practice</span>
+              <span class="caption-loc">San Francisco · London</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="section" id="work"><div class="container"><div class="heading"><div><p class="eyebrow">06 · Selected work</p><h2>Results that are easy to understand.</h2></div><p>Demonstration case studies. Replace with approved client material before publishing.</p></div>
-<div class="work-grid">
-<article class="work-card reveal"><span>CASE 01 · GROWTH</span><h3>Sharper positioning, clearer commercial priorities.</h3><p>Reframed the offer around the strongest customer problem and created a focused growth roadmap.</p><strong>+24%</strong><small>illustrative pipeline improvement</small></article>
-<article class="work-card reveal"><span>CASE 02 · OPERATIONS</span><h3>A simpler operating rhythm for a growing team.</h3><p>Clarified ownership, reduced unnecessary reporting and created a practical weekly decision rhythm.</p><strong>6 wks</strong><small>illustrative implementation</small></article>
-<article class="work-card reveal"><span>CASE 03 · STRATEGY</span><h3>Turning complexity into a clear next move.</h3><p>Aligned leadership around three priorities and converted them into measurable initiatives.</p><strong>3.1x</strong><small>illustrative conversion lift</small></article>
-</div>
-<div class="quotes"><blockquote class="reveal">“The work gave our team a clear direction without adding another layer of process.”<footer>— Managing Director, client example</footer></blockquote><blockquote class="reveal">“Rigorous, practical and easy to act on from the first session.”<footer>— Founder, client example</footer></blockquote></div>
-</div></section>
+    <!-- Company Introduction Section -->
+    <section class="intro-section" id="introduction">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="section-label-group">
+            <span class="section-num">01</span>
+            <span class="section-tag">AGENCY ESSENCE</span>
+          </div>
+          <div class="intro-content">
+            <p class="lead-statement">In a crowded digital marketplace, safe design is the biggest business risk. We help visionary founders and market leaders build unmistakable brand character that converts curiosity into enduring loyalty.</p>
+            <div class="intro-pillars">
+              <div class="pillar">
+                <h4>Distinctive Character</h4>
+                <p>We reject cookie-cutter templates in favor of bespoke visual systems designed to stand apart.</p>
+              </div>
+              <div class="pillar">
+                <h4>Commercial Traction</h4>
+                <p>Every aesthetic decision is anchored in clear consumer psychology and measurable business goals.</p>
+              </div>
+              <div class="pillar">
+                <h4>Flawless Execution</h4>
+                <p>From typographic nuance to responsive frontend craft, we execute with meticulous attention to detail.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="section tint" id="team"><div class="container"><div class="heading"><div><p class="eyebrow">07 · Team</p><h2>Senior people, directly involved.</h2></div><p>Keep the core team small so the work stays close to the decisions.</p></div>
-<div class="team-grid"><article class="person reveal"><div class="portrait">01</div><h3>Alex Morgan</h3><p>Founder & Principal</p><span>Strategy · Growth</span></article><article class="person reveal"><div class="portrait">02</div><h3>Priya Shah</h3><p>Strategy Director</p><span>Operations · Transformation</span></article><article class="person reveal"><div class="portrait">03</div><h3>Daniel Reed</h3><p>Client Partner</p><span>Commercial · Research</span></article></div></div></section>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-lead reveal">
+            <div class="section-label-group">
+              <span class="section-num">02</span>
+              <span class="section-tag">ABOUT US</span>
+            </div>
+            <h2 class="section-heading">A collective of designers, technologists, and brand strategists.</h2>
+            <p class="about-text">We operate as an agile creative studio rather than a bloated agency bureaucracy. By keeping our team senior and hands-on, our clients work directly with the creative directors who concept, design, and code their flagship projects.</p>
+            <div class="about-checklist">
+              <div class="check-item"><span class="check-icon">✓</span> Direct collaboration with creative partners at every stage</div>
+              <div class="check-item"><span class="check-icon">✓</span> Complete design systems with comprehensive governance guidelines</div>
+              <div class="check-item"><span class="check-icon">✓</span> Cross-platform digital execution optimized for speed and conversion</div>
+            </div>
+          </div>
 
-<section class="section" id="packages"><div class="container"><div class="heading"><div><p class="eyebrow">08 · Packages</p><h2>Clear ways to begin.</h2></div><p>Flexible engagement options for different stages and business needs.</p></div>
-<div class="pricing-grid">
-<article class="price-card reveal"><span>FOCUS SESSION</span><small>90 minutes</small><strong>$20</strong><p>One focused conversation around one important business question.</p><ul><li>Pre-session brief</li><li>90-minute session</li><li>Written next steps</li></ul><a class="button secondary" href="#contact">Choose package</a></article>
-<article class="price-card featured reveal"><span>GROWTH SPRINT</span><small>4 weeks</small><strong>$25</strong><p>A compact package for defining priorities and planning the next step.</p><ul><li>Business review</li><li>Priority roadmap</li><li>Action plan</li></ul><a class="button primary" href="#contact">Choose package</a></article>
-<article class="price-card reveal"><span>ADVISORY PARTNER</span><small>Monthly</small><strong>$30</strong><p>A simple recurring option for continued guidance and reviews.</p><ul><li>Priority advisory access</li><li>Leadership sessions</li><li>Monthly review</li></ul><a class="button secondary" href="#contact">Discuss package</a></article>
-</div></div></section>
+          <div class="about-metrics reveal">
+            <div class="metric-card">
+              <span class="metric-val">85+</span>
+              <span class="metric-name">Brand Systems Launched</span>
+              <p class="metric-desc">Complete visual identities deployed across consumer, tech, and enterprise markets.</p>
+            </div>
+            <div class="metric-card">
+              <span class="metric-val">3.2x</span>
+              <span class="metric-name">Avg. Conversion Increase</span>
+              <p class="metric-desc">Reported by client ecommerce and product portals following redesigns.</p>
+            </div>
+            <div class="metric-card">
+              <span class="metric-val">12</span>
+              <span class="metric-name">Global Design Honors</span>
+              <p class="metric-desc">Recognized for typographic innovation, digital art direction, and packaging.</p>
+            </div>
+            <div class="metric-card">
+              <span class="metric-val">100%</span>
+              <span class="metric-name">On-Time Studio Delivery</span>
+              <p class="metric-desc">Disciplined sprint management ensuring every launch deadline is met flawlessly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="section tint" id="faq"><div class="container faq-grid"><div><p class="eyebrow">09 · FAQ</p><h2>Before we start.</h2></div><div class="faq-list">
-<div class="faq"><button class="faq-q" type="button" aria-expanded="false"><span>How does the first conversation work?</span><b>+</b></button><div class="faq-a" hidden><p>We discuss your situation, outcome and timing, then recommend the most appropriate starting point.</p></div></div>
-<div class="faq"><button class="faq-q" type="button" aria-expanded="false"><span>Can I start with one problem?</span><b>+</b></button><div class="faq-a" hidden><p>Yes. A focused session is designed for exactly that situation.</p></div></div>
-<div class="faq"><button class="faq-q" type="button" aria-expanded="false"><span>Do you work remotely?</span><b>+</b></button><div class="faq-a" hidden><p>Yes. Remote delivery is available, with in-person workshops when useful.</p></div></div>
-<div class="faq"><button class="faq-q" type="button" aria-expanded="false"><span>Is the work shown here real?</span><b>+</b></button><div class="faq-a" hidden><p>These are illustrative template examples and should be replaced with approved client content.</p></div></div>
-</div></div></section>
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">03</span>
+              <span class="section-tag">STUDIO CAPABILITIES</span>
+            </div>
+            <h2 class="section-heading">Holistic design disciplines for transformative brands.</h2>
+          </div>
+          <p class="section-subtext">We take brands from foundational strategy through visual identity, interactive digital products, and high-engagement launch campaigns.</p>
+        </div>
 
-<section class="cta"><div class="container"><p class="eyebrow">10 · Next step</p><h2>Bring the question. Let's find the next move.</h2><p>Tell us what is changing and what you need to decide.</p><a class="button dark" href="#contact">Start a conversation ↗</a></div></section>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="card-top">
+              <span class="service-index">SERVICE 01</span>
+              <span class="service-icon">↗</span>
+            </div>
+            <h3 class="service-title">Brand Identity & Visual Systems</h3>
+            <p class="service-desc">Complete visual identities from logo typography and color theory to art direction, motion signatures, and comprehensive brand books.</p>
+            <ul class="service-list">
+              <li>Logomark & Custom Typography</li>
+              <li>Color Systems & Print Specs</li>
+              <li>Brand Guidelines & Asset Kits</li>
+            </ul>
+            <a class="service-link" href="#contact">Discuss Brand Identity ↗</a>
+          </article>
 
-<section class="section contact" id="contact"><div class="container contact-grid"><div><p class="eyebrow">11 · Contact</p><h2>Let's talk about the work.</h2><p class="body-copy">A short introduction is enough. We will respond with the appropriate next step.</p><div class="contact-details"><div><span>Email</span><strong>hello@formandfoundry.com</strong></div><div><span>Phone</span><strong>+1 (415) 555-0124</strong></div><div><span>Availability</span><strong>Mon–Fri · 09:00–18:00</strong></div><div><span>Office</span><strong>88 Market Street, San Francisco, CA</strong></div></div></div>
-<form class="contact-form" novalidate><div class="field"><label for="name">Full name</label><input id="name" name="name" required autocomplete="name" placeholder="Your name"><small data-error-for="name"></small></div><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="you@company.com"><small data-error-for="email"></small></div><div class="field"><label for="company">Company</label><input id="company" name="company" placeholder="Company name"></div><div class="field"><label for="service">Project area</label><select id="service" name="service" required><option value="">Select an area</option><option>Strategy</option><option>Growth</option><option>Operations</option><option>Advisory</option></select><small data-error-for="service"></small></div><div class="field"><label for="message">Project details</label><textarea id="message" name="message" required rows="5" placeholder="Tell us what you are trying to achieve."></textarea><small data-error-for="message"></small></div><button class="button primary" type="submit">Send enquiry ↗</button><p class="form-status" role="status" aria-live="polite"></p></form></div></section>
-</main>
+          <article class="service-card reveal">
+            <div class="card-top">
+              <span class="service-index">SERVICE 02</span>
+              <span class="service-icon">↗</span>
+            </div>
+            <h3 class="service-title">Digital Experience & UI/UX Design</h3>
+            <p class="service-desc">Immersive websites, web applications, and mobile interfaces designed to deliver memorable storytelling and frictionless user journeys.</p>
+            <ul class="service-list">
+              <li>Interactive Prototyping & Wireframing</li>
+              <li>Component Design Systems (Figma)</li>
+              <li>Motion Choreography & Micro-Interactions</li>
+            </ul>
+            <a class="service-link" href="#contact">Discuss Digital Experience ↗</a>
+          </article>
 
-<footer class="footer"><div class="container footer-main"><div><a class="brand" href="#top" aria-label="Back to top"><span class="brand-symbol">FO</span><span>Form & Foundry</span></a><p>Business Agency frontend template.</p></div><div class="footer-links"><a href="#about">About</a><a href="#services">Services</a><a href="#packages">Packages</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div><a href="#top">Back to top ↑</a></div><div class="container footer-bottom"><span>© 2026 Form & Foundry</span><span>Demo content · Replace before production use.</span></div></footer>
-<script src="script.js"></script>
-</body></html>
+          <article class="service-card reveal">
+            <div class="card-top">
+              <span class="service-index">SERVICE 03</span>
+              <span class="service-icon">↗</span>
+            </div>
+            <h3 class="service-title">Creative Direction & Campaigns</h3>
+            <p class="service-desc">High-concept product launches, editorial photoshoots, multi-channel ad campaigns, and social storytelling that spark genuine cultural conversation.</p>
+            <ul class="service-list">
+              <li>Launch Concepting & Storyboarding</li>
+              <li>Art Direction & Editorial Content</li>
+              <li>Omnichannel Campaign Assets</li>
+            </ul>
+            <a class="service-link" href="#contact">Discuss Campaigns ↗</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="card-top">
+              <span class="service-index">SERVICE 04</span>
+              <span class="service-icon">↗</span>
+            </div>
+            <h3 class="service-title">Content Direction & Editorial Strategy</h3>
+            <p class="service-desc">Voice, tone, copywriting frameworks, and content strategy that ensure your brand speaks with authority across all customer touchpoints.</p>
+            <ul class="service-list">
+              <li>Brand Voice & Messaging Hierarchy</li>
+              <li>Website & Product Copywriting</li>
+              <li>Editorial Content Playbooks</li>
+            </ul>
+            <a class="service-link" href="#contact">Discuss Content Strategy ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="approach-section" id="approach">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">04</span>
+              <span class="section-tag">AGENCY PROCESS</span>
+            </div>
+            <h2 class="section-heading">How we transform vision into iconic reality.</h2>
+          </div>
+          <p class="section-subtext">Our structured sprint model blends rigorous immersion with rapid creative exploration and meticulous production.</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step reveal">
+            <span class="step-num">PHASE 01</span>
+            <h3 class="step-title">Immersion & Strategy</h3>
+            <p class="step-desc">We interrogate your market position, competitive landscape, and audience aspirations to uncover your core brand truth.</p>
+          </div>
+          <div class="process-step reveal">
+            <span class="step-num">PHASE 02</span>
+            <h3 class="step-title">Creative Exploration</h3>
+            <p class="step-desc">We develop three radically distinct visual directions, exploring typography, color palettes, motion, and digital interfaces.</p>
+          </div>
+          <div class="process-step reveal">
+            <span class="step-num">PHASE 03</span>
+            <h3 class="step-title">Craft & Systematize</h3>
+            <p class="step-desc">We build out the selected concept into an exhaustive design system with production-ready assets and guidelines.</p>
+          </div>
+          <div class="process-step reveal">
+            <span class="step-num">PHASE 04</span>
+            <h3 class="step-title">Launch & Scale</h3>
+            <p class="step-desc">We guide your team through rollout, ensuring consistent execution across digital products, packaging, and campaigns.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features & Benefits Section -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">05</span>
+              <span class="section-tag">STUDIO ADVANTAGE</span>
+            </div>
+            <h2 class="section-heading">Why world-class brands partner with Form & Foundry.</h2>
+          </div>
+          <p class="section-subtext">Experience agency firepower combined with boutique agility and uncompromising creative standards.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-box reveal">
+            <span class="feature-badge">01</span>
+            <h3 class="feature-title">Award-Winning Craft</h3>
+            <p class="feature-desc">Every layout, typeface pairing, and transition is polished to perfection by experienced studio principals.</p>
+            <a class="feature-link" href="#proof">View portfolio ↗</a>
+          </div>
+
+          <div class="feature-box reveal">
+            <span class="feature-badge">02</span>
+            <h3 class="feature-title">Commercial Pragmatism</h3>
+            <p class="feature-desc">We marry aesthetic audacity with commercial clarity, ensuring every asset moves the needle on revenue and brand equity.</p>
+            <a class="feature-link" href="#services">Explore services ↗</a>
+          </div>
+
+          <div class="feature-box reveal">
+            <span class="feature-badge">03</span>
+            <h3 class="feature-title">Rapid Sprint Cycles</h3>
+            <p class="feature-desc">Our agile milestone model delivers comprehensive brand systems in weeks rather than months of stagnation.</p>
+            <a class="feature-link" href="#packages">View sprint tiers ↗</a>
+          </div>
+
+          <div class="feature-box reveal">
+            <span class="feature-badge">04</span>
+            <h3 class="feature-title">Future-Proof Systems</h3>
+            <p class="feature-desc">Modular Figma component libraries and design tokens that empower your internal team to scale seamlessly.</p>
+            <a class="feature-link" href="#contact">Discuss a brief ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section" id="stats">
+      <div class="container">
+        <div class="stats-bar reveal">
+          <div class="stat-col">
+            <strong class="stat-number">+165%</strong>
+            <span class="stat-label">Average Brand Engagement Lift</span>
+          </div>
+          <div class="stat-col">
+            <strong class="stat-number">4 Wks</strong>
+            <span class="stat-label">Average Identity Sprint Duration</span>
+          </div>
+          <div class="stat-col">
+            <strong class="stat-number">85+</strong>
+            <span class="stat-label">Global Brands Transformed</span>
+          </div>
+          <div class="stat-col">
+            <strong class="stat-number">100%</strong>
+            <span class="stat-label">Client Recommendation Rate</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work & Proof Section -->
+    <section class="proof-section" id="proof">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">06</span>
+              <span class="section-tag">FEATURED WORK</span>
+            </div>
+            <h2 class="section-heading">Visual stories that reshaped entire market categories.</h2>
+          </div>
+          <p class="section-subtext">Explore selected client case studies demonstrating our multidisciplinary approach to branding and digital experiences.</p>
+        </div>
+
+        <div class="cases-grid">
+          <article class="case-card reveal">
+            <div class="case-header">
+              <span class="case-sector">FINTECH REBRAND</span>
+              <span class="case-badge">CASE STUDY 01</span>
+            </div>
+            <h3 class="case-title">Complete Brand Architecture for Next-Gen NeoBank 'Aura'</h3>
+            <p class="case-summary">Developed a vibrant typographic identity, custom 3D iconography, and responsive web platform that redefined European digital banking.</p>
+            <div class="case-impact">
+              <div class="impact-metric">
+                <strong>+240%</strong>
+                <small>App Store Conversion Rate</small>
+              </div>
+              <div class="impact-metric">
+                <strong>$45M</strong>
+                <small>Series B Raised Post-Launch</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card reveal">
+            <div class="case-header">
+              <span class="case-sector">DIRECT-TO-CONSUMER</span>
+              <span class="case-badge">CASE STUDY 02</span>
+            </div>
+            <h3 class="case-title">Global E-commerce Experience & Packaging for 'Maison V'</h3>
+            <p class="case-summary">Crafted sustainable luxury packaging, editorial art direction, and a headless digital storefront for a modern botanical fragrance house.</p>
+            <div class="case-impact">
+              <div class="impact-metric">
+                <strong>+180%</strong>
+                <small>Average Order Value</small>
+              </div>
+              <div class="impact-metric">
+                <strong>4.8★</strong>
+                <small>Customer Brand Sentiment</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card reveal">
+            <div class="case-header">
+              <span class="case-sector">AI & SAAS PLATFORM</span>
+              <span class="case-badge">CASE STUDY 03</span>
+            </div>
+            <h3 class="case-title">Design System & Product Storytelling for 'Synthflow'</h3>
+            <p class="case-summary">Built a cohesive dark-mode design system, interactive 3D product animations, and developer documentation portal for an enterprise AI workflow platform.</p>
+            <div class="case-impact">
+              <div class="impact-metric">
+                <strong>3.5x</strong>
+                <small>Sign-Up Velocity</small>
+              </div>
+              <div class="impact-metric">
+                <strong>-50%</strong>
+                <small>Frontend Dev Handoff Time</small>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Testimonials / Quotes -->
+        <div class="testimonials-grid" id="testimonials">
+          <blockquote class="testimonial-card reveal">
+            <p class="quote-text">“Form & Foundry transformed our startup from a standard software utility into a recognized category leader. Their creative direction exceeded every expectation.”</p>
+            <footer class="quote-author">
+              <span class="author-name">Marcus Vance</span>
+              <span class="author-title">Founder & CEO, Aura Financial</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal">
+            <p class="quote-text">“Working with their team was an absolute masterclass in craft. The brand identity they delivered gave us the confidence to pitch the world's largest luxury retailers.”</p>
+            <footer class="quote-author">
+              <span class="author-name">Camilla Laurent</span>
+              <span class="author-title">Creative Director, Maison V Fragrances</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="team">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">07</span>
+              <span class="section-tag">STUDIO LEADERSHIP</span>
+            </div>
+            <h2 class="section-heading">Led by recognized practitioners and creative directors.</h2>
+          </div>
+          <p class="section-subtext">Our core principals bring over two decades of combined experience designing for global cultural icons and disruptive tech startups.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <div class="team-avatar">
+              <span class="avatar-initials">ML</span>
+              <span class="avatar-tag">CREATIVE DIRECTOR</span>
+            </div>
+            <div class="team-body">
+              <h3 class="team-name">Maya Lin</h3>
+              <p class="team-role">Co-Founder & Executive Creative Director</p>
+              <p class="team-bio">Former Design Director at Pentagram and Apple. Specializes in typography systems, luxury branding, and editorial art direction.</p>
+              <span class="team-specialty">Focus: Brand Systems · Typography · Creative Direction</span>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-avatar">
+              <span class="avatar-initials">KP</span>
+              <span class="avatar-tag">DESIGN LEAD</span>
+            </div>
+            <div class="team-body">
+              <h3 class="team-name">Kieran Patel</h3>
+              <p class="team-role">Head of Digital Experience & UI/UX</p>
+              <p class="team-bio">Pioneered interactive design systems for leading Silicon Valley scaleups with a passion for micro-interactions and creative code.</p>
+              <span class="team-specialty">Focus: UI/UX · Motion Choreography · Design Systems</span>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-avatar">
+              <span class="avatar-initials">SR</span>
+              <span class="avatar-tag">STRATEGY LEAD</span>
+            </div>
+            <div class="team-body">
+              <h3 class="team-name">Sophia Rossi</h3>
+              <p class="team-role">Partner & Brand Strategy Director</p>
+              <p class="team-bio">12+ years orchestrating brand positioning, go-to-market narratives, and consumer insights across London, Milan, and New York.</p>
+              <span class="team-specialty">Focus: Brand Positioning · Naming · Campaign Narratives</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages & Pricing Section -->
+    <section class="packages-section" id="packages">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">08</span>
+              <span class="section-tag">STUDIO PACKAGES</span>
+            </div>
+            <h2 class="section-heading">Predictable packages for ambitious creative projects.</h2>
+          </div>
+          <p class="section-subtext">Clear, value-driven pricing models with fixed deliverables and dedicated senior partner attention.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card reveal">
+            <div class="plan-header">
+              <span class="plan-type">DISCOVERY SPRINT</span>
+              <h3 class="plan-name">Brand Audit & Strategy</h3>
+              <p class="plan-desc">An intensive 10-day creative audit to assess your brand perception and outline a transformative visual direction.</p>
+            </div>
+            <div class="plan-price">
+              <span class="price-val">$20</span>
+              <span class="price-period">/ strategy sprint</span>
+            </div>
+            <ul class="plan-features">
+              <li>Comprehensive competitive brand audit</li>
+              <li>Target audience persona mapping</li>
+              <li>3 moodboard visual concepts</li>
+              <li>Strategy brief & scope roadmap</li>
+            </ul>
+            <a class="btn btn-secondary full-width" href="#contact">Choose Discovery</a>
+          </article>
+
+          <article class="pricing-card featured reveal">
+            <div class="featured-badge">FLAGSHIP TIER</div>
+            <div class="plan-header">
+              <span class="plan-type">IDENTITY SPRINT</span>
+              <h3 class="plan-name">Complete Brand Identity</h3>
+              <p class="plan-desc">Our core 4-week sprint delivering a complete visual identity, typography system, digital UI kit, and brand guidelines.</p>
+            </div>
+            <div class="plan-price">
+              <span class="price-val">$25</span>
+              <span class="price-period">/ 4-week identity sprint</span>
+            </div>
+            <ul class="plan-features">
+              <li>Bespoke logomark & typography system</li>
+              <li>Complete color & layout specifications</li>
+              <li>Figma UI component starter library</li>
+              <li>Comprehensive 40+ page brand book</li>
+              <li>Social media launch asset toolkit</li>
+            </ul>
+            <a class="btn btn-primary full-width" href="#contact">Choose Identity Sprint</a>
+          </article>
+
+          <article class="pricing-card reveal">
+            <div class="plan-header">
+              <span class="plan-type">STUDIO PARTNERSHIP</span>
+              <h3 class="plan-name">Creative Direction Retainer</h3>
+              <p class="plan-desc">Ongoing dedicated creative direction, campaign concepting, and digital product design support for growing teams.</p>
+            </div>
+            <div class="plan-price">
+              <span class="price-val">$30</span>
+              <span class="price-period">/ monthly studio retainer</span>
+            </div>
+            <ul class="plan-features">
+              <li>Dedicated creative director allocation</li>
+              <li>Bi-weekly sprint reviews & reviews</li>
+              <li>Ongoing digital & campaign asset creation</li>
+              <li>Design system governance & extension</li>
+              <li>Priority studio turnaround times</li>
+            </ul>
+            <a class="btn btn-secondary full-width" href="#contact">Discuss Retainer</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="faq-grid">
+          <div class="faq-intro reveal">
+            <div class="section-label-group">
+              <span class="section-num">09</span>
+              <span class="section-tag">FAQ</span>
+            </div>
+            <h2 class="section-heading">Frequently asked questions.</h2>
+            <p class="faq-desc">Common questions regarding our studio workflow, intellectual property rights, and project timelines.</p>
+            <div class="faq-contact-box">
+              <strong>Need a custom brief?</strong>
+              <p>Contact our creative directors to discuss tailored agency scopes.</p>
+              <a class="link-inline" href="#contact">Submit a brief ↗</a>
+            </div>
+          </div>
+
+          <div class="faq-accordion reveal">
+            <div class="faq-item">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span class="faq-question">What is the typical turnaround time for a complete brand identity?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Our standard Identity Sprint takes approximately 4 weeks from kickoff to final asset delivery. We also offer expedited 2-week sprints for early-stage startups with urgent launch deadlines.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span class="faq-question">Do we own all copyrights and vector source files?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Yes. Upon project completion and final invoice settlement, 100% of the commercial intellectual property rights, vector master files, Figma workspaces, and font licensing guidance are transferred entirely to you.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span class="faq-question">Can Form & Foundry handle the frontend development of our website?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Absolutely. We build clean, high-performance responsive frontends using modern semantic HTML5, CSS3, and JavaScript, as well as React/Next.js and Webflow implementations.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span class="faq-question">How many revision rounds are included in your sprints?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Each sprint includes two structured feedback cycles at every key milestone (strategy, initial visual concepts, and final system refinement), ensuring your vision is captured precisely.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span class="faq-question">How do we get started on a project with Form & Foundry?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Simply fill out the project inquiry form below with a brief summary of your timeline and goals. Our partners will reach out within 24 hours to schedule an introductory video call.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-banner" id="cta">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-content">
+            <span class="section-tag-light">IGNITE YOUR BRAND</span>
+            <h2 class="cta-heading">Ready to build something unforgettable?</h2>
+            <p class="cta-text">Let's create an unmistakable brand identity and digital experience that sets a new benchmark in your industry.</p>
+          </div>
+          <div class="cta-action">
+            <a class="btn btn-light" href="#contact">Start a Project ↗</a>
+            <span class="cta-note">Taking new briefs for Q3/Q4</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="section-label-group">
+              <span class="section-num">10</span>
+              <span class="section-tag">PROJECT INQUIRIES</span>
+            </div>
+            <h2 class="section-heading">Tell us about the world you want to build.</h2>
+            <p class="contact-subtext">Share your brief, timeline, or ambitions. Our creative directors review every submission and respond with thoughtful next steps.</p>
+
+            <div class="contact-meta-list">
+              <div class="meta-row">
+                <span class="meta-label">STUDIO EMAIL</span>
+                <a class="meta-value" href="mailto:hello@formandfoundry.com">hello@formandfoundry.com</a>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">PHONE</span>
+                <a class="meta-value" href="tel:+14155550124">+1 (415) 555-0124</a>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">STUDIO LOCATION</span>
+                <span class="meta-value">88 Market Street, Suite 400<br>San Francisco, CA 94105</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">STUDIO HOURS</span>
+                <span class="meta-value">Monday – Friday: 09:00 – 18:00 PST</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container reveal">
+            <form class="contact-form" id="agency-contact-form" novalidate>
+              <div class="form-header">
+                <h3 class="form-title">Start a Project Brief</h3>
+                <p class="form-desc">Provide your details to initiate an agency project discussion.</p>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-name">Full Name <span class="req">*</span></label>
+                <input id="contact-name" name="name" type="text" required autocomplete="name" placeholder="e.g. Julian Hayes">
+                <span class="error-msg" data-error-for="contact-name"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Work Email <span class="req">*</span></label>
+                <input id="contact-email" name="email" type="email" required autocomplete="email" placeholder="e.g. julian@brand.com">
+                <span class="error-msg" data-error-for="contact-email"></span>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-company">Company / Brand</label>
+                  <input id="contact-company" name="company" type="text" autocomplete="organization" placeholder="e.g. Aura Labs">
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-service">Project Type <span class="req">*</span></label>
+                  <select id="contact-service" name="service" required>
+                    <option value="">Select an area</option>
+                    <option value="Brand Identity">Brand Identity & Visual Systems</option>
+                    <option value="Digital Experience">Digital Experience & UI/UX</option>
+                    <option value="Campaigns">Creative Direction & Campaigns</option>
+                    <option value="Content Strategy">Content Direction & Copywriting</option>
+                    <option value="Full Rebrand">Full Brand & Web Package</option>
+                  </select>
+                  <span class="error-msg" data-error-for="contact-service"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Project Brief & Goals <span class="req">*</span></label>
+                <textarea id="contact-message" name="message" rows="4" required placeholder="Tell us about your brand, what you're launching, target timeline, and key design ambitions."></textarea>
+                <span class="error-msg" data-error-for="contact-message"></span>
+              </div>
+
+              <button class="btn btn-primary full-width" type="submit">Submit Agency Brief ↗</button>
+
+              <div class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a class="brand footer-brand" href="#top">
+            <span class="brand-badge">FF</span>
+            <span class="brand-name">Form & Foundry</span>
+          </a>
+          <p class="footer-tagline">Multidisciplinary creative agency building distinct brand systems, digital experiences, and high-impact campaigns for ambitious companies.</p>
+          <div class="footer-address-snippet">
+            88 Market St, San Francisco, CA 94105 · +1 (415) 555-0124
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="footer-heading">NAVIGATION</span>
+          <ul class="footer-nav-links">
+            <li><a href="#about">01 / About</a></li>
+            <li><a href="#services">02 / Services</a></li>
+            <li><a href="#approach">03 / Approach</a></li>
+            <li><a href="#proof">04 / Selected Work</a></li>
+            <li><a href="#team">05 / Team</a></li>
+            <li><a href="#packages">06 / Packages</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="footer-heading">RESOURCES</span>
+          <ul class="footer-nav-links">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#stats">Studio Metrics</a></li>
+            <li><a href="#testimonials">Client Praise</a></li>
+            <li><a href="#contact">Start a Project</a></li>
+            <li><a href="../index.html">← Back to Showcase</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          © 2026 Form & Foundry Studio. All rights reserved. Commercial Template Edition.
+        </div>
+        <div class="footer-actions">
+          <span>HTML5 · CSS3 · Vanilla JS</span>
+          <a class="back-to-top" href="#top" aria-label="Return to top of page">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

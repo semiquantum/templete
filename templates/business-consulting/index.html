@@ -1,89 +1,827 @@
 <!doctype html>
 <html lang="en" class="no-js">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Northline Advisory — Business Consulting frontend template.">
-<title>Northline Advisory — Business Consulting</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Northline Advisory — Strategic advisory and management consulting for leadership teams navigating growth, transformation, and high-stakes decisions.">
+  <meta name="theme-color" content="#1c1917">
+  <title>Northline Advisory — Strategic Management & Business Consulting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<a class="skip-link" href="#main">Skip to content</a>
-<div class="tech-strip"><div class="container strip-inner"><span>FRONTEND TECH TEMPLATE</span><span>HTML5 · CSS3 · VANILLA JAVASCRIPT</span></div></div>
-<header class="site-header"><nav class="container nav" aria-label="Primary navigation">
-<a class="brand" href="#top" aria-label="Back to top"><span class="brand-symbol">NO</span><span>Northline Advisory</span></a>
-<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open navigation"><i></i><i></i></button>
-<div class="nav-links" id="menu">
-<a href="#about">About</a><a href="#services">Services</a><a href="#approach">Approach</a><a href="#features">Features</a><a href="#work">Work</a><a href="#team">Team</a><a href="#packages">Packages</a><a href="#faq">FAQ</a><a href="#contact" class="nav-cta">Start a conversation ↗</a>
-</div></nav></header>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<main id="main">
-<div id="top" aria-hidden="true"></div><section class="hero" id="hero"><div class="container hero-grid">
-<div class="hero-copy reveal"><p class="eyebrow">Strategy · Growth · Transformation</p><h1>Make the next decision with confidence.</h1><p class="hero-text">Northline Advisory helps leadership teams turn complex business questions into focused priorities, practical plans and measurable progress.</p>
-<div class="actions"><a class="button primary" href="#contact">Start a conversation ↗</a><a class="button secondary" href="#services">View services</a></div>
-<div class="hero-meta"><span>Independent practice</span><span>Selected clients · Worldwide</span></div></div>
-<div class="hero-art reveal"><div class="art-card"><span class="art-index">/BUSINESS CONSULTING</span><div class="art-shape"></div><div class="art-grid"></div><div class="art-copy"><strong>Northline<br>means<br>business.</strong><small>Business Consulting</small></div></div></div>
-</div></section>
+  <!-- Top Tech Bar -->
+  <div class="tech-strip">
+    <div class="container strip-inner">
+      <span>FRONTEND TECH TEMPLATE</span>
+      <span>HTML5 · CSS3 · VANILLA JAVASCRIPT</span>
+    </div>
+  </div>
 
-<section class="section intro"><div class="container intro-grid"><p class="eyebrow">01 · Introduction</p><p class="intro-copy">Northline Advisory helps leadership teams turn complex business questions into focused priorities, practical plans and measurable progress.</p></div></section>
+  <!-- Main Navigation -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a class="brand" href="#top" aria-label="Northline Advisory Home">
+        <span class="brand-badge">NA</span>
+        <span class="brand-name">Northline Advisory</span>
+      </a>
 
-<section class="section" id="about"><div class="container two-col"><div><p class="eyebrow">02 · About</p><h2>A practical partner for important work.</h2></div>
-<div><p class="body-copy">We combine clear thinking with practical delivery. The goal is not a larger process — it is a better decision, a stronger plan and visible progress.</p>
-<div class="facts"><div><strong>12+</strong><span>years experience</span></div><div><strong>60+</strong><span>engagements</span></div><div><strong>4.9/5</strong><span>client rating</span></div></div></div></div></section>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Toggle navigation menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
 
-<section class="section tint" id="services"><div class="container"><div class="heading"><div><p class="eyebrow">03 · Services</p><h2>Focused support for the work ahead.</h2></div><p>Choose one service or combine capabilities around a larger business priority.</p></div><div class="service-grid"><article class="service-card reveal"><span>01</span><h3>Business Strategy</h3><p>Clarify positioning, priorities and the choices that shape the next stage.</p><a class="service-action" href="#contact">Explore service ↗</a></article>
-<article class="service-card reveal"><span>02</span><h3>Growth Planning</h3><p>Build focused customer, channel and commercial growth plans.</p><a class="service-action" href="#contact">Explore service ↗</a></article>
-<article class="service-card reveal"><span>03</span><h3>Transformation</h3><p>Turn change programmes into practical operating roadmaps.</p><a class="service-action" href="#contact">Explore service ↗</a></article>
-<article class="service-card reveal"><span>04</span><h3>Leadership Advisory</h3><p>A senior sounding board for high-stakes decisions.</p><a class="service-action" href="#contact">Explore service ↗</a></article></div></div></section>
+      <nav class="nav-links" id="primary-menu" aria-label="Primary site navigation">
+        <a href="#about" class="nav-item"><span class="nav-num">01</span> About</a>
+        <a href="#services" class="nav-item"><span class="nav-num">02</span> Services</a>
+        <a href="#approach" class="nav-item"><span class="nav-num">03</span> Approach</a>
+        <a href="#proof" class="nav-item"><span class="nav-num">04</span> Proof</a>
+        <a href="#team" class="nav-item"><span class="nav-num">05</span> Team</a>
+        <a href="#packages" class="nav-item"><span class="nav-num">06</span> Packages</a>
+        <a href="#faq" class="nav-item">FAQ</a>
+        <a href="#contact" class="nav-cta">Start a Conversation ↗</a>
+      </nav>
+    </div>
+  </header>
 
-<section class="section" id="approach"><div class="container"><div class="heading"><div><p class="eyebrow">05 · Approach</p><h2>Simple process. Serious thinking.</h2></div><p>From the first question to the first measurable result, the work stays focused.</p></div><div class="process-grid"><article class="process-card reveal"><b>01</b><h3>Discover</h3><p>Understand the business context, audience and decision that needs attention.</p></article>
-<article class="process-card reveal"><b>02</b><h3>Focus</h3><p>Identify the strongest priorities and remove unnecessary complexity.</p></article>
-<article class="process-card reveal"><b>03</b><h3>Deliver</h3><p>Turn the direction into practical work, owners and milestones.</p></article>
-<article class="process-card reveal"><b>04</b><h3>Review</h3><p>Measure progress, learn quickly and refine the next move.</p></article></div></div></section>
+  <main id="main">
+    <div id="top" aria-hidden="true"></div>
 
-<section class="section" id="features"><div class="container">
-<div class="heading"><div><p class="eyebrow">04 · Features & benefits</p><h2>Built around useful outcomes.</h2></div>
-<p>Clear structure, responsive layouts and practical interactions for a polished client-ready frontend.</p></div>
-<div class="benefit-grid">
-<article class="benefit-card reveal"><span>01</span><h3>Clear structure</h3><p>Visitors can understand the offer quickly and find the right next action.</p><a class="card-link" href="#services">View services ↗</a></article>
-<article class="benefit-card reveal"><span>02</span><h3>Responsive by default</h3><p>Layouts adapt cleanly across desktop, tablet and mobile screen sizes.</p><a class="card-link" href="#contact">Discuss a project ↗</a></article>
-<article class="benefit-card reveal"><span>03</span><h3>Easy to customize</h3><p>Organized HTML, CSS and JavaScript make client-side edits straightforward.</p><a class="card-link" href="#packages">View packages ↗</a></article>
-<article class="benefit-card reveal"><span>04</span><h3>Accessible interaction</h3><p>Keyboard focus, mobile navigation, form states and reduced-motion support are included.</p><a class="card-link" href="#contact">Contact us ↗</a></article>
-</div></div></section>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="pill-badge">Strategic Advisory · Operations · Leadership</div>
+          <h1 class="hero-title">Make the next critical decision with complete clarity.</h1>
+          <p class="hero-desc">Northline Advisory partners with executive leadership teams to turn ambiguous business challenges into focused strategic priorities, actionable operating roadmaps, and measurable enterprise value.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Start a Conversation ↗</a>
+            <a class="btn btn-secondary" href="#services">Explore Services</a>
+          </div>
+          <div class="hero-proof-bar">
+            <div class="proof-item">
+              <strong>$420M+</strong>
+              <span>Client Value Generated</span>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-item">
+              <strong>14+ Years</strong>
+              <span>Advisory Practice</span>
+            </div>
+            <div class="proof-divider"></div>
+            <div class="proof-item">
+              <strong>94%</strong>
+              <span>Executive Retention Rate</span>
+            </div>
+          </div>
+        </div>
 
-<section class="stats" id="stats"><div class="container stats-grid"><div><strong>31%</strong><span>illustrative efficiency gain</span></div><div><strong>8 wks</strong><span>typical focused programme</span></div><div><strong>60+</strong><span>projects supported</span></div><div><strong>12 yrs</strong><span>experience</span></div></div></section>
+        <div class="hero-graphic reveal" aria-hidden="true">
+          <div class="editorial-card">
+            <div class="card-header">
+              <span class="card-tag">ADVISORY INSIGHT</span>
+              <span class="card-index">01 / PERSPECTIVE</span>
+            </div>
+            <div class="card-body">
+              <div class="card-metric-block">
+                <span class="metric-num">3.4x</span>
+                <span class="metric-label">Average operating speed increase post-alignment</span>
+              </div>
+              <div class="card-quote">
+                “Rigorous strategy is not about exhaustive plans; it is about deliberate choices and disciplined execution.”
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="advisory-pill">Executive Briefing</div>
+              <span class="card-sub">Northline Strategy Practice</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="section" id="work"><div class="container"><div class="heading"><div><p class="eyebrow">06 · Selected work</p><h2>Results that are easy to understand.</h2></div><p>Demonstration case studies. Replace with approved client material before publishing.</p></div>
-<div class="work-grid">
-<article class="work-card reveal"><span>CASE 01 · GROWTH</span><h3>Sharper positioning, clearer commercial priorities.</h3><p>Reframed the offer around the strongest customer problem and created a focused growth roadmap.</p><strong>+24%</strong><small>illustrative pipeline improvement</small></article>
-<article class="work-card reveal"><span>CASE 02 · OPERATIONS</span><h3>A simpler operating rhythm for a growing team.</h3><p>Clarified ownership, reduced unnecessary reporting and created a practical weekly decision rhythm.</p><strong>6 wks</strong><small>illustrative implementation</small></article>
-<article class="work-card reveal"><span>CASE 03 · STRATEGY</span><h3>Turning complexity into a clear next move.</h3><p>Aligned leadership around three priorities and converted them into measurable initiatives.</p><strong>3.1x</strong><small>illustrative conversion lift</small></article>
-</div>
-<div class="quotes"><blockquote class="reveal">“The work gave our team a clear direction without adding another layer of process.”<footer>— Managing Director, client example</footer></blockquote><blockquote class="reveal">“Rigorous, practical and easy to act on from the first session.”<footer>— Founder, client example</footer></blockquote></div>
-</div></section>
+    <!-- Company Introduction Section -->
+    <section class="intro-section" id="introduction">
+      <div class="container">
+        <div class="intro-grid">
+          <div class="section-label-group">
+            <span class="section-num">01</span>
+            <span class="section-tag">INTRODUCTION</span>
+          </div>
+          <div class="intro-content">
+            <p class="lead-statement">We cut through organizational noise to solve complex commercial questions. Our advisors bring senior expertise directly to your executive table — delivering decisive analysis, operational realism, and lasting momentum.</p>
+            <div class="intro-pillars">
+              <div class="pillar">
+                <h4>Independent Perspective</h4>
+                <p>Objective, unvarnished guidance focused solely on your firm's competitive advantage.</p>
+              </div>
+              <div class="pillar">
+                <h4>Actionable Roadmaps</h4>
+                <p>Strategies translated into concrete milestones, owners, and capital allocation priorities.</p>
+              </div>
+              <div class="pillar">
+                <h4>Measurable Outcomes</h4>
+                <p>Continuous validation metrics that tie every initiative directly to bottom-line performance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="section tint" id="team"><div class="container"><div class="heading"><div><p class="eyebrow">07 · Team</p><h2>Senior people, directly involved.</h2></div><p>Keep the core team small so the work stays close to the decisions.</p></div>
-<div class="team-grid"><article class="person reveal"><div class="portrait">01</div><h3>Alex Morgan</h3><p>Founder & Principal</p><span>Strategy · Growth</span></article><article class="person reveal"><div class="portrait">02</div><h3>Priya Shah</h3><p>Strategy Director</p><span>Operations · Transformation</span></article><article class="person reveal"><div class="portrait">03</div><h3>Daniel Reed</h3><p>Client Partner</p><span>Commercial · Research</span></article></div></div></section>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-lead reveal">
+            <div class="section-label-group">
+              <span class="section-num">02</span>
+              <span class="section-tag">ABOUT US</span>
+            </div>
+            <h2 class="section-heading">Built on rigorous inquiry and grounded in operational reality.</h2>
+            <p class="about-text">Founded by veteran strategy directors and corporate executives, Northline Advisory exists to replace generic consulting slide decks with high-impact, actionable business direction. We work alongside leadership teams through critical market transitions, organizational restructuring, and accelerated growth phases.</p>
+            <div class="about-checklist">
+              <div class="check-item"><span class="check-icon">✓</span> Senior partners directly involved in all client deliverables</div>
+              <div class="check-item"><span class="check-icon">✓</span> Proprietary strategic frameworks tested across 120+ engagements</div>
+              <div class="check-item"><span class="check-icon">✓</span> Zero handoffs to junior analysts or disconnected third parties</div>
+            </div>
+          </div>
 
-<section class="section" id="packages"><div class="container"><div class="heading"><div><p class="eyebrow">08 · Packages</p><h2>Clear ways to begin.</h2></div><p>Flexible engagement options for different stages and business needs.</p></div>
-<div class="pricing-grid">
-<article class="price-card reveal"><span>FOCUS SESSION</span><small>90 minutes</small><strong>$20</strong><p>One focused conversation around one important business question.</p><ul><li>Pre-session brief</li><li>90-minute session</li><li>Written next steps</li></ul><a class="button secondary" href="#contact">Choose package</a></article>
-<article class="price-card featured reveal"><span>GROWTH SPRINT</span><small>4 weeks</small><strong>$25</strong><p>A compact package for defining priorities and planning the next step.</p><ul><li>Business review</li><li>Priority roadmap</li><li>Action plan</li></ul><a class="button primary" href="#contact">Choose package</a></article>
-<article class="price-card reveal"><span>ADVISORY PARTNER</span><small>Monthly</small><strong>$30</strong><p>A simple recurring option for continued guidance and reviews.</p><ul><li>Priority advisory access</li><li>Leadership sessions</li><li>Monthly review</li></ul><a class="button secondary" href="#contact">Discuss package</a></article>
-</div></div></section>
+          <div class="about-metrics reveal">
+            <div class="metric-card">
+              <span class="metric-val">120+</span>
+              <span class="metric-name">Enterprise Engagements</span>
+              <p class="metric-desc">Strategic reviews completed across North America, Europe, and Asia-Pacific.</p>
+            </div>
+            <div class="metric-card">
+              <span class="metric-val">98.2%</span>
+              <span class="metric-name">Milestone Attainment</span>
+              <p class="metric-desc">Advisory recommendations adopted and executed on schedule by client boards.</p>
+            </div>
+            <div class="metric-card">
+              <span class="metric-val">14 Yrs</span>
+              <span class="metric-name">Leadership Track Record</span>
+              <p class="metric-desc">Consistent delivery through volatile market cycles, mergers, and scale inflection points.</p>
+            </div>
+            <div class="metric-card">
+              <span class="metric-val">4.9 / 5</span>
+              <span class="metric-name">Executive Satisfaction</span>
+              <p class="metric-desc">Independent audit rating by CEOs and board chairs over the past five years.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<section class="section tint" id="faq"><div class="container faq-grid"><div><p class="eyebrow">09 · FAQ</p><h2>Before we start.</h2></div><div class="faq-list">
-<div class="faq"><button class="faq-q" type="button" aria-expanded="false"><span>How does the first conversation work?</span><b>+</b></button><div class="faq-a" hidden><p>We discuss your situation, outcome and timing, then recommend the most appropriate starting point.</p></div></div>
-<div class="faq"><button class="faq-q" type="button" aria-expanded="false"><span>Can I start with one problem?</span><b>+</b></button><div class="faq-a" hidden><p>Yes. A focused session is designed for exactly that situation.</p></div></div>
-<div class="faq"><button class="faq-q" type="button" aria-expanded="false"><span>Do you work remotely?</span><b>+</b></button><div class="faq-a" hidden><p>Yes. Remote delivery is available, with in-person workshops when useful.</p></div></div>
-<div class="faq"><button class="faq-q" type="button" aria-expanded="false"><span>Is the work shown here real?</span><b>+</b></button><div class="faq-a" hidden><p>These are illustrative template examples and should be replaced with approved client content.</p></div></div>
-</div></div></section>
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">03</span>
+              <span class="section-tag">SERVICES</span>
+            </div>
+            <h2 class="section-heading">Targeted strategic capabilities for pivotal moments.</h2>
+          </div>
+          <p class="section-subtext">Engage us for a single high-priority initiative or orchestrate a comprehensive multi-quarter organizational transformation.</p>
+        </div>
 
-<section class="cta"><div class="container"><p class="eyebrow">10 · Next step</p><h2>Bring the question. Let's find the next move.</h2><p>Tell us what is changing and what you need to decide.</p><a class="button dark" href="#contact">Start a conversation ↗</a></div></section>
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="card-top">
+              <span class="service-index">SERVICE 01</span>
+              <span class="service-icon">↗</span>
+            </div>
+            <h3 class="service-title">Corporate Strategy & Positioning</h3>
+            <p class="service-desc">Define clear competitive boundaries, prioritize core market opportunities, and align board expectations around durable growth vectors.</p>
+            <ul class="service-list">
+              <li>Market Opportunity & TAM Analysis</li>
+              <li>Competitive Moat Identification</li>
+              <li>Capital Allocation Strategy</li>
+            </ul>
+            <a class="service-link" href="#contact">Discuss Strategy ↗</a>
+          </article>
 
-<section class="section contact" id="contact"><div class="container contact-grid"><div><p class="eyebrow">11 · Contact</p><h2>Let's talk about the work.</h2><p class="body-copy">A short introduction is enough. We will respond with the appropriate next step.</p><div class="contact-details"><div><span>Email</span><strong>hello@northlineadvisory.com</strong></div><div><span>Phone</span><strong>+1 (212) 555-0186</strong></div><div><span>Availability</span><strong>Mon–Fri · 09:00–18:00</strong></div><div><span>Office</span><strong>245 Madison Avenue, New York, NY</strong></div></div></div>
-<form class="contact-form" novalidate><div class="field"><label for="name">Full name</label><input id="name" name="name" required autocomplete="name" placeholder="Your name"><small data-error-for="name"></small></div><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required autocomplete="email" placeholder="you@company.com"><small data-error-for="email"></small></div><div class="field"><label for="company">Company</label><input id="company" name="company" placeholder="Company name"></div><div class="field"><label for="service">Project area</label><select id="service" name="service" required><option value="">Select an area</option><option>Strategy</option><option>Growth</option><option>Operations</option><option>Advisory</option></select><small data-error-for="service"></small></div><div class="field"><label for="message">Project details</label><textarea id="message" name="message" required rows="5" placeholder="Tell us what you are trying to achieve."></textarea><small data-error-for="message"></small></div><button class="button primary" type="submit">Send enquiry ↗</button><p class="form-status" role="status" aria-live="polite"></p></form></div></section>
-</main>
+          <article class="service-card reveal">
+            <div class="card-top">
+              <span class="service-index">SERVICE 02</span>
+              <span class="service-icon">↗</span>
+            </div>
+            <h3 class="service-title">Operational Excellence & Scalability</h3>
+            <p class="service-desc">Streamline cross-functional workflows, eliminate organizational friction, and engineer operating models that scale predictably.</p>
+            <ul class="service-list">
+              <li>Operating Model Design & KPIs</li>
+              <li>Process Optimization & Automation</li>
+              <li>Cost Structure Rationalization</li>
+            </ul>
+            <a class="service-link" href="#contact">Discuss Operations ↗</a>
+          </article>
 
-<footer class="footer"><div class="container footer-main"><div><a class="brand" href="#top" aria-label="Back to top"><span class="brand-symbol">NO</span><span>Northline Advisory</span></a><p>Business Consulting frontend template.</p></div><div class="footer-links"><a href="#about">About</a><a href="#services">Services</a><a href="#packages">Packages</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div><a href="#top">Back to top ↑</a></div><div class="container footer-bottom"><span>© 2026 Northline Advisory</span><span>Demo content · Replace before production use.</span></div></footer>
-<script src="script.js"></script>
-</body></html>
+          <article class="service-card reveal">
+            <div class="card-top">
+              <span class="service-index">SERVICE 03</span>
+              <span class="service-icon">↗</span>
+            </div>
+            <h3 class="service-title">Growth & Commercial Acceleration</h3>
+            <p class="service-desc">Refine go-to-market strategies, optimize pricing architectures, and build resilient recurring revenue engines across all channels.</p>
+            <ul class="service-list">
+              <li>Go-To-Market & Channel Design</li>
+              <li>Value-Based Pricing Architecture</li>
+              <li>Customer Lifetime Value Expansion</li>
+            </ul>
+            <a class="service-link" href="#contact">Discuss Growth ↗</a>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="card-top">
+              <span class="service-index">SERVICE 04</span>
+              <span class="service-icon">↗</span>
+            </div>
+            <h3 class="service-title">Executive & Board Advisory</h3>
+            <p class="service-desc">Provide confidential, seasoned sounding-board support for CEOs and executive directors managing high-stakes transactions and restructuring.</p>
+            <ul class="service-list">
+              <li>M&A Due Diligence & Integration</li>
+              <li>Leadership Alignment Workshops</li>
+              <li>Quarterly Governance Reviews</li>
+            </ul>
+            <a class="service-link" href="#contact">Discuss Advisory ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="approach-section" id="approach">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">04</span>
+              <span class="section-tag">APPROACH</span>
+            </div>
+            <h2 class="section-heading">Disciplined methodology. Decisive execution.</h2>
+          </div>
+          <p class="section-subtext">Our structured four-phase delivery model ensures rapid alignment, transparent progress, and verifiable business impact.</p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-step reveal">
+            <span class="step-num">PHASE 01</span>
+            <h3 class="step-title">Diagnostic & Discovery</h3>
+            <p class="step-desc">Deep-dive assessment of financial data, operational bottlenecks, market signals, and stakeholder interviews within 14 business days.</p>
+          </div>
+          <div class="process-step reveal">
+            <span class="step-num">PHASE 02</span>
+            <h3 class="step-title">Strategic Synthesis</h3>
+            <p class="step-desc">Distill findings into 3 core strategic imperatives, eliminating secondary distractions to focus executive resources where yield is highest.</p>
+          </div>
+          <div class="process-step reveal">
+            <span class="step-num">PHASE 03</span>
+            <h3 class="step-title">Actionable Roadmap</h3>
+            <p class="step-desc">Translate chosen priorities into sequenced workstreams with distinct accountability matrices, budget allocations, and 30-60-90 day KPIs.</p>
+          </div>
+          <div class="process-step reveal">
+            <span class="step-num">PHASE 04</span>
+            <h3 class="step-title">Execution Governance</h3>
+            <p class="step-desc">Hands-on leadership support during implementation, continuous performance tracking, and dynamic course corrections as conditions shift.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features & Benefits Section -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">05</span>
+              <span class="section-tag">WHY NORTHLINE</span>
+            </div>
+            <h2 class="section-heading">Built specifically for decisive leadership teams.</h2>
+          </div>
+          <p class="section-subtext">How our advisory model differs from traditional management consultancies and boutique agencies.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-box reveal">
+            <span class="feature-badge">01</span>
+            <h3 class="feature-title">High Signal, Zero Fluff</h3>
+            <p class="feature-desc">We deliver clear, quantified recommendations rather than 200-page slide presentations filled with standard industry platitudes.</p>
+            <a class="feature-link" href="#services">Explore capabilities ↗</a>
+          </div>
+
+          <div class="feature-box reveal">
+            <span class="feature-badge">02</span>
+            <h3 class="feature-title">True Partner Accountability</h3>
+            <p class="feature-desc">Senior practice leaders author every strategy and participate directly in leadership reviews from kickoff to completion.</p>
+            <a class="feature-link" href="#team">Meet our team ↗</a>
+          </div>
+
+          <div class="feature-box reveal">
+            <span class="feature-badge">03</span>
+            <h3 class="feature-title">Rapid Time-to-Value</h3>
+            <p class="feature-desc">Our diagnostic sprint delivers actionable strategic clarity in weeks rather than dragging on through quarter-long discovery cycles.</p>
+            <a class="feature-link" href="#packages">View sprint packages ↗</a>
+          </div>
+
+          <div class="feature-box reveal">
+            <span class="feature-badge">04</span>
+            <h3 class="feature-title">Commercial Realism</h3>
+            <p class="feature-desc">Every roadmap is stress-tested against your company's actual technical capability, team bandwidth, and capital constraints.</p>
+            <a class="feature-link" href="#contact">Schedule assessment ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section" id="stats">
+      <div class="container">
+        <div class="stats-bar reveal">
+          <div class="stat-col">
+            <strong class="stat-number">+28%</strong>
+            <span class="stat-label">Average Operating Margin Gain</span>
+          </div>
+          <div class="stat-col">
+            <strong class="stat-number">6 Wks</strong>
+            <span class="stat-label">Typical Strategic Sprint Time</span>
+          </div>
+          <div class="stat-col">
+            <strong class="stat-number">120+</strong>
+            <span class="stat-label">Board Level Engagements</span>
+          </div>
+          <div class="stat-col">
+            <strong class="stat-number">98%</strong>
+            <span class="stat-label">Client Recommendation Rate</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work & Proof Section -->
+    <section class="proof-section" id="proof">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">06</span>
+              <span class="section-tag">SELECTED WORK & PROOF</span>
+            </div>
+            <h2 class="section-heading">Demonstrated outcomes across high-stakes initiatives.</h2>
+          </div>
+          <p class="section-subtext">Representative case studies highlighting strategic clarity and financial transformation across diverse industries.</p>
+        </div>
+
+        <div class="cases-grid">
+          <article class="case-card reveal">
+            <div class="case-header">
+              <span class="case-sector">FINTECH & PAYMENTS</span>
+              <span class="case-badge">CASE STUDY 01</span>
+            </div>
+            <h3 class="case-title">Restructuring Go-to-Market for an Enterprise Payments Provider</h3>
+            <p class="case-summary">Streamlined the product portfolio from 14 fragmented offerings into 3 core enterprise solution suites, re-aligning direct sales incentives and pricing tiers.</p>
+            <div class="case-impact">
+              <div class="impact-metric">
+                <strong>+42%</strong>
+                <small>Enterprise Annual Contract Value</small>
+              </div>
+              <div class="impact-metric">
+                <strong>-35%</strong>
+                <small>Sales Cycle Duration</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card reveal">
+            <div class="case-header">
+              <span class="case-sector">HEALTHCARE & MEDTECH</span>
+              <span class="case-badge">CASE STUDY 02</span>
+            </div>
+            <h3 class="case-title">Operational Realignment and Post-Merger Synergies</h3>
+            <p class="case-summary">Harmonized redundant operations across two merged clinical diagnostics organizations, establishing unified decision governance and supply chain efficiencies.</p>
+            <div class="case-impact">
+              <div class="impact-metric">
+                <strong>$18.5M</strong>
+                <small>First-Year Run Rate Synergies</small>
+              </div>
+              <div class="impact-metric">
+                <strong>100%</strong>
+                <small>Key Talent Retention</small>
+              </div>
+            </div>
+          </article>
+
+          <article class="case-card reveal">
+            <div class="case-header">
+              <span class="case-sector">INDUSTRIAL & LOGISTICS</span>
+              <span class="case-badge">CASE STUDY 03</span>
+            </div>
+            <h3 class="case-title">Digital Supply Chain Transformation & Profitability</h3>
+            <p class="case-summary">Designed an inventory optimization and regional fulfillment roadmap, empowering leadership to respond dynamically to global freight fluctuations.</p>
+            <div class="case-impact">
+              <div class="impact-metric">
+                <strong>+3.1x</strong>
+                <small>Inventory Velocity Turnover</small>
+              </div>
+              <div class="impact-metric">
+                <strong>-22%</strong>
+                <small>Working Capital Requirement</small>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Testimonials / Quotes -->
+        <div class="testimonials-grid" id="testimonials">
+          <blockquote class="testimonial-card reveal">
+            <p class="quote-text">“Northline provided the strategic precision our board needed during our expansion. They cut through internal debate with clear data and an actionable path forward.”</p>
+            <footer class="quote-author">
+              <span class="author-name">Jonathan Vance</span>
+              <span class="author-title">Chief Executive Officer, Vantage Capital Group</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card reveal">
+            <p class="quote-text">“Unlike traditional consultancies that deliver theoretical frameworks and disappear, Northline worked beside us to operationalize our entire commercial strategy.”</p>
+            <footer class="quote-author">
+              <span class="author-name">Elena Rostova</span>
+              <span class="author-title">Chief Operating Officer, Meridian Health Systems</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="team">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">07</span>
+              <span class="section-tag">LEADERSHIP</span>
+            </div>
+            <h2 class="section-heading">Practiced advisors with executive accountability.</h2>
+          </div>
+          <p class="section-subtext">Our partners bring decades of operating and advisory experience at Fortune 500 companies and high-growth enterprises.</p>
+        </div>
+
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <div class="team-avatar">
+              <span class="avatar-initials">AS</span>
+              <span class="avatar-tag">MANAGING PARTNER</span>
+            </div>
+            <div class="team-body">
+              <h3 class="team-name">Arthur Sterling</h3>
+              <p class="team-role">Managing Partner & Strategy Lead</p>
+              <p class="team-bio">Former Chief Strategy Officer at Global Logistics Partners with 18 years guiding enterprise restructuring and corporate capitalization.</p>
+              <span class="team-specialty">Specialty: Corporate Strategy · M&A · Capital Allocation</span>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-avatar">
+              <span class="avatar-initials">PS</span>
+              <span class="avatar-tag">PARTNER</span>
+            </div>
+            <div class="team-body">
+              <h3 class="team-name">Priya Shah</h3>
+              <p class="team-role">Director of Operational Strategy</p>
+              <p class="team-bio">Former Operations VP at Apex Systems with extensive expertise in cross-functional workflow design, supply chains, and operating margins.</p>
+              <span class="team-specialty">Specialty: Operational Excellence · Scalability · KPIs</span>
+            </div>
+          </article>
+
+          <article class="team-card reveal">
+            <div class="team-avatar">
+              <span class="avatar-initials">DT</span>
+              <span class="avatar-tag">PARTNER</span>
+            </div>
+            <div class="team-body">
+              <h3 class="team-name">David Thorne</h3>
+              <p class="team-role">Head of Commercial Acceleration</p>
+              <p class="team-bio">15+ years advising B2B technology and industrial enterprises on go-to-market architecture, international expansion, and pricing systems.</p>
+              <span class="team-specialty">Specialty: GTM Design · Pricing Models · Revenue Growth</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages & Pricing Section -->
+    <section class="packages-section" id="packages">
+      <div class="container">
+        <div class="section-header reveal">
+          <div>
+            <div class="section-label-group">
+              <span class="section-num">08</span>
+              <span class="section-tag">ENGAGEMENT PACKAGES</span>
+            </div>
+            <h2 class="section-heading">Transparent advisory formats for every stage.</h2>
+          </div>
+          <p class="section-subtext">Clear, predictable fee structures designed around tangible business deliverables rather than open-ended billing.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card reveal">
+            <div class="plan-header">
+              <span class="plan-type">EXECUTIVE SPRINT</span>
+              <h3 class="plan-name">Strategic Diagnostic</h3>
+              <p class="plan-desc">A fast, high-impact assessment to evaluate a single critical business problem or market opportunity.</p>
+            </div>
+            <div class="plan-price">
+              <span class="price-val">$20</span>
+              <span class="price-period">/ introductory audit</span>
+            </div>
+            <ul class="plan-features">
+              <li>Comprehensive 10-day diagnostic review</li>
+              <li>Executive stakeholder interviews (up to 4)</li>
+              <li>Findings report with 3 core priorities</li>
+              <li>90-minute board briefing session</li>
+            </ul>
+            <a class="btn btn-secondary full-width" href="#contact">Select Diagnostic</a>
+          </article>
+
+          <article class="pricing-card featured reveal">
+            <div class="featured-badge">MOST POPULAR</div>
+            <div class="plan-header">
+              <span class="plan-type">TRANSFORMATION SPRINT</span>
+              <h3 class="plan-name">Strategic Roadmap Sprint</h3>
+              <p class="plan-desc">A comprehensive 4-week engagement to define growth strategy, operating models, and 12-month milestones.</p>
+            </div>
+            <div class="plan-price">
+              <span class="price-val">$25</span>
+              <span class="price-period">/ 4-week sprint package</span>
+            </div>
+            <ul class="plan-features">
+              <li>Full market & operational audit</li>
+              <li>Cross-functional alignment workshops</li>
+              <li>Quantified 12-month execution roadmap</li>
+              <li>Operating KPI scorecard & accountability matrix</li>
+              <li>Weekly partner working sessions</li>
+            </ul>
+            <a class="btn btn-primary full-width" href="#contact">Select Strategic Sprint</a>
+          </article>
+
+          <article class="pricing-card reveal">
+            <div class="plan-header">
+              <span class="plan-type">RECURRING ADVISORY</span>
+              <h3 class="plan-name">Board & Executive Retainer</h3>
+              <p class="plan-desc">Ongoing senior strategic counsel, quarterly roadmap reviews, and on-demand sounding board for leadership.</p>
+            </div>
+            <div class="plan-price">
+              <span class="price-val">$30</span>
+              <span class="price-period">/ monthly engagement</span>
+            </div>
+            <ul class="plan-features">
+              <li>Dedicated senior partner access</li>
+              <li>Bi-weekly executive strategy calls</li>
+              <li>Quarterly board deck & performance audit</li>
+              <li>Priority response on high-stakes decisions</li>
+              <li>Ad-hoc transaction & M&A review</li>
+            </ul>
+            <a class="btn btn-secondary full-width" href="#contact">Discuss Retainer</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="faq-grid">
+          <div class="faq-intro reveal">
+            <div class="section-label-group">
+              <span class="section-num">09</span>
+              <span class="section-tag">FAQ</span>
+            </div>
+            <h2 class="section-heading">Frequently asked questions.</h2>
+            <p class="faq-desc">Everything you need to know about our engagement process, working cadence, and commercial expectations.</p>
+            <div class="faq-contact-box">
+              <strong>Have a specific question?</strong>
+              <p>Speak directly with our managing partners regarding your unique requirements.</p>
+              <a class="link-inline" href="#contact">Contact practice lead ↗</a>
+            </div>
+          </div>
+
+          <div class="faq-accordion reveal">
+            <div class="faq-item">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span class="faq-question">How quickly can Northline initiate a new advisory engagement?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Typically, we begin onboarding within 5 business days following an initial alignment call and scope confirmation. Our diagnostic sprint is structured to deliver initial executive findings by the end of week two.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span class="faq-question">Who from Northline will be working on our project?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Our engagements are staffed directly by senior partners. We do not pass client work to junior associates or external subcontractors. You have direct access to experienced executives throughout the engagement.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span class="faq-question">Do you support remote and international organizations?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Yes. Over 65% of our client engagements are conducted with distributed executive teams across North America and Europe, utilizing secure digital collaboration tools with on-site executive workshops where most effective.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span class="faq-question">How are strategic outcomes and deliverables validated?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>Every engagement establishes clear baseline financial and operational metrics during Phase 01. Progress is tracked against explicit 30, 60, and 90-day milestone criteria approved by your executive board.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button class="faq-trigger" type="button" aria-expanded="false">
+                <span class="faq-question">What format do your deliverables take?</span>
+                <span class="faq-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" hidden>
+                <p>We deliver concise executive synthesis memos, prioritized decision matrices, interactive financial models, and structured roadmap documentation ready for board presentation and operational handoff.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-banner" id="cta">
+      <div class="container">
+        <div class="cta-card reveal">
+          <div class="cta-content">
+            <span class="section-tag-light">GET STARTED TODAY</span>
+            <h2 class="cta-heading">Ready to define your next strategic move?</h2>
+            <p class="cta-text">Book an introductory consultation with our senior practice partners. We will discuss your challenges, timing, and outline the fastest path to measurable clarity.</p>
+          </div>
+          <div class="cta-action">
+            <a class="btn btn-light" href="#contact">Start a Conversation ↗</a>
+            <span class="cta-note">Confidential · No obligation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="section-label-group">
+              <span class="section-num">10</span>
+              <span class="section-tag">CONTACT US</span>
+            </div>
+            <h2 class="section-heading">Let's discuss what's next for your business.</h2>
+            <p class="contact-subtext">Share an overview of your current strategic question or operational challenge. A managing partner will review your inquiry and respond within 24 business hours.</p>
+
+            <div class="contact-meta-list">
+              <div class="meta-row">
+                <span class="meta-label">DIRECT INQUIRIES</span>
+                <a class="meta-value" href="mailto:hello@northlineadvisory.com">hello@northlineadvisory.com</a>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">PHONE</span>
+                <a class="meta-value" href="tel:+12125550186">+1 (212) 555-0186</a>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">MAIN OFFICE</span>
+                <span class="meta-value">245 Madison Avenue, 18th Floor<br>New York, NY 10016</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">OFFICE HOURS</span>
+                <span class="meta-value">Monday – Friday: 08:30 – 18:00 EST</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container reveal">
+            <form class="contact-form" id="consulting-contact-form" novalidate>
+              <div class="form-header">
+                <h3 class="form-title">Request Executive Consultation</h3>
+                <p class="form-desc">Complete the fields below to schedule a strategic discovery call.</p>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-name">Full Name <span class="req">*</span></label>
+                <input id="contact-name" name="name" type="text" required autocomplete="name" placeholder="e.g. Eleanor Vance">
+                <span class="error-msg" data-error-for="contact-name"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Business Email <span class="req">*</span></label>
+                <input id="contact-email" name="email" type="email" required autocomplete="email" placeholder="e.g. evance@company.com">
+                <span class="error-msg" data-error-for="contact-email"></span>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contact-company">Company / Organization</label>
+                  <input id="contact-company" name="company" type="text" autocomplete="organization" placeholder="e.g. Vance Industries">
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-service">Advisory Focus <span class="req">*</span></label>
+                  <select id="contact-service" name="service" required>
+                    <option value="">Select an area</option>
+                    <option value="Corporate Strategy">Corporate Strategy & Positioning</option>
+                    <option value="Operational Excellence">Operational Excellence & Scaling</option>
+                    <option value="Growth Acceleration">Growth & Commercial Acceleration</option>
+                    <option value="Executive Advisory">Executive & Board Advisory</option>
+                    <option value="Other">General Strategic Inquiry</option>
+                  </select>
+                  <span class="error-msg" data-error-for="contact-service"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Strategic Objective / Message <span class="req">*</span></label>
+                <textarea id="contact-message" name="message" rows="4" required placeholder="Briefly describe your company's strategic priorities, transition timeline, or key decisions."></textarea>
+                <span class="error-msg" data-error-for="contact-message"></span>
+              </div>
+
+              <button class="btn btn-primary full-width" type="submit">Submit Advisory Request ↗</button>
+
+              <div class="form-status" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand-col">
+          <a class="brand footer-brand" href="#top">
+            <span class="brand-badge">NA</span>
+            <span class="brand-name">Northline Advisory</span>
+          </a>
+          <p class="footer-tagline">Strategic management consulting and advisory services for executive leadership teams across high-growth and established enterprises.</p>
+          <div class="footer-address-snippet">
+            245 Madison Ave, New York, NY 10016 · +1 (212) 555-0186
+          </div>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="footer-heading">NAVIGATION</span>
+          <ul class="footer-nav-links">
+            <li><a href="#about">01 / About</a></li>
+            <li><a href="#services">02 / Services</a></li>
+            <li><a href="#approach">03 / Approach</a></li>
+            <li><a href="#proof">04 / Proof & Work</a></li>
+            <li><a href="#team">05 / Team</a></li>
+            <li><a href="#packages">06 / Packages</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="footer-heading">RESOURCES</span>
+          <ul class="footer-nav-links">
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#stats">Performance Metrics</a></li>
+            <li><a href="#testimonials">Client Testimonials</a></li>
+            <li><a href="#contact">Start a Conversation</a></li>
+            <li><a href="../index.html">← Back to Showcase</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="copyright">
+          © 2026 Northline Advisory LLC. All rights reserved. Commercial Template Edition.
+        </div>
+        <div class="footer-actions">
+          <span>HTML5 · CSS3 · Vanilla JS</span>
+          <a class="back-to-top" href="#top" aria-label="Return to top of page">Back to Top ↑</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,17 +1,22 @@
-# Harbor & Vale — Professional Services
+# Harbor & Vale — Professional Services (Legal Counsel & Commercial Advisory)
 
-Standalone frontend template.
+Standalone commercial-grade frontend website template.
 
 ### Stack
 HTML5 · CSS3 · Vanilla JavaScript (ES6)
 
+### Key Features
+- Numbered prestige navigation with responsive mobile drawer
+- Fiduciary seal and chambers credentials hero presentation
+- Complete Professional Services sections: Firm Overview, Practice Areas, Practice Standards, Representative Matters, Chambers Partners, Retainers, FAQ, and Privileged Inquiry Form
+- Accessible FAQ accordion with ARIA support
+- Validated confidential instruction form with real-time feedback
+- 100% responsive layout across desktop, tablet, and mobile with zero dependencies
+
 ### Files
-- `index.html`
-- `style.css`
-- `script.js`
+- `index.html` — Semantic markup and layout structure
+- `style.css` — Custom design system, typography, and responsive breakpoints
+- `script.js` — Pure Vanilla ES6 interactions, mobile menu, and form validation
 
 ### Usage
-Open `index.html` directly or deploy this folder to static hosting.
-
-### Notes
-The contact form is a frontend demonstration with validation and success/error UI. Connect it to a backend or form service before using it for real enquiries.
+Open `index.html` in any modern web browser or deploy the folder to any static hosting provider.

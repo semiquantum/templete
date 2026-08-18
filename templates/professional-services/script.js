@@ -1,46 +1,231 @@
-document.documentElement.classList.add('js-ready');document.documentElement.classList.remove('no-js');
-const menu=document.querySelector('.nav-links'),toggle=document.querySelector('.menu-toggle');
-function closeMenu(){if(!menu||!toggle)return;menu.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Open navigation')}
-function openMenu(){if(!menu||!toggle)return;menu.classList.add('open');toggle.setAttribute('aria-expanded','true');toggle.setAttribute('aria-label','Close navigation')}
-toggle?.addEventListener('click',()=>toggle.getAttribute('aria-expanded')==='true'?closeMenu():openMenu());
-menu?.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});
-window.addEventListener('resize',()=>{if(innerWidth>900)closeMenu()});
-document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(!t)return;e.preventDefault();t.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'})}));
-const items=document.querySelectorAll('.reveal');
-if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches){const ob=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');ob.unobserve(e.target)}}),{threshold:.12});items.forEach(x=>ob.observe(x))}else items.forEach(x=>x.classList.add('is-visible'));
-document.querySelectorAll('.faq-q').forEach((btn,index)=>{
-  const answer=btn.nextElementSibling;
-  if(answer){
-    const id=`faq-answer-${index+1}`;
-    answer.id=id;
-    btn.setAttribute('aria-controls',id);
-  }
-  btn.addEventListener('click',()=>{
-    const panel=btn.nextElementSibling;
-    const expanded=btn.getAttribute('aria-expanded')==='true';
-    document.querySelectorAll('.faq-q').forEach(other=>{
-      other.setAttribute('aria-expanded','false');
-      if(other.nextElementSibling) other.nextElementSibling.hidden=true;
-      const icon=other.querySelector('b'); if(icon) icon.textContent='+';
-    });
-    btn.setAttribute('aria-expanded',String(!expanded));
-    if(panel) panel.hidden=expanded;
-    const icon=btn.querySelector('b'); if(icon) icon.textContent=expanded?'+':'−';
-  });
-});
-const form=document.querySelector('.contact-form');
-form?.addEventListener('submit',e=>{e.preventDefault();let valid=true,first=null;form.querySelectorAll('[required]').forEach(f=>{const er=form.querySelector(`[data-error-for="${f.id}"]`);let msg='';if(!f.value.trim())msg='This field is required.';else if(f.type==='email'&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.value.trim()))msg='Enter a valid email address.';f.setAttribute('aria-invalid',msg?'true':'false');if(er)er.textContent=msg;if(msg&&!first)first=f;if(msg)valid=false});const status=form.querySelector('.form-status');status.className='form-status';if(!valid){status.textContent='Please correct the highlighted fields.';status.classList.add('error');first?.focus();return}status.textContent='Thanks — your enquiry was submitted successfully in this frontend demo.';status.classList.add('success');form.reset();form.querySelectorAll('[aria-invalid]').forEach(f=>f.setAttribute('aria-invalid','false'));form.querySelectorAll('[data-error-for]').forEach(x=>x.textContent='')});
+/**
+ * Harbor & Vale — Professional Services Template Script
+ * Modern Vanilla JavaScript ES6
+ */
 
-/* Navigation safety: every internal action resolves to a real section. */
-document.querySelectorAll('a[href^="#"]').forEach(link=>{
-  link.addEventListener('click',event=>{
-    const selector=link.getAttribute('href');
-    if(!selector || selector==='#') return;
-    const target=document.querySelector(selector);
-    if(!target){
-      event.preventDefault();
-      console.warn(`Navigation target not found: ${selector}`);
+document.addEventListener('DOMContentLoaded', () => {
+  // Mark JS as loaded for smooth reveal transitions
+  document.documentElement.classList.add('js-ready');
+  document.documentElement.classList.remove('no-js');
+
+  /* ==========================================================================
+     MOBILE NAVIGATION
+     ========================================================================== */
+  const menuToggle = document.querySelector('.menu-toggle');
+  const primaryMenu = document.querySelector('#primary-menu');
+
+  function openMenu() {
+    if (!menuToggle || !primaryMenu) return;
+    menuToggle.setAttribute('aria-expanded', 'true');
+    menuToggle.setAttribute('aria-label', 'Close navigation menu');
+    primaryMenu.classList.add('open');
+  }
+
+  function closeMenu() {
+    if (!menuToggle || !primaryMenu) return;
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', 'Open navigation menu');
+    primaryMenu.classList.remove('open');
+  }
+
+  if (menuToggle && primaryMenu) {
+    menuToggle.addEventListener('click', () => {
+      const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      if (isExpanded) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
+    });
+
+    // Close menu when clicking on any navigation link
+    primaryMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        closeMenu();
+      });
+    });
+
+    // Close menu on Escape key press
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menuToggle.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        menuToggle.focus();
+      }
+    });
+
+    // Close menu on resize if screen becomes larger than mobile breakpoint
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 860 && menuToggle.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+      }
+    });
+  }
+
+  /* ==========================================================================
+     SMOOTH SCROLLING FOR ANCHOR LINKS
+     ========================================================================== */
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (!targetId || targetId === '#') return;
+
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        e.preventDefault();
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        targetElement.scrollIntoView({
+          behavior: prefersReducedMotion ? 'auto' : 'smooth',
+          block: 'start'
+        });
+
+        // Update URL hash safely without jump
+        if (history.pushState) {
+          history.pushState(null, '', targetId);
+        }
+      }
+    });
+  });
+
+  /* ==========================================================================
+     INTERSECTION OBSERVER FOR SCROLL REVEALS
+     ========================================================================== */
+  const revealElements = document.querySelectorAll('.reveal');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if ('IntersectionObserver' in window && !prefersReducedMotion) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => observer.observe(el));
+  } else {
+    revealElements.forEach(el => el.classList.add('is-visible'));
+  }
+
+  /* ==========================================================================
+     FAQ ACCORDION (ACCESSIBLE ARIA)
+     ========================================================================== */
+  const faqItems = document.querySelectorAll('.faq-item');
+
+  faqItems.forEach((item, index) => {
+    const trigger = item.querySelector('.faq-trigger');
+    const panel = item.querySelector('.faq-panel');
+
+    if (trigger && panel) {
+      const panelId = `faq-panel-${index + 1}`;
+      const triggerId = `faq-trigger-${index + 1}`;
+
+      trigger.id = triggerId;
+      trigger.setAttribute('aria-controls', panelId);
+      panel.id = panelId;
+      panel.setAttribute('aria-labelledby', triggerId);
+      panel.setAttribute('role', 'region');
+
+      trigger.addEventListener('click', () => {
+        const isCurrentlyExpanded = trigger.getAttribute('aria-expanded') === 'true';
+
+        // Close all other items in this accordion
+        faqItems.forEach(otherItem => {
+          const otherTrigger = otherItem.querySelector('.faq-trigger');
+          const otherPanel = otherItem.querySelector('.faq-panel');
+          if (otherTrigger && otherPanel && otherTrigger !== trigger) {
+            otherTrigger.setAttribute('aria-expanded', 'false');
+            otherPanel.hidden = true;
+          }
+        });
+
+        // Toggle clicked item
+        trigger.setAttribute('aria-expanded', String(!isCurrentlyExpanded));
+        panel.hidden = isCurrentlyExpanded;
+      });
     }
   });
+
+  /* ==========================================================================
+     CONTACT FORM VALIDATION & FEEDBACK
+     ========================================================================== */
+  const contactForm = document.querySelector('#services-contact-form');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let isValid = true;
+      let firstInvalidInput = null;
+
+      // Required text inputs, selects, textareas
+      const requiredInputs = contactForm.querySelectorAll('[required]');
+
+      requiredInputs.forEach(input => {
+        const fieldName = input.id;
+        const errorContainer = contactForm.querySelector(`[data-error-for="${fieldName}"]`);
+        let errorMessage = '';
+
+        const value = input.value.trim();
+
+        if (!value) {
+          errorMessage = 'This field is required.';
+        } else if (input.type === 'email') {
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(value)) {
+            errorMessage = 'Please enter a valid corporate email address.';
+          }
+        }
+
+        if (errorMessage) {
+          isValid = false;
+          input.setAttribute('aria-invalid', 'true');
+          if (errorContainer) {
+            errorContainer.textContent = errorMessage;
+          }
+          if (!firstInvalidInput) {
+            firstInvalidInput = input;
+          }
+        } else {
+          input.setAttribute('aria-invalid', 'false');
+          if (errorContainer) {
+            errorContainer.textContent = '';
+          }
+        }
+      });
+
+      const statusContainer = contactForm.querySelector('.form-status');
+
+      if (!isValid) {
+        if (statusContainer) {
+          statusContainer.className = 'form-status error';
+          statusContainer.textContent = 'Please review and correct the required fields above.';
+        }
+        if (firstInvalidInput) {
+          firstInvalidInput.focus();
+        }
+      } else {
+        if (statusContainer) {
+          statusContainer.className = 'form-status success';
+          statusContainer.textContent = 'Privileged inquiry received. A chambers partner will review your matter and respond within 24 hours (Frontend Demo).';
+        }
+        contactForm.reset();
+        contactForm.querySelectorAll('[aria-invalid]').forEach(el => el.setAttribute('aria-invalid', 'false'));
+        contactForm.querySelectorAll('[data-error-for]').forEach(el => el.textContent = '');
+      }
+    });
+
+    // Real-time error clearing on input
+    contactForm.querySelectorAll('input, select, textarea').forEach(input => {
+      input.addEventListener('input', () => {
+        if (input.getAttribute('aria-invalid') === 'true') {
+          input.setAttribute('aria-invalid', 'false');
+          const err = contactForm.querySelector(`[data-error-for="${input.id}"]`);
+          if (err) err.textContent = '';
+        }
+      });
+    });
+  }
 });
