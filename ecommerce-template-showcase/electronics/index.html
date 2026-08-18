@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CYBERTECH — Next-Gen Electronics &amp; Hardware Marketplace</title>
+  <meta name="description" content="Shop ultra-performance laptops, 5G flagship smartphones, QD-OLED monitors, and audiophile gear with free 2-year warranty at CYBERTECH." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="electronics.css" />
+</head>
+<body class="electronics-theme">
+
+  <!-- ============================================================
+       FLOATING HUB NAVIGATION
+       ============================================================ -->
+  <a href="../index.html" class="showcase-hub-nav" aria-label="Return to showcase hub">
+    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+    <span>Back to Showcase Hub</span>
+  </a>
+
+  <!-- ============================================================
+       TOP ANNOUNCEMENT TICKER
+       ============================================================ -->
+  <div class="announcement-bar" style="background-color:#0066ff; color:#ffffff;">
+    <span>⚡ <strong>Mega Tech Fest 2026:</strong> Up to 45% OFF on Next-Gen Flagships • 2-Year Warranty Included • Use code <strong style="text-decoration:underline;">TECH15</strong></span>
+  </div>
+
+  <!-- ============================================================
+       TECH NAVBAR
+       ============================================================ -->
+  <header class="site-header electronics-header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="flex items-center gap-4">
+          <button type="button" class="hamburger-btn" aria-label="Toggle navigation menu" style="color:#ffffff;">
+            <span></span>
+          </button>
+          <a href="index.html" class="brand-tech">
+            <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color:var(--tech-cyan);">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+            <span>CYBER<span>TECH</span></span>
+          </a>
+        </div>
+
+        <div class="nav-links">
+          <a href="#deals" class="nav-link" style="color:var(--tech-cyan);">Flash Deals</a>
+          <a href="#catalog" class="nav-link" style="color:var(--tech-text);">Products</a>
+          <a href="#specs" class="nav-link" style="color:var(--tech-text);">Spec Matrix</a>
+          <a href="#reviews" class="nav-link" style="color:var(--tech-text);">Benchmarks</a>
+          <a href="#support" class="nav-link" style="color:var(--tech-text);">Support</a>
+        </div>
+
+        <div class="nav-actions">
+          <!-- Search input wrapper -->
+          <div class="search-container">
+            <div class="search-input-wrapper">
+              <svg class="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              <input type="text" class="search-input" placeholder="Search gadgets, specs, chips..." aria-label="Search products" style="background:#111827;color:#ffffff;border-color:var(--tech-border);" />
+              <button type="button" class="search-clear-btn" aria-label="Clear search">✕</button>
+            </div>
+            <div class="search-dropdown" id="searchDropdown" style="background:var(--tech-surface);border-color:var(--tech-border);color:#fff;"></div>
+          </div>
+
+          <!-- Wishlist button -->
+          <button type="button" class="nav-action-btn nav-wishlist-btn" aria-label="View wishlist" style="color:#ffffff;">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            <span class="nav-badge-count wishlist-badge-count" style="display:none;background:var(--tech-blue);">0</span>
+          </button>
+
+          <!-- Cart button -->
+          <button type="button" class="nav-action-btn cart-toggle-btn" aria-label="View shopping cart" style="color:#ffffff;">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+            <span class="nav-badge-count cart-badge-count" style="display:none;background:var(--tech-cyan);color:#090e1a;">0</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="drawer-backdrop" id="mobileNavBackdrop"></div>
+  <div class="drawer drawer-left" id="mobileNavDrawer" style="background:var(--tech-surface);color:#fff;">
+    <div class="drawer-header" style="border-color:var(--tech-border);">
+      <h3 style="font-family:var(--font-tech);color:#fff;">CYBERTECH</h3>
+      <button type="button" class="drawer-close-btn" id="mobileNavClose" aria-label="Close menu" style="color:#fff;">✕</button>
+    </div>
+    <div class="drawer-body">
+      <div style="margin-bottom: 20px;">
+        <input type="text" class="form-control search-input" placeholder="Search gadgets..." style="background:#090e1a;color:#fff;border-color:var(--tech-border);" />
+      </div>
+      <ul style="display:flex; flex-direction:column; gap:16px; font-size:1.05rem; font-weight:600;">
+        <li><a href="#deals" style="color:var(--tech-cyan);">⚡ Flash Deals (Live Timer)</a></li>
+        <li><a href="#catalog">Full Hardware Catalog</a></li>
+        <li><a href="#specs">Benchmark Spec Matrix</a></li>
+        <li><a href="#reviews">Verified Tech Reviews</a></li>
+        <li><a href="#support">24/7 Tech Concierge Support</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============================================================
+         TECH HERO PROMOTION
+         ============================================================ -->
+    <section class="tech-hero">
+      <div class="container">
+        <div class="tech-hero-grid">
+          <div class="tech-hero-content reveal-init">
+            <div class="tech-badge-flagship">
+              <span class="pulse-dot"></span> NEXT-GEN FLAGSHIP LAUNCH
+            </div>
+            <h1 class="tech-hero-title">
+              Quantum 15 Pro <br />
+              <span class="cyan-glow">Silicon M3 Ultra</span>
+            </h1>
+            <p class="tech-hero-desc">
+              Experience groundbreaking 3nm AI computing, 6.7-inch 120Hz ProMotion OLED, and 108MP computational optical camera in aerospace titanium.
+            </p>
+
+            <div class="tech-hero-specs-row">
+              <div class="tech-spec-item">
+                <div class="tech-spec-val">3nm</div>
+                <div class="tech-spec-lbl">AI Architecture</div>
+              </div>
+              <div class="tech-spec-item">
+                <div class="tech-spec-val">120Hz</div>
+                <div class="tech-spec-lbl">OLED Display</div>
+              </div>
+              <div class="tech-spec-item">
+                <div class="tech-spec-val">108MP</div>
+                <div class="tech-spec-lbl">Optic Sensor</div>
+              </div>
+              <div class="tech-spec-item">
+                <div class="tech-spec-val">5200mAh</div>
+                <div class="tech-spec-lbl">65W Fast Charge</div>
+              </div>
+            </div>
+
+            <div style="display:flex;gap:12px;flex-wrap:wrap;">
+              <button type="button" class="btn btn-lg" onclick="ProductModal.open('electronics-1')" style="background:var(--tech-blue);color:#fff;border-color:var(--tech-blue);font-weight:700;">
+                Pre-Order Now • $1,099
+              </button>
+              <a href="#specs" class="btn btn-outline btn-lg" style="border-color:var(--tech-border);color:#fff;">
+                Compare Specs
+              </a>
+            </div>
+          </div>
+
+          <div class="tech-hero-img-wrap reveal-init">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1000&q=80" alt="Quantum 15 Pro Smartphone" class="tech-hero-main-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FLASH DEALS SECTION
+         ============================================================ -->
+    <section class="section" id="deals" style="padding-top:20px;padding-bottom:20px;">
+      <div class="container">
+        <div class="flash-deals-banner reveal-init" data-countdown="true">
+          <div>
+            <span style="color:var(--tech-cyan);font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em;display:block;margin-bottom:4px;">Limited Time Opportunity</span>
+            <h3 style="font-size:1.6rem;color:#ffffff;">⚡ Midnight Flash Deals End In:</h3>
+          </div>
+
+          <div class="flash-timer-box">
+            <div class="timer-digit-box">
+              <div class="timer-val timer-hours">18</div>
+              <div class="timer-lbl">Hours</div>
+            </div>
+            <span style="font-size:1.5rem;font-weight:800;color:var(--tech-muted);">:</span>
+            <div class="timer-digit-box">
+              <div class="timer-val timer-minutes">42</div>
+              <div class="timer-lbl">Mins</div>
+            </div>
+            <span style="font-size:1.5rem;font-weight:800;color:var(--tech-muted);">:</span>
+            <div class="timer-digit-box">
+              <div class="timer-val timer-seconds">15</div>
+              <div class="timer-lbl">Secs</div>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-sm" onclick="setCategoryFilter('Audio')" style="background:var(--tech-cyan);color:#090e1a;font-weight:700;padding:10px 20px;">
+            Claim Audio Deals
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PRODUCT CATALOG SECTION (SEARCH, FILTERS, PRODUCTS)
+         ============================================================ -->
+    <section class="section" id="catalog">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" style="color:var(--tech-cyan);">Hardware &amp; Devices</span>
+          <h2 style="color:#ffffff;">High-Performance Catalog</h2>
+          <p style="color:var(--tech-muted);">Filter by department, price, or search for exact specifications.</p>
+        </div>
+
+        <!-- Filter Toolbar -->
+        <div class="catalog-toolbar" style="border-color:var(--tech-border);">
+          <div class="filter-pills-wrap">
+            <button type="button" class="filter-pill active" data-category="All">All Departments</button>
+            <button type="button" class="filter-pill" data-category="Smartphones">Smartphones</button>
+            <button type="button" class="filter-pill" data-category="Laptops">Laptops</button>
+            <button type="button" class="filter-pill" data-category="Audio">Audio &amp; ANC</button>
+            <button type="button" class="filter-pill" data-category="Gaming">Gaming &amp; VR</button>
+            <button type="button" class="filter-pill" data-category="Monitors">Monitors</button>
+            <button type="button" class="filter-pill" data-category="Wearables">Wearables</button>
+            <button type="button" class="filter-pill" data-category="Tablets">Tablets</button>
+            <button type="button" class="filter-pill" data-category="Drones">Drones</button>
+            <button type="button" class="filter-pill" data-category="Smart Home">Smart Home</button>
+          </div>
+
+          <div class="catalog-actions-group">
+            <span class="results-count-label" id="resultsCount" style="color:var(--tech-muted);">Showing 12 products</span>
+            <select class="sort-select" id="sortSelect" aria-label="Sort electronics" style="background:var(--tech-surface);border-color:var(--tech-border);color:#fff;">
+              <option value="default">Sort by: Featured</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Top Customer Rating</option>
+              <option value="discount">Biggest Discounts</option>
+              <option value="name-asc">Alphabetical (A-Z)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Dynamic Product Grid -->
+        <div class="grid grid-cols-4" id="productsGrid">
+          <!-- Populated dynamically by filters.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SPECIFICATION & COMPARISON MATRIX
+         ============================================================ -->
+    <section class="section" id="specs" style="background:#0c1322;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" style="color:var(--tech-cyan);">Deep Tech Specs</span>
+          <h2 style="color:#ffffff;">Flagship Hardware Benchmark Matrix</h2>
+          <p style="color:var(--tech-muted);">Direct side-by-side engineering comparison across premier devices.</p>
+        </div>
+
+        <div class="comparison-table-wrap">
+          <table class="tech-table">
+            <thead>
+              <tr>
+                <th>Device Model</th>
+                <th>Processor / GPU</th>
+                <th>Display Spec</th>
+                <th>Memory &amp; Storage</th>
+                <th>Battery / Charge</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Quantum 15 Pro</strong></td>
+                <td>Quantum 3nm Octa-Core</td>
+                <td>6.7" OLED (120Hz ProMotion)</td>
+                <td>12GB LPDDR5 / 512GB</td>
+                <td>5,200mAh (65W Fast)</td>
+                <td style="color:var(--tech-cyan);font-weight:700;">$1,099</td>
+              </tr>
+              <tr>
+                <td><strong>AeroBook Carbon M4</strong></td>
+                <td>12-Core M4 High Silicon</td>
+                <td>14.2" 3.2K Liquid XDR</td>
+                <td>32GB Unified / 1TB NVMe</td>
+                <td>22-Hour Battery (100W USB-C)</td>
+                <td style="color:var(--tech-cyan);font-weight:700;">$1,499</td>
+              </tr>
+              <tr>
+                <td><strong>UltraVision 34" OLED</strong></td>
+                <td>Real-Time QD-OLED Processor</td>
+                <td>3440x1440 UWQHD (240Hz 0.03ms)</td>
+                <td>DisplayHDR True Black 400</td>
+                <td>Dual HDMI 2.1 + USB-C 90W</td>
+                <td style="color:var(--tech-cyan);font-weight:700;">$899</td>
+              </tr>
+              <tr>
+                <td><strong>PulseTitan Smartwatch</strong></td>
+                <td>Dual-Frequency GNSS Chip</td>
+                <td>49mm Sapphire Crystal AMOLED</td>
+                <td>32GB Offline Storage</td>
+                <td>96-Hour Ultra Endurance</td>
+                <td style="color:var(--tech-cyan);font-weight:700;">$399</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BENCHMARKS & CUSTOMER REVIEWS
+         ============================================================ -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" style="color:var(--tech-cyan);">Verified Benchmarks</span>
+          <h2 style="color:#ffffff;">Technologist Reviews &amp; Ratings</h2>
+        </div>
+
+        <div class="grid grid-cols-3">
+          <div class="review-card" style="background:var(--tech-surface);border-color:var(--tech-border);">
+            <div style="font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:8px;">"The AeroBook Carbon replaced my entire desktop workstation."</div>
+            <p class="review-text" style="color:var(--tech-muted);">
+              Compiling large Rust and TypeScript codebases takes seconds. The thermals stay dead silent under full multi-core load.
+            </p>
+            <div class="review-author-row">
+              <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=120&q=80" alt="Reviewer" class="author-avatar" />
+              <div>
+                <div class="author-name" style="color:#fff;">David Zhao</div>
+                <div class="author-badge">Senior Systems Engineer</div>
+              </div>
+            </div>
+            <div class="review-footer" style="color:var(--tech-cyan);">Verified Benchmark Buyer • 5.0 ★★★★★</div>
+          </div>
+
+          <div class="review-card" style="background:var(--tech-surface);border-color:var(--tech-border);">
+            <div style="font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:8px;">"SonicPulse ANC cancels subway rumblings completely."</div>
+            <p class="review-text" style="color:var(--tech-muted);">
+              Audio fidelity over LDAC is pure bliss. The dual 45mm beryllium drivers deliver tight, punchy sub-bass without masking mid vocals.
+            </p>
+            <div class="review-author-row">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=120&q=80" alt="Reviewer" class="author-avatar" />
+              <div>
+                <div class="author-name" style="color:#fff;">Marcus Sterling</div>
+                <div class="author-badge">Audio Mastering Producer</div>
+              </div>
+            </div>
+            <div class="review-footer" style="color:var(--tech-cyan);">Verified Audio Buyer • 5.0 ★★★★★</div>
+          </div>
+
+          <div class="review-card" style="background:var(--tech-surface);border-color:var(--tech-border);">
+            <div style="font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:8px;">"UltraVision 240Hz QD-OLED is unmatched for gaming."</div>
+            <p class="review-text" style="color:var(--tech-muted);">
+              0.03ms response time means zero ghosting in competitive shooters. The infinite contrast blacks in HDR look astonishing.
+            </p>
+            <div class="review-author-row">
+              <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?auto=format&fit=crop&w=120&q=80" alt="Reviewer" class="author-avatar" />
+              <div>
+                <div class="author-name" style="color:#fff;">Ethan Ross</div>
+                <div class="author-badge">Competitive Esports Player</div>
+              </div>
+            </div>
+            <div class="review-footer" style="color:var(--tech-cyan);">Verified Gamer • 5.0 ★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TRADE-IN PROMOTIONAL CTA
+         ============================================================ -->
+    <section class="section" style="background:linear-gradient(135deg, #0044cc 0%, #090e1a 100%);color:#fff;border-top:1px solid var(--tech-border);border-bottom:1px solid var(--tech-border);">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;">
+        <div style="max-width:600px;">
+          <span style="color:var(--tech-cyan);font-weight:700;font-size:0.85rem;text-transform:uppercase;letter-spacing:0.1em;display:block;margin-bottom:6px;">Trade-In Upgrade Program</span>
+          <h2 style="font-size:clamp(1.8rem,3.5vw,2.8rem);margin-bottom:10px;">Get up to $650 Instant Trade-In Credit</h2>
+          <p style="color:#dbeafe;font-size:1.05rem;">Upgrade your old smartphone, laptop, or tablet. We send a prepaid return box and apply instant discounts at checkout.</p>
+        </div>
+        <button type="button" class="btn btn-lg" onclick="Toast.success('Trade-in calculator simulated! Estimated value: $450 towards Quantum 15 Pro.')" style="background:#ffffff;color:#090e1a;font-weight:700;">
+          Calculate Trade-In Value
+        </button>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TECH CONCIERGE & SUPPORT FORM
+         ============================================================ -->
+    <section class="section" id="support">
+      <div class="container-narrow">
+        <div class="section-header">
+          <span class="section-subtitle" style="color:var(--tech-cyan);">24/7 Expert Support</span>
+          <h2 style="color:#ffffff;">Hardware &amp; System Inquiries</h2>
+          <p style="color:var(--tech-muted);">Need help configuring hardware or tracking warranty coverage? Speak with our certified engineers.</p>
+        </div>
+
+        <form class="contact-form" style="background:var(--tech-surface);padding:40px;border-radius:var(--radius-xl);border:1px solid var(--tech-border);">
+          <div class="grid grid-cols-2">
+            <div class="form-group">
+              <label class="form-label" for="contactName" style="color:#fff;">Full Name *</label>
+              <input type="text" id="contactName" name="name" class="form-control" placeholder="Alex Chen" required style="background:#090e1a;color:#fff;border-color:var(--tech-border);" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactEmail" style="color:#fff;">Email Address *</label>
+              <input type="email" id="contactEmail" name="email" class="form-control" placeholder="alex.chen@tech.io" required style="background:#090e1a;color:#fff;border-color:var(--tech-border);" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactDept" style="color:#fff;">Technical Department</label>
+            <select id="contactDept" class="form-control" style="background:#090e1a;color:#fff;border-color:var(--tech-border);">
+              <option>Hardware Compatibility &amp; Custom Build Advice</option>
+              <option>Firmware, Drivers &amp; OS Setup Support</option>
+              <option>2-Year Warranty &amp; Advance RMA Claim</option>
+              <option>Enterprise B2B Hardware Procurement</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactMessage" style="color:#fff;">Inquiry Details *</label>
+            <textarea id="contactMessage" name="message" class="form-control" rows="4" placeholder="Describe your technical question, serial number, or requirements..." required style="background:#090e1a;color:#fff;border-color:var(--tech-border);"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-block btn-lg" style="background:var(--tech-blue);color:#fff;font-weight:700;">Submit Tech Ticket</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       TECH FOOTER
+       ============================================================ -->
+  <footer class="site-footer" style="background:#060a12;border-top:1px solid var(--tech-border);">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 style="font-family:var(--font-tech);color:#ffffff;font-size:1.6rem;">CYBERTECH</h3>
+          <p style="color:var(--tech-muted);font-size:0.9rem;">
+            Direct-to-consumer high-performance electronics, Silicon computing, and gaming hardware with 2-year warranty and free shipping.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Departments</h4>
+          <ul class="footer-links">
+            <li><a href="#catalog" onclick="setCategoryFilter('Smartphones')">Smartphones</a></li>
+            <li><a href="#catalog" onclick="setCategoryFilter('Laptops')">Laptops &amp; Mac</a></li>
+            <li><a href="#catalog" onclick="setCategoryFilter('Audio')">Audio &amp; ANC</a></li>
+            <li><a href="#catalog" onclick="setCategoryFilter('Gaming')">Esports Gaming</a></li>
+            <li><a href="#catalog" onclick="setCategoryFilter('Monitors')">OLED Displays</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Engineering</h4>
+          <ul class="footer-links">
+            <li><a href="#specs">Benchmark Matrix</a></li>
+            <li><a href="#deals">Flash Deals</a></li>
+            <li><a href="#reviews">Verified Ratings</a></li>
+            <li><a href="#support">Technical Support</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Tech Dispatch VIP</h4>
+          <p style="color:var(--tech-muted);font-size:0.85rem;margin-bottom:12px;">Get firmware updates and 15% off with code TECH15.</p>
+          <form class="newsletter-form" style="display:flex;gap:6px;">
+            <input type="email" class="form-control" placeholder="developer@domain.com" required style="background:#111827;color:#fff;border-color:var(--tech-border);" />
+            <button type="submit" class="btn btn-sm" style="background:var(--tech-blue);color:#fff;font-weight:700;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom" style="border-color:var(--tech-border);">
+        <span>© 2026 CYBERTECH Hardware Corp. All rights reserved.</span>
+        <span>Curated for E-Commerce Template Showcase</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       SHOPPING CART DRAWER
+       ============================================================ -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="drawer drawer-right" id="cartDrawer">
+    <div class="drawer-header">
+      <h3 style="font-family:var(--font-tech);color:#fff;">Hardware Cart</h3>
+      <button type="button" class="drawer-close-btn" id="cartDrawerClose" aria-label="Close cart">✕</button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="shipping-progress-box" style="background:#090e1a;border-color:var(--tech-border);color:var(--tech-cyan);">
+        <div id="shippingProgressText">Add hardware to unlock <strong>FREE Express Shipping</strong>!</div>
+        <div class="progress-track" style="background:#1e293b;">
+          <div class="progress-fill" id="shippingProgressFill" style="background:var(--tech-cyan);width:0%;"></div>
+        </div>
+      </div>
+
+      <div class="empty-view" id="cartEmptyView">
+        <svg class="empty-view-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+        </svg>
+        <h4 style="color:#fff;">Your hardware cart is empty</h4>
+        <p style="color:var(--tech-muted);">Explore flagship devices to add items.</p>
+        <button type="button" class="btn btn-primary btn-sm" onclick="Cart.closeDrawer();" style="background:var(--tech-blue);border-color:var(--tech-blue);">Browse Catalog</button>
+      </div>
+
+      <div class="cart-items-list" id="cartItemsList" style="display:none;"></div>
+    </div>
+
+    <div class="drawer-footer" id="cartFooter" style="display:none;background:#090e1a;border-color:var(--tech-border);">
+      <form class="promo-input-row" id="cartPromoForm">
+        <input type="text" class="promo-input" id="cartPromoInput" placeholder="Promo code (e.g. TECH15)" style="background:#111827;color:#fff;border-color:var(--tech-border);" />
+        <button type="submit" class="btn btn-secondary btn-sm" style="background:var(--tech-surface);color:#fff;border-color:var(--tech-border);">Apply</button>
+      </form>
+
+      <div class="cart-summary-line" style="color:var(--tech-muted);">
+        <span>Subtotal</span>
+        <span id="cartSubtotal" style="color:#fff;">$0.00</span>
+      </div>
+
+      <div class="cart-summary-line" id="cartDiscountLine" style="display:none;color:var(--tech-cyan);">
+        <span>Tech Promo Discount</span>
+        <span id="cartDiscount">-$0.00</span>
+      </div>
+
+      <div class="cart-summary-line" style="color:var(--tech-muted);">
+        <span>Estimated Express Delivery</span>
+        <span id="cartShipping" style="color:#fff;">FREE</span>
+      </div>
+
+      <div class="cart-summary-line" style="color:var(--tech-muted);">
+        <span>Estimated Tax (8%)</span>
+        <span id="cartTax" style="color:#fff;">$0.00</span>
+      </div>
+
+      <div class="cart-summary-line total" style="border-color:var(--tech-border);color:#fff;">
+        <span>Total</span>
+        <span id="cartTotal" style="color:var(--tech-cyan);">$0.00</span>
+      </div>
+
+      <button type="button" class="btn btn-lg btn-block" id="cartCheckoutBtn" style="margin-top:12px;background:var(--tech-blue);color:#fff;font-weight:700;">
+        Secure Checkout (Demo)
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="../js/products-data.js"></script>
+  <script src="../js/notifications.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/wishlist.js"></script>
+  <script src="../js/product-modal.js"></script>
+  <script src="../js/filters.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      ProductCatalog.init('electronics');
+    });
+
+    function setCategoryFilter(categoryName) {
+      const pills = document.querySelectorAll('.filter-pill[data-category]');
+      pills.forEach(p => {
+        if (p.getAttribute('data-category').toLowerCase() === categoryName.toLowerCase()) {
+          p.click();
+        }
+      });
+    }
+  </script>
+</body>
+</html>

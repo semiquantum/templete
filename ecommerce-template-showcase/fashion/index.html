@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATELIER & CO. — Luxury Fashion Store</title>
+  <meta name="description" content="Discover the Autumn/Winter 2026 Haute Couture collection at ATELIER & CO. Handcrafted luxury garments, pure cashmere, and Italian leather accessories." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="fashion.css" />
+</head>
+<body class="fashion-theme">
+
+  <!-- ============================================================
+       FLOATING HUB NAVIGATION
+       ============================================================ -->
+  <a href="../index.html" class="showcase-hub-nav" aria-label="Return to showcase hub">
+    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+    <span>Back to Showcase Hub</span>
+  </a>
+
+  <!-- ============================================================
+       ANNOUNCEMENT BAR
+       ============================================================ -->
+  <div class="announcement-bar" style="background-color: var(--fashion-noir); color: var(--color-white);">
+    <span>Complimentary Express Global Shipping on orders over $150 • Use code <strong style="color:var(--fashion-gold);">LUXE20</strong> for 20% off</span>
+  </div>
+
+  <!-- ============================================================
+       SITE HEADER & NAVBAR
+       ============================================================ -->
+  <header class="site-header fashion-header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="flex items-center gap-4">
+          <button type="button" class="hamburger-btn" aria-label="Toggle navigation menu">
+            <span></span>
+          </button>
+          <a href="index.html" class="brand-fashion">ATELIER & CO.</a>
+        </div>
+
+        <div class="nav-links">
+          <a href="#catalog" class="nav-link">Collections</a>
+          <a href="#lookbook" class="nav-link">Lookbook</a>
+          <a href="#craft" class="nav-link">Craftsmanship</a>
+          <a href="#reviews" class="nav-link">Press & Reviews</a>
+          <a href="#contact" class="nav-link">Concierge</a>
+        </div>
+
+        <div class="nav-actions">
+          <!-- Search input wrapper -->
+          <div class="search-container">
+            <div class="search-input-wrapper">
+              <svg class="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              <input type="text" class="search-input" placeholder="Search fashion collection..." aria-label="Search products" />
+              <button type="button" class="search-clear-btn" aria-label="Clear search">✕</button>
+            </div>
+            <div class="search-dropdown" id="searchDropdown"></div>
+          </div>
+
+          <!-- Wishlist button -->
+          <button type="button" class="nav-action-btn nav-wishlist-btn" aria-label="View wishlist">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            <span class="nav-badge-count wishlist-badge-count" style="display:none;">0</span>
+          </button>
+
+          <!-- Cart button -->
+          <button type="button" class="nav-action-btn cart-toggle-btn" aria-label="View shopping bag">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+            <span class="nav-badge-count cart-badge-count" style="display:none;">0</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="drawer-backdrop" id="mobileNavBackdrop"></div>
+  <div class="drawer drawer-left" id="mobileNavDrawer">
+    <div class="drawer-header">
+      <h3 style="font-family:var(--font-editorial);">ATELIER & CO.</h3>
+      <button type="button" class="drawer-close-btn" id="mobileNavClose" aria-label="Close navigation">✕</button>
+    </div>
+    <div class="drawer-body">
+      <div style="margin-bottom: 20px;">
+        <input type="text" class="form-control search-input" placeholder="Search products..." />
+      </div>
+      <ul style="display:flex; flex-direction:column; gap:16px; font-size:1.1rem; font-weight:600;">
+        <li><a href="#catalog">Shop All Collections</a></li>
+        <li><a href="#lookbook">Autumn / Winter Lookbook</a></li>
+        <li><a href="#craft">Artisan Craftsmanship</a></li>
+        <li><a href="#reviews">Client Testimonials</a></li>
+        <li><a href="#contact">VIP Concierge Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============================================================
+         HERO SECTION
+         ============================================================ -->
+    <section class="fashion-hero">
+      <div class="container">
+        <div class="fashion-hero-content reveal-init">
+          <span class="fashion-hero-subtitle">Haute Couture Collection • 2026</span>
+          <h1 class="fashion-hero-title">
+            The Art of Form &amp; <em>Timeless Texture</em>
+          </h1>
+          <p class="fashion-hero-desc">
+            Discover sculpted silhouettes and pure Italian textiles meticulously tailored for modern elegance.
+          </p>
+          <div class="fashion-hero-actions">
+            <a href="#catalog" class="btn btn-fashion-gold">Explore Collection</a>
+            <a href="#lookbook" class="btn btn-outline-white" style="letter-spacing:0.1em;text-transform:uppercase;font-size:0.85rem;">View Lookbook</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CATEGORY CARDS
+         ============================================================ -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" style="color:var(--fashion-gold);">Curated Categories</span>
+          <h2 style="font-family:var(--font-editorial);">Iconic Wardrobe Staples</h2>
+          <p>Explore handcrafted essentials tailored to elevate every silhouette.</p>
+        </div>
+
+        <div class="grid grid-cols-3">
+          <a href="#catalog" class="fashion-cat-card" onclick="setCategoryFilter('Outerwear')">
+            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80" alt="Outerwear" class="fashion-cat-img" loading="lazy" />
+            <div class="fashion-cat-info">
+              <h3>Outerwear &amp; Coats</h3>
+              <span>Explore 3 Items</span>
+            </div>
+          </a>
+
+          <a href="#catalog" class="fashion-cat-card" onclick="setCategoryFilter('Footwear')">
+            <img src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?auto=format&fit=crop&w=800&q=80" alt="Footwear" class="fashion-cat-img" loading="lazy" />
+            <div class="fashion-cat-info">
+              <h3>Artisan Footwear</h3>
+              <span>Explore 2 Items</span>
+            </div>
+          </a>
+
+          <a href="#catalog" class="fashion-cat-card" onclick="setCategoryFilter('Accessories')">
+            <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=800&q=80" alt="Accessories" class="fashion-cat-img" loading="lazy" />
+            <div class="fashion-cat-info">
+              <h3>Signature Accessories</h3>
+              <span>Explore 3 Items</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PRODUCT CATALOG SECTION (SEARCH, FILTERS, PRODUCTS)
+         ============================================================ -->
+    <section class="section" id="catalog" style="padding-top:0;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" style="color:var(--fashion-gold);">The Atelier Catalog</span>
+          <h2 style="font-family:var(--font-editorial);">Curated Haute Couture Pieces</h2>
+          <p>Filtered in real-time with zero latency. Click quick view to inspect details.</p>
+        </div>
+
+        <!-- Catalog Filter Toolbar -->
+        <div class="catalog-toolbar">
+          <div class="filter-pills-wrap">
+            <button type="button" class="filter-pill active" data-category="All">All Pieces</button>
+            <button type="button" class="filter-pill" data-category="Outerwear">Outerwear</button>
+            <button type="button" class="filter-pill" data-category="Tops">Tops &amp; Knitwear</button>
+            <button type="button" class="filter-pill" data-category="Dresses">Dresses</button>
+            <button type="button" class="filter-pill" data-category="Bottoms">Bottoms</button>
+            <button type="button" class="filter-pill" data-category="Footwear">Footwear</button>
+            <button type="button" class="filter-pill" data-category="Bags">Bags</button>
+            <button type="button" class="filter-pill" data-category="Accessories">Accessories</button>
+          </div>
+
+          <div class="catalog-actions-group">
+            <span class="results-count-label" id="resultsCount">Showing products</span>
+            <select class="sort-select" id="sortSelect" aria-label="Sort products">
+              <option value="default">Sort by: Curated Selection</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Customer Rating</option>
+              <option value="discount">Special Offers</option>
+              <option value="name-asc">Alphabetical (A-Z)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Dynamic Product Grid -->
+        <div class="grid grid-cols-4" id="productsGrid">
+          <!-- Populated by filters.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         LOOKBOOK EDITORIAL SECTION
+         ============================================================ -->
+    <section class="lookbook-section" id="lookbook">
+      <div class="container">
+        <div class="lookbook-grid">
+          <div class="lookbook-img-box reveal-init">
+            <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80" alt="Autumn Lookbook" class="lookbook-main-img" loading="lazy" />
+            <div class="lookbook-floating-badge">The Cashmere Capsule</div>
+          </div>
+          <div class="lookbook-content reveal-init">
+            <span style="color:var(--fashion-gold);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.2em;font-weight:700;display:block;margin-bottom:1rem;">Editorial Story</span>
+            <h2>Handcrafted in Biella &amp; Florence</h2>
+            <p>
+              Each garment in the Autumn / Winter capsule is born from century-old family mills in Northern Italy. We blend rare 15.2-micron Grade-A Mongolian cashmere with pure French silk for an ethereal hand-feel that only improves with time.
+            </p>
+            <p>
+              Our tailoring philosophy honors architectural drape and effortless wearability—designed not for fleeting seasons, but for enduring heirloom wardrobes.
+            </p>
+            <a href="#catalog" class="btn btn-fashion-gold">Explore The Capsule</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         VIP PROMO PARALLAX BANNER
+         ============================================================ -->
+    <section class="section" style="background:linear-gradient(rgba(18,18,18,0.85), rgba(18,18,18,0.85)), url('https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1600&q=80') center/cover fixed; color:#fff; text-align:center;">
+      <div class="container-narrow">
+        <span style="color:var(--fashion-gold);font-size:0.85rem;text-transform:uppercase;letter-spacing:0.25em;font-weight:700;margin-bottom:1rem;display:block;">Private Invitation</span>
+        <h2 style="font-family:var(--font-editorial);font-size:clamp(2rem,4vw,3.5rem);margin-bottom:1.2rem;">Join The Atelier VIP Circle</h2>
+        <p style="color:rgba(255,255,255,0.85);font-size:1.1rem;margin-bottom:2rem;">
+          Enjoy private trunk show invitations, bespoke tailoring consultations, and 20% off your inaugural order with code <strong style="color:var(--fashion-gold);">LUXE20</strong>.
+        </p>
+        <form class="newsletter-form" style="display:flex;gap:10px;max-width:520px;margin:0 auto;flex-wrap:wrap;">
+          <input type="email" class="form-control" placeholder="Enter your email address..." required style="background:rgba(255,255,255,0.9);border:none;flex:1;min-width:260px;" />
+          <button type="submit" class="btn btn-fashion-gold" style="white-space:nowrap;">Request VIP Access</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EDITORIAL PRESS & REVIEWS
+         ============================================================ -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" style="color:var(--fashion-gold);">Critical Acclaim</span>
+          <h2 style="font-family:var(--font-editorial);">Editorial Praise &amp; Verified Reviews</h2>
+        </div>
+
+        <div class="grid grid-cols-3">
+          <div class="review-card">
+            <div class="editorial-quote">"ATELIER &amp; CO. redefines modern luxury tailoring with rare restraint and impeccable hand-feel."</div>
+            <div class="review-author-row">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Reviewer" class="author-avatar" />
+              <div>
+                <div class="author-name">Genevieve Laurent</div>
+                <div class="author-badge">Fashion Director, Paris</div>
+              </div>
+            </div>
+            <div class="review-footer">Verified Haute Couture Client • 5.0 ★★★★★</div>
+          </div>
+
+          <div class="review-card">
+            <div class="editorial-quote">"The Italian wool coat is transcendent. The cut, the horn buttons, and the drape exceed Savile Row standards."</div>
+            <div class="review-author-row">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Reviewer" class="author-avatar" />
+              <div>
+                <div class="author-name">Alexander Vance</div>
+                <div class="author-badge">Verified Collector, Milan</div>
+              </div>
+            </div>
+            <div class="review-footer">Verified Buyer • 5.0 ★★★★★</div>
+          </div>
+
+          <div class="review-card">
+            <div class="editorial-quote">"Effortless elegance. The silk-linen shirt and tailored trousers have become my daily signature."</div>
+            <div class="review-author-row">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=120&q=80" alt="Reviewer" class="author-avatar" />
+              <div>
+                <div class="author-name">Sophia Sterling</div>
+                <div class="author-badge">Architectural Critic, London</div>
+              </div>
+            </div>
+            <div class="review-footer">Verified Buyer • 5.0 ★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CRAFT & VALUES
+         ============================================================ -->
+    <section class="section" id="craft" style="background-color: var(--fashion-cream);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" style="color:var(--fashion-gold);">Heritage &amp; Integrity</span>
+          <h2 style="font-family:var(--font-editorial);">The Atelier Pillars</h2>
+        </div>
+
+        <div class="grid grid-cols-3">
+          <div class="text-center" style="padding: 20px;">
+            <div style="font-size:2rem;margin-bottom:12px;">🧵</div>
+            <h4 style="font-family:var(--font-editorial);font-size:1.4rem;margin-bottom:8px;">Zero Synthetic Blends</h4>
+            <p style="font-size:0.9rem;">100% natural fibers sourced strictly from certified regenerative Italian and French mills.</p>
+          </div>
+
+          <div class="text-center" style="padding: 20px;">
+            <div style="font-size:2rem;margin-bottom:12px;">⚖️</div>
+            <h4 style="font-family:var(--font-editorial);font-size:1.4rem;margin-bottom:8px;">Ethical Atelier Craft</h4>
+            <p style="font-size:0.9rem;">Fair living wages and master artisan working conditions in historic European workshops.</p>
+          </div>
+
+          <div class="text-center" style="padding: 20px;">
+            <div style="font-size:2rem;margin-bottom:12px;">🌿</div>
+            <h4 style="font-family:var(--font-editorial);font-size:1.4rem;margin-bottom:8px;">Circular Heirlooms</h4>
+            <p style="font-size:0.9rem;">Free lifetime repair service and complimentary garment re-conditioning on all coats.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         VIP CONCIERGE / CONTACT SECTION
+         ============================================================ -->
+    <section class="section" id="contact">
+      <div class="container-narrow">
+        <div class="section-header">
+          <span class="section-subtitle" style="color:var(--fashion-gold);">Personal Assistance</span>
+          <h2 style="font-family:var(--font-editorial);">Private Styling Concierge</h2>
+          <p>Book a private consultation or inquire about custom bespoke sizing.</p>
+        </div>
+
+        <form class="contact-form" style="background:#ffffff;padding:40px;border-radius:var(--radius-xl);border:1px solid var(--fashion-border);box-shadow:var(--shadow-md);">
+          <div class="grid grid-cols-2">
+            <div class="form-group">
+              <label class="form-label" for="contactName">Full Name *</label>
+              <input type="text" id="contactName" name="name" class="form-control" placeholder="Lady Genevieve Laurent" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactEmail">Email Address *</label>
+              <input type="email" id="contactEmail" name="email" class="form-control" placeholder="g.laurent@vogue.fr" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactService">Inquiry Type</label>
+            <select id="contactService" class="form-control">
+              <option>Bespoke Tailoring &amp; Fitting</option>
+              <option>Private Showroom Appointment</option>
+              <option>Order Inquiries &amp; White Glove Delivery</option>
+              <option>Press &amp; Editorial Requests</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactMessage">Your Message *</label>
+            <textarea id="contactMessage" name="message" class="form-control" rows="4" placeholder="Please specify desired pieces, sizing requirements, or appointment dates..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-fashion-gold btn-block">Send Concierge Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FASHION FOOTER
+       ============================================================ -->
+  <footer class="site-footer" style="background-color: var(--fashion-noir);">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 style="font-family:var(--font-editorial);letter-spacing:0.1em;font-size:1.75rem;">ATELIER &amp; CO.</h3>
+          <p style="color:#a3a3a3;font-size:0.9rem;">
+            Haute couture luxury garments crafted in Italy. Dedicated to timeless silhouettes and sustainable master craft.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="#catalog" onclick="setCategoryFilter('Outerwear')">Outerwear</a></li>
+            <li><a href="#catalog" onclick="setCategoryFilter('Tops')">Knitwear &amp; Shirts</a></li>
+            <li><a href="#catalog" onclick="setCategoryFilter('Dresses')">Dresses</a></li>
+            <li><a href="#catalog" onclick="setCategoryFilter('Bags')">Leather Bags</a></li>
+            <li><a href="#catalog" onclick="setCategoryFilter('Footwear')">Footwear</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">The Maison</h4>
+          <ul class="footer-links">
+            <li><a href="#lookbook">Autumn/Winter 2026</a></li>
+            <li><a href="#craft">Artisan Mills</a></li>
+            <li><a href="#reviews">Press Mentions</a></li>
+            <li><a href="#contact">Private Concierge</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">VIP Access</h4>
+          <p style="color:#a3a3a3;font-size:0.85rem;margin-bottom:12px;">Sign up for private seasonal previews.</p>
+          <form class="newsletter-form" style="display:flex;gap:6px;">
+            <input type="email" class="form-control" placeholder="Your email..." required style="background:#222;color:#fff;border-color:#444;" />
+            <button type="submit" class="btn btn-fashion-gold btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 ATELIER &amp; CO. Maison de Couture. All rights reserved.</span>
+        <span>Curated for E-Commerce Template Showcase</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       SHOPPING CART DRAWER
+       ============================================================ -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="drawer drawer-right" id="cartDrawer">
+    <div class="drawer-header">
+      <h3 style="font-family:var(--font-editorial);">Your Shopping Bag</h3>
+      <button type="button" class="drawer-close-btn" id="cartDrawerClose" aria-label="Close bag">✕</button>
+    </div>
+
+    <div class="drawer-body">
+      <!-- Free Shipping Bar -->
+      <div class="shipping-progress-box">
+        <div id="shippingProgressText">Add items to unlock <strong>FREE Shipping</strong>!</div>
+        <div class="progress-track">
+          <div class="progress-fill" id="shippingProgressFill" style="width: 0%;"></div>
+        </div>
+      </div>
+
+      <!-- Empty View -->
+      <div class="empty-view" id="cartEmptyView">
+        <svg class="empty-view-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+        </svg>
+        <h4>Your shopping bag is empty</h4>
+        <p>Explore our latest collection to add luxury pieces.</p>
+        <button type="button" class="btn btn-primary btn-sm" onclick="Cart.closeDrawer();">Discover Collection</button>
+      </div>
+
+      <!-- Cart Item List -->
+      <div class="cart-items-list" id="cartItemsList" style="display:none;"></div>
+    </div>
+
+    <div class="drawer-footer" id="cartFooter" style="display:none;">
+      <!-- Promo Code Form -->
+      <form class="promo-input-row" id="cartPromoForm">
+        <input type="text" class="promo-input" id="cartPromoInput" placeholder="Promo code (e.g. LUXE20)" />
+        <button type="submit" class="btn btn-secondary btn-sm">Apply</button>
+      </form>
+
+      <div class="cart-summary-line">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$0.00</span>
+      </div>
+
+      <div class="cart-summary-line" id="cartDiscountLine" style="display:none;color:var(--color-success);">
+        <span>VIP Promo Discount</span>
+        <span id="cartDiscount">-$0.00</span>
+      </div>
+
+      <div class="cart-summary-line">
+        <span>Estimated Shipping</span>
+        <span id="cartShipping">FREE</span>
+      </div>
+
+      <div class="cart-summary-line">
+        <span>Estimated Tax (8%)</span>
+        <span id="cartTax">$0.00</span>
+      </div>
+
+      <div class="cart-summary-line total">
+        <span>Total</span>
+        <span id="cartTotal">$0.00</span>
+      </div>
+
+      <button type="button" class="btn btn-primary btn-lg btn-block" id="cartCheckoutBtn" style="margin-top:12px;background:var(--fashion-gold);border-color:var(--fashion-gold);">
+        Proceed to Checkout
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="../js/products-data.js"></script>
+  <script src="../js/notifications.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/wishlist.js"></script>
+  <script src="../js/product-modal.js"></script>
+  <script src="../js/filters.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      ProductCatalog.init('fashion');
+    });
+
+    function setCategoryFilter(categoryName) {
+      const pills = document.querySelectorAll('.filter-pill[data-category]');
+      pills.forEach(p => {
+        if (p.getAttribute('data-category').toLowerCase() === categoryName.toLowerCase()) {
+          p.click();
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LUMIÈRE BOTANICALS — Clean Beauty &amp; Bio-Active Cosmetics</title>
+  <meta name="description" content="100% Vegan, dermatologically-proven peptide serums, barrier creams, and mineral makeup. Clean formulations that transform skin health." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/animations.css" />
+  <link rel="stylesheet" href="../css/responsive.css" />
+  <link rel="stylesheet" href="beauty.css" />
+</head>
+<body class="beauty-theme">
+
+  <!-- ============================================================
+       FLOATING HUB NAVIGATION
+       ============================================================ -->
+  <a href="../index.html" class="showcase-hub-nav" aria-label="Return to showcase hub">
+    <svg fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+    <span>Back to Showcase Hub</span>
+  </a>
+
+  <!-- ============================================================
+       TOP ANNOUNCEMENT BAR
+       ============================================================ -->
+  <div class="announcement-bar" style="background-color: var(--beauty-plum); color: #ffffff;">
+    <span>🌸 <strong>Clean Beauty Month:</strong> Free 4-Piece Deluxe Travel Set on orders over $75 • Use code <strong style="text-decoration:underline;">BEAUTY20</strong> for 20% off</span>
+  </div>
+
+  <!-- ============================================================
+       BEAUTY NAVBAR
+       ============================================================ -->
+  <header class="site-header beauty-header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="flex items-center gap-4">
+          <button type="button" class="hamburger-btn" aria-label="Toggle navigation menu" style="color:var(--beauty-plum);">
+            <span></span>
+          </button>
+          <a href="index.html" class="brand-beauty">LUMIÈRE BOTANICALS</a>
+        </div>
+
+        <div class="nav-links">
+          <a href="#quiz" class="nav-link" style="color:var(--beauty-plum);font-weight:700;">Routine Quiz</a>
+          <a href="#catalog" class="nav-link">Shop All</a>
+          <a href="#clinical" class="nav-link">Clinical Results</a>
+          <a href="#reviews" class="nav-link">Derm Reviews</a>
+          <a href="#contact" class="nav-link">Consultation</a>
+        </div>
+
+        <div class="nav-actions">
+          <!-- Search input wrapper -->
+          <div class="search-container">
+            <div class="search-input-wrapper">
+              <svg class="search-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              <input type="text" class="search-input" placeholder="Search peptides, serums, lipsticks..." aria-label="Search beauty products" style="background:#fff;border-color:var(--beauty-border);" />
+              <button type="button" class="search-clear-btn" aria-label="Clear search">✕</button>
+            </div>
+            <div class="search-dropdown" id="searchDropdown"></div>
+          </div>
+
+          <!-- Wishlist button -->
+          <button type="button" class="nav-action-btn nav-wishlist-btn" aria-label="View saved items" style="color:var(--beauty-plum);">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+            <span class="nav-badge-count wishlist-badge-count" style="display:none;background:var(--beauty-plum);">0</span>
+          </button>
+
+          <!-- Cart button -->
+          <button type="button" class="nav-action-btn cart-toggle-btn" aria-label="View shopping bag" style="color:var(--beauty-plum);">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+            <span class="nav-badge-count cart-badge-count" style="display:none;background:var(--beauty-plum);">0</span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="drawer-backdrop" id="mobileNavBackdrop"></div>
+  <div class="drawer drawer-left" id="mobileNavDrawer">
+    <div class="drawer-header">
+      <h3 style="font-family:var(--font-cormorant);color:var(--beauty-plum);">LUMIÈRE BOTANICALS</h3>
+      <button type="button" class="drawer-close-btn" id="mobileNavClose" aria-label="Close menu">✕</button>
+    </div>
+    <div class="drawer-body">
+      <div style="margin-bottom: 20px;">
+        <input type="text" class="form-control search-input" placeholder="Search skincare &amp; cosmetics..." />
+      </div>
+      <ul style="display:flex; flex-direction:column; gap:16px; font-size:1.05rem; font-weight:600;">
+        <li><a href="#quiz" style="color:var(--beauty-plum);">✨ Take Skin Routine Quiz</a></li>
+        <li><a href="#catalog">Shop Full Beauty Catalog</a></li>
+        <li><a href="#clinical">Clinical Trial Statistics</a></li>
+        <li><a href="#reviews">Verified Customer Testimonials</a></li>
+        <li><a href="#contact">Skin Concierge Support</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============================================================
+         BEAUTY HERO SECTION
+         ============================================================ -->
+    <section class="beauty-hero">
+      <div class="container">
+        <div class="beauty-hero-content reveal-init">
+          <span class="beauty-hero-subtitle">100% Vegan • Clinical Grade Bio-Actives</span>
+          <h1 class="beauty-hero-title">
+            Glow From Within with <em>Pure Botanical Science</em>
+          </h1>
+          <p class="beauty-hero-desc">
+            Transformative biomimetic peptides, essential barrier ceramides, and antioxidant botanicals formulated for deeply luminous, healthy skin.
+          </p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="#quiz" class="btn btn-beauty-plum btn-lg">Take Skin Diagnostic Quiz</a>
+            <a href="#catalog" class="btn btn-outline btn-lg" style="border-radius:var(--radius-full);border-color:var(--beauty-plum);color:var(--beauty-plum);">Explore Best Sellers</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CLEAN STANDARDS STRIP
+         ============================================================ -->
+    <section class="clean-standards-strip">
+      <div class="container">
+        <div class="standards-grid">
+          <div class="standard-item">
+            <div class="standard-icon">🌿</div>
+            <h5>100% Certified Vegan</h5>
+            <p>Zero animal derivatives</p>
+          </div>
+          <div class="standard-item">
+            <div class="standard-icon">🐰</div>
+            <h5>Leaping Bunny Certified</h5>
+            <p>100% Cruelty-free testing</p>
+          </div>
+          <div class="standard-item">
+            <div class="standard-icon">🔬</div>
+            <h5>Dermatologist Tested</h5>
+            <p>Hypoallergenic &amp; non-comedogenic</p>
+          </div>
+          <div class="standard-item">
+            <div class="standard-icon">♻️</div>
+            <h5>Sustainable Glass Packaging</h5>
+            <p>Post-consumer recycled materials</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SKINCARE ROUTINE DIAGNOSTIC QUIZ
+         ============================================================ -->
+    <section class="section" id="quiz">
+      <div class="container-narrow">
+        <div class="section-header">
+          <span class="section-subtitle" style="color:var(--beauty-plum);">Personalized Prescription</span>
+          <h2 style="font-family:var(--font-cormorant);color:var(--beauty-plum);">Find Your Ideal Daily Routine</h2>
+          <p>Answer 3 quick questions to receive a tailored bio-active skincare regimen.</p>
+        </div>
+
+        <div class="routine-quiz-card reveal-init">
+          <!-- Step 1 -->
+          <div class="quiz-step active" id="quizStep1">
+            <h4 style="font-size:1.25rem;color:var(--beauty-plum);margin-bottom:8px;">Step 1: What is your primary skin concern?</h4>
+            <p style="font-size:0.9rem;color:var(--beauty-muted);">Select your primary target for transformation.</p>
+            <div class="quiz-options-grid">
+              <button type="button" class="quiz-opt-btn" onclick="nextQuizStep(2, 'Dehydration & Dullness')">💧 Dehydration &amp; Dullness</button>
+              <button type="button" class="quiz-opt-btn" onclick="nextQuizStep(2, 'Fine Lines & Elasticity')">✨ Fine Lines &amp; Elasticity</button>
+              <button type="button" class="quiz-opt-btn" onclick="nextQuizStep(2, 'Compromised Skin Barrier')">🛡️ Sensitive / Barrier Repair</button>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="quiz-step" id="quizStep2">
+            <h4 style="font-size:1.25rem;color:var(--beauty-plum);margin-bottom:8px;">Step 2: What is your preferred texture?</h4>
+            <p style="font-size:0.9rem;color:var(--beauty-muted);">How do you prefer your daily moisturizers to feel?</p>
+            <div class="quiz-options-grid">
+              <button type="button" class="quiz-opt-btn" onclick="nextQuizStep(3, 'Lightweight Dewy Gel')">Lightweight Dewy Gel</button>
+              <button type="button" class="quiz-opt-btn" onclick="nextQuizStep(3, 'Velvety Rich Barrier Cream')">Velvety Rich Cloud Cream</button>
+              <button type="button" class="quiz-opt-btn" onclick="nextQuizStep(3, 'Antioxidant Glow Oil')">Antioxidant Glow Facial Oil</button>
+            </div>
+          </div>
+
+          <!-- Step 3 / Result -->
+          <div class="quiz-step" id="quizStep3">
+            <div style="text-align:center;padding:10px 0;">
+              <span style="font-size:2rem;display:block;margin-bottom:8px;">✨</span>
+              <h3 style="font-family:var(--font-cormorant);font-size:2rem;color:var(--beauty-plum);margin-bottom:6px;">Your Recommended Ritual</h3>
+              <p style="color:var(--beauty-muted);margin-bottom:20px;">Based on your responses, we recommend pairing our clinical Peptide Hydra-Glow Serum with the Barrier Ceramide Cream.</p>
+              
+              <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;">
+                <button type="button" class="btn btn-beauty-plum" onclick="ProductModal.open('beauty-1')">View Triple Peptide Serum ($68)</button>
+                <button type="button" class="btn btn-outline" style="border-color:var(--beauty-plum);color:var(--beauty-plum);border-radius:var(--radius-full);" onclick="ProductModal.open('beauty-2')">View Barrier Ceramide Cream ($54)</button>
+              </div>
+
+              <button type="button" style="margin-top:20px;background:none;border:none;color:var(--beauty-muted);text-decoration:underline;cursor:pointer;font-size:0.85rem;" onclick="resetQuiz()">Retake Diagnostic Quiz</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PRODUCT CATALOG SECTION (SEARCH, FILTERS, PRODUCTS)
+         ============================================================ -->
+    <section class="section" id="catalog" style="padding-top:0;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" style="color:var(--beauty-plum);">The Clean Collection</span>
+          <h2 style="font-family:var(--font-cormorant);color:var(--beauty-plum);">Clinical Skincare &amp; Cosmetics</h2>
+          <p>Filtered live with instant updates. Click quick view to see key active ingredients.</p>
+        </div>
+
+        <!-- Filter Toolbar -->
+        <div class="catalog-toolbar">
+          <div class="filter-pills-wrap">
+            <button type="button" class="filter-pill active" data-category="All">All Formulations</button>
+            <button type="button" class="filter-pill" data-category="Skincare">Bio-Active Skincare</button>
+            <button type="button" class="filter-pill" data-category="Makeup">Mineral Makeup</button>
+            <button type="button" class="filter-pill" data-category="Haircare">Botanical Haircare</button>
+            <button type="button" class="filter-pill" data-category="Fragrance">Clean Fragrance</button>
+            <button type="button" class="filter-pill" data-category="Body Care">Nourishing Body</button>
+          </div>
+
+          <div class="catalog-actions-group">
+            <span class="results-count-label" id="resultsCount">Showing 12 items</span>
+            <select class="sort-select" id="sortSelect" aria-label="Sort beauty products">
+              <option value="default">Sort by: Curated Formulations</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Top Customer Rated</option>
+              <option value="discount">Special Offers</option>
+              <option value="name-asc">Alphabetical (A-Z)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Dynamic Product Grid -->
+        <div class="grid grid-cols-4" id="productsGrid">
+          <!-- Populated dynamically by filters.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CLINICAL TRIAL RESULTS
+         ============================================================ -->
+    <section class="section" id="clinical" style="background:#f9ede8;">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" style="color:var(--beauty-plum);">Independent Clinical Trials</span>
+          <h2 style="font-family:var(--font-cormorant);color:var(--beauty-plum);">Proven Dermatological Performance</h2>
+          <p>Results from a 4-week independent clinical study with 120 diverse participants.</p>
+        </div>
+
+        <div class="clinical-grid reveal-init">
+          <div class="clinical-card">
+            <div class="clinical-stat">98%</div>
+            <h4 style="font-size:1.15rem;color:var(--beauty-plum);margin-bottom:6px;">Improved Skin Bounce</h4>
+            <p>Reported significantly improved plumpness and hydration levels within 14 days.</p>
+          </div>
+
+          <div class="clinical-card">
+            <div class="clinical-stat">94%</div>
+            <h4 style="font-size:1.15rem;color:var(--beauty-plum);margin-bottom:6px;">Barrier Restoration</h4>
+            <p>Measured reduction in transepidermal water loss after continuous ceramide application.</p>
+          </div>
+
+          <div class="clinical-card">
+            <div class="clinical-stat">100%</div>
+            <h4 style="font-size:1.15rem;color:var(--beauty-plum);margin-bottom:6px;">Zero Redness Flare-Ups</h4>
+            <p>Verified safe for hypersensitive, eczema-prone, and reactive skin types.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CUSTOMER & DERM REVIEWS
+         ============================================================ -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle" style="color:var(--beauty-plum);">Verified Testimonials</span>
+          <h2 style="font-family:var(--font-cormorant);color:var(--beauty-plum);">Loved by Dermatologists &amp; Clean Enthusiasts</h2>
+        </div>
+
+        <div class="grid grid-cols-3">
+          <div class="review-card">
+            <div style="font-family:var(--font-cormorant);font-size:1.35rem;color:var(--beauty-plum);margin-bottom:10px;">"The Triple Peptide Serum is a masterclass in clean chemistry."</div>
+            <p class="review-text">
+              It hydrates immediately without sticky film. My patients with rosacea have experienced noticeable calming within 48 hours.
+            </p>
+            <div class="review-author-row">
+              <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=120&q=80" alt="Reviewer" class="author-avatar" />
+              <div>
+                <div class="author-name">Dr. Elena Rostova, MD</div>
+                <div class="author-badge">Board-Certified Dermatologist</div>
+              </div>
+            </div>
+            <div class="review-footer">Verified Medical Endorsement • 5.0 ★★★★★</div>
+          </div>
+
+          <div class="review-card">
+            <div style="font-family:var(--font-cormorant);font-size:1.35rem;color:var(--beauty-plum);margin-bottom:10px;">"Barrier Ceramide Cream saved my winter dry skin."</div>
+            <p class="review-text">
+              I had severe flaky patches from retinol use. This cream restored my natural moisture barrier in just three nights.
+            </p>
+            <div class="review-author-row">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Reviewer" class="author-avatar" />
+              <div>
+                <div class="author-name">Camille Dupont</div>
+                <div class="author-badge">Beauty Editor, Geneva</div>
+              </div>
+            </div>
+            <div class="review-footer">Verified Buyer • 5.0 ★★★★★</div>
+          </div>
+
+          <div class="review-card">
+            <div style="font-family:var(--font-cormorant);font-size:1.35rem;color:var(--beauty-plum);margin-bottom:10px;">"The Luminous Silk Foundation looks like real, radiant skin."</div>
+            <p class="review-text">
+              Provides the perfect dewy glow while protecting with non-nano mineral SPF 30. Does not settle into fine lines at all.
+            </p>
+            <div class="review-author-row">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=120&q=80" alt="Reviewer" class="author-avatar" />
+              <div>
+                <div class="author-name">Mia Chen</div>
+                <div class="author-badge">Clean Makeup Artist, NYC</div>
+              </div>
+            </div>
+            <div class="review-footer">Verified Buyer • 5.0 ★★★★★</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BEAUTY CONCIERGE & CONTACT FORM
+         ============================================================ -->
+    <section class="section" id="contact" style="background:#ffffff;border-top:1px solid var(--beauty-border);">
+      <div class="container-narrow">
+        <div class="section-header">
+          <span class="section-subtitle" style="color:var(--beauty-plum);">Skin Concierge</span>
+          <h2 style="font-family:var(--font-cormorant);color:var(--beauty-plum);">Connect with an Aesthetician</h2>
+          <p>Get personalized ingredient guidance or shade-matching recommendations.</p>
+        </div>
+
+        <form class="contact-form" style="background:var(--beauty-bg);padding:40px;border-radius:var(--radius-xl);border:1px solid var(--beauty-border);">
+          <div class="grid grid-cols-2">
+            <div class="form-group">
+              <label class="form-label" for="contactName">Name *</label>
+              <input type="text" id="contactName" name="name" class="form-control" placeholder="Camille Dupont" required />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="contactEmail">Email Address *</label>
+              <input type="email" id="contactEmail" name="email" class="form-control" placeholder="camille@dupont.ch" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactTopic">Topic</label>
+            <select id="contactTopic" class="form-control">
+              <option>Personalized Ingredient &amp; Routine Advice</option>
+              <option>Complexion Foundation Shade Matching</option>
+              <option>Hypersensitive / Reactive Skin Guidance</option>
+              <option>Order Inquiries &amp; Sample Set Requests</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactMessage">Your Skin Concerns or Questions *</label>
+            <textarea id="contactMessage" name="message" class="form-control" rows="4" placeholder="Tell us about your current regimen, skin type, or shade matching..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-beauty-plum btn-lg btn-block">Send Aesthetician Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       BEAUTY FOOTER
+       ============================================================ -->
+  <footer class="site-footer" style="background-color: var(--beauty-plum); color: #f9e8e4;">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3 style="font-family:var(--font-cormorant);color:#ffffff;font-size:1.75rem;">LUMIÈRE BOTANICALS</h3>
+          <p style="color:#e2c5bd;font-size:0.9rem;">
+            Clean bio-active formulations crafted with clinical peptides, botanical botanicals, and zero synthetic toxins.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading" style="color:#ffffff;">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#catalog" onclick="setCategoryFilter('Skincare')">Bio-Active Skincare</a></li>
+            <li><a href="#catalog" onclick="setCategoryFilter('Makeup')">Mineral Makeup</a></li>
+            <li><a href="#catalog" onclick="setCategoryFilter('Haircare')">Botanical Haircare</a></li>
+            <li><a href="#catalog" onclick="setCategoryFilter('Fragrance')">Clean Fragrance</a></li>
+            <li><a href="#catalog" onclick="setCategoryFilter('Body Care')">Whipped Body Care</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading" style="color:#ffffff;">The Science</h4>
+          <ul class="footer-links">
+            <li><a href="#quiz">Skin Diagnostic Quiz</a></li>
+            <li><a href="#clinical">Clinical Trial Data</a></li>
+            <li><a href="#reviews">Dermatologist Endorsements</a></li>
+            <li><a href="#contact">Aesthetician Concierge</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading" style="color:#ffffff;">Beauty Insider</h4>
+          <p style="color:#e2c5bd;font-size:0.85rem;margin-bottom:12px;">Get 20% off your initial clean order with code BEAUTY20.</p>
+          <form class="newsletter-form" style="display:flex;gap:6px;">
+            <input type="email" class="form-control" placeholder="your.email@clean.com" required style="background:rgba(255,255,255,0.15);color:#fff;border-color:rgba(255,255,255,0.25);" />
+            <button type="submit" class="btn btn-sm" style="background:#ffffff;color:var(--beauty-plum);font-weight:700;border-radius:var(--radius-full);">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom" style="border-color:rgba(255,255,255,0.15);color:#d9b8b0;">
+        <span>© 2026 LUMIÈRE BOTANICALS Lab. All rights reserved.</span>
+        <span>Curated for E-Commerce Template Showcase</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       SHOPPING CART DRAWER
+       ============================================================ -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <div class="drawer drawer-right" id="cartDrawer">
+    <div class="drawer-header">
+      <h3 style="font-family:var(--font-cormorant);color:var(--beauty-plum);">Your Beauty Bag</h3>
+      <button type="button" class="drawer-close-btn" id="cartDrawerClose" aria-label="Close cart">✕</button>
+    </div>
+
+    <div class="drawer-body">
+      <div class="shipping-progress-box" style="background:#fceee9;border-color:var(--beauty-blush);color:var(--beauty-plum);">
+        <div id="shippingProgressText">Add products to unlock <strong>FREE Deluxe Shipping</strong>!</div>
+        <div class="progress-track" style="background:#f4d3cb;">
+          <div class="progress-fill" id="shippingProgressFill" style="background:var(--beauty-plum);width:0%;"></div>
+        </div>
+      </div>
+
+      <div class="empty-view" id="cartEmptyView">
+        <svg class="empty-view-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+        </svg>
+        <h4 style="color:var(--beauty-plum);">Your beauty bag is empty</h4>
+        <p style="color:var(--beauty-muted);">Explore clean formulations to add items.</p>
+        <button type="button" class="btn btn-primary btn-sm" onclick="Cart.closeDrawer();" style="background:var(--beauty-plum);border-color:var(--beauty-plum);border-radius:var(--radius-full);">Discover Formulations</button>
+      </div>
+
+      <div class="cart-items-list" id="cartItemsList" style="display:none;"></div>
+    </div>
+
+    <div class="drawer-footer" id="cartFooter" style="display:none;background:#fdfaf7;border-color:var(--beauty-border);">
+      <form class="promo-input-row" id="cartPromoForm">
+        <input type="text" class="promo-input" id="cartPromoInput" placeholder="Promo code (e.g. BEAUTY20)" style="background:#fff;border-color:var(--beauty-border);" />
+        <button type="submit" class="btn btn-secondary btn-sm" style="background:var(--beauty-rose);color:var(--beauty-plum);border-radius:var(--radius-full);">Apply</button>
+      </form>
+
+      <div class="cart-summary-line" style="color:var(--beauty-muted);">
+        <span>Subtotal</span>
+        <span id="cartSubtotal" style="color:var(--beauty-plum);">$0.00</span>
+      </div>
+
+      <div class="cart-summary-line" id="cartDiscountLine" style="display:none;color:var(--color-success);">
+        <span>VIP Promo Discount</span>
+        <span id="cartDiscount">-$0.00</span>
+      </div>
+
+      <div class="cart-summary-line" style="color:var(--beauty-muted);">
+        <span>Estimated Express Delivery</span>
+        <span id="cartShipping" style="color:var(--beauty-plum);">FREE</span>
+      </div>
+
+      <div class="cart-summary-line" style="color:var(--beauty-muted);">
+        <span>Estimated Tax (8%)</span>
+        <span id="cartTax" style="color:var(--beauty-plum);">$0.00</span>
+      </div>
+
+      <div class="cart-summary-line total" style="border-color:var(--beauty-border);color:var(--beauty-plum);">
+        <span>Total</span>
+        <span id="cartTotal" style="color:var(--beauty-plum);">$0.00</span>
+      </div>
+
+      <button type="button" class="btn btn-beauty-plum btn-lg btn-block" id="cartCheckoutBtn" style="margin-top:12px;">
+        Proceed to Secure Checkout
+      </button>
+    </div>
+  </div>
+
+  <!-- Toast Container -->
+  <div class="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="../js/products-data.js"></script>
+  <script src="../js/notifications.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/wishlist.js"></script>
+  <script src="../js/product-modal.js"></script>
+  <script src="../js/filters.js"></script>
+  <script src="../js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      ProductCatalog.init('beauty');
+    });
+
+    function setCategoryFilter(categoryName) {
+      const pills = document.querySelectorAll('.filter-pill[data-category]');
+      pills.forEach(p => {
+        if (p.getAttribute('data-category').toLowerCase() === categoryName.toLowerCase()) {
+          p.click();
+        }
+      });
+    }
+
+    function nextQuizStep(stepNumber, selectedOption) {
+      document.querySelectorAll('.quiz-step').forEach(step => step.classList.remove('active'));
+      const targetStep = document.getElementById(`quizStep${stepNumber}`);
+      if (targetStep) targetStep.classList.add('active');
+    }
+
+    function resetQuiz() {
+      document.querySelectorAll('.quiz-step').forEach(step => step.classList.remove('active'));
+      const step1 = document.getElementById('quizStep1');
+      if (step1) step1.classList.add('active');
+    }
+  </script>
+</body>
+</html>

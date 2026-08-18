@@ -1,0 +1,237 @@
+/* ============================================================
+   FASHION STORE CSS — ATELIER & CO.
+   Editorial Luxury & Minimalist Aesthetic
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --fashion-bg: #fbf9f5;
+  --fashion-card-bg: #ffffff;
+  --fashion-noir: #121212;
+  --fashion-cream: #f4eee5;
+  --fashion-gold: #c5a880;
+  --fashion-gold-hover: #b09165;
+  --fashion-border: #e8e3da;
+  
+  --font-editorial: 'Cormorant Garamond', Georgia, serif;
+  --font-heading: 'Cormorant Garamond', serif;
+}
+
+body.fashion-theme {
+  background-color: var(--fashion-bg);
+  color: var(--fashion-noir);
+  font-family: var(--font-sans);
+}
+
+.fashion-header {
+  background-color: rgba(251, 249, 245, 0.95);
+  border-bottom: 1px solid var(--fashion-border);
+}
+
+.brand-fashion {
+  font-family: var(--font-editorial);
+  font-size: 1.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--fashion-noir);
+}
+
+/* Fashion Hero Section */
+.fashion-hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, rgba(18, 18, 18, 0.75), rgba(18, 18, 18, 0.2)),
+              url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1800&q=85') center/cover no-repeat;
+  color: #ffffff;
+}
+
+.fashion-hero-content {
+  max-width: 650px;
+}
+
+.fashion-hero-subtitle {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--fashion-gold);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.fashion-hero-title {
+  font-family: var(--font-editorial);
+  font-size: clamp(2.8rem, 6vw + 1rem, 5rem);
+  font-weight: 400;
+  line-height: 1.08;
+  margin-bottom: 1.5rem;
+}
+
+.fashion-hero-title em {
+  font-style: italic;
+  font-family: var(--font-editorial);
+}
+
+.fashion-hero-desc {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 2.2rem;
+  line-height: 1.6;
+}
+
+.fashion-hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-fashion-gold {
+  background-color: var(--fashion-gold);
+  color: #ffffff;
+  border: 1px solid var(--fashion-gold);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+  padding: 0.9rem 2rem;
+}
+
+.btn-fashion-gold:hover {
+  background-color: var(--fashion-gold-hover);
+  border-color: var(--fashion-gold-hover);
+  color: #ffffff;
+}
+
+/* Category Banners */
+.fashion-cat-card {
+  position: relative;
+  height: 380px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 2rem;
+  text-decoration: none;
+}
+
+.fashion-cat-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.fashion-cat-card:hover .fashion-cat-img {
+  transform: scale(1.08);
+}
+
+.fashion-cat-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.1) 60%);
+}
+
+.fashion-cat-info {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.fashion-cat-info h3 {
+  font-family: var(--font-editorial);
+  font-size: 1.75rem;
+  margin-bottom: 4px;
+}
+
+.fashion-cat-info span {
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--fashion-gold);
+  font-weight: 600;
+}
+
+/* Lookbook Split Banner */
+.lookbook-section {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 100px 0;
+}
+
+.lookbook-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.lookbook-img-box {
+  position: relative;
+}
+
+.lookbook-main-img {
+  width: 100%;
+  height: 580px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+}
+
+.lookbook-floating-badge {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: var(--fashion-gold);
+  color: #121212;
+  padding: 20px 24px;
+  border-radius: var(--radius-md);
+  font-family: var(--font-editorial);
+  font-size: 1.2rem;
+  font-weight: 700;
+  box-shadow: var(--shadow-xl);
+}
+
+.lookbook-content h2 {
+  font-family: var(--font-editorial);
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.lookbook-content p {
+  color: #a3a3a3;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+/* Luxury Editorial Reviews */
+.editorial-quote {
+  font-family: var(--font-editorial);
+  font-size: 1.5rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--fashion-noir);
+  margin-bottom: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  .lookbook-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .lookbook-main-img {
+    height: 400px;
+  }
+  .lookbook-floating-badge {
+    bottom: 10px;
+    right: 10px;
+  }
+}
