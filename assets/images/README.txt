@@ -1,0 +1,1 @@
+Replace remote demo images with approved local images here if required.
