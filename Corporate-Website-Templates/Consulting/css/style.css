@@ -1,0 +1,516 @@
+/* ==========================================================================
+   Template 03: Business Consulting Website - Vanguard Strategic Advisory
+   Theme: Dark Luxury Onyx (#0B0F19) & Warm Champagne Gold (#D97706 / #F59E0B)
+   Typography: Playfair Display (Serif Headings) & Outfit (Body)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&display=swap');
+
+:root {
+  --bg-dark: #0B0F19;
+  --bg-card: #151B28;
+  --bg-card-hover: #1E2638;
+  --primary-gold: #D97706;
+  --accent-gold-bright: #F59E0B;
+  --gold-gradient: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  --gold-glow: rgba(245, 158, 11, 0.15);
+  --text-white: #F9FAFB;
+  --text-muted: #9CA3AF;
+  --border-dark: rgba(255, 255, 255, 0.1);
+  --border-gold: rgba(245, 158, 11, 0.3);
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Outfit', -apple-system, sans-serif;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --max-width: 1280px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-padding {
+  padding: 6.5rem 0;
+}
+
+.text-center { text-align: center; }
+
+/* --- Typography --- */
+.gold-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 1rem;
+  background: var(--gold-glow);
+  border: 1px solid var(--border-gold);
+  color: var(--accent-gold-bright);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 50px;
+  margin-bottom: 1.25rem;
+}
+
+.serif-title {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  line-height: 1.2;
+  margin-bottom: 1.25rem;
+}
+
+.gold-gradient-text {
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle-dark {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 680px;
+  margin: 0 auto 3.5rem auto;
+}
+
+/* --- Buttons --- */
+.btn-vanguard {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.9rem 2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+}
+
+.btn-gold {
+  background: var(--gold-gradient);
+  color: #0B0F19;
+  font-weight: 700;
+  box-shadow: 0 4px 20px rgba(245, 158, 11, 0.3);
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.45);
+}
+
+.btn-outline-gold {
+  background: transparent;
+  border: 1px solid var(--accent-gold-bright);
+  color: var(--accent-gold-bright);
+}
+
+.btn-outline-gold:hover {
+  background: var(--gold-glow);
+  color: #FFFFFF;
+}
+
+/* --- Header / Navbar --- */
+.vanguard-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(11, 15, 25, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+.vanguard-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.brand-vanguard {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.brand-vanguard-mark {
+  width: 38px;
+  height: 38px;
+  border: 2px solid var(--accent-gold-bright);
+  color: var(--accent-gold-bright);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.vanguard-menu {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+}
+
+.vanguard-menu a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.vanguard-menu a:hover {
+  color: var(--accent-gold-bright);
+}
+
+/* Mobile Toggle */
+.vanguard-mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 6px;
+  width: 26px;
+}
+
+.vanguard-mobile-toggle span {
+  height: 2px;
+  width: 100%;
+  background-color: var(--text-white);
+  transition: var(--transition);
+}
+
+/* --- Hero Section --- */
+.hero-vanguard {
+  padding: 6.5rem 0 6rem 0;
+  position: relative;
+  background: radial-gradient(circle at 75% 25%, rgba(245, 158, 11, 0.08) 0%, transparent 60%);
+}
+
+.hero-vanguard-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.hero-serif-heading {
+  font-family: var(--font-serif);
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+}
+
+.hero-text {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.metrics-gold-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.metrics-gold-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 2px;
+  background: var(--gold-gradient);
+}
+
+.metric-gold-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  text-align: center;
+}
+
+.metric-gold-num {
+  font-family: var(--font-serif);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--accent-gold-bright);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.metric-gold-label {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* --- Strategic Advisory Domains Tabs --- */
+.strategy-tabs-nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.strategy-tab-btn {
+  padding: 0.85rem 1.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.strategy-tab-btn.active, .strategy-tab-btn:hover {
+  background: var(--gold-glow);
+  border-color: var(--accent-gold-bright);
+  color: var(--accent-gold-bright);
+}
+
+.strategy-content-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.strategy-content-box h3 {
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
+
+.strategy-content-box p {
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.gold-check-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+/* --- Industry Expertise Matrix --- */
+.industry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+}
+
+.industry-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  padding: 2.5rem 2rem;
+  transition: var(--transition);
+}
+
+.industry-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-gold);
+  background: var(--bg-card-hover);
+}
+
+.industry-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 6px;
+  background: var(--gold-glow);
+  color: var(--accent-gold-bright);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.industry-card h4 {
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.industry-card p {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+}
+
+/* --- Executive Methodology Timeline --- */
+.method-timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.method-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  padding: 2rem 1.5rem;
+  position: relative;
+}
+
+.method-step {
+  font-family: var(--font-serif);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--accent-gold-bright);
+  opacity: 0.6;
+  margin-bottom: 0.75rem;
+}
+
+.method-card h5 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.method-card p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+/* --- Consultation Booking Form --- */
+.booking-container {
+  background: linear-gradient(135deg, var(--bg-card), #1A2333);
+  border: 1px solid var(--border-gold);
+  border-radius: var(--radius-lg);
+  padding: 3.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.budget-btn-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.budget-btn {
+  padding: 0.6rem 1.2rem;
+  background: var(--bg-dark);
+  border: 1px solid var(--border-dark);
+  color: var(--text-muted);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  transition: var(--transition);
+}
+
+.budget-btn.selected, .budget-btn:hover {
+  border-color: var(--accent-gold-bright);
+  color: var(--accent-gold-bright);
+  background: var(--gold-glow);
+}
+
+/* --- Footer --- */
+.vanguard-footer {
+  background-color: #070910;
+  color: var(--text-muted);
+  padding: 4.5rem 0 2rem 0;
+  border-top: 1px solid var(--border-dark);
+}
+
+.vanguard-footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.25fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .hero-vanguard-grid, .strategy-content-box {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .vanguard-menu {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background: var(--bg-dark);
+    flex-direction: column;
+    padding: 2rem;
+    display: none;
+    border-bottom: 1px solid var(--border-dark);
+  }
+
+  .vanguard-menu.active {
+    display: flex;
+  }
+
+  .vanguard-mobile-toggle {
+    display: flex;
+  }
+
+  .hero-serif-heading {
+    font-size: 2.5rem;
+  }
+
+  .vanguard-footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

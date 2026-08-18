@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corporate Website Template Collection | 5 Production-Ready Templates</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+    :root {
+      --bg-dark: #0F172A;
+      --bg-card: #1E293B;
+      --primary-blue: #3B82F6;
+      --primary-emerald: #10B981;
+      --primary-gold: #F59E0B;
+      --primary-indigo: #6366F1;
+      --primary-rose: #EC4899;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --border-dark: #334155;
+      --font-main: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-main);
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding-bottom: 4rem;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    .header {
+      padding: 4rem 1.5rem;
+      text-align: center;
+      background: radial-gradient(circle at 50% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 70%);
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.35rem 1rem;
+      background: rgba(59, 130, 246, 0.15);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: var(--primary-blue);
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+
+    .title {
+      font-size: 3rem;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+
+    .template-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .template-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-dark);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .template-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--primary-blue);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .card-header-banner {
+      height: 180px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: #FFFFFF;
+      position: relative;
+    }
+
+    .t1-banner { background: linear-gradient(135deg, #0F172A, #2563EB); }
+    .t2-banner { background: linear-gradient(135deg, #064E3B, #059669); }
+    .t3-banner { background: linear-gradient(135deg, #0B0F19, #D97706); }
+    .t4-banner { background: linear-gradient(135deg, #1E1B4B, #6366F1); }
+    .t5-banner { background: linear-gradient(135deg, #0D1117, #EC4899); }
+
+    .card-body {
+      padding: 1.75rem;
+    }
+
+    .card-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #FFFFFF;
+    }
+
+    .card-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .feature-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .feature-chip {
+      font-size: 0.78rem;
+      padding: 0.25rem 0.65rem;
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 4px;
+      color: #CBD5E1;
+    }
+
+    .btn-launch {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 0.85rem;
+      background: var(--primary-blue);
+      color: #FFFFFF;
+      font-weight: 700;
+      border-radius: 8px;
+      transition: all 0.2s ease;
+    }
+
+    .btn-launch:hover {
+      opacity: 0.9;
+      transform: scale(1.02);
+    }
+
+    .matrix-section {
+      background: var(--bg-card);
+      border: 1px solid var(--border-dark);
+      border-radius: 16px;
+      padding: 2.5rem;
+      overflow-x: auto;
+    }
+
+    .matrix-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.9rem;
+    }
+
+    .matrix-table th, .matrix-table td {
+      padding: 1rem;
+      border-bottom: 1px solid var(--border-dark);
+    }
+
+    .matrix-table th {
+      color: var(--primary-blue);
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="badge">Master Suite Launch Hub</div>
+    <h1 class="title">Corporate Website Template Collection</h1>
+    <p class="subtitle">5 Complete, Modern, Responsive Frontend Website Templates Built with HTML5, CSS3, and Vanilla JavaScript (ES6)</p>
+  </header>
+
+  <main class="container">
+    <div class="template-grid">
+
+      <!-- Template 01 -->
+      <div class="template-card">
+        <div>
+          <div class="card-header-banner t1-banner">
+            <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Template 01</span>
+            <h3 style="font-size: 1.6rem; font-weight: 800;">Apex Global Enterprises</h3>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Corporate Company Template</h4>
+            <p class="card-desc">Designed for global enterprise corporations, Fortune 500 partners, and infrastructure leaders.</p>
+            <div class="feature-list">
+              <span class="feature-chip">Navy/Blue Theme</span>
+              <span class="feature-chip">Glassmorphic Header</span>
+              <span class="feature-chip">Live Stats Counter</span>
+              <span class="feature-chip">Case Study Tabs</span>
+              <span class="feature-chip">Form Validation UI</span>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 0 1.75rem 1.75rem 1.75rem;">
+          <a href="Template-01-Corporate-Company/index.html" class="btn-launch" style="background: #2563EB;">Launch Template 01 Live →</a>
+        </div>
+      </div>
+
+      <!-- Template 02 -->
+      <div class="template-card">
+        <div>
+          <div class="card-header-banner t2-banner">
+            <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Template 02</span>
+            <h3 style="font-size: 1.6rem; font-weight: 800;">Servix Solutions</h3>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Corporate Services Template</h4>
+            <p class="card-desc">Tailored for B2B service providers, IT operations, and outsourced administrative suites.</p>
+            <div class="feature-list">
+              <span class="feature-chip">Emerald/Teal Theme</span>
+              <span class="feature-chip">ROI Cost Calculator</span>
+              <span class="feature-chip">Testimonial Slider</span>
+              <span class="feature-chip">FAQ Accordion</span>
+              <span class="feature-chip">4-Step Workflow</span>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 0 1.75rem 1.75rem 1.75rem;">
+          <a href="Template-02-Corporate-Services/index.html" class="btn-launch" style="background: #059669;">Launch Template 02 Live →</a>
+        </div>
+      </div>
+
+      <!-- Template 03 -->
+      <div class="template-card">
+        <div>
+          <div class="card-header-banner t3-banner">
+            <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Template 03</span>
+            <h3 style="font-size: 1.6rem; font-weight: 800;">Vanguard Advisory</h3>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Business Consulting Template</h4>
+            <p class="card-desc">Dark luxury executive style for strategy consulting, M&A advisory, and C-suite leaders.</p>
+            <div class="feature-list">
+              <span class="feature-chip">Dark Gold/Onyx Vibe</span>
+              <span class="feature-chip">Serif Typography</span>
+              <span class="feature-chip">Domain Strategy Tabs</span>
+              <span class="feature-chip">Budget Selector</span>
+              <span class="feature-chip">Private Booking UI</span>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 0 1.75rem 1.75rem 1.75rem;">
+          <a href="Template-03-Business-Consulting/index.html" class="btn-launch" style="background: #D97706;">Launch Template 03 Live →</a>
+        </div>
+      </div>
+
+      <!-- Template 04 -->
+      <div class="template-card">
+        <div>
+          <div class="card-header-banner t4-banner">
+            <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Template 04</span>
+            <h3 style="font-size: 1.6rem; font-weight: 800;">Nexus Holdings Group</h3>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Company Profile Template</h4>
+            <p class="card-desc">Engineered for official company profiles, investor relations, corporate history, and ESG goals.</p>
+            <div class="feature-list">
+              <span class="feature-chip">Indigo & Violet</span>
+              <span class="feature-chip">History Timeline</span>
+              <span class="feature-chip">Regional Filter</span>
+              <span class="feature-chip">ESG Impact Metrics</span>
+              <span class="feature-chip">Investor Form UI</span>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 0 1.75rem 1.75rem 1.75rem;">
+          <a href="Template-04-Company-Profile/index.html" class="btn-launch" style="background: #6366F1;">Launch Template 04 Live →</a>
+        </div>
+      </div>
+
+      <!-- Template 05 -->
+      <div class="template-card">
+        <div>
+          <div class="card-header-banner t5-banner">
+            <span style="font-size: 0.8rem; font-weight: 700; text-transform: uppercase;">Template 05</span>
+            <h3 style="font-size: 1.6rem; font-weight: 800;">Aetheria Studio</h3>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title">Professional Agency Template</h4>
+            <p class="card-desc">High-voltage creative technology studio style for product agencies, design studios, and software teams.</p>
+            <div class="feature-list">
+              <span class="feature-chip">Neon Slate/Purple</span>
+              <span class="feature-chip">Floating Pill Nav</span>
+              <span class="feature-chip">Portfolio Lightbox</span>
+              <span class="feature-chip">Filter Grid</span>
+              <span class="feature-chip">Agile Process Cards</span>
+            </div>
+          </div>
+        </div>
+        <div style="padding: 0 1.75rem 1.75rem 1.75rem;">
+          <a href="Template-05-Professional-Agency/index.html" class="btn-launch" style="background: #EC4899;">Launch Template 05 Live →</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Feature Matrix -->
+    <div class="matrix-section">
+      <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;">Collection Feature Matrix</h3>
+      <table class="matrix-table">
+        <thead>
+          <tr>
+            <th>Template Name</th>
+            <th>Primary Color System</th>
+            <th>Primary Font</th>
+            <th>Distinct Interactive Feature</th>
+            <th>Target Corporate Industry</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>01. Apex Global</strong></td>
+            <td>Navy (`#0F172A`) & Blue (`#2563EB`)</td>
+            <td>Inter</td>
+            <td>IntersectionObserver Animated Counters & Case Tabs</td>
+            <td>Enterprise Corporation / Infrastructure</td>
+          </tr>
+          <tr>
+            <td><strong>02. Servix Solutions</strong></td>
+            <td>Emerald (`#059669`) & Teal (`#0F766E`)</td>
+            <td>Plus Jakarta Sans</td>
+            <td>Live Interactive ROI Cost Calculator Widget</td>
+            <td>B2B Corporate Services & IT Support</td>
+          </tr>
+          <tr>
+            <td><strong>03. Vanguard Advisory</strong></td>
+            <td>Dark Onyx (`#0B0F19`) & Gold (`#D97706`)</td>
+            <td>Playfair Display + Outfit</td>
+            <td>Domain Advisory Tabs & Executive Booking Form</td>
+            <td>Executive Strategy Consulting & M&A</td>
+          </tr>
+          <tr>
+            <td><strong>04. Nexus Holdings</strong></td>
+            <td>Royal Indigo (`#3730A3`) & Violet</td>
+            <td>Montserrat + Inter</td>
+            <td>History Timeline & Regional Portfolio Filter</td>
+            <td>Company Profile & Investor Relations</td>
+          </tr>
+          <tr>
+            <td><strong>05. Aetheria Studio</strong></td>
+            <td>Dark Slate (`#0D1117`) & Neon Purple/Pink</td>
+            <td>Space Grotesk</td>
+            <td>Floating Pill Nav & Portfolio Lightbox Modal</td>
+            <td>Digital Agency & Creative Studio</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</body>
+</html>

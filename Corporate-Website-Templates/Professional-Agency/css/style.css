@@ -1,0 +1,451 @@
+/* ==========================================================================
+   Template 05: Professional Agency Website - Aetheria Creative Studio
+   Theme: Dark Slate (#0D1117), Electric Purple (#8B5CF6) & Rose Pink (#EC4899)
+   Typography: Space Grotesk (Headings) & Plus Jakarta Sans (Body)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&display=swap');
+
+:root {
+  --bg-dark: #0D1117;
+  --bg-card: #161B22;
+  --bg-card-hover: #21262D;
+  --primary-purple: #8B5CF6;
+  --primary-rose: #EC4899;
+  --accent-cyan: #06B6D4;
+  --gradient-neon: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+  --text-white: #F0F6FC;
+  --text-muted: #8B949E;
+  --border-dark: #30363D;
+  --border-glow: rgba(139, 92, 246, 0.4);
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  --max-width: 1280px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a { text-decoration: none; color: inherit; transition: var(--transition); }
+ul { list-style: none; }
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-padding { padding: 6.5rem 0; }
+.text-center { text-align: center; }
+
+/* --- Neon Tags & Headings --- */
+.neon-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1.1rem;
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  color: #C084FC;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-radius: 50px;
+  margin-bottom: 1.25rem;
+}
+
+.agency-title {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.03em;
+}
+
+.gradient-text {
+  background: var(--gradient-neon);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.agency-sub {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 680px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.btn-agency {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.95rem 2.25rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+}
+
+.btn-neon {
+  background: var(--gradient-neon);
+  color: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(139, 92, 246, 0.4);
+}
+
+.btn-neon:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 30px rgba(236, 72, 153, 0.5);
+}
+
+.btn-outline-neon {
+  background: transparent;
+  border: 1px solid var(--border-dark);
+  color: #FFFFFF;
+}
+
+.btn-outline-neon:hover {
+  border-color: var(--primary-purple);
+  background: rgba(139, 92, 246, 0.1);
+}
+
+/* --- Floating Pill Navigation --- */
+.agency-header {
+  position: fixed;
+  top: 1.5rem;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.agency-nav-pill {
+  pointer-events: auto;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: rgba(22, 27, 34, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border-dark);
+  border-radius: 50px;
+  padding: 0.65rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.brand-aetheria {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #10B981;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #10B981;
+}
+
+.agency-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.agency-menu a {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.agency-menu a:hover { color: #FFFFFF; }
+
+.agency-mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  width: 26px;
+}
+
+.agency-mobile-toggle span {
+  height: 2px;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+/* --- Hero Section --- */
+.hero-agency {
+  padding: 10rem 0 6rem 0;
+  text-align: center;
+  position: relative;
+  background: radial-gradient(circle at 50% 30%, rgba(139, 92, 246, 0.15) 0%, transparent 60%);
+}
+
+.hero-agency-title {
+  font-family: var(--font-heading);
+  font-size: 4.25rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.04em;
+}
+
+.hero-tags-cloud {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 2.5rem 0;
+  flex-wrap: wrap;
+}
+
+.tag-chip {
+  padding: 0.4rem 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* --- Agency Services --- */
+.services-neon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+.agency-service-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  padding: 2.5rem 2rem;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.agency-service-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary-purple);
+  box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
+}
+
+.service-num {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: rgba(255,255,255,0.1);
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+.agency-service-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+/* --- Portfolio Grid with Lightbox --- */
+.portfolio-filter-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.portfolio-filter-btn {
+  padding: 0.6rem 1.4rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  color: var(--text-muted);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.88rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.portfolio-filter-btn.active, .portfolio-filter-btn:hover {
+  background: var(--gradient-neon);
+  color: #FFFFFF;
+  border-color: transparent;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.portfolio-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary-rose);
+  box-shadow: 0 20px 40px rgba(236, 72, 153, 0.2);
+}
+
+.portfolio-preview-box {
+  height: 220px;
+  background: linear-gradient(135deg, #1A1F29, #2D1F3F);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.portfolio-body {
+  padding: 1.75rem;
+}
+
+/* Modal Lightbox */
+.lightbox-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 17, 23, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+
+.lightbox-modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-content {
+  background: var(--bg-card);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* --- Agile Process --- */
+.process-agency-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.process-agency-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  padding: 2.25rem 1.75rem;
+  transition: var(--transition);
+}
+
+.process-agency-card:hover {
+  border-color: var(--primary-purple);
+  transform: translateY(-5px);
+}
+
+/* --- CTA Banner --- */
+.cta-neon-box {
+  background: linear-gradient(135deg, #1F1535 0%, #3B1B36 100%);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--radius-lg);
+  padding: 5rem 3rem;
+  text-align: center;
+}
+
+/* --- Footer --- */
+.agency-footer {
+  background-color: #070A0F;
+  color: var(--text-muted);
+  padding: 4rem 0 2rem 0;
+  border-top: 1px solid var(--border-dark);
+}
+
+@media (max-width: 768px) {
+  .hero-agency-title { font-size: 2.75rem; }
+  .agency-nav-pill { margin: 0 1rem; }
+  .agency-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: var(--bg-card);
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-dark);
+  }
+  .agency-menu.active { display: flex; }
+  .agency-mobile-toggle { display: flex; }
+}

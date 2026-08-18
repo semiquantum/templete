@@ -1,0 +1,412 @@
+/* ==========================================================================
+   Template 04: Company Profile Website - Nexus Holdings Group
+   Theme: Royal Indigo (#3730A3), Soft Violet (#6366F1) & Amber Gold (#F59E0B)
+   Typography: Montserrat (Headings) & Inter (Body)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap');
+
+:root {
+  --primary-indigo: #3730A3;
+  --secondary-violet: #6366F1;
+  --accent-amber: #F59E0B;
+  --bg-light: #F8FAFC;
+  --bg-white: #FFFFFF;
+  --dark-slate: #0F172A;
+  --text-body: #334155;
+  --text-muted: #64748B;
+  --border-color: #E2E8F0;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --max-width: 1280px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-light);
+  color: var(--text-body);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+ul { list-style: none; }
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-padding { padding: 6rem 0; }
+.text-center { text-align: center; }
+
+/* --- Tags & Buttons --- */
+.nexus-tag {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  background-color: #EEF2FF;
+  color: var(--primary-indigo);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.nexus-title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--dark-slate);
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.nexus-sub {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 650px;
+  margin: 0 auto 3rem auto;
+}
+
+.btn-nexus {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.75rem;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+}
+
+.btn-indigo {
+  background-color: var(--primary-indigo);
+  color: #FFFFFF;
+}
+
+.btn-indigo:hover {
+  background-color: var(--secondary-violet);
+  transform: translateY(-2px);
+}
+
+/* --- Header / Navbar --- */
+.nexus-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  border-bottom: 2px solid var(--primary-indigo);
+}
+
+.nexus-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.brand-nexus {
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: var(--dark-slate);
+  letter-spacing: -0.03em;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.nexus-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nexus-menu a {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--text-body);
+  text-transform: uppercase;
+}
+
+.nexus-menu a:hover {
+  color: var(--secondary-violet);
+}
+
+/* Mobile Toggle */
+.nexus-mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  width: 28px;
+}
+
+.nexus-mobile-toggle span {
+  height: 3px;
+  width: 100%;
+  background-color: var(--dark-slate);
+}
+
+/* --- Hero Section --- */
+.hero-nexus {
+  background: linear-gradient(135deg, var(--dark-slate) 0%, var(--primary-indigo) 100%);
+  color: #FFFFFF;
+  padding: 6rem 0 5rem 0;
+}
+
+.hero-nexus-content {
+  max-width: 800px;
+}
+
+.hero-nexus-title {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.hero-nexus-desc {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+/* --- Timeline Section --- */
+.timeline-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  position: relative;
+  margin-top: 3rem;
+}
+
+.timeline-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-top: 4px solid var(--secondary-violet);
+  border-radius: var(--radius-md);
+  padding: 2rem 1.5rem;
+  transition: var(--transition);
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.timeline-year {
+  font-family: var(--font-heading);
+  font-size: 1.85rem;
+  font-weight: 900;
+  color: var(--primary-indigo);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-event {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--dark-slate);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* --- Mission Vision Values --- */
+.mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.mvv-card {
+  background: var(--bg-white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: 2.5rem 2rem;
+  transition: var(--transition);
+}
+
+.mvv-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(99, 102, 241, 0.12);
+  border-color: var(--secondary-violet);
+}
+
+.mvv-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 8px;
+  background-color: #EEF2FF;
+  color: var(--secondary-violet);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.mvv-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--dark-slate);
+  margin-bottom: 0.75rem;
+}
+
+.mvv-card p {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+/* --- Regional Projects Filter --- */
+.region-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.region-btn {
+  padding: 0.65rem 1.5rem;
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.region-btn.active, .region-btn:hover {
+  background: var(--primary-indigo);
+  color: #FFFFFF;
+  border-color: var(--primary-indigo);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: var(--bg-white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.project-header {
+  height: 160px;
+  background: linear-gradient(135deg, var(--dark-slate), var(--primary-indigo));
+  padding: 1.5rem;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.project-body {
+  padding: 1.75rem;
+}
+
+/* --- ESG Impact Metrics --- */
+.esg-banner {
+  background-color: var(--dark-slate);
+  color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 4rem 3rem;
+}
+
+.esg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.esg-num {
+  font-family: var(--font-heading);
+  font-size: 3.25rem;
+  font-weight: 900;
+  color: var(--accent-amber);
+  margin-bottom: 0.5rem;
+}
+
+/* --- Footer --- */
+.nexus-footer {
+  background-color: #0A0F1D;
+  color: #94A3B8;
+  padding: 4rem 0 2rem 0;
+  border-top: 2px solid var(--primary-indigo);
+}
+
+.nexus-footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 768px) {
+  .nexus-menu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    flex-direction: column;
+    padding: 2rem;
+    display: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+
+  .nexus-menu.active { display: flex; }
+  .nexus-mobile-toggle { display: flex; }
+  .hero-nexus-title { font-size: 2.5rem; }
+  .nexus-footer-grid { grid-template-columns: 1fr; }
+}

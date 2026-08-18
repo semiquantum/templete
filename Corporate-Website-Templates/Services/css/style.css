@@ -1,0 +1,645 @@
+/* ==========================================================================
+   Template 02: Corporate Services Website - Servix Business Solutions
+   Theme: Modern Emerald Green (#059669) & Deep Teal (#0F766E)
+   Font: Plus Jakarta Sans (Google Font)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --primary-emerald: #059669;
+  --emerald-dark: #047857;
+  --emerald-light: #ECFDF5;
+  --emerald-mint: #D1FAE5;
+  --primary-teal: #0F766E;
+  --bg-slate: #F8FAFC;
+  --bg-white: #FFFFFF;
+  --dark-accent: #0F172A;
+  --text-main: #1E293B;
+  --text-muted: #64748B;
+  --border-color: #E2E8F0;
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --card-shadow: 0 10px 30px -5px rgba(5, 150, 105, 0.08);
+  --hover-shadow: 0 20px 40px -10px rgba(5, 150, 105, 0.18);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --font-family: 'Plus Jakarta Sans', sans-serif;
+  --max-width: 1280px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-white);
+  color: var(--text-main);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-padding {
+  padding: 6rem 0;
+}
+
+.text-center { text-align: center; }
+
+/* --- Tags & Typography --- */
+.badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1rem;
+  background-color: var(--emerald-light);
+  color: var(--primary-emerald);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: 50px;
+  border: 1px solid var(--emerald-mint);
+  margin-bottom: 1.25rem;
+}
+
+.heading-lg {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: var(--dark-accent);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  max-width: 680px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.emerald-text { color: var(--primary-emerald); }
+
+/* --- Buttons --- */
+.btn-servix {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 0.85rem 1.85rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+  border: none;
+}
+
+.btn-emerald {
+  background-color: var(--primary-emerald);
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(5, 150, 105, 0.35);
+}
+
+.btn-emerald:hover {
+  background-color: var(--emerald-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(5, 150, 105, 0.45);
+}
+
+.btn-outline-dark {
+  background-color: transparent;
+  border: 2px solid var(--dark-accent);
+  color: var(--dark-accent);
+}
+
+.btn-outline-dark:hover {
+  background-color: var(--dark-accent);
+  color: #FFFFFF;
+}
+
+/* --- Header / Navbar --- */
+.servix-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.servix-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 84px;
+}
+
+.brand-servix {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--dark-accent);
+}
+
+.brand-servix-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--primary-emerald), var(--primary-teal));
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.servix-menu {
+  display: flex;
+  align-items: center;
+  gap: 2.25rem;
+}
+
+.servix-menu a {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+.servix-menu a:hover {
+  color: var(--primary-emerald);
+}
+
+.mobile-drawer-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  width: 28px;
+}
+
+.mobile-drawer-toggle span {
+  height: 3px;
+  width: 100%;
+  background-color: var(--dark-accent);
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+/* --- Centered Hero Section --- */
+.hero-services {
+  padding: 6rem 0 5rem 0;
+  background: linear-gradient(180deg, #F0FDF4 0%, #FFFFFF 100%);
+  text-align: center;
+  position: relative;
+}
+
+.hero-main-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--dark-accent);
+  letter-spacing: -0.04em;
+  margin-bottom: 1.25rem;
+}
+
+.hero-subtext {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 720px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.hero-cta-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  max-width: 550px;
+  margin: 0 auto 3rem auto;
+  background: #FFFFFF;
+  padding: 0.5rem 0.5rem 0.5rem 1.25rem;
+  border-radius: 50px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.06);
+}
+
+.hero-cta-box input {
+  border: none;
+  outline: none;
+  font-size: 0.95rem;
+  width: 100%;
+  font-family: inherit;
+}
+
+.hero-stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+.hero-stat-chip {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: #FFFFFF;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+}
+
+.stat-chip-num {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary-emerald);
+}
+
+/* --- Service Categories Grid --- */
+.services-cat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.servix-card {
+  background: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 2.5rem 2rem;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.servix-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 0;
+  background-color: var(--primary-emerald);
+  transition: var(--transition);
+}
+
+.servix-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--hover-shadow);
+  border-color: var(--emerald-mint);
+}
+
+.servix-card:hover::before {
+  height: 100%;
+}
+
+.servix-card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-sm);
+  background-color: var(--emerald-light);
+  color: var(--primary-emerald);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.servix-card-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--dark-accent);
+  margin-bottom: 0.75rem;
+}
+
+.servix-card-desc {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.servix-card-features {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.25rem;
+  margin-top: 1rem;
+}
+
+.servix-card-features li {
+  font-size: 0.88rem;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* --- Workflow Process Section --- */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  position: relative;
+}
+
+.process-step-card {
+  background-color: var(--bg-white);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  padding: 2.25rem 1.75rem;
+  position: relative;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.process-step-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-emerald);
+  box-shadow: var(--hover-shadow);
+}
+
+.step-number {
+  width: 48px;
+  height: 48px;
+  background-color: var(--emerald-light);
+  color: var(--primary-emerald);
+  font-weight: 800;
+  font-size: 1.25rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.25rem auto;
+  border: 2px solid var(--primary-emerald);
+}
+
+.step-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--dark-accent);
+  margin-bottom: 0.5rem;
+}
+
+.step-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* --- Interactive ROI Calculator Widget --- */
+.calculator-box {
+  background: linear-gradient(135deg, var(--dark-accent), #1E293B);
+  color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 3rem;
+  box-shadow: 0 25px 50px rgba(15, 23, 42, 0.25);
+  margin-top: 4rem;
+}
+
+.calc-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.calc-slider-group {
+  margin-bottom: 2rem;
+}
+
+.calc-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.calc-slider {
+  width: 100%;
+  accent-color: var(--primary-emerald);
+  height: 8px;
+  border-radius: 4px;
+}
+
+.calc-result-card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.calc-result-amount {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--emerald-mint);
+  margin-bottom: 0.5rem;
+}
+
+/* --- Testimonial Slider --- */
+.slider-container {
+  max-width: 850px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide-item {
+  min-width: 100%;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.slide-quote {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--text-main);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.slide-author-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--dark-accent);
+}
+
+.slide-author-role {
+  font-size: 0.88rem;
+  color: var(--primary-emerald);
+}
+
+.slider-nav {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--border-color);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.dot.active {
+  background-color: var(--primary-emerald);
+  width: 28px;
+  border-radius: 10px;
+}
+
+/* --- FAQ Accordion --- */
+.faq-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.faq-question {
+  padding: 1.25rem 1.5rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--dark-accent);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-answer {
+  padding: 0 1.5rem 1.25rem 1.5rem;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  display: none;
+  line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+.faq-icon {
+  font-weight: 400;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* --- B2B CTA Banner --- */
+.cta-emerald-banner {
+  background: linear-gradient(135deg, var(--primary-emerald), var(--primary-teal));
+  color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 4rem 3rem;
+  text-align: center;
+}
+
+.cta-emerald-banner h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.cta-emerald-banner p {
+  font-size: 1.15rem;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  opacity: 0.9;
+}
+
+/* --- Footer --- */
+.servix-footer {
+  background-color: var(--dark-accent);
+  color: #94A3B8;
+  padding: 4rem 0 2rem 0;
+}
+
+.servix-footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .calc-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .servix-menu {
+    position: fixed;
+    top: 84px;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    flex-direction: column;
+    padding: 2rem;
+    display: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+  
+  .servix-menu.active {
+    display: flex;
+  }
+
+  .mobile-drawer-toggle {
+    display: flex;
+  }
+
+  .hero-main-title {
+    font-size: 2.5rem;
+  }
+
+  .servix-footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

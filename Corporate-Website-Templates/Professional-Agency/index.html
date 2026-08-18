@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aetheria Studio | Creative Technology & Digital Product Agency</title>
+  <meta name="description" content="High-impact creative technology studio building enterprise digital products, brand identities, and AI software experiences.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Floating Pill Navigation Header -->
+  <header class="agency-header">
+    <div class="agency-nav-pill">
+      <a href="#" class="brand-aetheria">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#EC4899" stroke-width="3"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        <span>AETHERIA<span class="gradient-text">STUDIO</span></span>
+      </a>
+
+      <nav class="agency-menu" id="agencyMenu">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Work</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="btn-agency btn-neon" style="padding: 0.5rem 1.25rem; font-size: 0.85rem;">Let's Talk</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: #8B949E;" class="status-indicator">
+        <div class="status-dot"></div>
+        <span>Open for Q3/Q4 Projects</span>
+      </div>
+
+      <button class="agency-mobile-toggle" id="agencyMobileToggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-agency">
+    <div class="container">
+      <span class="neon-tag">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        Award-Winning Creative Tech Studio
+      </span>
+
+      <h1 class="hero-agency-title">We Architect <span class="gradient-text">Digital Futures</span> & Enterprise Brands</h1>
+      <p class="agency-sub">Aetheria combines high-end UI/UX design, generative AI integration, and full-stack software engineering to craft world-class digital products.</p>
+
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="#portfolio" class="btn-agency btn-neon">Explore Portfolio</a>
+        <a href="#contact" class="btn-agency btn-outline-neon">Start a Project Sprint</a>
+      </div>
+
+      <div class="hero-tags-cloud">
+        <span class="tag-chip">UI/UX Design</span>
+        <span class="tag-chip">Enterprise AI Systems</span>
+        <span class="tag-chip">3D WebGL Motion</span>
+        <span class="tag-chip">Brand Identity Systems</span>
+        <span class="tag-chip">Mobile Applications</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agency Services -->
+  <section class="section-padding" id="services">
+    <div class="container">
+      <div class="text-center">
+        <span class="neon-tag">Our Capabilities</span>
+        <h2 class="agency-title">Crafted for Market Impact</h2>
+        <p class="agency-sub">End-to-end digital product design, strategy, and modern software development.</p>
+      </div>
+
+      <div class="services-neon-grid">
+        <div class="agency-service-card">
+          <span class="service-num">01</span>
+          <h3>Digital Product Design & UX</h3>
+          <p style="color: #8B949E; font-size: 0.95rem; margin-bottom: 1.5rem;">User research, interactive Figma prototyping, design systems, and conversion-optimized interface engineering.</p>
+          <div style="font-size: 0.85rem; color: #C084FC;">Figma • Micro-Interactions • Design Systems</div>
+        </div>
+
+        <div class="agency-service-card">
+          <span class="service-num">02</span>
+          <h3>Full-Stack & Cloud Engineering</h3>
+          <p style="color: #8B949E; font-size: 0.95rem; margin-bottom: 1.5rem;">High-performance web applications, serverless API backends, and microservices architecture built for scale.</p>
+          <div style="font-size: 0.85rem; color: #C084FC;">React / Next.js • Python • AWS Cloud</div>
+        </div>
+
+        <div class="agency-service-card">
+          <span class="service-num">03</span>
+          <h3>Brand Identity & Motion</h3>
+          <p style="color: #8B949E; font-size: 0.95rem; margin-bottom: 1.5rem;">Logomarks, brand positioning, 3D WebGL motion, interactive typography, and digital campaign guidelines.</p>
+          <div style="font-size: 0.85rem; color: #C084FC;">3D WebGL • Brand Guidelines • Motion Design</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Filterable Portfolio Grid -->
+  <section class="section-padding" id="portfolio" style="background: #121721;">
+    <div class="container">
+      <div class="text-center">
+        <span class="neon-tag">Selected Works</span>
+        <h2 class="agency-title">Recent Client Showcase</h2>
+        <p class="agency-sub">Click any project to inspect interactive details and tech stack.</p>
+      </div>
+
+      <div class="portfolio-filter-nav">
+        <button class="portfolio-filter-btn active" data-filter="all">All Projects</button>
+        <button class="portfolio-filter-btn" data-filter="uiux">UI/UX Design</button>
+        <button class="portfolio-filter-btn" data-filter="branding">Branding</button>
+        <button class="portfolio-filter-btn" data-filter="ai">AI Platforms</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <div class="portfolio-card" data-category="uiux" data-title="Krypton AI Financial Terminal" data-client="Krypton Global" data-stack="Next.js, WebGL, Tailwind, Python" data-desc="Real-time algorithmic trading interface with customized dark mode data visualization widgets.">
+          <div class="portfolio-preview-box">
+            <span class="neon-tag" style="align-self: flex-start; margin-bottom: 0;">UI/UX Design</span>
+            <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: #FFF;">Krypton AI Terminal</div>
+          </div>
+          <div class="portfolio-body">
+            <p style="font-size: 0.9rem; color: #8B949E;">High-frequency data dashboard designed for institutional crypto asset traders.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="branding" data-title="Veloce EV Automotive Brand Identity" data-client="Veloce Motors UK" data-stack="3D Blender, Figma, Brand System" data-desc="Complete brand system, typography, 3D motion graphics, and luxury vehicle configurator interface.">
+          <div class="portfolio-preview-box" style="background: linear-gradient(135deg, #2A1F3F, #1F383B);">
+            <span class="neon-tag" style="align-self: flex-start; margin-bottom: 0;">Branding & Motion</span>
+            <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: #FFF;">Veloce EV Brand Identity</div>
+          </div>
+          <div class="portfolio-body">
+            <p style="font-size: 0.9rem; color: #8B949E;">Luxury electric vehicle visual identity and digital showroom experience.</p>
+          </div>
+        </div>
+
+        <div class="portfolio-card" data-category="ai" data-title="Synthetix Generative Speech Platform" data-client="Synthetix Labs" data-stack="React, Web Audio API, PyTorch" data-desc="Enterprise voice synthesis web app processing voice clones for broadcast audio production.">
+          <div class="portfolio-preview-box" style="background: linear-gradient(135deg, #3B1B2D, #19273D);">
+            <span class="neon-tag" style="align-self: flex-start; margin-bottom: 0;">AI Platform</span>
+            <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: #FFF;">Synthetix AI Platform</div>
+          </div>
+          <div class="portfolio-body">
+            <p style="font-size: 0.9rem; color: #8B949E;">AI voice synthesis and automated dialogue generation tool for game studios.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Process Section -->
+  <section class="section-padding" id="process">
+    <div class="container">
+      <div class="text-center">
+        <span class="neon-tag">Our Methodology</span>
+        <h2 class="agency-title">The 4-Stage Sprint Process</h2>
+        <p class="agency-sub">Rapid execution from concept sprint to production deployment.</p>
+      </div>
+
+      <div class="process-agency-grid">
+        <div class="process-agency-card">
+          <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #EC4899; margin-bottom: 0.5rem;">01. Discover</div>
+          <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">Strategy Sprint</h4>
+          <p style="font-size: 0.88rem; color: #8B949E;">Auditing target users, market competitors, and technical architecture to map project scope.</p>
+        </div>
+
+        <div class="process-agency-card">
+          <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #EC4899; margin-bottom: 0.5rem;">02. Prototype</div>
+          <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">UX & Wireframing</h4>
+          <p style="font-size: 0.88rem; color: #8B949E;">Interactive prototype design in Figma to validate key user flows and micro-interactions.</p>
+        </div>
+
+        <div class="process-agency-card">
+          <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #EC4899; margin-bottom: 0.5rem;">03. Engineer</div>
+          <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">Production Build</h4>
+          <p style="font-size: 0.88rem; color: #8B949E;">Clean code implementation with automated CI/CD deployment pipelines and security audits.</p>
+        </div>
+
+        <div class="process-agency-card">
+          <div style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; color: #EC4899; margin-bottom: 0.5rem;">04. Scale</div>
+          <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem;">Launch & Growth</h4>
+          <p style="font-size: 0.88rem; color: #8B949E;">Deployment on cloud servers with ongoing optimization, performance monitoring, and SLA support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="section-padding" id="contact">
+    <div class="container">
+      <div class="cta-neon-box">
+        <span class="neon-tag">Ready to Innovate?</span>
+        <h2 style="font-family: var(--font-heading); font-size: 3rem; font-weight: 800; margin-bottom: 1rem;">Let’s Build Something <span class="gradient-text">Extraordinary</span></h2>
+        <p style="color: #8B949E; max-width: 600px; margin: 0 auto 2.5rem auto; font-size: 1.1rem;">Submit your project inquiry to initiate a 48-hour discovery proposal.</p>
+
+        <form id="agencyContactForm" style="max-width: 600px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.25rem;">
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+            <input type="text" placeholder="Your Name *" required style="padding: 0.9rem 1.2rem; background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: 8px; color: #FFF; outline: none;">
+            <input type="email" placeholder="Work Email *" required style="padding: 0.9rem 1.2rem; background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: 8px; color: #FFF; outline: none;">
+          </div>
+          <textarea placeholder="Tell us about your project, timeline & target budget *" required style="padding: 0.9rem 1.2rem; background: var(--bg-card); border: 1px solid var(--border-dark); border-radius: 8px; color: #FFF; outline: none; height: 110px; resize: vertical;"></textarea>
+          <button type="submit" class="btn-agency btn-neon" style="padding: 1.1rem;">Launch Project Sprint</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="closeLightbox">&times;</button>
+      <span class="neon-tag" id="modalClient">Client: -</span>
+      <h3 style="font-family: var(--font-heading); font-size: 1.75rem; margin: 0.75rem 0;" id="modalTitle">Project Title</h3>
+      <p style="color: #8B949E; font-size: 0.95rem; margin-bottom: 1.25rem;" id="modalDesc">Project description...</p>
+      <div style="font-size: 0.85rem; color: #C084FC; font-weight: 600;" id="modalStack">Tech Stack: -</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="agency-footer">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1.5rem;">
+      <a href="#" class="brand-aetheria">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EC4899" stroke-width="3"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+        <span>AETHERIA<span class="gradient-text">STUDIO</span></span>
+      </a>
+
+      <div style="font-size: 0.85rem; color: #8B949E;">
+        © 2026 Aetheria Creative & Tech Studio Inc. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
