@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elena Vance | Principal Product & Brand Designer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                Elena Vance<span>.</span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#process" class="nav-link">Design Process</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills & Tools</a></li>
+                <li class="nav-item"><a href="#portfolio" class="nav-link">Case Studies</a></li>
+                <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div style="display: flex; align-items: center; gap: 16px;">
+                <a href="#contact" class="btn btn-dark" id="startProjectBtn" type="button">Start Project</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu" type="button">&#9776;</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-layout">
+            <div>
+                <div class="hero-tag">
+                    ✦ PRINCIPAL PRODUCT DESIGNER BASED IN NEW YORK
+                </div>
+                <h1 class="hero-title">
+                    Crafting <em>intuitive</em> digital products & design systems.
+                </h1>
+                <p class="hero-bio">
+                    I help tech companies and modern brands transform complex user challenges into elegant, human-centered digital experiences that drive measurable business growth.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn btn-dark">Explore Case Studies &rarr;</a>
+                    <a href="#process" class="btn btn-outline">Design Philosophy</a>
+                </div>
+            </div>
+
+            <div class="hero-image-frame">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Elena Vance" class="hero-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- About & Philosophy -->
+    <section class="about" id="about">
+        <div class="container">
+            <span class="section-label">01 // PHILOSOPHY</span>
+            <h2 class="section-title">Design with Purpose & Precision</h2>
+
+            <div class="about-grid">
+                <div class="about-quote-box">
+                    <div class="quote-mark">“</div>
+                    <blockquote class="quote-text">
+                        Great design isn't just about how a product looks—it's about how effortlessly it empowers people to achieve their goals.
+                    </blockquote>
+                    <div style="font-weight: 600; color: var(--text-main);">Elena Vance</div>
+                    <div style="font-size: 0.88rem; color: var(--text-muted);">Former Design Director at Studio Nova</div>
+                </div>
+
+                <div class="principles-grid">
+                    <div class="principle-card">
+                        <div class="principle-num">01.</div>
+                        <h3 class="principle-title">Human-Centric First</h3>
+                        <p class="principle-desc">Every pixel is informed by real user data, behavioral psychology, and rigorous empathy mapping.</p>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-num">02.</div>
+                        <h3 class="principle-title">System-Driven Scale</h3>
+                        <p class="principle-desc">Building reusable design systems that empower engineering teams to launch faster with zero visual drift.</p>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-num">03.</div>
+                        <h3 class="principle-title">Pixel-Perfect Detail</h3>
+                        <p class="principle-desc">Uncompromising focus on typography hierarchy, micro-interactions, and visual harmony.</p>
+                    </div>
+
+                    <div class="principle-card">
+                        <div class="principle-num">04.</div>
+                        <h3 class="principle-title">Accessible to All</h3>
+                        <p class="principle-desc">Strict adherence to WCAG AAA accessibility standards ensuring inclusive experiences for every user.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Design Process -->
+    <section class="process" id="process">
+        <div class="container">
+            <span class="section-label">02 // WORKFLOW</span>
+            <h2 class="section-title">The 4-Step Design Framework</h2>
+            <p class="section-subtitle">A structured, collaborative approach to taking products from concept to market-ready reality.</p>
+
+            <div class="process-tabs">
+                <button class="process-tab-btn active" data-step="1" type="button">01. DISCOVERY</button>
+                <button class="process-tab-btn" data-step="2" type="button">02. ARCHITECTURE</button>
+                <button class="process-tab-btn" data-step="3" type="button">03. UI & SYSTEMS</button>
+                <button class="process-tab-btn" data-step="4" type="button">04. PROTOTYPING</button>
+            </div>
+
+            <div class="process-content-card">
+                <div>
+                    <h3 id="processTitle" style="font-size: 1.8rem; margin-bottom: 16px;">01. Discovery & User Research</h3>
+                    <p id="processDesc" style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 24px;">
+                        Uncovering core user pain points through quantitative surveys, 1-on-1 interviews, and competitor benchmark analysis to align business goals with user needs.
+                    </p>
+
+                    <h4 class="mono" style="font-size: 0.85rem; color: var(--accent-amber); margin-bottom: 12px;">KEY DELIVERABLES:</h4>
+                    <ul id="processDeliverables" style="list-style: none; font-size: 0.95rem;">
+                        <li style="margin-bottom:6px; color:var(--text-main); font-weight:500;">✓ User Personas</li>
+                        <li style="margin-bottom:6px; color:var(--text-main); font-weight:500;">✓ Customer Journey Maps</li>
+                        <li style="margin-bottom:6px; color:var(--text-main); font-weight:500;">✓ Usability Audit</li>
+                        <li style="margin-bottom:6px; color:var(--text-main); font-weight:500;">✓ Product Metrics</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <img id="processImg" src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&q=80" alt="Process Step" style="width:100%; height:280px; object-fit:cover; border-radius: var(--radius-md);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Tools -->
+    <section class="skills" id="skills" style="padding: 90px 0; background: var(--bg-canvas);">
+        <div class="container">
+            <span class="section-label">03 // CAPABILITIES</span>
+            <h2 class="section-title">Design Expertise & Tooling</h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-top: 40px;">
+                <div style="background: var(--bg-surface); padding: 28px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 16px;">Product & UI/UX</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <span style="background: var(--bg-card); padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; border: 1px solid var(--border-color);">User Research</span>
+                        <span style="background: var(--bg-card); padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; border: 1px solid var(--border-color);">Information Architecture</span>
+                        <span style="background: var(--bg-card); padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; border: 1px solid var(--border-color);">Wireframing</span>
+                        <span style="background: var(--bg-card); padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; border: 1px solid var(--border-color);">Usability Testing</span>
+                    </div>
+                </div>
+
+                <div style="background: var(--bg-surface); padding: 28px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 16px;">Design Systems</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <span style="background: var(--bg-card); padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; border: 1px solid var(--border-color);">Component Libraries</span>
+                        <span style="background: var(--bg-card); padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; border: 1px solid var(--border-color);">Design Tokens</span>
+                        <span style="background: var(--bg-card); padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; border: 1px solid var(--border-color);">Figma Auto-Layout</span>
+                        <span style="background: var(--bg-card); padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; border: 1px solid var(--border-color);">Accessibility Standards</span>
+                    </div>
+                </div>
+
+                <div style="background: var(--bg-surface); padding: 28px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                    <h3 style="font-size: 1.2rem; margin-bottom: 16px;">Software & Tools</h3>
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <span style="background: var(--bg-card); padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; border: 1px solid var(--border-color); color: var(--accent-amber); font-weight:600;">Figma (Expert)</span>
+                        <span style="background: var(--bg-card); padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; border: 1px solid var(--border-color);">Framer</span>
+                        <span style="background: var(--bg-card); padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; border: 1px solid var(--border-color);">Rive Animations</span>
+                        <span style="background: var(--bg-card); padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; border: 1px solid var(--border-color);">Principle</span>
+                        <span style="background: var(--bg-card); padding: 6px 12px; border-radius: 4px; font-size: 0.85rem; border: 1px solid var(--border-color);">Adobe Illustrator</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <span class="section-label">04 // SELECTED WORK</span>
+            <h2 class="section-title">Case Studies & Projects</h2>
+            <p class="section-subtitle">Explore end-to-end design solutions delivered for high-growth tech startups and global brands.</p>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all" type="button">All Projects</button>
+                <button class="filter-btn" data-filter="mobile" type="button">Mobile Apps</button>
+                <button class="filter-btn" data-filter="systems" type="button">Design Systems</button>
+                <button class="filter-btn" data-filter="web" type="button">Web Platforms</button>
+            </div>
+
+            <div class="case-studies-grid">
+
+                <!-- Case 1 -->
+                <div class="case-card" data-category="mobile" onclick="openCaseModal(1)">
+                    <div class="case-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80" alt="FinPulse" class="case-img">
+                    </div>
+                    <div class="case-body">
+                        <div class="case-cat">MOBILE UI/UX DESIGN</div>
+                        <h3 class="case-title">FinPulse Mobile Banking</h3>
+                        <p class="case-desc">Redesigned mobile wealth management platform, driving 42% surge in user investments.</p>
+                        <span class="btn btn-outline" style="padding: 6px 14px; font-size: 0.82rem;">View Case Study &rarr;</span>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="case-card" data-category="systems" onclick="openCaseModal(2)">
+                    <div class="case-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80" alt="Aura System" class="case-img">
+                    </div>
+                    <div class="case-body">
+                        <div class="case-cat">DESIGN SYSTEM & TOKENS</div>
+                        <h3 class="case-title">Aura Enterprise Component Library</h3>
+                        <p class="case-desc">Created cross-platform Figma design system with 120+ accessible tokens and component variants.</p>
+                        <span class="btn btn-outline" style="padding: 6px 14px; font-size: 0.82rem;">View Case Study &rarr;</span>
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="case-card" data-category="web" onclick="openCaseModal(3)">
+                    <div class="case-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Veloce SaaS" class="case-img">
+                    </div>
+                    <div class="case-body">
+                        <div class="case-cat">WEB APPLICATION</div>
+                        <h3 class="case-title">Veloce Analytics Platform</h3>
+                        <p class="case-desc">Complex analytics dashboard interface reducing customer onboarding time from 3 weeks to 2 days.</p>
+                        <span class="btn btn-outline" style="padding: 6px 14px; font-size: 0.82rem;">View Case Study &rarr;</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Interactive Modal -->
+    <div class="modal-overlay" id="caseStudyModal">
+        <div class="modal-box">
+            <button class="modal-close-btn" id="modalCloseBtn" type="button">&times;</button>
+            <span id="caseModalCategory" class="mono" style="color: var(--accent-amber); font-size:0.85rem;">CATEGORY</span>
+            <h2 id="caseModalTitle" style="font-size: 2rem; margin-top: 6px; margin-bottom: 12px;">Case Title</h2>
+            <p id="caseModalOverview" style="color: var(--text-muted); font-size: 1.05rem;">Case study overview text...</p>
+
+            <div class="proto-switcher">
+                <button class="proto-btn active" id="protoBtnHifi" onclick="switchProtoView('hifi')" type="button">High-Fidelity Render</button>
+                <button class="proto-btn" id="protoBtnWire" onclick="switchProtoView('wireframe')" type="button">Low-Fi Wireframe Blueprint</button>
+            </div>
+
+            <div class="proto-preview-box">
+                <img id="protoDisplayImg" src="" alt="Prototype Preview" style="width:100%; height:100%; object-fit:cover;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Services Section -->
+    <section class="services" id="services" style="padding: 100px 0;">
+        <div class="container">
+            <span class="section-label">05 // SERVICES</span>
+            <h2 class="section-title">Design Services Offered</h2>
+            <p style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 30px;">Click any service card below to inspect service scope & deliverables.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px;">
+                <div class="service-card" onclick="openServiceModal('Mobile & Web UI/UX', 'End-to-end user interface design for iOS, Android, and SaaS platforms. Built with human-centered research, WCAG AAA accessibility standards, and pixel-perfect design tokens.', ['iOS & Android Design', 'SaaS Web Apps', 'Interactive Prototypes', 'User Testing'])" style="background: var(--bg-surface); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--border-color); cursor: pointer; transition: transform 0.3s ease, border-color 0.3s ease;">
+                    <div style="font-size: 2rem; color: var(--accent-amber); margin-bottom: 16px;">✦</div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Mobile & Web UI/UX</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">End-to-end user interface design for iOS, Android, and SaaS platforms built for usability.</p>
+                    <div style="margin-top: 16px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-amber); font-weight:600;">Inspect Scope &rarr;</div>
+                </div>
+
+                <div class="service-card" onclick="openServiceModal('Design Systems Architecture', 'Comprehensive Figma component architectures with design tokens, dark/light variants, auto-layout rules, and developer handoff documentation.', ['Figma Component Library', 'Design Tokens Schema', 'Dark / Light Themes', 'Developer Redlines'])" style="background: var(--bg-surface); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--border-color); cursor: pointer; transition: transform 0.3s ease, border-color 0.3s ease;">
+                    <div style="font-size: 2rem; color: var(--accent-amber); margin-bottom: 16px;">❖</div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Design Systems Architecture</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Comprehensive Figma component architectures with design tokens, documentation, and handoff guides.</p>
+                    <div style="margin-top: 16px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-amber); font-weight:600;">Inspect Scope &rarr;</div>
+                </div>
+
+                <div class="service-card" onclick="openServiceModal('UX Audit & Optimization', 'In-depth analysis of existing digital product user flows to identify usability bottlenecks, reduce churn rates, and optimize conversion funnels.', ['Funnel Heuristic Audit', 'UX Recommendations', 'A/B Testing Strategy', 'Conversion Optimization'])" style="background: var(--bg-surface); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--border-color); cursor: pointer; transition: transform 0.3s ease, border-color 0.3s ease;">
+                    <div style="font-size: 2rem; color: var(--accent-amber); margin-bottom: 16px;">⚡</div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px;">UX Audit & Optimization</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">In-depth analysis of existing user flows to identify friction points and boost funnel conversion rates.</p>
+                    <div style="margin-top: 16px; font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-amber); font-weight:600;">Inspect Scope &rarr;</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Detail Modal -->
+    <div class="modal-overlay" id="serviceModal">
+        <div class="modal-box">
+            <button class="modal-close-btn" onclick="closeServiceModal()" type="button">&times;</button>
+            <span class="mono" style="color: var(--accent-amber); font-size: 0.85rem;">SERVICE // SPECS</span>
+            <h2 id="serviceModalTitle" style="font-size: 2rem; margin: 6px 0 12px;">Service Title</h2>
+            <p id="serviceModalDesc" style="color: var(--text-muted); font-size: 1.05rem; margin-bottom: 24px;">Service description...</p>
+            
+            <h4 class="mono" style="font-size: 0.85rem; color: var(--text-main); margin-bottom: 12px;">DELIVERABLES & PROCESS:</h4>
+            <div id="serviceModalTags" style="display: flex; flex-wrap: wrap; gap: 8px;"></div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <section class="testimonials" style="background: var(--bg-surface); border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <span class="section-label" style="text-align: center; display: block;">06 // TESTIMONIALS</span>
+            <h2 class="section-title" style="text-align: center;">Client Recommendations</h2>
+
+            <div class="testimonial-card">
+                <blockquote class="testimonial-quote">
+                    "Elena completely reshaped how our users interact with our financial platform. Her design system cut our engineering launch cycles in half, and her attention to micro-animations elevated our brand aesthetic to world-class status."
+                </blockquote>
+                <div style="display: flex; align-items: center; gap: 14px;">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Thorne" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                    <div>
+                        <div style="font-weight: 700;">Marcus Thorne</div>
+                        <div style="font-size: 0.88rem; color: var(--text-muted);">VP of Product, FinPulse Inc.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Form -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-layout">
+                <div>
+                    <span class="section-label">07 // LET'S TALK</span>
+                    <h2 class="section-title">Have a project in mind?</h2>
+                    <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 30px;">
+                        I am currently accepting new design commissions, product design strategy consultations, and select full-time advisory roles.
+                    </p>
+
+                    <div style="margin-bottom: 20px;">
+                        <strong style="display:block; font-size:0.9rem; color:var(--text-muted);">EMAIL INQUIRIES:</strong>
+                        <a href="mailto:elena.vance.design@example.com" style="color: var(--text-main); font-weight:700; font-size:1.2rem; text-decoration:none;">elena.vance.design@example.com</a>
+                    </div>
+
+                    <div>
+                        <strong style="display:block; font-size:0.9rem; color:var(--text-muted);">STUDIO LOCATION:</strong>
+                        <span>SoHo, New York, NY (Remote Worldwide)</span>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="designerContactForm" style="background: var(--bg-canvas); padding: 36px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                    <div class="form-group">
+                        <label class="form-label">YOUR NAME</label>
+                        <input type="text" id="designerClientName" class="form-control" placeholder="e.g. Sarah Jenkins" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">EMAIL ADDRESS</label>
+                        <input type="email" class="form-control" placeholder="e.g. sarah@company.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">PROJECT SCOPE</label>
+                        <select class="form-control" required>
+                            <option value="">Select Primary Requirement...</option>
+                            <option value="mobile">Mobile App UI/UX</option>
+                            <option value="system">Design System Architecture</option>
+                            <option value="redesign">Full Web Product Redesign</option>
+                            <option value="consulting">UX Strategy Consultation</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">PROJECT DETAILS</label>
+                        <textarea class="form-control" placeholder="Tell me about your product goals, timeline, and budget expectation..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-dark" style="width: 100%;">Submit Project Brief &rarr;</button>
+
+                    <div id="formStatusMsg" style="margin-top: 16px; font-weight:700; color:var(--accent-amber); display:none;"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div>
+                &copy; 2026 Elena Vance. All rights reserved. Designed with precision.
+            </div>
+
+            <div style="display: flex; gap: 24px;">
+                <a href="#" style="color: var(--bg-canvas); text-decoration:none;">Figma</a>
+                <a href="#" style="color: var(--bg-canvas); text-decoration:none;">Dribbble</a>
+                <a href="#" style="color: var(--bg-canvas); text-decoration:none;">LinkedIn</a>
+                <a href="#hero" style="color: var(--accent-amber); text-decoration:none;">Back to Top ↑</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

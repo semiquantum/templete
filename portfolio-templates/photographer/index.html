@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcus Vance | Fine Art & Commercial Photographer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                MARCUS VANCE<span>.</span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#about" class="nav-link">About & Gear</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#exhibitions" class="nav-link">Exhibitions</a></li>
+                <li><a href="#booking" class="nav-link">Inquire / Book</a></li>
+            </ul>
+
+            <div style="display: flex; align-items: center; gap: 16px;">
+                <a href="#booking" class="btn btn-gold" type="button">Book Shoot</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle menu" type="button">&#9776;</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Fullscreen Hero Slider -->
+    <section class="hero" id="hero">
+        <div class="hero-slide-bg active" style="background-image: url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="hero-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1920&q=80');"></div>
+        <div class="hero-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1920&q=80');"></div>
+
+        <div class="hero-content">
+            <span class="section-tag">FINE ART & COMMERCIAL PHOTOGRAPHY</span>
+            <h1 class="hero-title">Capturing Light, Form & Emotion</h1>
+            <p class="hero-subtitle">New York • Paris • Tokyo • Worldwide</p>
+            <a href="#gallery" class="btn btn-gold">View Portfolio Gallery &rarr;</a>
+        </div>
+    </section>
+
+    <!-- About & Photographer Statement -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div>
+                    <span class="section-tag">PHOTOGRAPHER STATEMENT</span>
+                    <h2 class="section-title">The Art of Visual Storytelling</h2>
+                    <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 1.05rem;">
+                        For over 15 years, my lens has documented the quiet stillness of untouched landscapes, high-fashion editorial campaigns, and raw human emotion across 40+ countries.
+                    </p>
+                    <p style="color: var(--text-muted); margin-bottom: 30px; font-size: 1.05rem;">
+                        My work balances analog medium-format precision with cutting-edge digital glass optics, creating timeless imagery for global fashion houses, luxury brands, and art collectors.
+                    </p>
+
+                    <h3 class="serif gold-text" style="font-size: 1.4rem; margin-bottom: 12px;">Primary Camera Loadout</h3>
+                    <ul class="gear-list">
+                        <li><span>Leica M11 (Rangefinder 60MP)</span> <span style="color:var(--text-dim);">Street & Documentary</span></li>
+                        <li><span>Hasselblad X2D 100C (Medium Format)</span> <span style="color:var(--text-dim);">Studio & Fine Art</span></li>
+                        <li><span>Sony A1 Dual-Engine</span> <span style="color:var(--text-dim);">Commercial & Motion</span></li>
+                        <li><span>Leica Summilux & Hasselblad XCD Optics</span> <span style="color:var(--text-dim);">f/0.95 - f/1.4 Glass</span></li>
+                    </ul>
+                </div>
+
+                <div style="position: relative;">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="Marcus Vance Portrait" style="width:100%; height:480px; object-fit:cover; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filterable Masonry Gallery -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <span class="section-tag" style="text-align: center; display: block;">PORTFOLIO ARCHIVE</span>
+            <h2 class="section-title" style="text-align: center;">Curated Photography Collection</h2>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all" type="button">All Works</button>
+                <button class="filter-btn" data-filter="landscape" type="button">Landscapes</button>
+                <button class="filter-btn" data-filter="portrait" type="button">Portraits & Editorial</button>
+                <button class="filter-btn" data-filter="architecture" type="button">Architecture</button>
+            </div>
+
+            <div class="masonry-grid">
+
+                <!-- Photo 1 -->
+                <div class="gallery-item" data-category="landscape" onclick="openLightbox(0)">
+                    <img src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80" alt="Solitude in Fog" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="photo-cat">Reykjavík, Iceland</span>
+                        <h3 class="photo-title">Solitude in Fog</h3>
+                    </div>
+                </div>
+
+                <!-- Photo 2 -->
+                <div class="gallery-item" data-category="portrait" onclick="openLightbox(1)">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80" alt="The Editorial Muse" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="photo-cat">Paris Fashion Week</span>
+                        <h3 class="photo-title">The Editorial Muse</h3>
+                    </div>
+                </div>
+
+                <!-- Photo 3 -->
+                <div class="gallery-item" data-category="architecture" onclick="openLightbox(2)">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80" alt="Brutalist Geometry" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="photo-cat">Tokyo, Japan</span>
+                        <h3 class="photo-title">Brutalist Geometry</h3>
+                    </div>
+                </div>
+
+                <!-- Photo 4 -->
+                <div class="gallery-item" data-category="landscape" onclick="openLightbox(3)">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80" alt="Majestic Ridge" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="photo-cat">Dolomites, Italy</span>
+                        <h3 class="photo-title">Majestic Ridge at Dawn</h3>
+                    </div>
+                </div>
+
+                <!-- Photo 5 -->
+                <div class="gallery-item" data-category="portrait" onclick="openLightbox(4)">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" alt="Monochrome Gaze" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="photo-cat">New York Studio</span>
+                        <h3 class="photo-title">Monochrome Gaze</h3>
+                    </div>
+                </div>
+
+                <!-- Photo 6 -->
+                <div class="gallery-item" data-category="architecture" onclick="openLightbox(5)">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Glass Monoliths" class="gallery-img">
+                    <div class="gallery-overlay">
+                        <span class="photo-cat">Manhattan, NYC</span>
+                        <h3 class="photo-title">Glass Monoliths</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Lightbox Gallery Modal -->
+    <div class="lightbox-modal" id="lightboxModal">
+        <button class="lightbox-close" onclick="closeLightbox()" type="button">&times;</button>
+        <button class="lightbox-nav lightbox-prev" onclick="navLightbox(-1)" type="button">&larr;</button>
+        <button class="lightbox-nav lightbox-next" onclick="navLightbox(1)" type="button">&rarr;</button>
+
+        <div class="lightbox-img-container">
+            <img id="lightboxImg" class="lightbox-img" src="" alt="Full Photo">
+        </div>
+
+        <div style="text-align: center; margin-top: 14px;">
+            <h3 id="lightboxTitle" class="serif gold-text" style="font-size: 1.6rem;">Photo Title</h3>
+            <div id="lightboxLocation" style="color: var(--text-muted); font-size: 0.88rem;">Location</div>
+        </div>
+
+        <!-- EXIF Telemetry Drawer -->
+        <div class="exif-panel">
+            <div class="exif-item"><strong>Camera:</strong> <span id="exifCamera">Leica M11</span></div>
+            <div class="exif-item"><strong>Lens:</strong> <span id="exifLens">50mm f/0.95</span></div>
+            <div class="exif-item"><strong>Settings:</strong> <span id="exifFocal">f/1.4 | 1/1000s</span></div>
+            <div class="exif-item"><strong>ISO:</strong> <span id="exifIso">ISO 100</span></div>
+        </div>
+    </div>
+
+    <!-- Services & Booking Packages -->
+    <section class="services" id="services" style="padding: 100px 0; background: var(--bg-surface);">
+        <div class="container">
+            <span class="section-tag">COMMISSIONS & SERVICES</span>
+            <h2 class="section-title">Photography Services</h2>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; margin-top: 40px;">
+                <div style="background: var(--bg-card); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                    <h3 class="serif gold-text" style="font-size: 1.5rem; margin-bottom: 12px;">Editorial & Fashion</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">High-fashion lookbooks, magazine covers, and campaign direction for luxury apparel brands.</p>
+                </div>
+
+                <div style="background: var(--bg-card); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                    <h3 class="serif gold-text" style="font-size: 1.5rem; margin-bottom: 12px;">Commercial & Brand</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">Architectural space, product hero shots, and brand lifestyle campaigns with full licensing rights.</p>
+                </div>
+
+                <div style="background: var(--bg-card); padding: 32px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
+                    <h3 class="serif gold-text" style="font-size: 1.5rem; margin-bottom: 12px;">Fine Art Archival Prints</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">Numbered, museum-grade pigment prints on Hahnemühle paper for private galleries and collectors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exhibitions & Awards Section -->
+    <section class="exhibitions" id="exhibitions" style="padding: 100px 0; background: var(--bg-dark); border-top: 1px solid var(--border-color);">
+        <div class="container">
+            <span class="section-tag" style="text-align: center; display: block;">HONORS & RECOGNITION</span>
+            <h2 class="section-title" style="text-align: center;">Exhibitions & Awards</h2>
+            <p style="color: var(--text-muted); text-align: center; margin-bottom: 50px;">Selected solo exhibitions, international gallery features, and photography awards.</p>
+
+            <div style="max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 20px;">
+                <div style="background: var(--bg-surface); padding: 24px 32px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+                    <div>
+                        <span class="gold-text" style="font-weight: 700; font-size: 0.88rem; letter-spacing: 0.1em;">2026 // SOLO EXHIBITION</span>
+                        <h3 class="serif" style="font-size: 1.4rem; margin-top: 4px;">"Solitude & Light" — Galerie de l'Ombre</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Paris, France</p>
+                    </div>
+                    <span style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 6px 16px; border-radius: 20px; font-size: 0.8rem; color: var(--accent-gold);">FEATURED</span>
+                </div>
+
+                <div style="background: var(--bg-surface); padding: 24px 32px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+                    <div>
+                        <span class="gold-text" style="font-weight: 700; font-size: 0.88rem; letter-spacing: 0.1em;">2025 // INTERNATIONAL AWARD</span>
+                        <h3 class="serif" style="font-size: 1.4rem; margin-top: 4px;">International Photography Awards (IPA)</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Gold Medalist — Fine Art & Landscape Series</p>
+                    </div>
+                    <span style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 6px 16px; border-radius: 20px; font-size: 0.8rem; color: var(--accent-gold);">GOLD MEDAL</span>
+                </div>
+
+                <div style="background: var(--bg-surface); padding: 24px 32px; border-radius: var(--radius-md); border: 1px solid var(--border-color); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+                    <div>
+                        <span class="gold-text" style="font-weight: 700; font-size: 0.88rem; letter-spacing: 0.1em;">2024 // GALLERY SHOWCASE</span>
+                        <h3 class="serif" style="font-size: 1.4rem; margin-top: 4px;">"Modern Monoliths" — SoHo Photo Gallery</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">New York City, NY</p>
+                    </div>
+                    <span style="background: var(--bg-card); border: 1px solid var(--border-color); padding: 6px 16px; border-radius: 20px; font-size: 0.8rem; color: var(--text-muted);">EXHIBITION</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking / Contact Form -->
+    <section class="contact" id="booking">
+        <div class="container" style="max-width: 800px;">
+            <span class="section-tag" style="text-align: center; display: block;">INQUIRE FOR COMMISSIONS</span>
+            <h2 class="section-title" style="text-align: center;">Book a Photography Session</h2>
+
+            <form id="photoBookingForm" style="background: var(--bg-surface); padding: 40px; border-radius: var(--radius-md); border: 1px solid var(--border-color); margin-top: 30px;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div>
+                        <label style="font-size: 0.8rem; letter-spacing:0.1em; color:var(--accent-gold); display:block; margin-bottom:6px;">YOUR NAME</label>
+                        <input type="text" id="photoClientName" class="form-control" placeholder="John Doe" required>
+                    </div>
+
+                    <div>
+                        <label style="font-size: 0.8rem; letter-spacing:0.1em; color:var(--accent-gold); display:block; margin-bottom:6px;">EMAIL ADDRESS</label>
+                        <input type="email" class="form-control" placeholder="john@example.com" required>
+                    </div>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div>
+                        <label style="font-size: 0.8rem; letter-spacing:0.1em; color:var(--accent-gold); display:block; margin-bottom:6px;">SHOOT TYPE</label>
+                        <select class="form-control" required style="background: var(--bg-surface); color:white;">
+                            <option value="">Select Commission Type...</option>
+                            <option value="fashion">Fashion & Editorial Campaign</option>
+                            <option value="architecture">Architectural & Space</option>
+                            <option value="fineart">Fine Art Print Acquisition</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label style="font-size: 0.8rem; letter-spacing:0.1em; color:var(--accent-gold); display:block; margin-bottom:6px;">PREFERRED LOCATION / CITY</label>
+                        <input type="text" class="form-control" placeholder="e.g. Paris or New York" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label style="font-size: 0.8rem; letter-spacing:0.1em; color:var(--accent-gold); display:block; margin-bottom:6px;">COMMISSION DETAILS & DATES</label>
+                    <textarea class="form-control" style="min-height: 120px;" placeholder="Describe your vision, shoot dates, and licensing requirements..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-gold" style="width: 100%;" type="button">Transmit Booking Inquiry &rarr;</button>
+
+                <div id="bookingStatusMsg" style="margin-top: 16px; font-size: 0.9rem; color: var(--accent-gold); text-align: center; display: none;"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Marcus Vance Photography. All photographs protected by copyright laws worldwide.</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

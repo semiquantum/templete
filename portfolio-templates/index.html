@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Portfolio Website Templates Collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0a0c10;
+            --bg-card: #12161f;
+            --bg-card-hover: #1a202c;
+            --border-color: #232d3f;
+            --text-main: #f1f5f9;
+            --text-muted: #94a3b8;
+            --accent-cyan: #06b6d4;
+            --accent-indigo: #6366f1;
+            --accent-amber: #f59e0b;
+            --accent-emerald: #10b981;
+            --accent-rose: #f43f5e;
+            --radius-lg: 16px;
+            --radius-md: 10px;
+            --shadow-glow: 0 10px 30px -10px rgba(99, 102, 241, 0.25);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding-bottom: 60px;
+        }
+
+        header {
+            border-bottom: 1px solid var(--border-color);
+            background: rgba(10, 12, 16, 0.85);
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 800;
+            font-size: 1.25rem;
+        }
+
+        .logo-icon {
+            width: 38px;
+            height: 38px;
+            background: linear-gradient(135deg, var(--accent-indigo), var(--accent-cyan));
+            border-radius: 10px;
+            display: grid;
+            place-items: center;
+            color: white;
+            font-weight: 800;
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+        }
+
+        .header-badges {
+            display: flex;
+            gap: 10px;
+        }
+
+        .badge {
+            background: rgba(99, 102, 241, 0.1);
+            color: var(--accent-indigo);
+            border: 1px solid rgba(99, 102, 241, 0.3);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .badge-emerald {
+            background: rgba(16, 185, 129, 0.1);
+            color: var(--accent-emerald);
+            border-color: rgba(16, 185, 129, 0.3);
+        }
+
+        .hero-hub {
+            text-align: center;
+            padding: 65px 0 40px;
+        }
+
+        .hero-title {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #ffffff 30%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.15rem;
+            color: var(--text-muted);
+            max-width: 760px;
+            margin: 0 auto 30px;
+        }
+
+        .feature-pills {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+
+        .pill {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .pill svg {
+            color: var(--accent-cyan);
+        }
+
+        .grid-templates {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+            gap: 28px;
+            margin-top: 20px;
+        }
+
+        .template-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .template-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .card-header {
+            height: 220px;
+            position: relative;
+            overflow: hidden;
+            background: #020617;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-preview-bg {
+            position: absolute;
+            inset: 0;
+            background-size: cover;
+            background-position: center top;
+            opacity: 0.75;
+            transition: transform 0.5s ease, opacity 0.3s ease;
+        }
+
+        .template-card:hover .card-preview-bg {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        .card-tag {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            background: rgba(10, 12, 16, 0.85);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-color);
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .card-tag.developer { color: var(--accent-cyan); border-color: rgba(6, 182, 212, 0.3); }
+        .card-tag.designer { color: #d97706; border-color: rgba(217, 119, 6, 0.3); }
+        .card-tag.photographer { color: #eab308; border-color: rgba(234, 179, 8, 0.3); }
+        .card-tag.freelancer { color: var(--accent-indigo); border-color: rgba(99, 102, 241, 0.3); }
+        .card-tag.creative { color: var(--accent-rose); border-color: rgba(244, 63, 94, 0.3); }
+
+        .card-body {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card-title {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .card-desc {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .card-features-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+
+        .feature-tag {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 0.78rem;
+            padding: 3px 10px;
+            border-radius: 6px;
+            color: #cbd5e1;
+        }
+
+        .card-footer {
+            display: flex;
+            gap: 12px;
+            margin-top: auto;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: var(--radius-md);
+            font-size: 0.92rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-primary {
+            background: var(--accent-indigo);
+            color: white;
+            flex: 1;
+        }
+
+        .btn-primary:hover {
+            background: #4f46e5;
+            box-shadow: 0 4px 14px rgba(99, 102, 241, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text-main);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.12);
+        }
+
+        /* Modal previewer */
+        .preview-modal {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.85);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            display: none;
+            flex-direction: column;
+        }
+
+        .preview-modal.active {
+            display: flex;
+        }
+
+        .preview-modal-header {
+            background: #0f172a;
+            border-bottom: 1px solid var(--border-color);
+            padding: 14px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .preview-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .modal-close-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+            font-size: 1.2rem;
+        }
+
+        .modal-close-btn:hover {
+            background: var(--accent-rose);
+        }
+
+        .preview-modal-iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            background: white;
+        }
+
+        footer {
+            margin-top: 80px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            padding-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <a href="#" class="logo">
+                <div class="logo-icon">5</div>
+                <span>PORTFOLIO TEMPLATES</span>
+            </a>
+            <div class="header-badges">
+                <span class="badge badge-emerald">🟢 5 / 5 Production Ready</span>
+                <span class="badge">Responsive & Interactive</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero-hub">
+            <h1 class="hero-title">Premium Portfolio Website Collection</h1>
+            <p class="hero-subtitle">
+                Explore 5 distinct, client-ready portfolio website templates crafted for developers, UI/UX designers, photographers, freelancers, and creative art directors.
+            </p>
+
+            <div class="feature-pills">
+                <div class="pill">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                    Unique Visual Identities
+                </div>
+                <div class="pill">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                    100% Mobile & Tablet Responsive
+                </div>
+                <div class="pill">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    Interactive JS Modals & Lightboxes
+                </div>
+                <div class="pill">
+                    <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    Zero External Dependencies
+                </div>
+            </div>
+        </section>
+
+        <div class="grid-templates">
+
+            <!-- 1. Developer Portfolio -->
+            <div class="template-card">
+                <div class="card-header">
+                    <div class="card-preview-bg" style="background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.2), #12161f), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80');"></div>
+                    <span class="card-tag developer">01. Developer</span>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Developer Portfolio</h2>
+                    <p class="card-desc">Dark cyber-slate IDE aesthetic with interactive terminal, live code runner demo, Git timeline, and code inspector project modals.</p>
+                    
+                    <ul class="card-features-list">
+                        <li class="feature-tag">Dark IDE Theme</li>
+                        <li class="feature-tag">Interactive Terminal</li>
+                        <li class="feature-tag">Git Timeline</li>
+                        <li class="feature-tag">Code Inspector Modal</li>
+                        <li class="feature-tag">Tech Stack Matrix</li>
+                    </ul>
+
+                    <div class="card-footer">
+                        <a href="./developer/index.html" class="btn btn-primary">Open Template &rarr;</a>
+                        <button onclick="previewTemplate('./developer/index.html', 'Developer Portfolio')" class="btn btn-secondary">Quick Preview</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Designer Portfolio -->
+            <div class="template-card">
+                <div class="card-header">
+                    <div class="card-preview-bg" style="background-image: linear-gradient(to bottom, rgba(28, 25, 23, 0.2), #12161f), url('https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80');"></div>
+                    <span class="card-tag designer">02. Designer</span>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Designer Portfolio</h2>
+                    <p class="card-desc">High-fashion editorial minimalism with asymmetric layout, Playfair typography, 4-step design process timeline, and wireframe prototype modal.</p>
+                    
+                    <ul class="card-features-list">
+                        <li class="feature-tag">Editorial Layout</li>
+                        <li class="feature-tag">Serif Typography</li>
+                        <li class="feature-tag">Design Process Tabs</li>
+                        <li class="feature-tag">Prototype Switcher</li>
+                        <li class="feature-tag">Case Study Modal</li>
+                    </ul>
+
+                    <div class="card-footer">
+                        <a href="./designer/index.html" class="btn btn-primary">Open Template &rarr;</a>
+                        <button onclick="previewTemplate('./designer/index.html', 'Designer Portfolio')" class="btn btn-secondary">Quick Preview</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Photographer Portfolio -->
+            <div class="template-card">
+                <div class="card-header">
+                    <div class="card-preview-bg" style="background-image: linear-gradient(to bottom, rgba(9, 9, 11, 0.2), #12161f), url('https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=800&q=80');"></div>
+                    <span class="card-tag photographer">03. Photographer</span>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Photographer Portfolio</h2>
+                    <p class="card-desc">Immersive dark gallery with full-bleed hero slider, masonry gallery layout, EXIF data viewer, and custom JS Lightbox zoom modal.</p>
+                    
+                    <ul class="card-features-list">
+                        <li class="feature-tag">Cinematic Dark Room</li>
+                        <li class="feature-tag">Full-Bleed Hero</li>
+                        <li class="feature-tag">Masonry Gallery</li>
+                        <li class="feature-tag">EXIF Data Popover</li>
+                        <li class="feature-tag">JS Lightbox Modal</li>
+                    </ul>
+
+                    <div class="card-footer">
+                        <a href="./photographer/index.html" class="btn btn-primary">Open Template &rarr;</a>
+                        <button onclick="previewTemplate('./photographer/index.html', 'Photographer Portfolio')" class="btn btn-secondary">Quick Preview</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Freelancer Portfolio -->
+            <div class="template-card">
+                <div class="card-header">
+                    <div class="card-preview-bg" style="background-image: linear-gradient(to bottom, rgba(30, 64, 175, 0.2), #12161f), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80');"></div>
+                    <span class="card-tag freelancer">04. Freelancer</span>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Freelancer Portfolio</h2>
+                    <p class="card-desc">High-converting SaaS/agency theme with tiered pricing package toggles, instant proposal quote calculator, and ROI impact statistics.</p>
+                    
+                    <ul class="card-features-list">
+                        <li class="feature-tag">SaaS Agency Theme</li>
+                        <li class="feature-tag">Pricing Package Toggle</li>
+                        <li class="feature-tag">Interactive Calculator</li>
+                        <li class="feature-tag">Client Logo Ticker</li>
+                        <li class="feature-tag">High-Trust CTAs</li>
+                    </ul>
+
+                    <div class="card-footer">
+                        <a href="./freelancer/index.html" class="btn btn-primary">Open Template &rarr;</a>
+                        <button onclick="previewTemplate('./freelancer/index.html', 'Freelancer Portfolio')" class="btn btn-secondary">Quick Preview</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 5. Creative Professional Portfolio -->
+            <div class="template-card">
+                <div class="card-header">
+                    <div class="card-preview-bg" style="background-image: linear-gradient(to bottom, rgba(5, 5, 5, 0.2), #12161f), url('https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=800&q=80');"></div>
+                    <span class="card-tag creative">05. Creative Pro</span>
+                </div>
+                <div class="card-body">
+                    <h2 class="card-title">Creative Professional Portfolio</h2>
+                    <p class="card-desc">Avant-garde studio aesthetic with acid lime accents, video showreel modal, kinetic marquee text, and staggered creative work matrix.</p>
+                    
+                    <ul class="card-features-list">
+                        <li class="feature-tag">Neo-Brutalist Studio</li>
+                        <li class="feature-tag">Kinetic Marquee</li>
+                        <li class="feature-tag">Showreel Video Modal</li>
+                        <li class="feature-tag">Acid Lime Accents</li>
+                        <li class="feature-tag">Staggered Work Matrix</li>
+                    </ul>
+
+                    <div class="card-footer">
+                        <a href="./creative-professional/index.html" class="btn btn-primary">Open Template &rarr;</a>
+                        <button onclick="previewTemplate('./creative-professional/index.html', 'Creative Pro Portfolio')" class="btn btn-secondary">Quick Preview</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Modal for Quick Preview -->
+    <div id="previewModal" class="preview-modal">
+        <div class="preview-modal-header">
+            <div class="preview-title">
+                <span id="previewModalTitle">Template Preview</span>
+            </div>
+            <button class="modal-close-btn" onclick="closePreviewModal()">&times;</button>
+        </div>
+        <iframe id="previewIframe" class="preview-modal-iframe" src="about:blank"></iframe>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Premium Portfolio Website Template Collection. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function previewTemplate(url, title) {
+            document.getElementById('previewModalTitle').innerText = title + ' (Live Preview)';
+            document.getElementById('previewIframe').src = url;
+            document.getElementById('previewModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePreviewModal() {
+            document.getElementById('previewModal').classList.remove('active');
+            document.getElementById('previewIframe').src = 'about:blank';
+            document.body.style.overflow = 'auto';
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closePreviewModal();
+        });
+    </script>
+</body>
+</html>

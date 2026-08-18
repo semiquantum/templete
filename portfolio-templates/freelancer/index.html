@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Jenkins | Web Developer & Digital Growth Consultant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                Sarah Jenkins<span>.dev</span>
+            </a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#pricing" class="nav-link">Packages & Rates</a></li>
+                <li><a href="#calculator" class="nav-link">Quote Calculator</a></li>
+                <li><a href="#projects" class="nav-link">Case Studies</a></li>
+                <li><a href="#process" class="nav-link">Workflow</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div style="display: flex; align-items: center; gap: 16px;">
+                <a href="#contact" class="btn btn-indigo" type="button">Book Discovery Call</a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu" type="button">&#9776;</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-grid">
+            <div>
+                <div class="rating-badge">
+                    <span>⭐ 5.0 Rating</span> • <span>Top Rated Plus Freelancer</span>
+                </div>
+                <h1 class="hero-title">
+                    I build web apps that <span class="gradient-text">scale your revenue.</span>
+                </h1>
+                <p class="hero-desc">
+                    Hi, I'm <strong>Sarah Jenkins</strong>. I help founders, SMBs, and digital agencies build high-converting websites, SaaS web applications, and custom e-commerce platforms.
+                </p>
+
+                <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                    <a href="#calculator" class="btn btn-indigo">Calculate Project Quote &rarr;</a>
+                    <a href="#projects" class="btn btn-outline">Explore Client Work</a>
+                </div>
+            </div>
+
+            <div style="position: relative;">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Sarah Jenkins" style="width: 100%; height: 440px; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--shadow-card);">
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Metrics Strip -->
+    <section class="metrics-strip">
+        <div class="container metrics-grid">
+            <div>
+                <div class="metric-num">250%</div>
+                <div class="metric-label">Avg. Conversion Lift</div>
+            </div>
+
+            <div>
+                <div class="metric-num">$4.2M+</div>
+                <div class="metric-label">Client Revenue Generated</div>
+            </div>
+
+            <div>
+                <div class="metric-num">98.4%</div>
+                <div class="metric-label">On-Time Delivery Rate</div>
+            </div>
+
+            <div>
+                <div class="metric-num">50+</div>
+                <div class="metric-label">Projects Completed</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services" style="padding: 90px 0;">
+        <div class="container">
+            <span class="section-tag" style="display: block; width: max-content; margin: 0 auto 12px;">CLIENT SOLUTIONS</span>
+            <h2 class="section-title" style="text-align: center;">Freelance Engineering Services</h2>
+            <p class="section-desc" style="text-align: center; margin: 0 auto 40px;">Tailored technical solutions designed to maximize conversion rates and revenue growth.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px;">
+                <div style="background: var(--bg-surface); padding: 32px; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+                    <div style="font-size: 2rem; color: var(--primary-indigo); margin-bottom: 16px;">⚡</div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Full-Stack Web App Development</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Custom React, Next.js, and Node.js web applications built with scalable databases and secure auth.</p>
+                </div>
+
+                <div style="background: var(--bg-surface); padding: 32px; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+                    <div style="font-size: 2rem; color: var(--primary-indigo); margin-bottom: 16px;">🛍️</div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Headless E-Commerce Platforms</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">High-performance online storefronts built with Shopify Plus, WooCommerce, and Stripe checkout integration.</p>
+                </div>
+
+                <div style="background: var(--bg-surface); padding: 32px; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+                    <div style="font-size: 2rem; color: var(--primary-indigo); margin-bottom: 16px;">🚀</div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Landing Page & Conversion Optimization</h3>
+                    <p style="color: var(--text-muted); font-size: 0.95rem;">Pixel-perfect, 100/100 Lighthouse performance landing pages engineered to convert visitors into paying clients.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services & Pricing Packages -->
+    <section class="pricing-section" id="pricing" style="background: var(--bg-surface); padding: 90px 0;">
+        <div class="container">
+            <span class="section-tag" style="display: block; width: max-content; margin: 0 auto 12px;">TRANSPARENT PRICING</span>
+            <h2 class="section-title" style="text-align: center;">Service Packages & Rates</h2>
+            <p class="section-desc" style="text-align: center; margin: 0 auto 30px;">Choose a fixed project scope or an ongoing monthly engineering retainer.</p>
+
+            <div class="toggle-container">
+                <span id="billingLabelFixed" style="font-weight:700; color:var(--primary-indigo);">Fixed Project</span>
+                <div class="toggle-switch" id="pricingToggle">
+                    <div class="toggle-slider"></div>
+                </div>
+                <span id="billingLabelMonthly" style="font-weight:700; color:var(--text-muted);">Monthly Retainer</span>
+            </div>
+
+            <div class="pricing-grid">
+
+                <!-- Package 1 -->
+                <div class="pricing-card" data-fixed="$2,500" data-monthly="$1,800">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 8px;">Landing Page & Marketing Site</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Ideal for new product launches, startup landing pages, and lead generation.</p>
+
+                    <div style="font-size: 2.5rem; font-weight: 800; margin-bottom: 20px;">
+                        <span class="price-num">$2,500</span><span class="price-period" style="font-size:1rem; color:var(--text-muted); font-weight:500;"> fixed</span>
+                    </div>
+
+                    <ul style="list-style: none; font-size: 0.9rem; margin-bottom: 28px; line-height: 2;">
+                        <li>✓ Custom Next.js / Tailwind Code</li>
+                        <li>✓ 100/100 Lighthouse Performance</li>
+                        <li>✓ Mobile Responsive Layout</li>
+                        <li>✓ Contact Form & Analytics</li>
+                    </ul>
+
+                    <a href="#contact" class="btn btn-outline" style="width: 100%;">Select Package &rarr;</a>
+                </div>
+
+                <!-- Package 2 (Featured) -->
+                <div class="pricing-card featured" data-fixed="$5,500" data-monthly="$3,800">
+                    <div style="position: absolute; top: -14px; right: 24px; background: var(--primary-indigo); color: white; padding: 4px 12px; border-radius: 12px; font-size: 0.75rem; font-weight: 700;">MOST POPULAR</div>
+                    <h3 style="font-size: 1.3rem; margin-bottom: 8px;">Full Web Application / SaaS</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Complete custom web application with database, authentication, and payments.</p>
+
+                    <div style="font-size: 2.5rem; font-weight: 800; margin-bottom: 20px;">
+                        <span class="price-num">$5,500</span><span class="price-period" style="font-size:1rem; color:var(--text-muted); font-weight:500;"> fixed</span>
+                    </div>
+
+                    <ul style="list-style: none; font-size: 0.9rem; margin-bottom: 28px; line-height: 2;">
+                        <li>✓ React / Next.js Full-Stack App</li>
+                        <li>✓ User Auth & Stripe Payments</li>
+                        <li>✓ Database & API Integration</li>
+                        <li>✓ 30 Days Post-Launch Support</li>
+                    </ul>
+
+                    <a href="#contact" class="btn btn-indigo" style="width: 100%;">Select Package &rarr;</a>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="pricing-card" data-fixed="$4,000" data-monthly="$2,900">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 8px;">E-Commerce Storefront</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">High-converting online store with seamless checkout and inventory syncing.</p>
+
+                    <div style="font-size: 2.5rem; font-weight: 800; margin-bottom: 20px;">
+                        <span class="price-num">$4,000</span><span class="price-period" style="font-size:1rem; color:var(--text-muted); font-weight:500;"> fixed</span>
+                    </div>
+
+                    <ul style="list-style: none; font-size: 0.9rem; margin-bottom: 28px; line-height: 2;">
+                        <li>✓ Headless Shopify / WooCommerce</li>
+                        <li>✓ Product Catalog & Cart</li>
+                        <li>✓ Payment Gateway Integration</li>
+                        <li>✓ SEO & Conversion Optimization</li>
+                    </ul>
+
+                    <a href="#contact" class="btn btn-outline" style="width: 100%;">Select Package &rarr;</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Project Quote Calculator -->
+    <section class="calc-section" id="calculator" style="padding: 90px 0;">
+        <div class="container">
+            <span class="section-tag">INSTANT ESTIMATOR</span>
+            <h2 class="section-title">Interactive Project Quote Calculator</h2>
+            <p class="section-desc">Select the features your project requires to calculate an instant cost estimate and timeframe.</p>
+
+            <div class="calc-box">
+                <div class="calc-options">
+                    <label class="calc-option-label">
+                        <input type="checkbox" class="calc-checkbox" data-cost="800" data-days="3" checked>
+                        <span>Custom UI/UX Mobile Responsive Design (+ $800, 3 days)</span>
+                    </label>
+
+                    <label class="calc-option-label">
+                        <input type="checkbox" class="calc-checkbox" data-cost="1200" data-days="5" checked>
+                        <span>Next.js / React Frontend Development (+ $1,200, 5 days)</span>
+                    </label>
+
+                    <label class="calc-option-label">
+                        <input type="checkbox" class="calc-checkbox" data-cost="1500" data-days="7">
+                        <span>Node.js / Database Backend & APIs (+ $1,500, 7 days)</span>
+                    </label>
+
+                    <label class="calc-option-label">
+                        <input type="checkbox" class="calc-checkbox" data-cost="900" data-days="4">
+                        <span>Stripe Payment & Subscription Gateway (+ $900, 4 days)</span>
+                    </label>
+
+                    <label class="calc-option-label">
+                        <input type="checkbox" class="calc-checkbox" data-cost="600" data-days="2">
+                        <span>Headless CMS Integration (+ $600, 2 days)</span>
+                    </label>
+                </div>
+
+                <div class="calc-result-box">
+                    <div style="font-size: 0.88rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">ESTIMATED INVESTMENT</div>
+                    <div id="calcTotalPrice" style="font-size: 3rem; font-weight: 800; color: var(--primary-indigo); margin: 10px 0;">$3,500</div>
+                    
+                    <div style="font-size: 0.88rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">ESTIMATED TIMELINE</div>
+                    <div id="calcTimeline" style="font-size: 1.2rem; font-weight: 700; color: var(--text-main); margin-bottom: 24px;">15 Business Days</div>
+
+                    <button id="copyEstimateBtn" class="btn btn-indigo" style="width: 100%;" type="button">Use This Estimate in Contact &rarr;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies & Featured Work Section -->
+    <section class="projects-section" id="projects" style="padding: 90px 0; background: var(--bg-surface);">
+        <div class="container">
+            <span class="section-tag" style="display: block; width: max-content; margin: 0 auto 12px;">CLIENT CASE STUDIES</span>
+            <h2 class="section-title" style="text-align: center;">Featured Client Work</h2>
+            <p class="section-desc" style="text-align: center; margin: 0 auto 40px;">Real business results delivered for fast-growing startups and digital products.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 32px;">
+
+                <!-- Case 1 -->
+                <div style="background: white; border-radius: var(--radius-lg); border: 1px solid var(--border-color); overflow: hidden; box-shadow: var(--shadow-card);">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80'" alt="CloudPulse Analytics" style="width: 100%; height: 220px; object-fit: cover;">
+                    <div style="padding: 28px;">
+                        <span style="background: rgba(79, 70, 229, 0.1); color: var(--primary-indigo); padding: 4px 10px; border-radius: 4px; font-weight: 700; font-size: 0.78rem;">SAAS APPLICATION</span>
+                        <h3 style="font-size: 1.4rem; margin: 10px 0 8px;">CloudPulse Analytics Engine</h3>
+                        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 16px;">Built full-stack telemetry analytics dashboard with real-time WebSocket chart streams.</p>
+                        <div style="font-weight: 700; color: var(--accent-emerald); font-size: 0.95rem; margin-bottom: 20px;">📈 Result: +210% Conversion Lift</div>
+                        <a href="#contact" class="btn btn-indigo" style="width: 100%;">Request Similar Build &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div style="background: white; border-radius: var(--radius-lg); border: 1px solid var(--border-color); overflow: hidden; box-shadow: var(--shadow-card);">
+                    <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80'" alt="Velvet & Oak Store" style="width: 100%; height: 220px; object-fit: cover;">
+                    <div style="padding: 28px;">
+                        <span style="background: rgba(79, 70, 229, 0.1); color: var(--primary-indigo); padding: 4px 10px; border-radius: 4px; font-weight: 700; font-size: 0.78rem;">HEADLESS E-COMMERCE</span>
+                        <h3 style="font-size: 1.4rem; margin: 10px 0 8px;">Velvet & Oak Storefront</h3>
+                        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 16px;">Custom Shopify storefront with instantaneous page loads and custom checkout cart.</p>
+                        <div style="font-weight: 700; color: var(--accent-emerald); font-size: 0.95rem; margin-bottom: 20px;">🛍️ Result: $1.4M Annual Sales</div>
+                        <a href="#contact" class="btn btn-indigo" style="width: 100%;">Request Similar Build &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div style="background: white; border-radius: var(--radius-lg); border: 1px solid var(--border-color); overflow: hidden; box-shadow: var(--shadow-card);">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80'" alt="Apex Cloud Launch" style="width: 100%; height: 220px; object-fit: cover;">
+                    <div style="padding: 28px;">
+                        <span style="background: rgba(79, 70, 229, 0.1); color: var(--primary-indigo); padding: 4px 10px; border-radius: 4px; font-weight: 700; font-size: 0.78rem;">LANDING PAGE</span>
+                        <h3 style="font-size: 1.4rem; margin: 10px 0 8px;">Apex Cloud Launch Site</h3>
+                        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 16px;">High-converting marketing site engineered with Next.js and animated product demos.</p>
+                        <div style="font-weight: 700; color: var(--accent-emerald); font-size: 0.95rem; margin-bottom: 20px;">🚀 Result: 14,000 Signups in 30 Days</div>
+                        <a href="#contact" class="btn btn-indigo" style="width: 100%;">Request Similar Build &rarr;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Process Section -->
+    <section class="process-section" id="process" style="padding: 90px 0;">
+        <div class="container">
+            <span class="section-tag" style="display: block; width: max-content; margin: 0 auto 12px;">CLIENT WORKFLOW</span>
+            <h2 class="section-title" style="text-align: center;">4-Stage Development Process</h2>
+            <p class="section-desc" style="text-align: center; margin: 0 auto 40px;">How we collaborate to take your web project from initial scope to live launch.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px;">
+                <div style="background: var(--bg-surface); padding: 28px; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+                    <div style="font-weight: 800; color: var(--primary-indigo); font-size: 1.5rem; margin-bottom: 10px;">01. Discovery</div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Strategy & Scope</h3>
+                    <p style="color: var(--text-muted); font-size: 0.88rem;">We align on technical requirements, target metrics, architecture, and exact milestones.</p>
+                </div>
+
+                <div style="background: var(--bg-surface); padding: 28px; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+                    <div style="font-weight: 800; color: var(--primary-indigo); font-size: 1.5rem; margin-bottom: 10px;">02. UI/UX Blueprint</div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Wireframe & Design</h3>
+                    <p style="color: var(--text-muted); font-size: 0.88rem;">Figma prototypes are reviewed and approved before writing production code.</p>
+                </div>
+
+                <div style="background: var(--bg-surface); padding: 28px; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+                    <div style="font-weight: 800; color: var(--primary-indigo); font-size: 1.5rem; margin-bottom: 10px;">03. Development</div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 8px;">Full-Stack Build</h3>
+                    <p style="color: var(--text-muted); font-size: 0.88rem;">Clean React / Node.js code implementation with weekly staging demo updates.</p>
+                </div>
+
+                <div style="background: var(--bg-surface); padding: 28px; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+                    <div style="font-weight: 800; color: var(--primary-indigo); font-size: 1.5rem; margin-bottom: 10px;">04. Launch</div>
+                    <h3 style="font-size: 1.1rem; margin-bottom: 8px;">QA & Scaling</h3>
+                    <p style="color: var(--text-muted); font-size: 0.88rem;">Lighthouse optimization, domain deployment, and 30-day post-launch support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" style="padding: 90px 0; background: var(--bg-surface);">
+        <div class="container">
+            <span class="section-tag" style="display: block; width: max-content; margin: 0 auto 12px;">CLIENT PROOF</span>
+            <h2 class="section-title" style="text-align: center;">What Clients Say</h2>
+
+            <div style="background: white; border: 1px solid var(--border-color); padding: 36px; border-radius: var(--radius-lg); max-width: 760px; margin: 0 auto; box-shadow: var(--shadow-card);">
+                <div style="color: var(--accent-amber); font-size: 1.2rem; margin-bottom: 14px;">⭐⭐⭐⭐⭐</div>
+                <p style="font-size: 1.1rem; color: var(--text-main); font-style: italic; margin-bottom: 20px;">
+                    "Sarah delivered our SaaS web application 5 days ahead of schedule. Her code quality is exceptional, and our conversion rate jumped by 210% within the first two weeks of launch!"
+                </p>
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="David Miller" style="width: 44px; height: 44px; border-radius: 50%; object-fit: cover;">
+                    <div>
+                        <div style="font-weight: 700;">David Miller</div>
+                        <div style="font-size: 0.85rem; color: var(--text-muted);">CEO & Founder, CloudPulse</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact" style="padding: 90px 0;">
+        <div class="container" style="max-width: 750px;">
+            <span class="section-tag" style="display: block; width: max-content; margin: 0 auto 12px;">LET'S CONNECT</span>
+            <h2 class="section-title" style="text-align: center;">Start Your Project</h2>
+            <p class="section-desc" style="text-align: center; margin: 0 auto 30px;">Fill out the form below to receive a personalized proposal within 24 hours.</p>
+
+            <form id="freelancerContactForm" style="background: var(--bg-surface); padding: 36px; border-radius: var(--radius-lg); border: 1px solid var(--border-color);">
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-weight: 700; font-size: 0.88rem; margin-bottom: 6px;">YOUR NAME</label>
+                    <input type="text" id="freelancerClientName" style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius-sm);" placeholder="John Doe" required>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-weight: 700; font-size: 0.88rem; margin-bottom: 6px;">EMAIL ADDRESS</label>
+                    <input type="email" style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius-sm);" placeholder="john@company.com" required>
+                </div>
+
+                <div style="margin-bottom: 20px;">
+                    <label style="display: block; font-weight: 700; font-size: 0.88rem; margin-bottom: 6px;">PROJECT DESCRIPTION & BUDGET</label>
+                    <textarea id="freelancerMessage" style="width: 100%; padding: 12px; border: 1px solid var(--border-color); border-radius: var(--radius-sm); min-height: 120px;" placeholder="Tell me about your project requirement..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-indigo" style="width: 100%;" type="button">Submit Proposal Request &rarr;</button>
+
+                <div id="formStatusMsg" style="margin-top: 16px; font-weight: 700; color: var(--primary-indigo); text-align: center; display: none;"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Sarah Jenkins Freelance Consulting. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
