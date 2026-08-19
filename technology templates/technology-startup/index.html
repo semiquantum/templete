@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PrismOS — The decentralized real-time edge data mesh and collaborative application runtime.">
+  <meta name="theme-color" content="#FF5A36">
+  <title>PrismOS — Next-Gen Real-Time Edge Data Mesh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Top Startup Ticker Bar -->
+  <div class="startup-ticker">
+    <div class="container ticker-inner">
+      <span class="ticker-badge">Y COMBINATOR W26 BACKED</span>
+      <p class="ticker-text">🚀 Series Seed announced: $6.2M to decentralize real-time edge computing.</p>
+      <a href="#traction" class="ticker-link">Read Announcement →</a>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="PrismOS Homepage">
+        <div class="brand-shape">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+            <polygon points="13 2, 24 22, 2 22" fill="#FF5A36"/>
+            <polygon points="13 8, 20 20, 6 20" fill="#FAF8F5"/>
+            <polygon points="13 12, 17 19, 9 19" fill="#111827"/>
+          </svg>
+        </div>
+        <span class="brand-name">PRISM<span class="brand-os">OS</span></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="menu">
+        <a href="#product">Product</a>
+        <a href="#problem-solution">Why PrismOS</a>
+        <a href="#features">Features</a>
+        <a href="#tech-stack">Edge Mesh</a>
+        <a href="#traction">Traction</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="nav-cta">Claim Early Access ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div id="top" aria-hidden="true"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-left reveal">
+          <div class="hero-tag">
+            <span class="pulse-coral"></span>
+            <span>DECENTRALIZED EDGE RUNTIME</span>
+          </div>
+          <h1>The real-time data mesh built for multiplayer apps.</h1>
+          <p class="hero-p">
+            PrismOS replaces centralized backend databases with a zero-latency peer-to-peer data mesh. Synchronize state across millions of devices in sub-5ms without provisioning servers.
+          </p>
+          <div class="hero-cta-group">
+            <a class="btn btn-coral" href="#pricing">Get Started Free ↗</a>
+            <a class="btn btn-dark" href="#product">Explore SDK</a>
+          </div>
+          <div class="hero-backers">
+            <span>BACKED BY TOP FOUNDERS AT:</span>
+            <div class="backer-logos">
+              <strong>STRIPE</strong>
+              <strong>VERCEL</strong>
+              <strong>FIGMA</strong>
+              <strong>LINEAR</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Product Card / Edge Node Telemetry -->
+        <div class="hero-right reveal">
+          <div class="mesh-card">
+            <div class="mesh-top">
+              <span class="mesh-label">PrismOS Node // Global Mesh</span>
+              <span class="mesh-status">● 4,820 Active Edge Nodes</span>
+            </div>
+            <div class="mesh-body">
+              <div class="mesh-visual">
+                <div class="node-center">
+                  <span>PRISM CORE</span>
+                  <small>Zero-Copy State</small>
+                </div>
+                <div class="node-sat n1">SF · 1.8ms</div>
+                <div class="node-sat n2">LON · 4.2ms</div>
+                <div class="node-sat n3">TYO · 3.1ms</div>
+                <div class="node-sat n4">SYD · 5.0ms</div>
+              </div>
+              <div class="mesh-stats-row">
+                <div>
+                  <span class="ms-lbl">CRDT Sync Rate</span>
+                  <strong class="ms-val">0.00ms Conflict</strong>
+                </div>
+                <div>
+                  <span class="ms-lbl">Global Latency P95</span>
+                  <strong class="ms-val">3.8 ms</strong>
+                </div>
+              </div>
+            </div>
+            <div class="mesh-footer">
+              <code>npm install @prismos/mesh-client</code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problem vs Solution Section -->
+    <section class="section section-tint" id="problem-solution">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="eyebrow">01 · THE PROBLEM VS SOLUTION</span>
+          <h2>Centralized backends are broken for modern interactive apps.</h2>
+          <p class="heading-lead">Why modern founders are switching from centralized databases to edge state meshes.</p>
+        </div>
+
+        <div class="comparison-grid">
+          <div class="comp-box old reveal">
+            <span class="comp-tag old-tag">THE OLD WAY // CENTRALIZED SERVERS</span>
+            <h3>Fragmented Cloud Plumbing</h3>
+            <ul class="comp-list">
+              <li>High latency roundtrips to us-east-1 data centers (120ms+)</li>
+              <li>Fragile WebSockets and Redis pub/sub sync loops</li>
+              <li>Unpredictable database connection pooling timeouts</li>
+              <li>Expensive cloud compute bills for idle websocket servers</li>
+            </ul>
+          </div>
+
+          <div class="comp-box new reveal">
+            <span class="comp-tag new-tag">THE PRISMOS WAY // EDGE DATA MESH</span>
+            <h3>Sub-5ms Peer-to-Peer State</h3>
+            <ul class="comp-list">
+              <li>State lives directly on local device and replicates to closest edge node</li>
+              <li>Mathematical CRDTs guarantee 100% conflict-free merges</li>
+              <li>Offline-first by default with instant background syncing</li>
+              <li>Zero backend infrastructure to manage or scale</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="section" id="product">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">02 · CORE PRODUCT</span>
+            <h2>Three powerful primitives for your startup stack.</h2>
+          </div>
+          <p class="heading-desc">
+            Everything you need to build collaborative, local-first applications with seamless sync.
+          </p>
+        </div>
+
+        <div class="products-grid">
+          <article class="prod-card reveal">
+            <div class="prod-icon">⚡</div>
+            <h3>PrismMesh Engine</h3>
+            <p>A distributed WebAssembly state engine compiled in Rust that runs inside browsers, mobile apps, and edge workers with instant synchronization.</p>
+            <div class="prod-badge">WebAssembly + Rust</div>
+          </article>
+
+          <article class="prod-card reveal">
+            <div class="prod-icon">🔄</div>
+            <h3>PrismSync CRDTs</h3>
+            <p>Conflict-free Replicated Data Types tailored for collaborative text, nested JSON trees, spatial canvas coordinates, and multi-cursor state.</p>
+            <div class="prod-badge">Deterministic Merges</div>
+          </article>
+
+          <article class="prod-card reveal">
+            <div class="prod-icon">🛡️</div>
+            <h3>PrismAuth & Vault</h3>
+            <p>Cryptographic public-key identity with fine-grained document encryption. Users own their data keys with zero vendor lock-in.</p>
+            <div class="prod-badge">End-to-End Encrypted</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section section-tint" id="features">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="eyebrow">03 · DEVELOPER FEATURES</span>
+          <h2>Built for speed, simplicity, and delightful DX.</h2>
+        </div>
+
+        <div class="features-mosaic">
+          <div class="feat-tile reveal">
+            <span class="tile-icon">📱</span>
+            <h3>Offline-First by Design</h3>
+            <p>Users can work seamlessly on planes or subway tunnels. State automatically merges when reconnected with zero lost edits.</p>
+          </div>
+
+          <div class="feat-tile reveal">
+            <span class="tile-icon">🌐</span>
+            <h3>Zero Server Provisioning</h3>
+            <p>No Postgres clusters, no Redis instances, no Dockerfiles. Just import `@prismos/react` and declare your state schemas.</p>
+          </div>
+
+          <div class="feat-tile reveal">
+            <span class="tile-icon">🔒</span>
+            <h3>E2E Encrypted Rooms</h3>
+            <p>Zero-knowledge room security ensures neither our servers nor ISPs can inspect your collaborative document payloads.</p>
+          </div>
+
+          <div class="feat-tile reveal">
+            <span class="tile-icon">📦</span>
+            <h3>Lightweight 12KB Footprint</h3>
+            <p>Tiny client bundle with zero external runtime dependencies. Loads in under 20 milliseconds on 3G mobile devices.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section class="section" id="tech-stack">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow">04 · ARCHITECTURE & EDGE STACK</span>
+            <h2>Under the hood of the PrismOS network.</h2>
+          </div>
+          <p class="heading-desc">
+            Open standards and bleeding-edge protocols engineered for extreme performance.
+          </p>
+        </div>
+
+        <div class="startup-stack-grid">
+          <div class="stack-item reveal">
+            <h4>Runtime & Logic</h4>
+            <p>WebAssembly (WASM), Rust, TypeScript, WebGPU Compute.</p>
+          </div>
+          <div class="stack-item reveal">
+            <h4>Transport Protocol</h4>
+            <p>QUIC (HTTP/3), WebTransport, WebRTC DataChannels, Encrypted TLS 1.3.</p>
+          </div>
+          <div class="stack-item reveal">
+            <h4>State Storage</h4>
+            <p>IndexedDB on client, RocksDB at edge nodes, Cloudflare Durable Objects.</p>
+          </div>
+          <div class="stack-item reveal">
+            <h4>Cryptography</h4>
+            <p>Ed25519 signatures, XChaCha20-Poly1305 symmetric room encryption.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Traction & Statistics Section -->
+    <section class="section-traction" id="traction">
+      <div class="container">
+        <div class="traction-grid">
+          <div class="trac-card reveal">
+            <strong class="trac-num">18,500+</strong>
+            <span class="trac-title">Active Developers</span>
+            <span class="trac-sub">Building multiplayer and local-first apps</span>
+          </div>
+          <div class="trac-card reveal">
+            <strong class="trac-num">&lt; 3.8ms</strong>
+            <span class="trac-title">Global P95 Sync Latency</span>
+            <span class="trac-sub">Across 85+ global edge points-of-presence</span>
+          </div>
+          <div class="trac-card reveal">
+            <strong class="trac-num">1.4B+</strong>
+            <span class="trac-title">Monthly State Replications</span>
+            <span class="trac-sub">Zero data loss or state divergence recorded</span>
+          </div>
+          <div class="trac-card reveal">
+            <strong class="trac-num">4.9 ★</strong>
+            <span class="trac-title">Developer NPS Rating</span>
+            <span class="trac-sub">Ranked #1 Developer Tool on ProductHunt</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Roadmap -->
+    <section class="section section-tint" id="roadmap">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="eyebrow">05 · WHAT WE ARE BUILDING</span>
+          <h2>Product Roadmap & Milestones.</h2>
+        </div>
+
+        <div class="roadmap-timeline">
+          <div class="road-card reveal">
+            <span class="road-q completed">Q1 2026 · COMPLETED</span>
+            <h3>PrismCore v1.0 Launch</h3>
+            <p>Rust WASM client SDK, CRDT text synchronization, React and Vue hooks, 85 PoP edge network.</p>
+          </div>
+
+          <div class="road-card current reveal">
+            <span class="road-q in-progress">Q2 2026 · IN PROGRESS</span>
+            <h3>PrismSpatial & Canvas</h3>
+            <p>Infinite canvas spatial indexing, multiplayer cursor broadcasting, WebGPU vector rendering.</p>
+          </div>
+
+          <div class="road-card reveal">
+            <span class="road-q upcoming">Q3 2026 · UPCOMING</span>
+            <h3>Edge AI Agent Mesh</h3>
+            <p>Run lightweight SLMs directly within edge sync rooms to provide autonomous co-pilot features.</p>
+          </div>
+
+          <div class="road-card reveal">
+            <span class="road-q upcoming">Q4 2026 · PLANNED</span>
+            <h3>Sovereign Private Meshes</h3>
+            <p>Self-hosted cluster deployments for healthcare and financial enterprise compliance.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="eyebrow">06 · SIMPLE PRICING</span>
+          <h2>Build for free. Scale transparently as you grow.</h2>
+          <p class="heading-desc">Zero credit card required to start. Generous free tier for hobbyists and early-stage founders.</p>
+        </div>
+
+        <div class="startup-pricing-grid">
+          <div class="start-price-card reveal">
+            <span class="plan-tag">COMMUNITY // FREE</span>
+            <div class="plan-cost">
+              <strong>$0</strong>
+              <small>/ forever</small>
+            </div>
+            <p class="plan-desc">For indie hackers, hackathon projects, and early MVPs.</p>
+            <ul class="plan-list">
+              <li>100 Concurrent Connections</li>
+              <li>1 Million State Syncs / month</li>
+              <li>Global Edge Mesh Routing</li>
+              <li>Community Discord Support</li>
+            </ul>
+            <a class="btn btn-outline-dark btn-block" href="#contact">Start Building Free ↗</a>
+          </div>
+
+          <div class="start-price-card featured reveal">
+            <span class="startup-ribbon">EARLY FOUNDER SPECIAL</span>
+            <span class="plan-tag">FOUNDER SEED</span>
+            <div class="plan-cost">
+              <strong>$24</strong>
+              <small>/ month</small>
+            </div>
+            <p class="plan-desc">For fast-growing startups shipping multiplayer commercial apps.</p>
+            <ul class="plan-list">
+              <li>5,000 Concurrent Connections</li>
+              <li>50 Million State Syncs / month</li>
+              <li>Custom Domain Edge Routing</li>
+              <li>End-to-End Encryption Keys</li>
+              <li>Priority Engineering Support</li>
+            </ul>
+            <a class="btn btn-coral btn-block" href="#contact">Get Founder Tier ↗</a>
+          </div>
+
+          <div class="start-price-card reveal">
+            <span class="plan-tag">SCALEUP UNLIMITED</span>
+            <div class="plan-cost">
+              <strong>$64</strong>
+              <small>/ month</small>
+            </div>
+            <p class="plan-desc">For established apps with high-concurrency real-time workloads.</p>
+            <ul class="plan-list">
+              <li>50,000+ Concurrent Connections</li>
+              <li>Unlimited State Replications</li>
+              <li>Dedicated Regional Mesh Cluster</li>
+              <li>99.99% Financial Uptime SLA</li>
+              <li>Dedicated Slack Channel Access</li>
+            </ul>
+            <a class="btn btn-outline-dark btn-block" href="#contact">Upgrade to Scaleup ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integrations Section -->
+    <section class="section section-tint" id="integrations">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="eyebrow">07 · ECOSYSTEM COMPATIBILITY</span>
+          <h2>Works with your favorite frontend frameworks.</h2>
+        </div>
+
+        <div class="int-grid-startup">
+          <div class="int-box-st reveal"><strong>React & Next.js</strong><span>1-line hook sync</span></div>
+          <div class="int-box-st reveal"><strong>Vue & Nuxt</strong><span>Reactive pinia store</span></div>
+          <div class="int-box-st reveal"><strong>Svelte 5</strong><span>Runes integration</span></div>
+          <div class="int-box-st reveal"><strong>React Native</strong><span>Mobile offline sync</span></div>
+          <div class="int-box-st reveal"><strong>Flutter</strong><span>Native Dart FFI bindings</span></div>
+          <div class="int-box-st reveal"><strong>Supabase</strong><span>Edge auth connectors</span></div>
+          <div class="int-box-st reveal"><strong>Figma Plugins</strong><span>Real-time canvas sync</span></div>
+          <div class="int-box-st reveal"><strong>Cloudflare</strong><span>Workers deployment</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="eyebrow">08 · FOUNDER LOVE</span>
+          <h2>Loved by developers building the future of software.</h2>
+        </div>
+
+        <div class="startup-testimonials">
+          <div class="st-card reveal">
+            <p class="st-quote">“We built a real-time collaborative whiteboarding app in 3 days using PrismOS. In other stacks, writing WebSockets and conflict resolution would have taken 4 months.”</p>
+            <div class="st-author">
+              <div class="st-avatar">AK</div>
+              <div>
+                <strong>Alex Kim</strong>
+                <span>Founder & CEO, CollabFlow (YC S25)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="st-card reveal">
+            <p class="st-quote">“The offline-first synchronization feels like magic. Our field technicians can update schematics underground and it syncs the instant they walk into cell range.”</p>
+            <div class="st-author">
+              <div class="st-avatar">ER</div>
+              <div>
+                <strong>Emma Rodriguez</strong>
+                <span>Lead Architect, FieldCraft Mobile</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="st-card reveal">
+            <p class="st-quote">“PrismOS reduced our cloud server bills to zero. No websocket servers to maintain, no memory leak panic at 3 AM. Truly the next paradigm.”</p>
+            <div class="st-author">
+              <div class="st-avatar">DL</div>
+              <div>
+                <strong>Devin Liu</strong>
+                <span>CTO, CanvasOS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-tint" id="faq">
+      <div class="container faq-narrow-st">
+        <div class="section-heading text-center">
+          <span class="eyebrow">09 · FAQ</span>
+          <h2>Frequently Asked Questions.</h2>
+        </div>
+
+        <div class="st-faq-list">
+          <div class="st-faq-item">
+            <button class="st-faq-btn" type="button" aria-expanded="false">
+              <span>How does conflict-free resolution work during concurrent edits?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="st-faq-body" hidden>
+              <p>PrismOS implements state-based CRDTs (Conflict-free Replicated Data Types) with Lamport timestamps, ensuring mathematical determinism: regardless of packet arrival order, every client converges to the exact same state without data loss.</p>
+            </div>
+          </div>
+
+          <div class="st-faq-item">
+            <button class="st-faq-btn" type="button" aria-expanded="false">
+              <span>Do I still need a traditional backend database?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="st-faq-body" hidden>
+              <p>For collaborative real-time state, no! For cold relational persistence, you can use our built-in webhook connectors to automatically stream room snapshots into PostgreSQL, Supabase, or S3.</p>
+            </div>
+          </div>
+
+          <div class="st-faq-item">
+            <button class="st-faq-btn" type="button" aria-expanded="false">
+              <span>Can we self-host PrismOS on our own Kubernetes cluster?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="st-faq-body" hidden>
+              <p>Yes. Our Scaleup tier includes Helm charts and Docker images for deploying private mesh nodes across your own private cloud or on-premises servers.</p>
+            </div>
+          </div>
+
+          <div class="st-faq-item">
+            <button class="st-faq-btn" type="button" aria-expanded="false">
+              <span>Is this template ready to be deployed for my startup?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="st-faq-body" hidden>
+              <p>Yes! It is built purely with HTML5, CSS3, and ES6 JavaScript. Simply edit the copy and CSS variables in style.css to launch your startup landing page.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="startup-cta-section">
+      <div class="container text-center">
+        <div class="startup-cta-box reveal">
+          <span class="eyebrow-coral">START BUILDING TODAY</span>
+          <h2>Join 18,000+ developers on the PrismOS mesh.</h2>
+          <p class="cta-desc">Launch your next multiplayer, real-time application in minutes with zero server headaches.</p>
+          <div class="cta-btn-group">
+            <a class="btn btn-coral btn-lg" href="#pricing">Claim Early Founder Access ↗</a>
+            <a class="btn btn-dark btn-lg" href="#contact">Schedule Developer Demo</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section & Early Access Form -->
+    <section class="section" id="contact">
+      <div class="container contact-startup-grid">
+        <div class="st-contact-info reveal">
+          <span class="eyebrow">10 · GET EARLY ACCESS</span>
+          <h2>Let's build the real-time future together.</h2>
+          <p class="contact-sub">
+            Have questions about custom high-concurrency throughput or enterprise private mesh deployment? Talk directly to our founding engineers.
+          </p>
+
+          <div class="st-points">
+            <div class="st-pt">
+              <span class="st-pt-tag">Founding Engineers</span>
+              <strong>founders@prismos.dev</strong>
+            </div>
+            <div class="st-pt">
+              <span class="st-pt-tag">Discord Community</span>
+              <strong>discord.gg/prismos-devs</strong>
+            </div>
+            <div class="st-pt">
+              <span class="st-pt-tag">Startup HQ</span>
+              <strong>548 Market Street, Suite 3200, San Francisco, CA 94104</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="st-form-card reveal">
+          <form class="contact-form" id="startupForm" novalidate>
+            <div class="form-header-st">
+              <h3>Claim Early Founder Access</h3>
+              <p>All fields marked with * are required.</p>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="st-field">
+                <label for="stName">Full Name *</label>
+                <input type="text" id="stName" name="name" required placeholder="Alex Kim" autocomplete="name">
+                <small class="error-msg" data-error-for="stName"></small>
+              </div>
+
+              <div class="st-field">
+                <label for="stEmail">Work Email *</label>
+                <input type="email" id="stEmail" name="email" required placeholder="alex@collabflow.io" autocomplete="email">
+                <small class="error-msg" data-error-for="stEmail"></small>
+              </div>
+            </div>
+
+            <div class="form-grid-2">
+              <div class="st-field">
+                <label for="stProject">Startup / Project Name *</label>
+                <input type="text" id="stProject" name="project" required placeholder="CollabFlow App">
+                <small class="error-msg" data-error-for="stProject"></small>
+              </div>
+
+              <div class="st-field">
+                <label for="stPlan">Target Tier *</label>
+                <select id="stPlan" name="tier" required>
+                  <option value="">Select a plan</option>
+                  <option value="free">Community Free ($0)</option>
+                  <option value="founder">Founder Seed Tier ($24/mo)</option>
+                  <option value="scaleup">Scaleup Unlimited ($64/mo)</option>
+                  <option value="custom">Custom Enterprise Mesh</option>
+                </select>
+                <small class="error-msg" data-error-for="stPlan"></small>
+              </div>
+            </div>
+
+            <div class="st-field">
+              <label for="stAppType">What are you building? *</label>
+              <textarea id="stAppType" name="message" rows="3" required placeholder="Describe your app (e.g. collaborative canvas, multiplayer editor, offline field tool)..."></textarea>
+              <small class="error-msg" data-error-for="stAppType"></small>
+            </div>
+
+            <button class="btn btn-coral btn-block" type="submit">Submit Early Access Request ↗</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-st-grid">
+      <div class="footer-st-brand">
+        <div class="brand">
+          <div class="brand-shape">
+            <svg width="20" height="20" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+              <polygon points="13 2, 24 22, 2 22" fill="#FF5A36"/>
+              <polygon points="13 8, 20 20, 6 20" fill="#FAF8F5"/>
+              <polygon points="13 12, 17 19, 9 19" fill="#111827"/>
+            </svg>
+          </div>
+          <span class="brand-name font-white">PRISM<span class="brand-os">OS</span></span>
+        </div>
+        <p class="footer-desc-st">
+          The decentralized real-time edge data mesh and collaborative application runtime for modern software creators.
+        </p>
+        <div class="st-tag-row">
+          <span>Rust WASM</span>
+          <span>QUIC Engine</span>
+          <span>Zero Server Overhead</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#product">PrismMesh Engine</a></li>
+          <li><a href="#product">PrismSync CRDTs</a></li>
+          <li><a href="#features">Offline-First Tech</a></li>
+          <li><a href="#tech-stack">Edge Architecture</a></li>
+          <li><a href="#integrations">Framework Hooks</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Startup</h4>
+        <ul>
+          <li><a href="#problem-solution">Why PrismOS</a></li>
+          <li><a href="#traction">Traction & Stats</a></li>
+          <li><a href="#roadmap">Product Roadmap</a></li>
+          <li><a href="#pricing">Pricing Plans</a></li>
+          <li><a href="#testimonials">Customer Stories</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="#contact">Discord Community</a></li>
+          <li><a href="#contact">GitHub Repository</a></li>
+          <li><a href="#faq">Documentation & FAQ</a></li>
+          <li><a href="#top">Privacy Policy</a></li>
+          <li><a href="#contact">Contact Founders</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom-st">
+      <span>© 2026 PrismOS Labs Inc. (YC W26). All rights reserved.</span>
+      <a class="back-top" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

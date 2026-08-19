@@ -1,0 +1,792 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Northline Systems — Custom Software Engineering, Distributed Systems Architecture & High-Scale Cloud Platforms.">
+  <meta name="theme-color" content="#D97706">
+  <title>Northline Systems — Engineering-Led Software & Systems Architecture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Top Engineering Meta Strip -->
+  <div class="eng-strip">
+    <div class="container strip-box">
+      <span class="eng-tag">ENGINEERING CONSULTANCY</span>
+      <div class="eng-stats">
+        <span>CI/CD Automation</span>
+        <span class="sep">/</span>
+        <span>Distributed Systems in Go & Rust</span>
+        <span class="sep">/</span>
+        <span>Zero Tech Debt Delivery</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Northline Systems Home">
+        <div class="brand-box">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M16 18L22 12L16 6M8 6L2 12L8 18M14 2L10 22" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">NORTHLINE<span class="brand-accent">_SYSTEMS</span></span>
+          <span class="brand-sub">SOFTWARE SYSTEMS</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="menu">
+        <a href="#services">Services</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#tech-stack">Tech Stack</a>
+        <a href="#case-studies">Engineering Case Studies</a>
+        <a href="#process">Process</a>
+        <a href="#integrations">Toolchain</a>
+        <a href="#pricing">Engagements</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="nav-cta">Build Your Squad ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div id="top" aria-hidden="true"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="pulse-amber"></span>
+            <span>HIGH-VELOCITY PRODUCT ENGINEERING</span>
+          </div>
+          <h1>Architecting resilient software systems for scale.</h1>
+          <p class="hero-desc">
+            Northline Systems builds high-throughput backend services, reactive web platforms, and cloud-native microservices. We replace bloated technical debt with clean, performant, and maintainable software.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#contact">Assemble Engineering Squad ↗</a>
+            <a class="btn btn-secondary" href="#services">Review Capabilities</a>
+          </div>
+          <div class="hero-telemetry">
+            <div class="t-item">
+              <strong>99.99%</strong>
+              <span>Production Reliability</span>
+            </div>
+            <div class="t-sep"></div>
+            <div class="t-item">
+              <strong>&lt; 4 Wks</strong>
+              <span>Sprint-to-Production</span>
+            </div>
+            <div class="t-sep"></div>
+            <div class="t-item">
+              <strong>100%</strong>
+              <span>TypeScript / Go / Rust</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Architecture / Code Blueprint Preview -->
+        <div class="hero-code-card reveal">
+          <div class="code-header">
+            <div class="code-tabs">
+              <span class="tab active">cluster_engine.go</span>
+              <span class="tab">deploy.yaml</span>
+            </div>
+            <span class="code-status">● COMPILED (0 errors)</span>
+          </div>
+          <div class="code-body">
+            <pre><code><span class="c-keyword">package</span> main
+
+<span class="c-keyword">import</span> (
+    <span class="c-str">"context"</span>
+    <span class="c-str">"github.com/northline/engine/v2/telemetry"</span>
+)
+
+<span class="c-keyword">type</span> <span class="c-type">ClusterPipeline</span> <span class="c-keyword">struct</span> {
+    ConcurrencyLimit <span class="c-type">int</span>
+    TelemetryStream  *telemetry.<span class="c-type">Emitter</span>
+}
+
+<span class="c-keyword">func</span> (cp *<span class="c-type">ClusterPipeline</span>) <span class="c-func">ExecuteDistributedJob</span>(ctx context.Context) <span class="c-type">error</span> {
+    <span class="c-comment">// Zero-allocation event batching with eBPF tracing</span>
+    stream := cp.TelemetryStream.<span class="c-func">OpenBuffer</span>(ctx, 64*1024)
+    <span class="c-keyword">return</span> stream.<span class="c-func">DispatchToNodes</span>(cp.ConcurrencyLimit)
+}</code></pre>
+          </div>
+          <div class="code-footer">
+            <span>Runtime: Go 1.23 / Native Binary</span>
+            <span class="latency-pill">Latency: 0.42ms</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product / Service Introduction -->
+    <section class="section intro-section" id="intro">
+      <div class="container">
+        <div class="intro-grid">
+          <div>
+            <span class="section-tag">01 · ENGINEERING PHILOSOPHY</span>
+            <h2>Code written to last decades, not just to pass the next demo.</h2>
+          </div>
+          <div>
+            <p class="intro-lead">
+              We operate as a high-discipline engineering partner. No junior handoffs, no brittle spaghetti code. We engineer mission-critical systems using domain-driven design, robust automated testing, and comprehensive observability from Day 1.
+            </p>
+            <div class="intro-pillars">
+              <div class="p-item">
+                <strong>Strict Type Safety</strong>
+                <p>Compile-time guarantees prevent runtime catastrophes in production.</p>
+              </div>
+              <div class="p-item">
+                <strong>Zero-Allocation Architecture</strong>
+                <p>Optimized memory layouts that scale under extreme concurrency.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Showcase -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-tag">02 · CORE SERVICES</span>
+            <h2>Full-lifecycle software engineering disciplines.</h2>
+          </div>
+          <p class="header-desc">
+            Whether building a greenfield platform or modernizing legacy monoliths, our squads deliver with ruthless precision.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <span class="s-num">01 // BACKEND & DISTRIBUTED SYSTEMS</span>
+            <h3>High-Throughput Distributed Microservices</h3>
+            <p>Architecting scalable, fault-tolerant backend architectures in Go, Rust, and Node.js with gRPC and event-driven Apache Kafka brokers.</p>
+            <ul class="s-list">
+              <li>Low-latency microservices</li>
+              <li>gRPC & GraphQL API design</li>
+              <li>Event sourcing & CQRS patterns</li>
+            </ul>
+            <a class="s-link" href="#contact">Discuss Backend Architecture ↗</a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="s-num">02 // WEB & CLOUD PLATFORMS</span>
+            <h3>Modern Cloud-Native Web Applications</h3>
+            <p>Building high-performance, accessible, and reactive frontend platforms utilizing React, Next.js, and modern Vanilla TypeScript architectures.</p>
+            <ul class="s-list">
+              <li>Responsive Design Systems</li>
+              <li>State Management & Caching</li>
+              <li>Accessibility (a11y) Compliance</li>
+            </ul>
+            <a class="s-link" href="#contact">Build Web Platform ↗</a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="s-num">03 // LEGACY MODERNIZATION</span>
+            <h3>Monolith-to-Microservices Migration</h3>
+            <p>Deconstructing brittle legacy systems into modular, testable containerized services without interrupting live production revenue flows.</p>
+            <ul class="s-list">
+              <li>Strangler Fig migration pattern</li>
+              <li>Zero-downtime database cutovers</li>
+              <li>Automated regression test suites</li>
+            </ul>
+            <a class="s-link" href="#contact">Plan Modernization ↗</a>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="s-num">04 // DEVOPS & CI/CD SRE</span>
+            <h3>Automated Delivery & GitOps Pipelines</h3>
+            <p>Constructing automated CI/CD pipelines, Kubernetes container orchestration, and automated canary deployments with rollback guardrails.</p>
+            <ul class="s-list">
+              <li>Terraform Infrastructure as Code</li>
+              <li>Kubernetes & Helm orchestration</li>
+              <li>Prometheus & Grafana telemetry</li>
+            </ul>
+            <a class="s-link" href="#contact">Automate CI/CD ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture & Features -->
+    <section class="section section-dark" id="architecture">
+      <div class="container">
+        <div class="section-header dark-head">
+          <div>
+            <span class="section-tag-amber">03 · QUALITY STANDARDS</span>
+            <h2>Precision engineering guardrails built into every commit.</h2>
+          </div>
+          <p class="header-desc-dark">
+            Our delivery process follows rigorous software craft standards to ensure your platform remains maintainable for years to come.
+          </p>
+        </div>
+
+        <div class="arch-features-grid">
+          <div class="arch-card reveal">
+            <div class="arch-icon">🧪</div>
+            <h3>Automated Test Matrix</h3>
+            <p>Every PR is validated against comprehensive unit tests, integration test suites, and end-to-end browser journeys before reaching staging.</p>
+          </div>
+
+          <div class="arch-card reveal">
+            <div class="arch-icon">📦</div>
+            <h3>Modular Monorepo Architecture</h3>
+            <p>Shared type definitions, standardized linting, and atomic versioning that keep distributed squads collaborating without friction.</p>
+          </div>
+
+          <div class="arch-card reveal">
+            <div class="arch-icon">🔒</div>
+            <h3>Static Security & SAST Audits</h3>
+            <p>Automated dependency vulnerability scanners and static code analysis running on every git push to stop security flaws at source.</p>
+          </div>
+
+          <div class="arch-card reveal">
+            <div class="arch-icon">📈</div>
+            <h3>Built-In OpenTelemetry Hooks</h3>
+            <p>Native structured logging, distributed span tracing, and health metrics baked directly into application middleware.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Stack Section -->
+    <section class="section" id="tech-stack">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-tag">04 · TECHNOLOGY ARSENAL</span>
+            <h2>Battle-tested languages, databases, and runtimes.</h2>
+          </div>
+          <p class="header-desc">
+            We pick the right tool for the job, favoring reliability, performance, and vibrant developer ecosystems.
+          </p>
+        </div>
+
+        <div class="stack-box-grid">
+          <div class="s-category reveal">
+            <h4>Languages & Runtimes</h4>
+            <div class="pill-group">
+              <span class="pill">Go (Golang)</span>
+              <span class="pill">Rust</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">Python 3.12</span>
+              <span class="pill">Node.js</span>
+            </div>
+          </div>
+
+          <div class="s-category reveal">
+            <h4>Data & Messaging</h4>
+            <div class="pill-group">
+              <span class="pill">PostgreSQL 16</span>
+              <span class="pill">Redis Cluster</span>
+              <span class="pill">Apache Kafka</span>
+              <span class="pill">ClickHouse</span>
+              <span class="pill">Elasticsearch</span>
+            </div>
+          </div>
+
+          <div class="s-category reveal">
+            <h4>Cloud & DevOps</h4>
+            <div class="pill-group">
+              <span class="pill">Kubernetes</span>
+              <span class="pill">Docker</span>
+              <span class="pill">Terraform</span>
+              <span class="pill">AWS & Azure</span>
+              <span class="pill">ArgoCD GitOps</span>
+            </div>
+          </div>
+
+          <div class="s-category reveal">
+            <h4>Frontend & APIs</h4>
+            <div class="pill-group">
+              <span class="pill">React / Next.js</span>
+              <span class="pill">GraphQL</span>
+              <span class="pill">gRPC / Protobuf</span>
+              <span class="pill">Tailwind & Vanilla CSS</span>
+              <span class="pill">WebSockets</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="section-stats-banner">
+      <div class="container">
+        <div class="eng-stats-grid">
+          <div class="e-stat reveal">
+            <strong class="stat-digit">240+</strong>
+            <span class="stat-name">Successful Production Releases</span>
+            <p class="stat-info">Delivered across fintech, healthcare, and logistics enterprises.</p>
+          </div>
+          <div class="e-stat reveal">
+            <strong class="stat-digit">&lt; 0.01%</strong>
+            <span class="stat-name">Post-Release Bug Escape Rate</span>
+            <p class="stat-info">Ensured by strict peer reviews and automated QA test matrices.</p>
+          </div>
+          <div class="e-stat reveal">
+            <strong class="stat-digit">98%</strong>
+            <span class="stat-name">Code Coverage Average</span>
+            <p class="stat-info">On core business logic and critical payment processing flows.</p>
+          </div>
+          <div class="e-stat reveal">
+            <strong class="stat-digit">100%</strong>
+            <span class="stat-name">Senior Engineering Squads</span>
+            <p class="stat-info">Average of 8+ years experience per deployed engineer.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Case Studies -->
+    <section class="section" id="case-studies">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-tag">05 · ENGINEERING CASE STUDIES</span>
+            <h2>Proven software execution in complex domains.</h2>
+          </div>
+          <p class="header-desc">
+            Representative case studies showcasing architecture decisions, technical execution, and client business outcomes.
+          </p>
+        </div>
+
+        <div class="eng-case-grid">
+          <article class="eng-case-card reveal">
+            <span class="case-badge">FINTECH PAYMENTS</span>
+            <h3>Sub-Millisecond Settlement Engine in Go</h3>
+            <p>Designed an ACID-compliant ledger service processing 45,000 transactions/second with distributed consensus and zero double-spend anomalies.</p>
+            <div class="case-meta">
+              <strong>12x</strong>
+              <span>Throughput Improvement</span>
+            </div>
+          </article>
+
+          <article class="eng-case-card reveal">
+            <span class="case-badge">SUPPLY CHAIN TELEMETRY</span>
+            <h3>Real-Time IoT Fleet Tracker in Rust</h3>
+            <p>Constructed an asynchronous streaming ingest pipeline processing GPS coordinates from 80,000 trucks with sub-10ms alerting thresholds.</p>
+            <div class="case-meta">
+              <strong>-60%</strong>
+              <span>Server Memory Footprint</span>
+            </div>
+          </article>
+
+          <article class="eng-case-card reveal">
+            <span class="case-badge">HEALTHCARE PLATFORM</span>
+            <h3>HIPAA-Compliant Patient Portal & EHR Sync</h3>
+            <p>Engineered a reactive patient portal with end-to-end encrypted messaging and FHIR medical records synchronization for 500k patients.</p>
+            <div class="case-meta">
+              <strong>100%</strong>
+              <span>Audit Compliance</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Delivery Process -->
+    <section class="section section-tint" id="process">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-tag">06 · HOW WE OPERATE</span>
+            <h2>Transparent 4-phase engineering lifecycle.</h2>
+          </div>
+        </div>
+
+        <div class="process-steps">
+          <div class="step-box reveal">
+            <span class="step-num">01</span>
+            <h3>System Architecture & Spec</h3>
+            <p>We draft technical RFCs, define data models, and align on API contracts before writing a single line of code.</p>
+          </div>
+          <div class="step-box reveal">
+            <span class="step-num">02</span>
+            <h3>Bi-Weekly Sprint Execution</h3>
+            <p>Rapid iterative development in 2-week sprints with live deployment previews and continuous test execution.</p>
+          </div>
+          <div class="step-box reveal">
+            <span class="step-num">03</span>
+            <h3>Load Testing & Security SAST</h3>
+            <p>Rigorous stress-testing under simulated peak traffic and automated penetration testing prior to production signoff.</p>
+          </div>
+          <div class="step-box reveal">
+            <span class="step-num">04</span>
+            <h3>Knowledge Transfer & SRE</h3>
+            <p>Complete documentation, clean runbooks, and handover sessions to empower your internal engineering teams.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Toolchain & Integrations -->
+    <section class="section" id="integrations">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">07 · DEVELOPER TOOLCHAIN</span>
+          <h2>Seamless integration with your engineering workflow.</h2>
+        </div>
+
+        <div class="tool-grid">
+          <div class="tool-card reveal"><strong>GitHub</strong><span>Automated CI Workflows</span></div>
+          <div class="tool-card reveal"><strong>GitLab</strong><span>Enterprise Pipelines</span></div>
+          <div class="tool-card reveal"><strong>Docker</strong><span>Immutable Containers</span></div>
+          <div class="tool-card reveal"><strong>Kubernetes</strong><span>Autoscaling Clusters</span></div>
+          <div class="tool-card reveal"><strong>Terraform</strong><span>Declarative Cloud</span></div>
+          <div class="tool-card reveal"><strong>Prometheus</strong><span>Metrics Scraping</span></div>
+          <div class="tool-card reveal"><strong>Grafana</strong><span>Real-Time Dashboards</span></div>
+          <div class="tool-card reveal"><strong>Linear</strong><span>Issue Tracking</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing / Engagement Models -->
+    <section class="section section-tint" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="section-tag">08 · ENGAGEMENT PACKAGES</span>
+            <h2>Clear, predictable squad engagement models.</h2>
+          </div>
+          <p class="header-desc">
+            Transparent pricing tailored for rapid prototyping, dedicated engineering teams, or enterprise modernization.
+          </p>
+        </div>
+
+        <div class="eng-pricing-grid">
+          <div class="eng-price-card reveal">
+            <span class="eng-price-tier">SPRINT PROTOTYPE</span>
+            <div class="eng-cost">
+              <strong>$35</strong>
+              <small>/ sprint week</small>
+            </div>
+            <p class="eng-desc">Rapid architecture prototype, technical proof-of-concept, or code health audit.</p>
+            <ul class="eng-perks">
+              <li>1 Senior Lead Architect</li>
+              <li>Technical RFC & System Blueprint</li>
+              <li>Working PoC Codebase</li>
+              <li>Architecture Recommendations Report</li>
+            </ul>
+            <a class="btn btn-secondary btn-block" href="#contact">Book Architecture Sprint</a>
+          </div>
+
+          <div class="eng-price-card featured reveal">
+            <span class="featured-banner">POPULAR CHOICE</span>
+            <span class="eng-price-tier">DEDICATED PRODUCT SQUAD</span>
+            <div class="eng-cost">
+              <strong>$75</strong>
+              <small>/ sprint week</small>
+            </div>
+            <p class="eng-desc">Autonomous full-stack engineering team ready to build and ship your production platform.</p>
+            <ul class="eng-perks">
+              <li>1 Staff Architect + 2 Senior Engineers</li>
+              <li>Full CI/CD Pipeline & Test Automation</li>
+              <li>Direct Slack Integration & Daily Standups</li>
+              <li>Bi-Weekly Production Releases</li>
+              <li>100% IP & Code Ownership Handover</li>
+            </ul>
+            <a class="btn btn-primary btn-block" href="#contact">Assemble Squad ↗</a>
+          </div>
+
+          <div class="eng-price-card reveal">
+            <span class="eng-price-tier">PLATFORM RE-ARCHITECTURE</span>
+            <div class="eng-cost">
+              <strong>$120</strong>
+              <small>/ sprint week</small>
+            </div>
+            <p class="eng-desc">High-scale monolith migration, distributed systems overhaul, and SRE hardening.</p>
+            <ul class="eng-perks">
+              <li>Principal Architect + 3 Senior SRE Engineers</li>
+              <li>Zero-Downtime Migration Execution</li>
+              <li>High-Availability Multi-Region Kubernetes</li>
+              <li>24/7 Deployment War Room Support</li>
+            </ul>
+            <a class="btn btn-secondary btn-block" href="#contact">Plan Re-Architecture</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">09 · CLIENT ENDORSEMENTS</span>
+          <h2>What engineering executives say about our squads.</h2>
+        </div>
+
+        <div class="eng-testimonials">
+          <blockquote class="eng-test-card reveal">
+            <p class="test-text">“Northline Systems stepped into our messy monolith and delivered a clean, modular Go microservice architecture in 8 weeks. Their engineers are world-class.”</p>
+            <footer class="test-author">
+              <div class="author-circle">RM</div>
+              <div>
+                <strong>Ryan Mitchell</strong>
+                <span>VP of Engineering, PayFlow Systems</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="eng-test-card reveal">
+            <p class="test-text">“The test automation and CI/CD pipelines they built reduced our deployment cycle time from 3 days to 15 minutes. Best engineering investment we've made.”</p>
+            <footer class="test-author">
+              <div class="author-circle">TG</div>
+              <div>
+                <strong>Tanya Gupta</strong>
+                <span>Chief Technology Officer, LogiMesh Global</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="eng-test-card reveal">
+            <p class="test-text">“They operate with extreme technical discipline. Every PR was well-documented, tested, and easy for our internal team to adopt and maintain.”</p>
+            <footer class="test-author">
+              <div class="author-circle">NL</div>
+              <div>
+                <strong>Nathan Lawson</strong>
+                <span>Head of Product, Omnitrack Software</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-tint" id="faq">
+      <div class="container faq-center-box">
+        <div class="section-header text-center">
+          <span class="section-tag">10 · FREQUENTLY ASKED QUESTIONS</span>
+          <h2>Everything you need to know about working with us.</h2>
+        </div>
+
+        <div class="eng-faq-list">
+          <div class="eng-faq-item">
+            <button class="eng-faq-q" type="button" aria-expanded="false">
+              <span>Who owns the intellectual property and source code?</span>
+              <span class="faq-sym">+</span>
+            </button>
+            <div class="eng-faq-a" hidden>
+              <p>You own 100% of all intellectual property, repository code, architectural blueprints, and artifacts generated during the engagement. Everything is transferred to your private repositories on completion.</p>
+            </div>
+          </div>
+
+          <div class="eng-faq-item">
+            <button class="eng-faq-q" type="button" aria-expanded="false">
+              <span>How quickly can an engineering squad deploy to our project?</span>
+              <span class="faq-sym">+</span>
+            </button>
+            <div class="eng-faq-a" hidden>
+              <p>Following initial technical scoping and RFC alignment, our senior engineering squads typically integrate into your workflow within 5 to 7 business days.</p>
+            </div>
+          </div>
+
+          <div class="eng-faq-item">
+            <button class="eng-faq-q" type="button" aria-expanded="false">
+              <span>Do you provide ongoing maintenance after project delivery?</span>
+              <span class="faq-sym">+</span>
+            </button>
+            <div class="eng-faq-a" hidden>
+              <p>Yes. We offer fractional SRE retainers and level-3 architecture support to ensure your system continues operating smoothly as your user base scales.</p>
+            </div>
+          </div>
+
+          <div class="eng-faq-item">
+            <button class="eng-faq-q" type="button" aria-expanded="false">
+              <span>Can we customize this template for our software agency?</span>
+              <span class="faq-sym">+</span>
+            </button>
+            <div class="eng-faq-a" hidden>
+              <p>Yes. This template is written in semantic HTML5, modern CSS3 variables, and vanilla ES6 JS. You can easily tweak branding, color tokens, and content in minutes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="eng-cta-wrap">
+      <div class="container">
+        <div class="eng-cta-box reveal">
+          <div>
+            <span class="cta-mini-tag">START YOUR NEXT BUILD</span>
+            <h2>Ready to ship mission-critical software?</h2>
+            <p>Let's discuss your architecture, timeline, and engineering squad requirements.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="#contact">Assemble Engineering Squad ↗</a>
+            <a class="btn btn-secondary" href="#services">Explore Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container contact-eng-grid">
+        <div class="contact-left reveal">
+          <span class="section-tag">11 · GET IN TOUCH</span>
+          <h2>Start a conversation with a Principal Architect.</h2>
+          <p class="contact-lead">
+            Tell us about your project requirements, target technology stack, or existing codebase. We review and respond with an architectural perspective within 24 hours.
+          </p>
+
+          <div class="eng-contact-cards">
+            <div class="card-pt">
+              <span class="card-pt-lbl">Engineering Office</span>
+              <strong>squads@northline-systems.com</strong>
+            </div>
+            <div class="card-pt">
+              <span class="card-pt-lbl">Architecture Desk</span>
+              <strong>+1 (415) 555-0188</strong>
+            </div>
+            <div class="card-pt">
+              <span class="card-pt-lbl">Engineering Studio</span>
+              <strong>350 Mission Street, Floor 14, San Francisco, CA 94105</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right reveal">
+          <form class="contact-form" id="softwareContactForm" novalidate>
+            <div class="form-banner">
+              <h3>Assemble Engineering Squad</h3>
+              <p>All fields marked with * are required.</p>
+            </div>
+
+            <div class="form-cols">
+              <div class="field-item">
+                <label for="engName">Full Name *</label>
+                <input type="text" id="engName" name="name" required placeholder="Ryan Mitchell" autocomplete="name">
+                <small class="error-msg" data-error-for="engName"></small>
+              </div>
+
+              <div class="field-item">
+                <label for="engEmail">Work Email *</label>
+                <input type="email" id="engEmail" name="email" required placeholder="ryan@company.io" autocomplete="email">
+                <small class="error-msg" data-error-for="engEmail"></small>
+              </div>
+            </div>
+
+            <div class="form-cols">
+              <div class="field-item">
+                <label for="engCompany">Company Name *</label>
+                <input type="text" id="engCompany" name="company" required placeholder="PayFlow Systems">
+                <small class="error-msg" data-error-for="engCompany"></small>
+              </div>
+
+              <div class="field-item">
+                <label for="engService">Primary Discipline *</label>
+                <select id="engService" name="service" required>
+                  <option value="">Select an engineering area</option>
+                  <option value="backend">Distributed Microservices (Go/Rust)</option>
+                  <option value="web">Full-Stack Cloud Platform (React/TS)</option>
+                  <option value="modernization">Legacy Monolith Modernization</option>
+                  <option value="devops">DevOps & CI/CD GitOps Pipeline</option>
+                  <option value="squad">Dedicated Product Squad ($75/wk)</option>
+                </select>
+                <small class="error-msg" data-error-for="engService"></small>
+              </div>
+            </div>
+
+            <div class="field-item">
+              <label for="engDetails">Project Scope & Technical Stack *</label>
+              <textarea id="engDetails" name="message" rows="4" required placeholder="Describe your architecture goals, timeline, and current programming languages..."></textarea>
+              <small class="error-msg" data-error-for="engDetails"></small>
+            </div>
+
+            <button class="btn btn-primary btn-block" type="submit">Submit Engineering Brief ↗</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-top-grid">
+      <div class="footer-brand-pane">
+        <div class="brand">
+          <div class="brand-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M16 18L22 12L16 6M8 6L2 12L8 18M14 2L10 22" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="brand-title font-white">NORTHLINE<span class="brand-accent">_SYSTEMS</span></span>
+        </div>
+        <p class="footer-lead">
+          Elite software engineering consultancy delivering distributed backend systems, cloud platforms, and DevOps automation.
+        </p>
+        <div class="footer-pills">
+          <span>Go 1.23</span>
+          <span>Rust</span>
+          <span>TypeScript</span>
+          <span>Kubernetes</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Disciplines</h4>
+        <ul>
+          <li><a href="#services">Distributed Backends</a></li>
+          <li><a href="#services">Cloud Web Platforms</a></li>
+          <li><a href="#services">Monolith Migration</a></li>
+          <li><a href="#services">CI/CD & GitOps SRE</a></li>
+          <li><a href="#tech-stack">API Design & gRPC</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Engagements</h4>
+        <ul>
+          <li><a href="#pricing">Sprint Prototypes</a></li>
+          <li><a href="#pricing">Dedicated Squads</a></li>
+          <li><a href="#pricing">Platform Modernization</a></li>
+          <li><a href="#case-studies">Case Studies</a></li>
+          <li><a href="#process">Engineering Process</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#intro">Philosophy</a></li>
+          <li><a href="#integrations">Developer Toolchain</a></li>
+          <li><a href="#faq">Client FAQ</a></li>
+          <li><a href="#top">Privacy Policy</a></li>
+          <li><a href="#contact">Contact Architects</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom-bar">
+      <span>© 2026 Northline Systems Inc. All rights reserved.</span>
+      <a class="back-top" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

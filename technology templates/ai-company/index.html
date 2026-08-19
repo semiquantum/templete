@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Nexa Intelligence — Deterministic AI foundation models, multi-agent reasoning, and sovereign research infrastructure for enterprise.">
+  <meta name="theme-color" content="#090B10">
+  <title>Nexa Intelligence — Sovereign Foundation Models & Cognitive Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Top AI Announcement Bar -->
+  <div class="ai-strip">
+    <div class="container strip-content">
+      <span class="ai-badge">RESEARCH BENCHMARK</span>
+      <p class="ai-strip-text">Nexa-Core-70B achieves 94.2% on MMLU-Pro with zero-shot deterministic reasoning.</p>
+      <a href="#models" class="ai-link">Read Technical Report ↗</a>
+    </div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Nexa Intelligence Home">
+        <div class="brand-glyph">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+            <circle cx="13" cy="13" r="12" stroke="#C5A880" stroke-width="1.5"/>
+            <circle cx="13" cy="13" r="5" fill="#C5A880"/>
+            <path d="M13 1V5M13 21V25M1 13H5M21 13H25" stroke="#C5A880" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="brand-titles">
+          <span class="brand-name">NEXA</span>
+          <span class="brand-sub">INTELLIGENCE</span>
+        </div>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="menu">
+        <a href="#models">Models</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#tech-stack">Inference Stack</a>
+        <a href="#benchmarks">Benchmarks</a>
+        <a href="#integrations">Ecosystem</a>
+        <a href="#pricing">API Pricing</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="nav-cta">Deploy Enterprise Model ↗</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div id="top" aria-hidden="true"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="container hero-layout">
+        <div class="hero-text-block reveal">
+          <div class="hero-tag">
+            <span class="pulse-violet"></span>
+            <span>ENTERPRISE COGNITIVE INTELLIGENCE</span>
+          </div>
+          <h1>Autonomous AI engineered for verifiable precision.</h1>
+          <p class="hero-lead">
+            Nexa Intelligence builds sovereign foundation models and multi-agent reasoning infrastructure. We empower enterprise organizations to deploy private, verifiable intelligence with zero hallucination drift.
+          </p>
+          <div class="hero-buttons">
+            <a class="btn btn-violet" href="#models">Explore Foundation Models ↗</a>
+            <a class="btn btn-glass" href="#contact">Request On-Premises Evaluation</a>
+          </div>
+          <div class="hero-stats-row">
+            <div>
+              <strong>&lt; 12ms</strong>
+              <span>Time-to-First-Token</span>
+            </div>
+            <div class="sep-line"></div>
+            <div>
+              <strong>100%</strong>
+              <span>Sovereign Data Privacy</span>
+            </div>
+            <div class="sep-line"></div>
+            <div>
+              <strong>0.001%</strong>
+              <span>Hallucination Rate</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive AI Inference Preview -->
+        <div class="hero-ai-preview reveal">
+          <div class="ai-console">
+            <div class="console-top">
+              <div class="console-status">
+                <span class="status-dot"></span>
+                <span>Nexa-Reasoner-v2 // Enterprise Cluster</span>
+              </div>
+              <span class="console-pill">FP8 TensorRT</span>
+            </div>
+            <div class="console-body">
+              <div class="prompt-box">
+                <span class="prompt-label">INPUT PROMPT</span>
+                <p class="prompt-text">“Synthesize Q3 multi-region supply chain telemetry, detect inventory anomalies, and formulate an automated allocation plan.”</p>
+              </div>
+
+              <div class="reasoning-trace">
+                <span class="trace-title">AGENTIC REASONING GRAPH</span>
+                <div class="trace-step">
+                  <span class="step-badge">1. Vector Retrieval</span>
+                  <span>Queried 4.2M SKU records across 12 SAP/ERP nodes (2.4ms)</span>
+                </div>
+                <div class="trace-step">
+                  <span class="step-badge">2. Anomaly Synthesis</span>
+                  <span>Identified 14% component bottleneck in Hamburg hub</span>
+                </div>
+                <div class="trace-step highlight">
+                  <span class="step-badge">3. Autonomous Resolution</span>
+                  <span>Rerouted 42,000 units from Rotterdam with 99.8% confidence</span>
+                </div>
+              </div>
+
+              <div class="response-box">
+                <span class="response-label">SYNTHESIZED OUTPUT</span>
+                <p class="response-text">
+                  Reallocation matrix executed. Zero freight disruption projected. Inventory equilibrium restored in 48 hours.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product & Model Showcase -->
+    <section class="section" id="models">
+      <div class="container">
+        <div class="section-title text-center">
+          <span class="sub-label">01 · FOUNDATION PLATFORM</span>
+          <h2>A modular suite of specialized intelligence.</h2>
+          <p class="title-desc">
+            Deploy general-purpose reasoning, structured semantic search, or autonomous decision agents on private infrastructure.
+          </p>
+        </div>
+
+        <div class="models-grid">
+          <article class="model-card reveal">
+            <div class="model-meta">
+              <span class="model-name">Nexa-Core</span>
+              <span class="model-size">70B Parameters</span>
+            </div>
+            <h3>Deterministic Reasoning Engine</h3>
+            <p>Built for complex multi-step deductive logic, quantitative financial auditing, legal contract validation, and autonomous root-cause engineering.</p>
+            <div class="model-specs">
+              <div><span>Context Window</span><strong>128K Tokens</strong></div>
+              <div><span>Precision</span><strong>FP8 / BF16 Native</strong></div>
+              <div><span>Deployment</span><strong>VPC / On-Prem</strong></div>
+            </div>
+            <a class="model-link" href="#contact">Request Model Weights ↗</a>
+          </article>
+
+          <article class="model-card reveal">
+            <div class="model-meta">
+              <span class="model-name">Nexa-Embed & Graph</span>
+              <span class="model-size">Dense Multimodal</span>
+            </div>
+            <h3>Enterprise Knowledge Synthesis</h3>
+            <p>Transforms petabytes of unstructured PDFs, databases, git repos, and internal communications into a real-time semantic knowledge graph.</p>
+            <div class="model-specs">
+              <div><span>Dimensions</span><strong>3072 Matryoshka</strong></div>
+              <div><span>Multimodal</span><strong>Text, Code, Schematics</strong></div>
+              <div><span>Search Speed</span><strong>&lt; 3ms / Million</strong></div>
+            </div>
+            <a class="model-link" href="#contact">Explore Vector Graph ↗</a>
+          </article>
+
+          <article class="model-card reveal">
+            <div class="model-meta">
+              <span class="model-name">Nexa-Agents Core</span>
+              <span class="model-size">Autonomous SRE</span>
+            </div>
+            <h3>Autonomous Execution Agents</h3>
+            <p>Self-directed agent swarms equipped with sandboxed tool execution, automated code testing, and multi-agent consensus validation protocols.</p>
+            <div class="model-specs">
+              <div><span>Tool Calling</span><strong>100% Deterministic</strong></div>
+              <div><span>Sandbox</span><strong>Air-gapped MicroVM</strong></div>
+              <div><span>Safety Filter</span><strong>Llama-Guard 3</strong></div>
+            </div>
+            <a class="model-link" href="#contact">Deploy Agent Swarms ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cognitive Architecture & Introduction -->
+    <section class="section section-darker" id="architecture">
+      <div class="container">
+        <div class="section-title">
+          <span class="sub-label">02 · ARCHITECTURE & TRUST</span>
+          <h2>The Four Pillars of Sovereign AI.</h2>
+          <p class="title-desc">
+            We reject black-box models. Every prediction, token, and reasoning branch generated by Nexa Intelligence includes verifiable source attribution.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <div class="pillar-card reveal">
+            <div class="pillar-num">01</div>
+            <h3>Deterministic Verification</h3>
+            <p>Our mathematical validation layer verifies factual consistency against your private enterprise truth-data before generating customer-facing responses.</p>
+          </div>
+
+          <div class="pillar-card reveal">
+            <div class="pillar-num">02</div>
+            <h3>Air-Gapped Sovereign Deployment</h3>
+            <p>Run entirely inside your own AWS/Azure VPC or on-premises GPU clusters. Zero customer telemetry or training data ever leaves your perimeter.</p>
+          </div>
+
+          <div class="pillar-card reveal">
+            <div class="pillar-num">03</div>
+            <h3>Sub-Millisecond Speculative Decoding</h3>
+            <p>Proprietary speculative draft models deliver up to 4.2x faster token generation speeds, dramatically slashing GPU inference power costs.</p>
+          </div>
+
+          <div class="pillar-card reveal">
+            <div class="pillar-num">04</div>
+            <h3>Responsible AI Guardrails</h3>
+            <p>Granular policy enforcement engines automatically detect and redact sensitive PII, trade secrets, and unauthorized model prompts at the network boundary.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capabilities Section -->
+    <section class="section" id="capabilities">
+      <div class="container">
+        <div class="section-title text-center">
+          <span class="sub-label">03 · ENTERPRISE IMPACT</span>
+          <h2>Engineered for mission-critical industries.</h2>
+        </div>
+
+        <div class="capabilities-grid">
+          <div class="cap-box reveal">
+            <span class="cap-tag">FINANCIAL RISK</span>
+            <h3>Real-Time Fraud & Anomaly Auditing</h3>
+            <p>Continuous reasoning across millions of high-frequency banking transactions, flagging synthetic identities and complex fraud schemes in sub-second timelines.</p>
+          </div>
+
+          <div class="cap-box reveal">
+            <span class="cap-tag">HEALTHCARE & BIOPHARMA</span>
+            <h3>Clinical Evidence Synthesis</h3>
+            <p>Aggregating millions of medical literature records, clinical trial notes, and patient records with strict HIPAA compliance and zero data leakage.</p>
+          </div>
+
+          <div class="cap-box reveal">
+            <span class="cap-tag">LEGAL & REGULATORY</span>
+            <h3>Automated Compliance Auditing</h3>
+            <p>Compare complex global supply contracts and cross-border regulatory filings against internal compliance guidelines in minutes.</p>
+          </div>
+
+          <div class="cap-box reveal">
+            <span class="cap-tag">SOFTWARE ENGINEERING</span>
+            <h3>Autonomous Codebase Modernization</h3>
+            <p>Intelligent agent refactoring that modernizes legacy COBOL/Fortran monoliths into microservices with automated unit test generation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology & Inference Stack -->
+    <section class="section section-darker" id="tech-stack">
+      <div class="container">
+        <div class="section-title">
+          <span class="sub-label">04 · INFERENCE INFRASTRUCTURE</span>
+          <h2>High-Throughput Machine Learning Stack.</h2>
+          <p class="title-desc">Built upon industry standard, production-hardened deep learning frameworks.</p>
+        </div>
+
+        <div class="ai-stack-grid">
+          <div class="stack-box reveal">
+            <h4>Inference Acceleration</h4>
+            <p>NVIDIA TensorRT-LLM, vLLM Engine, Triton Inference Server, CUDA 12.4, FlashAttention-3.</p>
+          </div>
+          <div class="stack-box reveal">
+            <h4>Vector & Graph Storage</h4>
+            <p>Qdrant Distributed, Milvus Cluster, pgvector on PostgreSQL, Neo4j Knowledge Graph.</p>
+          </div>
+          <div class="stack-box reveal">
+            <h4>Orchestration & Serving</h4>
+            <p>Kubernetes (KServe), Ray Train/Serve, Docker Container Runtime, Slurm GPU Scheduling.</p>
+          </div>
+          <div class="stack-box reveal">
+            <h4>Frameworks & Tooling</h4>
+            <p>PyTorch 2.4, HuggingFace Transformers, LangChain, LlamaIndex, DeepSpeed ZeRO-3.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Statistics & Research Benchmarks -->
+    <section class="section-bench" id="benchmarks">
+      <div class="container">
+        <div class="bench-grid">
+          <div class="b-card reveal">
+            <strong class="b-stat">94.2%</strong>
+            <span class="b-title">MMLU-Pro Accuracy</span>
+            <span class="b-sub">Superior zero-shot reasoning benchmarks</span>
+          </div>
+          <div class="b-card reveal">
+            <strong class="b-stat">128K</strong>
+            <span class="b-title">Context Window</span>
+            <span class="b-sub">100% Needle-In-A-Haystack retrieval accuracy</span>
+          </div>
+          <div class="b-card reveal">
+            <strong class="b-stat">4.2x</strong>
+            <span class="b-title">Inference Throughput</span>
+            <span class="b-sub">Driven by continuous batching & speculative decode</span>
+          </div>
+          <div class="b-card reveal">
+            <strong class="b-stat">85B+</strong>
+            <span class="b-title">Enterprise Tokens / Day</span>
+            <span class="b-sub">Processed with zero downtime across 4 continents</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Integrations Section -->
+    <section class="section" id="integrations">
+      <div class="container">
+        <div class="section-title text-center">
+          <span class="sub-label">05 · ENTERPRISE ECOSYSTEM</span>
+          <h2>Connect seamlessly to your data warehouses.</h2>
+        </div>
+
+        <div class="ai-partners-grid">
+          <div class="partner-card reveal"><strong>Snowflake</strong><span>Data Cloud Native</span></div>
+          <div class="partner-card reveal"><strong>Databricks</strong><span>Lakehouse Integration</span></div>
+          <div class="partner-card reveal"><strong>Google BigQuery</strong><span>Analytics Engine</span></div>
+          <div class="partner-card reveal"><strong>AWS Bedrock</strong><span>Custom VPC Endpoints</span></div>
+          <div class="partner-card reveal"><strong>Microsoft Azure</strong><span>Private OpenAI Mesh</span></div>
+          <div class="partner-card reveal"><strong>NVIDIA Omniverse</strong><span>GPU Acceleration</span></div>
+          <div class="partner-card reveal"><strong>HuggingFace</strong><span>Open Weights Access</span></div>
+          <div class="partner-card reveal"><strong>PostgreSQL</strong><span>pgvector Native</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section section-darker" id="pricing">
+      <div class="container">
+        <div class="section-title text-center">
+          <span class="sub-label">06 · API & MODEL PRICING</span>
+          <h2>Transparent token economics. No hidden compute fees.</h2>
+          <p class="title-desc">Pay per million tokens or deploy dedicated on-premises GPU node licenses.</p>
+        </div>
+
+        <div class="ai-pricing-grid">
+          <div class="ai-price-card reveal">
+            <span class="price-tier">DEVELOPER API</span>
+            <div class="price-amount">
+              <strong>$29</strong>
+              <small>/ million tokens</small>
+            </div>
+            <p class="price-desc">Ideal for engineering teams building prototypes and fine-tuning domain agents.</p>
+            <ul class="price-perks">
+              <li>Full Access to Nexa-Core API</li>
+              <li>128K Token Context Length</li>
+              <li>Rate Limit: 2,500 req / minute</li>
+              <li>Standard Community Support</li>
+              <li>OpenAI-Compatible API Endpoints</li>
+            </ul>
+            <a class="btn btn-glass btn-block" href="#contact">Get API Keys ↗</a>
+          </div>
+
+          <div class="ai-price-card featured reveal">
+            <span class="ai-featured-tag">MOST POPULAR</span>
+            <span class="price-tier">TEAM PRO CLUSTER</span>
+            <div class="price-amount">
+              <strong>$79</strong>
+              <small>/ million tokens</small>
+            </div>
+            <p class="price-desc">High-throughput dedicated API endpoints with priority GPU allocation.</p>
+            <ul class="price-perks">
+              <li>Dedicated Low-Latency Model Endpoints</li>
+              <li>Private Knowledge Graph Embeddings</li>
+              <li>Custom LoRA Adapter Weights</li>
+              <li>Zero Data Retention Guarantee</li>
+              <li>Priority 24/7 Slack Support</li>
+            </ul>
+            <a class="btn btn-violet btn-block" href="#contact">Deploy Pro Cluster ↗</a>
+          </div>
+
+          <div class="ai-price-card reveal">
+            <span class="price-tier">DEDICATED SOVEREIGN</span>
+            <div class="price-amount">
+              <strong>$199</strong>
+              <small>/ node license</small>
+            </div>
+            <p class="price-desc">Full model weights deployed entirely inside your own air-gapped VPC or data center.</p>
+            <ul class="price-perks">
+              <li>Full FP8 / BF16 Weights Handover</li>
+              <li>Unlimited In-House Inference</li>
+              <li>On-Premises Installation & Tuning</li>
+              <li>Custom Continuous Pre-Training</li>
+              <li>Dedicated AI Research Engineer SLA</li>
+            </ul>
+            <a class="btn btn-glass btn-block" href="#contact">Discuss Sovereign License ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section" id="testimonials">
+      <div class="container">
+        <div class="section-title text-center">
+          <span class="sub-label">07 · RESEARCH & INDUSTRY TRUST</span>
+          <h2>What technology leaders say about Nexa Intelligence.</h2>
+        </div>
+
+        <div class="ai-testimonials">
+          <blockquote class="ai-test-card reveal">
+            <p class="ai-quote">“Nexa-Core outperformed every commercial API we tested on complex financial derivation tasks. The zero-hallucination guardrail is genuinely revolutionary.”</p>
+            <footer class="ai-author">
+              <div class="ai-avatar">VK</div>
+              <div>
+                <strong>Dr. Viktor Krause</strong>
+                <span>Chief AI Scientist, Quantum Asset Management</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="ai-test-card reveal">
+            <p class="ai-quote">“Deploying the air-gapped Nexa weights inside our private hospital VPC allowed us to synthesize patient medical histories without violating clinical privacy regulations.”</p>
+            <footer class="ai-author">
+              <div class="ai-avatar">MS</div>
+              <div>
+                <strong>Dr. Monica Sinclair</strong>
+                <span>Director of Medical Informatics, BioHealth Systems</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="ai-test-card reveal">
+            <p class="ai-quote">“The speculative decoding speedup cut our quarterly GPU inference bills in half while maintaining sub-15ms response latency for 10 million active users.”</p>
+            <footer class="ai-author">
+              <div class="ai-avatar">JL</div>
+              <div>
+                <strong>James Liu</strong>
+                <span>VP of Platform AI, Omnicorp Global</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section section-darker" id="faq">
+      <div class="container faq-narrow">
+        <div class="section-title text-center">
+          <span class="sub-label">08 · FREQUENTLY ASKED QUESTIONS</span>
+          <h2>Everything you need to know about Nexa.</h2>
+        </div>
+
+        <div class="ai-faq-list">
+          <div class="ai-faq-entry">
+            <button class="ai-faq-btn" type="button" aria-expanded="false">
+              <span>Are Nexa models compatible with the OpenAI API format?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="ai-faq-body" hidden>
+              <p>Yes. All Nexa inference endpoints expose 100% drop-in compatible `/v1/chat/completions` and `/v1/embeddings` routes, meaning you can switch your existing LangChain, LlamaIndex, or internal code by simply changing the base URL.</p>
+            </div>
+          </div>
+
+          <div class="ai-faq-entry">
+            <button class="ai-faq-btn" type="button" aria-expanded="false">
+              <span>Do you train models on user enterprise prompts or data?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="ai-faq-body" hidden>
+              <p>Never. We maintain a strict Zero Data Retention policy. User prompts and synthetic outputs are processed strictly in volatile GPU VRAM and never persisted or used for model fine-tuning.</p>
+            </div>
+          </div>
+
+          <div class="ai-faq-entry">
+            <button class="ai-faq-btn" type="button" aria-expanded="false">
+              <span>Can we run Nexa foundation models completely offline?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="ai-faq-body" hidden>
+              <p>Yes. Our Dedicated Sovereign license delivers containerized weights via private registry, allowing full offline execution on air-gapped NVIDIA H100/A100 clusters without internet connectivity.</p>
+            </div>
+          </div>
+
+          <div class="ai-faq-entry">
+            <button class="ai-faq-btn" type="button" aria-expanded="false">
+              <span>What is the minimum GPU requirement for local inference?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="ai-faq-body" hidden>
+              <p>Nexa-Core (70B FP8) runs comfortably on a single node with 2x NVIDIA A100 (80GB) or 1x H100 SXM5 with vLLM tensor parallelism enabled.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global CTA Banner -->
+    <section class="ai-cta-section">
+      <div class="container text-center">
+        <div class="ai-cta-card reveal">
+          <span class="sub-label-violet">DEPLOY PRIVATE INTELLIGENCE</span>
+          <h2>Bring sovereign cognitive models to your enterprise.</h2>
+          <p class="cta-p">Schedule an architectural consultation with our AI research team to evaluate custom model weights and on-premises benchmarks.</p>
+          <div class="cta-actions-row">
+            <a class="btn btn-violet" href="#contact">Request Enterprise Evaluation ↗</a>
+            <a class="btn btn-glass" href="#pricing">Review API Documentation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container contact-ai-grid">
+        <div class="ai-contact-info reveal">
+          <span class="sub-label">09 · GET IN TOUCH</span>
+          <h2>Connect with our AI research team.</h2>
+          <p class="lead-p">
+            Let us know about your infrastructure requirements, expected token throughput, or sovereign deployment timeline.
+          </p>
+
+          <div class="contact-details-ai">
+            <div class="ai-detail-item">
+              <span class="d-label">Research Inquiries</span>
+              <strong>research@nexa-intelligence.ai</strong>
+            </div>
+            <div class="ai-detail-item">
+              <span class="d-label">Enterprise Deployment</span>
+              <strong>enterprise@nexa-intelligence.ai</strong>
+            </div>
+            <div class="ai-detail-item">
+              <span class="d-label">Research Labs</span>
+              <strong>100 Enterprise Way, Suite 600, Palo Alto, CA 94304</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="ai-form-card reveal">
+          <form class="contact-form" id="aiForm" novalidate>
+            <div class="form-header-ai">
+              <h3>Request AI Model Evaluation</h3>
+              <p>All fields marked with * are required.</p>
+            </div>
+
+            <div class="form-split">
+              <div class="ai-field">
+                <label for="aiName">Full Name *</label>
+                <input type="text" id="aiName" name="name" required placeholder="Dr. Viktor Krause" autocomplete="name">
+                <small class="error-msg" data-error-for="aiName"></small>
+              </div>
+
+              <div class="ai-field">
+                <label for="aiEmail">Work / Academic Email *</label>
+                <input type="email" id="aiEmail" name="email" required placeholder="v.krause@institution.org" autocomplete="email">
+                <small class="error-msg" data-error-for="aiEmail"></small>
+              </div>
+            </div>
+
+            <div class="form-split">
+              <div class="ai-field">
+                <label for="aiOrg">Organization Name *</label>
+                <input type="text" id="aiOrg" name="organization" required placeholder="Quantum Asset Management">
+                <small class="error-msg" data-error-for="aiOrg"></small>
+              </div>
+
+              <div class="ai-field">
+                <label for="aiDeployment">Deployment Interest *</label>
+                <select id="aiDeployment" name="deployment" required>
+                  <option value="">Select deployment model</option>
+                  <option value="cloud-api">Developer Cloud API ($29/M)</option>
+                  <option value="dedicated-vpc">Team Pro Dedicated Endpoint ($79/M)</option>
+                  <option value="on-prem">Air-Gapped Sovereign On-Prem ($199/Node)</option>
+                  <option value="custom">Custom Pre-Training & LoRA</option>
+                </select>
+                <small class="error-msg" data-error-for="aiDeployment"></small>
+              </div>
+            </div>
+
+            <div class="ai-field">
+              <label for="aiRequirements">Inference Requirements & Architecture *</label>
+              <textarea id="aiRequirements" name="message" rows="4" required placeholder="Describe your target use case, expected token volume, GPU hardware (if on-prem), and regulatory constraints..."></textarea>
+              <small class="error-msg" data-error-for="aiRequirements"></small>
+            </div>
+
+            <button class="btn btn-violet btn-block" type="submit">Submit Model Evaluation Request ↗</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-layout">
+      <div class="footer-brand-side">
+        <div class="brand">
+          <div class="brand-glyph">
+            <svg width="22" height="22" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+              <circle cx="13" cy="13" r="12" stroke="#C5A880" stroke-width="1.5"/>
+              <circle cx="13" cy="13" r="5" fill="#C5A880"/>
+              <path d="M13 1V5M13 21V25M1 13H5M21 13H25" stroke="#C5A880" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="brand-titles">
+            <span class="brand-name font-light">NEXA</span>
+            <span class="brand-sub font-sub">INTELLIGENCE</span>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Advancing the frontier of verifiable cognitive intelligence, sovereign foundation models, and multi-agent reasoning systems.
+        </p>
+        <div class="ai-tags">
+          <span>PyTorch 2.4</span>
+          <span>CUDA 12.4</span>
+          <span>Zero Data Retention</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Models</h4>
+        <ul>
+          <li><a href="#models">Nexa-Core 70B</a></li>
+          <li><a href="#models">Nexa-Embed 3072</a></li>
+          <li><a href="#models">Nexa-Agents SRE</a></li>
+          <li><a href="#benchmarks">MMLU-Pro Benchmarks</a></li>
+          <li><a href="#tech-stack">Inference Server</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Ecosystem</h4>
+        <ul>
+          <li><a href="#integrations">Snowflake & Databricks</a></li>
+          <li><a href="#integrations">vLLM Acceleration</a></li>
+          <li><a href="#pricing">API Token Pricing</a></li>
+          <li><a href="#faq">Documentation & FAQ</a></li>
+          <li><a href="#contact">Model Weight Downloads</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Governance</h4>
+        <ul>
+          <li><a href="#top">Responsible AI Charter</a></li>
+          <li><a href="#top">Zero Data Retention Policy</a></li>
+          <li><a href="#top">HIPAA / SOC2 Compliance</a></li>
+          <li><a href="#top">Security Auditing</a></li>
+          <li><a href="#contact">Contact AI Research</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bar">
+      <span>© 2026 Nexa Intelligence Laboratories Inc. All rights reserved.</span>
+      <a class="back-top" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Professional Technology Website Template Collection — 5 independent, client-ready frontend templates built with HTML5, CSS3, and Vanilla JavaScript.">
+  <meta name="theme-color" content="#0F172A">
+  <title>Technology Frontend Templates Collection — Client-Ready Web Templates</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0B0F17;
+      --surface: #131A26;
+      --card: #192231;
+      --card-hover: #202B3D;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --border: #243042;
+      --accent: #38BDF8;
+      --accent-glow: rgba(56, 189, 248, 0.15);
+      --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-mono: 'Space Grotesk', monospace;
+      --max: 1200px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap { width: min(var(--max), calc(100% - 48px)); margin-inline: auto; }
+    a { color: inherit; text-decoration: none; }
+
+    /* Top Strip */
+    .top-strip {
+      background: #06090E;
+      border-bottom: 1px solid var(--border);
+      font-size: 11px;
+      font-family: var(--font-mono);
+      color: var(--text-muted);
+      padding-block: 8px;
+    }
+    .top-strip .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .top-tag { color: var(--accent); font-weight: 700; }
+
+    /* Navigation */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(11, 15, 23, 0.94);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .navin {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-mono);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .brand-sym { color: var(--accent); }
+    .nav-links { display: flex; gap: 24px; font-size: 13px; font-weight: 600; color: var(--text-muted); }
+    .nav-links a:hover { color: var(--accent); }
+
+    /* Hero */
+    .hero {
+      padding: 96px 0 80px;
+      background: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.12) 0%, transparent 60%);
+      border-bottom: 1px solid var(--border);
+    }
+    .eyebrow {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 4.2rem);
+      line-height: 1.08;
+      letter-spacing: -0.04em;
+      max-width: 900px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 18px;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin-bottom: 36px;
+    }
+    .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 6px;
+      transition: 0.2s;
+    }
+    .btn-primary { background: var(--accent); color: #080B10; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(56, 189, 248, 0.3); }
+    .btn-secondary { background: var(--surface); color: #FFF; border: 1px solid var(--border); }
+    .btn-secondary:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+
+    /* Section */
+    .section { padding: 96px 0; }
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 32px;
+      margin-bottom: 48px;
+    }
+    .heading h2 { font-size: clamp(2rem, 3.5vw, 2.8rem); letter-spacing: -0.03em; }
+    .heading p { max-width: 440px; color: var(--text-muted); font-size: 15px; }
+
+    /* Templates Grid */
+    .template-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 28px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+    }
+    .card-badge {
+      display: inline-block;
+      font-family: var(--font-mono);
+      font-size: 10px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 4px;
+      letter-spacing: 0.1em;
+      margin-bottom: 16px;
+    }
+    .badge-it { background: rgba(217, 107, 39, 0.2); color: #E88348; border: 1px solid rgba(217, 107, 39, 0.3); }
+    .badge-saas { background: rgba(79, 70, 229, 0.2); color: #818CF8; border: 1px solid rgba(79, 70, 229, 0.3); }
+    .badge-ai { background: rgba(197, 168, 128, 0.2); color: #C5A880; border: 1px solid rgba(197, 168, 128, 0.3); }
+    .badge-software { background: rgba(14, 165, 233, 0.2); color: #38BDF8; border: 1px solid rgba(14, 165, 233, 0.3); }
+    .badge-startup { background: rgba(255, 90, 54, 0.2); color: #FF866B; border: 1px solid rgba(255, 90, 54, 0.3); }
+
+    .card h3 { font-size: 22px; margin-bottom: 10px; }
+    .card-desc { font-size: 14px; color: var(--text-muted); line-height: 1.6; margin-bottom: 20px; }
+    
+    .card-specs {
+      list-style: none;
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+      margin-bottom: 24px;
+      font-size: 12px;
+      color: #CBD5E1;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .card-specs li::before { content: "✦ "; color: var(--accent); }
+
+    .card-actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .btn-view {
+      flex: 1;
+      text-align: center;
+      background: #FFFFFF;
+      color: #080B10;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+    .btn-view:hover { background: var(--accent); }
+
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 10px 16px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      transition: 0.2s;
+    }
+    .btn-download:hover { border-color: var(--text); color: var(--text); }
+
+    /* Features / Standards Banner */
+    .standards {
+      background: var(--surface);
+      border-block: 1px solid var(--border);
+      padding: 64px 0;
+    }
+    .std-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
+    .std-item { padding: 12px; border-right: 1px solid var(--border); }
+    .std-item:last-child { border-right: none; }
+    .std-item strong { display: block; font-size: 18px; font-weight: 700; color: #FFF; margin-bottom: 4px; }
+    .std-item span { font-size: 13px; color: var(--text-muted); }
+
+    /* Footer */
+    .foot {
+      padding: 40px 0;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .foot-in { display: flex; justify-content: space-between; align-items: center; }
+
+    @media (max-width: 1024px) {
+      .heading { flex-direction: column; align-items: flex-start; }
+      .std-grid { grid-template-columns: repeat(2, 1fr); }
+      .std-item:nth-child(2) { border-right: none; }
+      .std-item:nth-child(1), .std-item:nth-child(2) { border-bottom: 1px solid var(--border); padding-bottom: 24px; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .template-grid { grid-template-columns: 1fr; }
+      .card-actions { flex-direction: column; }
+      .btn-download { width: 100%; justify-content: center; }
+      .foot-in { flex-direction: column; gap: 12px; text-align: center; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .card, .btn, .btn-view { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="top-strip">
+    <div class="wrap">
+      <span class="top-tag">CLIENT-READY TECHNOLOGY WEBSITE COLLECTION</span>
+      <span>HTML5 · CSS3 · VANILLA ES6 JS · ZERO FRAMEWORKS</span>
+    </div>
+  </div>
+
+  <header class="nav">
+    <div class="wrap navin">
+      <a class="brand" href="#top">
+        <span class="brand-sym">⬢</span>
+        <span>TECH TEMPLATES</span>
+      </a>
+      <nav class="nav-links" aria-label="Showcase Navigation">
+        <a href="#templates">All Templates</a>
+        <a href="#standards">Quality Standards</a>
+        <a href="#architecture">Architecture</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="wrap">
+        <span class="eyebrow">5 Distinct Commercial Website Templates</span>
+        <h1>Professional Technology Website Template Collection</h1>
+        <p>
+          Five independent, modern, and fully-responsive frontend templates crafted for enterprise IT companies, SaaS platforms, AI labs, software engineering squads, and tech startups. Built with clean semantic code, accessible interactions, and zero framework overhead.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#templates">Browse All Templates ↓</a>
+          <a class="btn btn-secondary" href="#standards">View Engineering Standards</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Templates Collection Grid -->
+    <section class="section" id="templates">
+      <div class="wrap">
+        <div class="heading">
+          <div>
+            <span class="eyebrow">01 · Production Templates</span>
+            <h2>Select a technology template.</h2>
+          </div>
+          <p>Each template is 100% standalone, fully runnable directly in the browser, and packaged with its own style, script, and documentation.</p>
+        </div>
+
+        <div class="template-grid">
+          <!-- 1. IT Company -->
+          <article class="card">
+            <div>
+              <span class="card-badge badge-it">ENTERPRISE IT SERVICES</span>
+              <h3>CoreMatrix IT Solutions</h3>
+              <p class="card-desc">
+                Structured corporate-modern design for cloud infrastructure, cybersecurity defense, SOC 2 compliance, and managed 24/7 IT services.
+              </p>
+              <ul class="card-specs">
+                <li>Live Telemetry Server Terminal Mockup</li>
+                <li>Multi-Cloud Stack & Certification Showcase</li>
+                <li>SOC2 & ISO 27001 Compliance Badges</li>
+                <li>Interactive Architecture Audit Form</li>
+              </ul>
+            </div>
+            <div class="card-actions">
+              <a class="btn-view" href="it-company/index.html">Live Preview ↗</a>
+              <a class="btn-download" href="downloads/it-company.zip" download>ZIP Download ↓</a>
+            </div>
+          </article>
+
+          <!-- 2. SaaS Platform -->
+          <article class="card">
+            <div>
+              <span class="card-badge badge-saas">B2B SAAS PLATFORM</span>
+              <h3>FlowPulse Cloud</h3>
+              <p class="card-desc">
+                Clean, product-led B2B SaaS platform design with real-time telemetry pipelines, interactive pricing toggles, and DevOps integrations.
+              </p>
+              <ul class="card-specs">
+                <li>Interactive CSS Product Dashboard Mockup</li>
+                <li>Monthly / Annual Pricing Switcher (-20%)</li>
+                <li>3-Step Incident Resolution Workflow</li>
+                <li>Validated 14-Day Trial & Demo Request Form</li>
+              </ul>
+            </div>
+            <div class="card-actions">
+              <a class="btn-view" href="saas-platform/index.html">Live Preview ↗</a>
+              <a class="btn-download" href="downloads/saas-platform.zip" download>ZIP Download ↓</a>
+            </div>
+          </article>
+
+          <!-- 3. AI Company -->
+          <article class="card">
+            <div>
+              <span class="card-badge badge-ai">AUTONOMOUS AI & RESEARCH</span>
+              <h3>Cognita AI</h3>
+              <p class="card-desc">
+                Sophisticated, editorial, and restrained luxury tech aesthetic tailored for sovereign foundation models, agentic reasoning, and air-gapped VPCs.
+              </p>
+              <ul class="card-specs">
+                <li>Simulated Chain-of-Thought Reasoning Graph</li>
+                <li>Foundation Model Weights Showcase (70B)</li>
+                <li>MMLU-Pro 94.2% Benchmarks & Hardware Stack</li>
+                <li>Model Evaluation & Weights Request Form</li>
+              </ul>
+            </div>
+            <div class="card-actions">
+              <a class="btn-view" href="ai-company/index.html">Live Preview ↗</a>
+              <a class="btn-download" href="downloads/ai-company.zip" download>ZIP Download ↓</a>
+            </div>
+          </article>
+
+          <!-- 4. Software Company -->
+          <article class="card">
+            <div>
+              <span class="card-badge badge-software">ENGINEERING CONSULTANCY</span>
+              <h3>Apex DevForge</h3>
+              <p class="card-desc">
+                Technical, high-precision software engineering consultancy design with code blueprints, distributed Go/Rust backends, and GitOps CI/CD.
+              </p>
+              <ul class="card-specs">
+                <li>Syntax-Highlighted Go Engine Preview</li>
+                <li>Distributed Microservices & Modernization</li>
+                <li>Sprint-Based Squad Engagement Pricing</li>
+                <li>Principal Architect Consultation Form</li>
+              </ul>
+            </div>
+            <div class="card-actions">
+              <a class="btn-view" href="software-company/index.html">Live Preview ↗</a>
+              <a class="btn-download" href="downloads/software-company.zip" download>ZIP Download ↓</a>
+            </div>
+          </article>
+
+          <!-- 5. Technology Startup -->
+          <article class="card">
+            <div>
+              <span class="card-badge badge-startup">DECENTRALIZED EDGE STARTUP</span>
+              <h3>PrismOS Labs</h3>
+              <p class="card-desc">
+                Modern, energetic, editorial startup landing page featuring YC backing badge, edge mesh node telemetry, and offline-first product showcases.
+              </p>
+              <ul class="card-specs">
+                <li>Live Global Edge Mesh Node Visualization</li>
+                <li>The Problem vs Solution Architectural Frame</li>
+                <li>Traction Milestones & Quarterly Roadmap</li>
+                <li>Early Founder Access Form with Live Feedback</li>
+              </ul>
+            </div>
+            <div class="card-actions">
+              <a class="btn-view" href="technology-startup/index.html">Live Preview ↗</a>
+              <a class="btn-download" href="downloads/technology-startup.zip" download>ZIP Download ↓</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Standards Section -->
+    <section class="standards" id="standards">
+      <div class="wrap">
+        <div class="std-grid">
+          <div class="std-item">
+            <strong>100% Framework Free</strong>
+            <span>Semantic HTML5, modular CSS3 custom properties, and native ES6 JS.</span>
+          </div>
+          <div class="std-item">
+            <strong>Zero Build Step</strong>
+            <span>Open any index.html directly in any browser or upload to static hosting.</span>
+          </div>
+          <div class="std-item">
+            <strong>Fully Accessible</strong>
+            <span>Keyboard focus, ARIA expanded/controls, skip links, and reduced-motion.</span>
+          </div>
+          <div class="std-item">
+            <strong>Interactive Logic</strong>
+            <span>Mobile navigation, FAQ accordions, and real-time form validation.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <span>© 2026 Technology Frontend Template Collection. All templates independently runnable.</span>
+      <span>Client-Ready Commercial Frontend Templates</span>
+    </div>
+  </footer>
+</body>
+</html>
