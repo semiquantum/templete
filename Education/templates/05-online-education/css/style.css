@@ -1,0 +1,542 @@
+/* ==========================================================================
+   Template 05: Online Education Platform - SkillVerse
+   Design System: Modern EdTech / SaaS Dashboard, Vivid Indigo, Purple & Cyber Teal
+   ========================================================================== */
+
+:root {
+  --indigo: #4f46e5;
+  --indigo-dark: #3730a3;
+  --indigo-light: #e0e7ff;
+  --purple: #8b5cf6;
+  --teal: #14b8a6;
+  --teal-light: #ccfbf1;
+  
+  --neutral-900: #0f172a;
+  --neutral-800: #1e293b;
+  --neutral-700: #334155;
+  --neutral-600: #475569;
+  --neutral-400: #94a3b8;
+  --neutral-200: #e2e8f0;
+  --neutral-100: #f1f5f9;
+  --neutral-50: #f8fafc;
+  --white: #ffffff;
+
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 4px 12px rgba(79, 70, 229, 0.05);
+  --shadow-md: 0 10px 30px rgba(79, 70, 229, 0.1);
+  --shadow-lg: 0 20px 40px rgba(15, 23, 42, 0.12);
+
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--neutral-700);
+  background-color: var(--neutral-50);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--neutral-900);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+a { text-decoration: none; color: inherit; transition: var(--transition); }
+ul { list-style: none; }
+img { max-width: 100%; height: auto; display: block; }
+button, input, select, textarea { font-family: inherit; font-size: inherit; outline: none; border: none; }
+
+.container {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.section-padding { padding: 90px 0; }
+.text-center { text-align: center; }
+
+.section-tag {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: var(--indigo-light);
+  color: var(--indigo-dark);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: var(--radius-full);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.section-title {
+  font-size: 2.6rem;
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--neutral-600);
+  max-width: 680px;
+  margin: 0 auto 48px auto;
+}
+
+/* --- Buttons --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 0.95rem;
+}
+
+.btn-indigo {
+  background-color: var(--indigo);
+  color: var(--white);
+  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.35);
+}
+
+.btn-indigo:hover {
+  background-color: var(--indigo-dark);
+  transform: translateY(-2px);
+}
+
+.btn-teal {
+  background-color: var(--teal);
+  color: var(--white);
+}
+
+.btn-teal:hover {
+  background-color: #0d9488;
+  transform: translateY(-2px);
+}
+
+.btn-outline-indigo {
+  border: 2px solid var(--indigo);
+  color: var(--indigo);
+  background: transparent;
+}
+
+.btn-outline-indigo:hover {
+  background-color: var(--indigo);
+  color: var(--white);
+}
+
+/* --- EdTech Header --- */
+.ed-nav {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  box-shadow: var(--shadow-sm);
+  z-index: 1000;
+}
+
+.ed-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.ed-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--indigo);
+}
+
+.ed-menu {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.ed-menu a {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--neutral-700);
+}
+
+.ed-menu a:hover {
+  color: var(--indigo);
+}
+
+/* --- Hero Section --- */
+.ed-hero {
+  background: linear-gradient(135deg, #e0e7ff 0%, #f3e8ff 50%, #ccfbf1 100%);
+  padding: 80px 0 100px 0;
+}
+
+.hero-ed-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.ed-hero h1 {
+  font-size: 3.4rem;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.ed-hero h1 span {
+  color: var(--indigo);
+  background: linear-gradient(135deg, var(--indigo) 0%, var(--purple) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Live Search Bar Component */
+.hero-search-box {
+  background: var(--white);
+  padding: 8px 12px 8px 24px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 580px;
+  margin-top: 28px;
+}
+
+.hero-search-input {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  color: var(--neutral-800);
+}
+
+/* Category Pills Bar */
+.category-pills {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pill-btn {
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  background: var(--white);
+  border: 1px solid var(--neutral-200);
+  font-weight: 600;
+  font-size: 0.88rem;
+  color: var(--neutral-700);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.pill-btn.active, .pill-btn:hover {
+  background: var(--indigo);
+  color: var(--white);
+  border-color: var(--indigo);
+}
+
+/* --- Course Cards Grid --- */
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.course-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--neutral-200);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.course-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--indigo-light);
+}
+
+.course-thumb-box {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.course-thumb-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition);
+}
+
+.course-card:hover .course-thumb-box img {
+  transform: scale(1.06);
+}
+
+.course-cat-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: var(--white);
+  color: var(--indigo);
+  font-weight: 700;
+  font-size: 0.78rem;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-sm);
+}
+
+.course-body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-meta-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  color: var(--neutral-600);
+  margin-bottom: 10px;
+}
+
+.rating-badge {
+  color: #f59e0b;
+  font-weight: 700;
+}
+
+.course-body h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.course-instructor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--neutral-100);
+}
+
+.inst-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.price-tag {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--indigo);
+  margin-left: auto;
+}
+
+/* --- Instructor Cards --- */
+.instructor-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.instructor-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 28px;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.inst-img-lg {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 16px auto;
+  border: 3px solid var(--purple);
+}
+
+/* --- Pricing Plans --- */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  border: 2px solid var(--neutral-200);
+  text-align: center;
+  transition: var(--transition);
+  position: relative;
+}
+
+.pricing-card.popular {
+  border-color: var(--indigo);
+  box-shadow: var(--shadow-lg);
+}
+
+.pop-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--indigo);
+  color: var(--white);
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 4px 16px;
+  border-radius: var(--radius-full);
+}
+
+/* --- FAQ Accordion --- */
+.ed-faq {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ed-faq-item {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  margin-bottom: 14px;
+  border: 1px solid var(--neutral-200);
+}
+
+.ed-faq-btn {
+  width: 100%;
+  padding: 20px 24px;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--neutral-900);
+  cursor: pointer;
+  text-align: left;
+}
+
+.ed-faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 24px;
+  color: var(--neutral-600);
+}
+
+.ed-faq-item.active .ed-faq-content {
+  padding: 0 24px 20px 24px;
+}
+
+/* --- Modal Drawer --- */
+.course-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.course-modal.active {
+  display: flex;
+}
+
+.modal-inner {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  max-width: 640px;
+  width: 100%;
+  padding: 36px;
+  position: relative;
+  animation: popIn 0.3s ease-out;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 20px; right: 20px;
+  background: var(--neutral-100);
+  width: 32px; height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: bold;
+}
+
+/* --- Footer --- */
+.ed-footer {
+  background: var(--neutral-900);
+  color: var(--neutral-400);
+  padding: 80px 0 40px 0;
+  font-size: 0.9rem;
+}
+
+.ed-footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.ed-footer h4 { color: var(--white); margin-bottom: 20px; }
+.ed-footer ul li { margin-bottom: 10px; }
+.ed-footer a:hover { color: var(--indigo-light); }
+
+@media (max-width: 992px) {
+  .hero-ed-grid { grid-template-columns: 1fr; }
+  .courses-grid { grid-template-columns: 1fr; }
+  .instructor-grid { grid-template-columns: repeat(2, 1fr); }
+  .pricing-grid, .ed-footer-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 576px) {
+  .instructor-grid { grid-template-columns: 1fr; }
+  .ed-hero h1 { font-size: 2.2rem; }
+}

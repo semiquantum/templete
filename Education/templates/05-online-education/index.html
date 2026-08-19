@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillVerse — Learn Skills That Move Your Future Forward</title>
+  <meta name="description" content="SkillVerse is an online learning platform offering top-rated video courses in coding, artificial intelligence, UI/UX design, and business data science.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../../css/template-style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="ed-nav">
+    <div class="container">
+      <a href="#" class="ed-logo">
+        <span style="background:var(--indigo); color:var(--white); padding:6px 10px; border-radius:8px;">SV</span>
+        SkillVerse
+      </a>
+
+      <nav class="ed-menu">
+        <a href="#courses">Courses</a>
+        <a href="#courses">Categories</a>
+        <a href="#instructors">Instructors</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#pricing" class="btn btn-indigo js-subscription-btn" data-plan="7-Day Free Trial">Start Free Trial</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section with Search -->
+  <section class="ed-hero">
+    <div class="container hero-ed-grid">
+      <div>
+        <span class="section-tag">⚡ 1,200+ Interactive Online Courses</span>
+        <h1>Learn Skills That <span>Move Your Future</span> Forward</h1>
+        <p>Gain industry-recognized skills in software development, AI engineering, UX design, and data analytics with hands-on projects guided by world-class mentors.</p>
+
+        <!-- Live Search Input -->
+        <div class="hero-search-box">
+          <span style="font-size:1.2rem;">🔍</span>
+          <input type="text" id="heroSearchInput" class="hero-search-input" placeholder="Search courses e.g. React, Python, UI Design, AI...">
+          <button class="btn btn-indigo" style="padding:10px 20px; font-size:0.88rem;">Search</button>
+        </div>
+      </div>
+
+      <div>
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Online Learning Student" style="border-radius:var(--radius-lg); box-shadow:var(--shadow-lg);">
+      </div>
+    </div>
+  </section>
+
+  <!-- Course Catalog & Category Filters -->
+  <section id="courses" class="section-padding">
+    <div class="container text-center">
+      <span class="section-tag">Explore Catalog</span>
+      <h2 class="section-title">Popular E-Learning Courses</h2>
+      <p class="section-subtitle">Real-time searchable catalog. Filter by category or search by topic below.</p>
+
+      <!-- Category Pills Filter -->
+      <div class="category-pills">
+        <button class="pill-btn active" data-cat="all">All Courses</button>
+        <button class="pill-btn" data-cat="development">Web Development</button>
+        <button class="pill-btn" data-cat="ai">AI & Python</button>
+        <button class="pill-btn" data-cat="design">UI/UX Design</button>
+        <button class="pill-btn" data-cat="business">Data & Business</button>
+      </div>
+
+      <!-- No Results State -->
+      <div id="noResultsMsg" style="display:none; padding:40px; background:var(--neutral-100); border-radius:var(--radius-md); margin-bottom:30px;">
+        <h3 style="color:var(--neutral-700); margin-bottom:8px;">No courses found matching your query</h3>
+        <p style="color:var(--neutral-500); font-size:0.9rem;">Try searching for different keywords like 'Python', 'React', 'Design', or clear your search input.</p>
+      </div>
+
+      <!-- Course Cards Grid -->
+      <div class="courses-grid">
+        <!-- Card 1 -->
+        <div class="course-card" data-category="development">
+          <div class="course-thumb-box">
+            <span class="course-cat-badge">Web Development</span>
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=600&q=80" alt="React & Next.js Masterclass">
+          </div>
+          <div class="course-body" style="text-align:left;">
+            <div class="course-meta-top">
+              <span class="rating-badge">★ 4.9 (2,450)</span>
+              <span>⏱️ 28 Hours • 140 Lessons</span>
+            </div>
+            <h3>Fullstack React & Next.js 14 Masterclass</h3>
+            <div class="course-instructor">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Sarah Connor" class="inst-avatar">
+              <span class="inst-name" style="font-size:0.88rem; font-weight:600;">Sarah Connor</span>
+              <span class="price-tag">$49.99</span>
+            </div>
+            <button class="btn btn-outline-indigo preview-btn" style="width:100%; margin-top:16px; padding:8px 16px; font-size:0.88rem;">Quick Preview & Syllabus</button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="course-card" data-category="ai">
+          <div class="course-thumb-box">
+            <span class="course-cat-badge">AI & Python</span>
+            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80" alt="Python & Machine Learning">
+          </div>
+          <div class="course-body" style="text-align:left;">
+            <div class="course-meta-top">
+              <span class="rating-badge">★ 4.9 (4,120)</span>
+              <span>⏱️ 36 Hours • 180 Lessons</span>
+            </div>
+            <h3>Python, PyTorch & LLM Engineering</h3>
+            <div class="course-instructor">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Dr. Alex Rivera" class="inst-avatar">
+              <span class="inst-name" style="font-size:0.88rem; font-weight:600;">Dr. Alex Rivera</span>
+              <span class="price-tag">$59.99</span>
+            </div>
+            <button class="btn btn-outline-indigo preview-btn" style="width:100%; margin-top:16px; padding:8px 16px; font-size:0.88rem;">Quick Preview & Syllabus</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="course-card" data-category="design">
+          <div class="course-thumb-box">
+            <span class="course-cat-badge">UI/UX Design</span>
+            <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?auto=format&fit=crop&w=600&q=80" alt="Figma UI/UX Design">
+          </div>
+          <div class="course-body" style="text-align:left;">
+            <div class="course-meta-top">
+              <span class="rating-badge">★ 4.8 (1,890)</span>
+              <span>⏱️ 22 Hours • 95 Lessons</span>
+            </div>
+            <h3>Figma UI/UX Systems & Design Thinking</h3>
+            <div class="course-instructor">
+              <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80" alt="Elena Vance" class="inst-avatar">
+              <span class="inst-name" style="font-size:0.88rem; font-weight:600;">Elena Vance</span>
+              <span class="price-tag">$39.99</span>
+            </div>
+            <button class="btn btn-outline-indigo preview-btn" style="width:100%; margin-top:16px; padding:8px 16px; font-size:0.88rem;">Quick Preview & Syllabus</button>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="course-card" data-category="business">
+          <div class="course-thumb-box">
+            <span class="course-cat-badge">Data & Business</span>
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Data Analytics & SQL">
+          </div>
+          <div class="course-body" style="text-align:left;">
+            <div class="course-meta-top">
+              <span class="rating-badge">★ 4.9 (3,200)</span>
+              <span>⏱️ 30 Hours • 130 Lessons</span>
+            </div>
+            <h3>SQL, PowerBI & Business Intelligence</h3>
+            <div class="course-instructor">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Marcus Brody" class="inst-avatar">
+              <span class="inst-name" style="font-size:0.88rem; font-weight:600;">Marcus Brody</span>
+              <span class="price-tag">$44.99</span>
+            </div>
+            <button class="btn btn-outline-indigo preview-btn" style="width:100%; margin-top:16px; padding:8px 16px; font-size:0.88rem;">Quick Preview & Syllabus</button>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="course-card" data-category="development">
+          <div class="course-thumb-box">
+            <span class="course-cat-badge">Web Development</span>
+            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?auto=format&fit=crop&w=600&q=80" alt="Node.js Microservices">
+          </div>
+          <div class="course-body" style="text-align:left;">
+            <div class="course-meta-top">
+              <span class="rating-badge">★ 4.8 (1,420)</span>
+              <span>⏱️ 26 Hours • 110 Lessons</span>
+            </div>
+            <h3>Node.js Backend Microservices & Docker</h3>
+            <div class="course-instructor">
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Sarah Connor" class="inst-avatar">
+              <span class="inst-name" style="font-size:0.88rem; font-weight:600;">Sarah Connor</span>
+              <span class="price-tag">$49.99</span>
+            </div>
+            <button class="btn btn-outline-indigo preview-btn" style="width:100%; margin-top:16px; padding:8px 16px; font-size:0.88rem;">Quick Preview & Syllabus</button>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="course-card" data-category="ai">
+          <div class="course-thumb-box">
+            <span class="course-cat-badge">AI & Python</span>
+            <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=600&q=80" alt="Generative AI Art">
+          </div>
+          <div class="course-body" style="text-align:left;">
+            <div class="course-meta-top">
+              <span class="rating-badge">★ 4.9 (2,100)</span>
+              <span>⏱️ 18 Hours • 80 Lessons</span>
+            </div>
+            <h3>Generative AI & Prompt Engineering Bootcamp</h3>
+            <div class="course-instructor">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Dr. Alex Rivera" class="inst-avatar">
+              <span class="inst-name" style="font-size:0.88rem; font-weight:600;">Dr. Alex Rivera</span>
+              <span class="price-tag">$34.99</span>
+            </div>
+            <button class="btn btn-outline-indigo preview-btn" style="width:100%; margin-top:16px; padding:8px 16px; font-size:0.88rem;">Quick Preview & Syllabus</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instructor Spotlight -->
+  <section id="instructors" class="section-padding" style="background:var(--neutral-100);">
+    <div class="container text-center">
+      <span class="section-tag">Expert Mentors</span>
+      <h2 class="section-title">Learn From Industry Leaders</h2>
+      <p class="section-subtitle">Top engineering leads and product designers dedicated to your success.</p>
+
+      <div class="instructor-grid">
+        <div class="instructor-card">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Sarah Connor" class="inst-img-lg">
+          <h3>Sarah Connor</h3>
+          <p style="font-size:0.85rem; color:var(--indigo); font-weight:600; margin-bottom:6px;">Ex-Meta Staff Engineer</p>
+          <span style="font-size:0.8rem; color:var(--neutral-600);">14 Courses • 85k Students</span>
+        </div>
+
+        <div class="instructor-card">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Dr. Alex Rivera" class="inst-img-lg">
+          <h3>Dr. Alex Rivera</h3>
+          <p style="font-size:0.85rem; color:var(--indigo); font-weight:600; margin-bottom:6px;">AI Research Lead</p>
+          <span style="font-size:0.8rem; color:var(--neutral-600);">8 Courses • 62k Students</span>
+        </div>
+
+        <div class="instructor-card">
+          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80" alt="Elena Vance" class="inst-img-lg">
+          <h3>Elena Vance</h3>
+          <p style="font-size:0.85rem; color:var(--indigo); font-weight:600; margin-bottom:6px;">Principal UX Architect</p>
+          <span style="font-size:0.8rem; color:var(--neutral-600);">11 Courses • 49k Students</span>
+        </div>
+
+        <div class="instructor-card">
+          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80" alt="Marcus Brody" class="inst-img-lg">
+          <h3>Marcus Brody</h3>
+          <p style="font-size:0.85rem; color:var(--indigo); font-weight:600; margin-bottom:6px;">Head of Data Strategy</p>
+          <span style="font-size:0.8rem; color:var(--neutral-600);">6 Courses • 38k Students</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscription Pricing Plans -->
+  <section id="pricing" class="section-padding">
+    <div class="container text-center">
+      <span class="section-tag">Flexible Membership</span>
+      <h2 class="section-title">Simple Subscription Pricing</h2>
+      <p class="section-subtitle">Unlock full access to 1,200+ courses, certificates, and community projects.</p>
+
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Monthly Pro</h3>
+          <p style="color:var(--neutral-600); margin-bottom:20px;">Ideal for short-term skill boosts</p>
+          <h2 style="font-size:3rem; color:var(--indigo); margin-bottom:20px;">$19<span style="font-size:1rem; color:var(--neutral-500);">/mo</span></h2>
+          <ul style="text-align:left; margin-bottom:28px; font-size:0.9rem;">
+            <li style="margin-bottom:8px;">✓ Unlimited access to all 1,200+ courses</li>
+            <li style="margin-bottom:8px;">✓ Official certificates of completion</li>
+            <li style="margin-bottom:8px;">✓ Discord community support</li>
+          </ul>
+          <button type="button" class="btn btn-outline-indigo js-subscription-btn" data-plan="7-Day Free Trial" style="width:100%;">Start 7-Day Free Trial</button>
+        </div>
+
+        <div class="pricing-card popular">
+          <span class="pop-badge">SAVE 40% ANNUAL</span>
+          <h3>Annual All-Access</h3>
+          <p style="color:var(--neutral-600); margin-bottom:20px;">Best value for committed learners</p>
+          <h2 style="font-size:3rem; color:var(--indigo); margin-bottom:20px;">$149<span style="font-size:1rem; color:var(--neutral-500);">/yr</span></h2>
+          <ul style="text-align:left; margin-bottom:28px; font-size:0.9rem;">
+            <li style="margin-bottom:8px;">✓ Everything in Monthly Pro</li>
+            <li style="margin-bottom:8px;">✓ Offline video downloads</li>
+            <li style="margin-bottom:8px;">✓ 1-on-1 mentor code reviews</li>
+          </ul>
+          <button type="button" class="btn btn-indigo js-subscription-btn" data-plan="Annual All-Access" style="width:100%;">Get Annual Membership</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faqs" class="section-padding" style="background:var(--neutral-100);">
+    <div class="container text-center">
+      <span class="section-tag">Learning Help</span>
+      <h2 class="section-title">E-Learning Platform FAQs</h2>
+      <p class="section-subtitle">Got questions about certificates, refunds, or course downloads?</p>
+
+      <div class="ed-faq">
+        <div class="ed-faq-item active">
+          <button class="ed-faq-btn">
+            <span>Are SkillVerse certificates recognized by employers?</span>
+            <span>▼</span>
+          </button>
+          <div class="ed-faq-content" style="max-height:200px;">
+            <p>Yes, SkillVerse certificates feature verified QR codes and digital credentials easily shareable directly to LinkedIn and employer resume portals.</p>
+          </div>
+        </div>
+
+        <div class="ed-faq-item">
+          <button class="ed-faq-btn">
+            <span>Can I cancel my subscription anytime?</span>
+            <span>▼</span>
+          </button>
+          <div class="ed-faq-content">
+            <p>Absolutely. You can cancel your monthly or annual subscription with one click inside your account dashboard with zero penalty fees.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscription / Free Trial Modal -->
+  <div id="subscriptionModal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button type="button" class="modal-close" aria-label="Close">&times;</button>
+      <span style="color:var(--indigo); font-weight:700; font-size:0.85rem; text-transform:uppercase;">SkillVerse Membership</span>
+      <h2 id="subscriptionTitle" style="margin:8px 0 10px;">Start Your Free Trial</h2>
+      <p id="subscriptionPlan" style="color:var(--neutral-600); margin-bottom:22px;">7-Day Free Trial</p>
+
+      <form id="subscriptionForm">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:14px;">
+          <div>
+            <label for="subName" style="display:block; margin-bottom:6px; font-weight:600;">Full Name</label>
+            <input id="subName" name="name" type="text" required placeholder="Enter your name"
+                   style="width:100%; padding:12px; border:1px solid var(--neutral-300); border-radius:10px;">
+          </div>
+          <div>
+            <label for="subEmail" style="display:block; margin-bottom:6px; font-weight:600;">Email</label>
+            <input id="subEmail" name="email" type="email" required placeholder="you@example.com"
+                   style="width:100%; padding:12px; border:1px solid var(--neutral-300); border-radius:10px;">
+          </div>
+        </div>
+        <div id="subscriptionSuccess" class="form-success" style="display:none;"></div>
+        <button type="submit" class="btn btn-indigo" style="width:100%;">Continue</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Course Detail Modal Drawer -->
+  <div id="courseDetailModal" class="course-modal">
+    <div class="modal-inner">
+      <div class="modal-close-btn">&times;</div>
+      <span style="color:var(--indigo); font-weight:700; font-size:0.85rem; text-transform:uppercase;">Course Quick Overview</span>
+      <h2 id="mTitle" style="margin:8px 0 12px 0; font-size:1.6rem;">Course Title</h2>
+      <p id="mInst" style="color:var(--purple); font-weight:600; margin-bottom:16px;">Taught by Instructor</p>
+      <p id="mDesc" style="color:var(--neutral-600); font-size:0.95rem; line-height:1.6; margin-bottom:24px;">Course syllabus description...</p>
+      
+      <div style="display:flex; justify-content:space-between; align-items:center; border-top:1px solid var(--neutral-200); padding-top:20px;">
+        <span id="mPrice" style="font-size:1.8rem; font-weight:800; color:var(--indigo);">$49.99</span>
+        <button class="btn btn-indigo" onclick="alert('Enrolled successfully in course!');">Enroll & Start Learning</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="ed-footer">
+    <div class="container">
+      <div class="ed-footer-grid">
+        <div>
+          <h3 style="color:var(--white); margin-bottom:16px;">SkillVerse</h3>
+          <p style="margin-bottom:20px;">Empowering tech learners worldwide with project-based online education.</p>
+          <p style="color:var(--teal);">SkillVerse Inc., San Francisco, CA</p>
+        </div>
+
+        <div>
+          <h4>Top Subjects</h4>
+          <ul>
+            <li><a href="#">React & Next.js</a></li>
+            <li><a href="#">Python & AI</a></li>
+            <li><a href="#">Figma UI/UX</a></li>
+            <li><a href="#">Data Analytics</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Platform</h4>
+          <ul>
+            <li><a href="#">All Courses</a></li>
+            <li><a href="#">Instructors</a></li>
+            <li><a href="#">Pricing Plans</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Student Discord</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="border-top:1px solid rgba(255,255,255,0.1); padding-top:24px; text-align:center; font-size:0.85rem;">
+        &copy; 2026 SkillVerse EdTech Inc. All Rights Reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/script.js"></script>
+</body>
+</html>

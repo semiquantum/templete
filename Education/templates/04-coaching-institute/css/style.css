@@ -1,0 +1,471 @@
+/* ==========================================================================
+   Template 04: Coaching Institute - Apex Academy
+   Design System: Energetic, High-Conversion, Bold Dark Mode & Flame Orange
+   ========================================================================== */
+
+:root {
+  --dark-bg: #111827;
+  --dark-card: #1f2937;
+  --dark-border: #374151;
+  --flame-orange: #ff5722;
+  --flame-hover: #e64a19;
+  --electric-yellow: #facc15;
+  --cobalt-blue: #2563eb;
+  
+  --neutral-900: #030712;
+  --neutral-800: #111827;
+  --neutral-700: #1f2937;
+  --neutral-400: #9ca3af;
+  --neutral-200: #e5e7eb;
+  --white: #ffffff;
+
+  --font-heading: 'Space Grotesk', 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --shadow-orange: 0 8px 24px rgba(255, 87, 34, 0.35);
+
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--neutral-200);
+  background-color: var(--dark-bg);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--white);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a { text-decoration: none; color: inherit; transition: var(--transition); }
+ul { list-style: none; }
+img { max-width: 100%; height: auto; display: block; }
+button, input, select, textarea { font-family: inherit; font-size: inherit; outline: none; border: none; }
+
+.container {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.section-padding { padding: 90px 0; }
+.text-center { text-align: center; }
+
+.section-tag {
+  display: inline-block;
+  padding: 6px 16px;
+  background-color: rgba(255, 87, 34, 0.15);
+  color: var(--flame-orange);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  border: 1px solid rgba(255, 87, 34, 0.3);
+}
+
+.section-title {
+  font-size: 2.7rem;
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--neutral-400);
+  max-width: 680px;
+  margin: 0 auto 48px auto;
+}
+
+/* --- Buttons --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 28px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 0.95rem;
+}
+
+.btn-orange {
+  background-color: var(--flame-orange);
+  color: var(--white);
+  box-shadow: var(--shadow-orange);
+}
+
+.btn-orange:hover {
+  background-color: var(--flame-hover);
+  transform: translateY(-2px);
+}
+
+.btn-yellow {
+  background-color: var(--electric-yellow);
+  color: var(--neutral-900);
+  font-weight: 800;
+}
+
+.btn-yellow:hover {
+  background-color: #eab308;
+  transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+  border: 2px solid var(--dark-border);
+  color: var(--white);
+  background: transparent;
+}
+
+.btn-outline-dark:hover {
+  border-color: var(--flame-orange);
+  color: var(--flame-orange);
+}
+
+/* --- Urgency Ticker --- */
+.ticker-bar {
+  background: var(--flame-orange);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* --- Header --- */
+.apex-header {
+  position: sticky;
+  top: 0;
+  background: rgba(17, 24, 39, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--dark-border);
+  z-index: 1000;
+}
+
+.apex-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.apex-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.apex-badge {
+  background: var(--flame-orange);
+  color: var(--white);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.apex-nav {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.apex-nav a {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--neutral-400);
+}
+
+.apex-nav a:hover {
+  color: var(--flame-orange);
+}
+
+/* --- Hero Section --- */
+.apex-hero {
+  padding: 80px 0 100px 0;
+  background: radial-gradient(circle at 80% 20%, rgba(255, 87, 34, 0.15) 0%, transparent 50%);
+}
+
+.hero-apex-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.apex-hero h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.apex-hero h1 span {
+  color: var(--flame-orange);
+}
+
+.hero-lead-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.hero-lead-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--flame-orange);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+}
+
+/* --- Countdown Timer Widget --- */
+.countdown-box {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.count-unit {
+  background: var(--dark-bg);
+  border: 1px solid var(--dark-border);
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  min-width: 60px;
+}
+
+.count-unit strong {
+  font-size: 1.4rem;
+  color: var(--electric-yellow);
+  display: block;
+}
+
+.count-unit span {
+  font-size: 0.7rem;
+  color: var(--neutral-400);
+  text-transform: uppercase;
+}
+
+/* --- Toppers Hall of Fame --- */
+.topper-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.topper-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  text-align: center;
+  position: relative;
+  transition: var(--transition);
+}
+
+.topper-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--flame-orange);
+}
+
+.rank-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: var(--electric-yellow);
+  color: var(--neutral-900);
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+}
+
+.topper-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 14px auto;
+  border: 3px solid var(--flame-orange);
+}
+
+.topper-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 4px;
+}
+
+.topper-card p {
+  color: var(--flame-orange);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* --- Prep Courses --- */
+.course-apex-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.apex-course-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+
+.apex-course-card:hover {
+  border-color: var(--flame-orange);
+  box-shadow: var(--shadow-orange);
+}
+
+.course-tag {
+  display: inline-block;
+  padding: 4px 10px;
+  background: rgba(37, 99, 235, 0.2);
+  color: #60a5fa;
+  font-weight: 700;
+  font-size: 0.78rem;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+
+.apex-course-card h3 {
+  font-size: 1.35rem;
+  margin-bottom: 10px;
+}
+
+.apex-course-card p {
+  font-size: 0.92rem;
+  color: var(--neutral-400);
+  margin-bottom: 20px;
+  flex: 1;
+}
+
+/* --- Batch Schedule Cards --- */
+.batch-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.batch-card {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  border-left: 4px solid var(--electric-yellow);
+}
+
+.seat-left-badge {
+  background: rgba(239, 68, 68, 0.2);
+  color: #f87171;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* --- FAQ Accordion --- */
+.apex-faq {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.apex-faq-item {
+  background: var(--dark-card);
+  border: 1px solid var(--dark-border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 12px;
+}
+
+.apex-faq-btn {
+  width: 100%;
+  padding: 18px 24px;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--white);
+  cursor: pointer;
+  text-align: left;
+}
+
+.apex-faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 24px;
+  color: var(--neutral-400);
+}
+
+.apex-faq-item.active .apex-faq-content {
+  padding: 0 24px 20px 24px;
+}
+
+/* --- Footer --- */
+.apex-footer {
+  background: var(--neutral-900);
+  border-top: 1px solid var(--dark-border);
+  color: var(--neutral-400);
+  padding: 80px 0 40px 0;
+  font-size: 0.9rem;
+}
+
+.apex-footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.apex-footer h4 { color: var(--white); margin-bottom: 20px; }
+.apex-footer ul li { margin-bottom: 10px; }
+.apex-footer a:hover { color: var(--flame-orange); }
+
+@media (max-width: 992px) {
+  .hero-apex-grid { grid-template-columns: 1fr; }
+  .topper-grid { grid-template-columns: repeat(2, 1fr); }
+  .course-apex-grid, .batch-grid { grid-template-columns: 1fr; }
+  .apex-footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 576px) {
+  .topper-grid, .apex-footer-grid { grid-template-columns: 1fr; }
+  .apex-hero h1 { font-size: 2.2rem; }
+}

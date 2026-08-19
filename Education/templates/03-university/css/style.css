@@ -1,0 +1,460 @@
+/* ==========================================================================
+   Template 03: University Website - St. Jude International University
+   Design System: Premium Institutional, Research-Driven, Gold & Imperial Navy
+   ========================================================================== */
+
+/* --- Custom Properties --- */
+:root {
+  --imperial-navy: #0a192f;
+  --navy-dark: #020c1b;
+  --navy-surface: #112240;
+  --gold: #d4af37;
+  --gold-light: #f3e5ab;
+  --gold-hover: #c5a028;
+  --crimson: #991b1b;
+  --crimson-light: #fef2f2;
+  
+  --neutral-900: #0f172a;
+  --neutral-800: #1e293b;
+  --neutral-700: #334155;
+  --neutral-600: #475569;
+  --neutral-400: #94a3b8;
+  --neutral-200: #e2e8f0;
+  --neutral-100: #f1f5f9;
+  --white: #ffffff;
+
+  --font-serif: 'Playfair Display', serif;
+  --font-body: 'Lora', serif;
+
+  --radius-sm: 4px;
+  --radius-md: 10px;
+  --radius-lg: 18px;
+
+  --shadow-gold: 0 10px 30px rgba(212, 175, 55, 0.15);
+  --shadow-navy: 0 16px 36px rgba(10, 25, 47, 0.2);
+
+  --transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--neutral-800);
+  background-color: #fafbfc;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--imperial-navy);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+a { text-decoration: none; color: inherit; transition: var(--transition); }
+ul { list-style: none; }
+img { max-width: 100%; height: auto; display: block; }
+button, input, select, textarea { font-family: inherit; font-size: inherit; outline: none; border: none; }
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section-padding { padding: 90px 0; }
+.text-center { text-align: center; }
+
+.section-tag {
+  display: inline-block;
+  padding: 6px 18px;
+  background-color: rgba(212, 175, 55, 0.12);
+  color: var(--imperial-navy);
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  border-left: 3px solid var(--gold);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  margin-bottom: 16px;
+}
+
+.section-subtitle {
+  font-size: 1.15rem;
+  color: var(--neutral-600);
+  max-width: 720px;
+  margin: 0 auto 52px auto;
+  font-style: italic;
+}
+
+/* --- Buttons --- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 32px;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1rem;
+}
+
+.btn-gold {
+  background-color: var(--gold);
+  color: var(--imperial-navy);
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3);
+}
+
+.btn-gold:hover {
+  background-color: var(--gold-hover);
+  transform: translateY(-2px);
+}
+
+.btn-navy {
+  background-color: var(--imperial-navy);
+  color: var(--gold);
+  border: 1px solid var(--gold);
+}
+
+.btn-navy:hover {
+  background-color: var(--navy-surface);
+  color: var(--white);
+}
+
+/* --- Top Utility Bar --- */
+.uni-topbar {
+  background: var(--navy-dark);
+  color: var(--neutral-400);
+  font-size: 0.82rem;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.uni-topbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.uni-topbar a:hover {
+  color: var(--gold);
+}
+
+/* --- Main Header --- */
+.uni-header {
+  position: sticky;
+  top: 0;
+  background: rgba(10, 25, 47, 0.96);
+  backdrop-filter: blur(10px);
+  color: var(--white);
+  z-index: 1000;
+  box-shadow: var(--shadow-navy);
+}
+
+.uni-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+}
+
+.brand-crest {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.crest-symbol {
+  width: 44px;
+  height: 44px;
+  background: var(--gold);
+  color: var(--imperial-navy);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  border-radius: var(--radius-sm);
+  font-size: 1.3rem;
+}
+
+.uni-nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.uni-nav a {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--neutral-200);
+}
+
+.uni-nav a:hover {
+  color: var(--gold);
+}
+
+/* --- Hero Section --- */
+.uni-hero {
+  background: linear-gradient(135deg, var(--navy-dark) 0%, var(--imperial-navy) 60%, #172a45 100%);
+  color: var(--white);
+  padding: 120px 0 140px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.uni-hero::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -20%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+}
+
+.uni-hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.uni-hero h1 {
+  color: var(--white);
+  font-size: 3.8rem;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.uni-hero h1 span {
+  color: var(--gold);
+  font-style: italic;
+}
+
+.uni-hero p {
+  font-size: 1.2rem;
+  color: var(--neutral-400);
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.hero-stats-box {
+  background: rgba(17, 34, 64, 0.8);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 32px;
+  border-radius: var(--radius-md);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+/* --- Schools & Faculties --- */
+.schools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.school-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 36px;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+  border-top: 4px solid var(--gold);
+  transition: var(--transition);
+}
+
+.school-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(10, 25, 47, 0.12);
+}
+
+.school-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.school-card p {
+  font-size: 0.95rem;
+  color: var(--neutral-600);
+  margin-bottom: 20px;
+}
+
+/* --- Research Spotlight Tabs --- */
+.research-section {
+  background: var(--imperial-navy);
+  color: var(--white);
+}
+
+.research-section .section-title {
+  color: var(--white);
+}
+
+.research-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.research-tab-btn {
+  background: var(--navy-surface);
+  color: var(--neutral-400);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  padding: 12px 28px;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.research-tab-btn.active, .research-tab-btn:hover {
+  background: var(--gold);
+  color: var(--imperial-navy);
+}
+
+.research-display {
+  background: var(--navy-surface);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  padding: 40px;
+  border-radius: var(--radius-md);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* --- Newsroom & Timeline --- */
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.news-card {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+}
+
+.news-card img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.news-body {
+  padding: 24px;
+}
+
+.news-date {
+  font-size: 0.8rem;
+  color: var(--gold-hover);
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.news-body h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+/* --- FAQ Accordion --- */
+.uni-faq {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.uni-faq-item {
+  background: var(--white);
+  border: 1px solid var(--neutral-200);
+  margin-bottom: 14px;
+  border-radius: var(--radius-sm);
+}
+
+.uni-faq-question {
+  width: 100%;
+  padding: 20px 28px;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--imperial-navy);
+  cursor: pointer;
+}
+
+.uni-faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 28px;
+  color: var(--neutral-600);
+}
+
+.uni-faq-item.active .uni-faq-answer {
+  padding: 0 28px 24px 28px;
+}
+
+/* --- Footer --- */
+.uni-footer {
+  background: var(--navy-dark);
+  color: var(--neutral-400);
+  padding: 90px 0 40px 0;
+  border-top: 2px solid var(--gold);
+}
+
+.uni-footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.uni-footer h4 {
+  color: var(--white);
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+
+.uni-footer ul li { margin-bottom: 12px; }
+.uni-footer a:hover { color: var(--gold); }
+
+@media (max-width: 992px) {
+  .uni-hero-grid, .research-display { grid-template-columns: 1fr; }
+  .schools-grid, .news-grid { grid-template-columns: 1fr; }
+  .uni-footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 576px) {
+  .uni-footer-grid { grid-template-columns: 1fr; }
+  .uni-hero h1 { font-size: 2.4rem; }
+}
