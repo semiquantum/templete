@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NESTORA LIVING — Modern Residential Homes & Apartment Communities</title>
+  <meta name="description" content="Discover warm, community-centered apartment living at NESTORA. Explore interactive floor plans, resort amenities, and schedule a private resident tour today.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Shared CSS Architecture -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  
+  <!-- Template Specific CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="residential-theme">
+
+  <!-- Floating Link Back to Master Showcase -->
+  <a href="../index.html" class="showcase-hub-nav" aria-label="Return to Master Showcase Portfolio">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+    <span>Master Showcase</span>
+  </a>
+
+  <!-- Header / Navbar -->
+  <header class="site-header residential-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo brand-nestora">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#e07a5f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          <span>NESTORA</span> LIVING
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#apartments" class="nav-link">Residences</a></li>
+          <li><a href="#floorplans" class="nav-link">Floor Plans</a></li>
+          <li><a href="#community" class="nav-link">Community Amenities</a></li>
+          <li><a href="#neighborhood" class="nav-link">Neighborhood</a></li>
+          <li><a href="#faq" class="nav-link">Resident FAQ</a></li>
+          <li><a href="#tour" class="nav-link">Schedule Tour</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#apartments" class="nav-action-btn" style="color: var(--nes-primary); background: #fdf0e9;" title="Saved Residences">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <span class="nav-badge-count favorites-count-badge" style="display: none; background: var(--nes-primary);">0</span>
+          </a>
+          <a href="#tour" class="btn btn-sm btn-primary" style="background: var(--nes-primary); border-color: var(--nes-primary);">Book a Tour</a>
+          <button class="hamburger-btn" aria-label="Toggle mobile menu">
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop"></div>
+  <div class="mobile-nav-drawer" style="background: #fdfbf7;">
+    <div class="mobile-nav-header">
+      <div class="brand-logo brand-nestora">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#e07a5f" stroke-width="2.2" style="width: 24px; height: 24px;"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        <span>NESTORA</span>
+      </div>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#apartments" class="mobile-nav-link">Available Residences</a></li>
+      <li><a href="#floorplans" class="mobile-nav-link">Interactive Floor Plans</a></li>
+      <li><a href="#community" class="mobile-nav-link">Community Amenities</a></li>
+      <li><a href="#neighborhood" class="mobile-nav-link">Neighborhood & Transit</a></li>
+      <li><a href="#faq" class="mobile-nav-link">Resident FAQ</a></li>
+      <li><a href="#tour" class="mobile-nav-link">Schedule a Tour</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 20px;">
+      <a href="#tour" class="btn btn-primary btn-block" style="background: var(--nes-primary); border-color: var(--nes-primary);">Apply for Lease</a>
+    </div>
+  </div>
+
+  <!-- Warm Residential Hero -->
+  <section class="nestora-hero">
+    <div class="container">
+      <div class="container-narrow text-center">
+        <span class="badge" style="background: rgba(224, 122, 95, 0.35); color: #fff; border: 1px solid rgba(255, 255, 255, 0.4); padding: 6px 16px;">
+          Now Leasing • 1, 2 & 3 Bedroom Residences
+        </span>
+        <h1 style="margin: 16px 0; color: #ffffff;">Designed for Living. Built for Vibrant Community.</h1>
+        <p style="font-size: 1.2rem; color: #f4f1de; max-width: 640px; margin: 0 auto 32px;">
+          Immerse yourself in sun-filled spaces, private balconies, courtyard gardens, and a welcoming neighborhood atmosphere.
+        </p>
+
+        <div style="display: flex; gap: 14px; justify-content: center; flex-wrap: wrap;">
+          <a href="#floorplans" class="btn btn-lg btn-white" style="color: var(--nes-secondary);">Explore Floor Plans</a>
+          <a href="#tour" class="btn btn-lg btn-outline-white">Schedule Resident Visit</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Floor Plans Viewer Section -->
+  <section class="section" id="floorplans">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: var(--nes-primary);">Architectural Layouts</span>
+        <h2 class="section-title">Interactive Floor Plans</h2>
+        <p class="section-desc">Select a floor plan configuration to view room dimensions, square footage, and lease pricing.</p>
+      </div>
+
+      <div class="floor-plans-box">
+        <div class="floor-plan-tabs-row">
+          <button class="floor-plan-tab-btn active" data-target="panel-2bhk">2-Bedroom Haven (1,080 SF)</button>
+          <button class="floor-plan-tab-btn" data-target="panel-3bhk">3-Bedroom Suite (1,620 SF)</button>
+          <button class="floor-plan-tab-btn" data-target="panel-studio">Studio Loft (620 SF)</button>
+        </div>
+
+        <!-- 2BHK Panel -->
+        <div class="floor-plan-panel active" id="panel-2bhk">
+          <div class="floor-plan-mockup">
+            <svg width="100%" height="220" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 380px;">
+              <rect x="10" y="10" width="380" height="220" rx="6" stroke="#3d405b" stroke-width="3" fill="#ffffff"/>
+              <!-- Living Room -->
+              <rect x="20" y="20" width="180" height="120" stroke="#cbd5e1" stroke-width="2" fill="#f8fafc"/>
+              <text x="110" y="85" fill="#3d405b" font-weight="700" font-size="13" text-anchor="middle">Living Room (15' x 13')</text>
+              <!-- Master Bed -->
+              <rect x="210" y="20" width="170" height="100" stroke="#cbd5e1" stroke-width="2" fill="#f8fafc"/>
+              <text x="295" y="75" fill="#3d405b" font-weight="700" font-size="13" text-anchor="middle">Master Suite (14' x 12')</text>
+              <!-- Second Bed -->
+              <rect x="210" y="130" width="170" height="90" stroke="#cbd5e1" stroke-width="2" fill="#f8fafc"/>
+              <text x="295" y="180" fill="#3d405b" font-weight="700" font-size="13" text-anchor="middle">Bedroom 2 (12' x 11')</text>
+              <!-- Kitchen / Balcony -->
+              <rect x="20" y="150" width="180" height="70" stroke="#e07a5f" stroke-width="2" fill="#fdf0e9"/>
+              <text x="110" y="190" fill="#e07a5f" font-weight="700" font-size="13" text-anchor="middle">Kitchen & Balcony Deck</text>
+            </svg>
+            <div style="font-size: 0.8rem; color: #64748b; margin-top: 10px;">Architectural Schematic • Cedar Grove 2BHK</div>
+          </div>
+
+          <div>
+            <span class="badge" style="background: #fdf0e9; color: var(--nes-primary); margin-bottom: 8px;">Most Popular Layout</span>
+            <h3 style="font-size: 1.6rem; color: var(--nes-secondary); margin-bottom: 6px;">Cedar Grove 2-Bedroom Haven</h3>
+            <div style="font-size: 1.6rem; font-weight: 800; color: var(--nes-primary); margin-bottom: 16px;">$2,450 / month</div>
+            
+            <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 20px;">
+              Optimal split-bedroom layout ensuring maximum privacy. Dual vanities, walk-in closets, and an expansive 80 sq.ft private garden balcony overlooking the inner courtyard.
+            </p>
+
+            <ul style="display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem; color: #475569; margin-bottom: 24px;">
+              <li>✓ Total Living Area: <strong>1,080 sq.ft</strong></li>
+              <li>✓ 2 Full Bathrooms with soaking tub</li>
+              <li>✓ In-Unit Full Size Washer & Dryer</li>
+              <li>✓ Stainless Steel Energy Star Appliances</li>
+            </ul>
+
+            <button class="btn btn-primary" style="background: var(--nes-primary); border-color: var(--nes-primary);" onclick="PropertyModal.open('nes-401')">View Detailed Gallery</button>
+          </div>
+        </div>
+
+        <!-- 3BHK Panel -->
+        <div class="floor-plan-panel" id="panel-3bhk">
+          <div class="floor-plan-mockup">
+            <svg width="100%" height="220" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 380px;">
+              <rect x="10" y="10" width="380" height="220" rx="6" stroke="#3d405b" stroke-width="3" fill="#ffffff"/>
+              <rect x="20" y="20" width="160" height="110" stroke="#cbd5e1" stroke-width="2" fill="#f8fafc"/>
+              <text x="100" y="80" fill="#3d405b" font-weight="700" font-size="13" text-anchor="middle">Great Room (18' x 16')</text>
+              <rect x="190" y="20" width="190" height="80" stroke="#cbd5e1" stroke-width="2" fill="#f8fafc"/>
+              <text x="285" y="65" fill="#3d405b" font-weight="700" font-size="13" text-anchor="middle">Master Suite (16' x 14')</text>
+              <rect x="190" y="110" width="95" height="110" stroke="#cbd5e1" stroke-width="2" fill="#f8fafc"/>
+              <text x="237" y="170" fill="#3d405b" font-weight="700" font-size="12" text-anchor="middle">Bed 2</text>
+              <rect x="295" y="110" width="85" height="110" stroke="#cbd5e1" stroke-width="2" fill="#f8fafc"/>
+              <text x="337" y="170" fill="#3d405b" font-weight="700" font-size="12" text-anchor="middle">Bed 3</text>
+            </svg>
+            <div style="font-size: 0.8rem; color: #64748b; margin-top: 10px;">Architectural Schematic • Willow Creek 3BHK</div>
+          </div>
+
+          <div>
+            <span class="badge" style="background: #fdf0e9; color: var(--nes-primary); margin-bottom: 8px;">Spacious Family Layout</span>
+            <h3 style="font-size: 1.6rem; color: var(--nes-secondary); margin-bottom: 6px;">Willow Creek 3-Bedroom Family Suite</h3>
+            <div style="font-size: 1.6rem; font-weight: 800; color: var(--nes-primary); margin-bottom: 16px;">$3,400 / month</div>
+            
+            <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 20px;">
+              Designed for families and work-from-home professionals. Generous kitchen island with breakfast bar and dedicated study nook.
+            </p>
+
+            <ul style="display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem; color: #475569; margin-bottom: 24px;">
+              <li>✓ Total Living Area: <strong>1,620 sq.ft</strong></li>
+              <li>✓ 2.5 Bathrooms with dual master sinks</li>
+              <li>✓ Direct Secured Underground Parking Access</li>
+            </ul>
+
+            <button class="btn btn-primary" style="background: var(--nes-primary); border-color: var(--nes-primary);" onclick="PropertyModal.open('nes-402')">View Detailed Gallery</button>
+          </div>
+        </div>
+
+        <!-- Studio Panel -->
+        <div class="floor-plan-panel" id="panel-studio">
+          <div class="floor-plan-mockup">
+            <svg width="100%" height="220" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg" style="max-width: 380px;">
+              <rect x="10" y="10" width="380" height="220" rx="6" stroke="#3d405b" stroke-width="3" fill="#ffffff"/>
+              <rect x="20" y="20" width="240" height="200" stroke="#cbd5e1" stroke-width="2" fill="#f8fafc"/>
+              <text x="140" y="125" fill="#3d405b" font-weight="700" font-size="14" text-anchor="middle">Open Living & Sleep Zone</text>
+              <rect x="270" y="20" width="110" height="110" stroke="#e07a5f" stroke-width="2" fill="#fdf0e9"/>
+              <text x="325" y="80" fill="#e07a5f" font-weight="700" font-size="12" text-anchor="middle">Kitchen</text>
+              <rect x="270" y="140" width="110" height="80" stroke="#cbd5e1" stroke-width="2" fill="#f8fafc"/>
+              <text x="325" y="185" fill="#3d405b" font-weight="700" font-size="12" text-anchor="middle">Bath</text>
+            </svg>
+            <div style="font-size: 0.8rem; color: #64748b; margin-top: 10px;">Architectural Schematic • Studio Loft</div>
+          </div>
+
+          <div>
+            <span class="badge" style="background: #fdf0e9; color: var(--nes-primary); margin-bottom: 8px;">Micro-Luxury Loft</span>
+            <h3 style="font-size: 1.6rem; color: var(--nes-secondary); margin-bottom: 6px;">The Studio Loft at Nestora</h3>
+            <div style="font-size: 1.6rem; font-weight: 800; color: var(--nes-primary); margin-bottom: 16px;">$1,750 / month</div>
+            
+            <p style="color: #64748b; font-size: 0.95rem; margin-bottom: 20px;">
+              Smart floor plan maximizing every square inch. Integrated custom storage and seamless acoustics.
+            </p>
+
+            <ul style="display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem; color: #475569; margin-bottom: 24px;">
+              <li>✓ Total Living Area: <strong>620 sq.ft</strong></li>
+              <li>✓ Acoustic Noise Insulation</li>
+              <li>✓ Flexible Lease Terms Available</li>
+            </ul>
+
+            <button class="btn btn-primary" style="background: var(--nes-primary); border-color: var(--nes-primary);" onclick="PropertyModal.open('nes-403')">View Detailed Gallery</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Available Residences Section -->
+  <section class="section" id="apartments" style="background: #ffffff;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: var(--nes-primary);">Now Available</span>
+        <h2 class="section-title">Explore Available Residences</h2>
+        <p class="section-desc">Move-in ready homes with premium finishes and flexible 6 to 18-month lease terms.</p>
+      </div>
+
+      <!-- Controls & Toolbar -->
+      <div class="catalog-toolbar">
+        <div class="filter-pills-wrap">
+          <button class="filter-pill active" data-filter="type" data-value="all">All Residences</button>
+          <button class="filter-pill" data-filter="type" data-value="Apartment">Apartments</button>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="results-count-label" id="resultsCount">Loading residences...</span>
+          <select class="filter-select" id="sortBySelect" aria-label="Sort residential homes">
+            <option value="featured">Sort: Featured</option>
+            <option value="price-low">Rent: Lowest First</option>
+            <option value="price-high">Rent: Highest First</option>
+            <option value="sqft-high">Area: Largest First</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Dynamic Grid -->
+      <div class="grid grid-cols-3" id="propertiesGrid">
+        <!-- Rendered by PropertyEngine -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Amenities Section -->
+  <section class="section" id="community">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: var(--nes-primary);">Lifestyle & Wellness</span>
+        <h2 class="section-title">Community Amenities</h2>
+        <p class="section-desc">Designed to foster wellness, productivity, relaxation, and neighborly connection.</p>
+      </div>
+
+      <div class="grid grid-cols-3">
+        <div class="community-amenity-card">
+          <div class="amenity-icon-circle">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <h3 style="font-size: 1.2rem; color: var(--nes-secondary); margin-bottom: 8px;">Resident Co-Working Lounge</h3>
+          <p style="font-size: 0.9rem; color: #64748b;">Private zoom pods, gigabit fiber Wi-Fi, and artisanal espresso bar for remote professionals.</p>
+        </div>
+
+        <div class="community-amenity-card">
+          <div class="amenity-icon-circle" style="background: #ecfdf5; color: #059669;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 5.172C10 3.782 8.423 2.679 6.5 3c-2.823.47-4.113 6.006-4 7 .08.703 1.725 1.722 3.656 1 1.261-.472 1.96-1.45 2.344-2.5"/><path d="M14.267 5.172c0-1.39 1.577-2.493 3.5-2.172 2.823.47 4.113 6.006 4 7-.08.703-1.725 1.722-3.656 1-1.261-.472-1.855-1.45-2.239-2.5"/><path d="M8 14v.5C8 17 10 19 12 19s4-2 4-4.5V14"/></svg>
+          </div>
+          <h3 style="font-size: 1.2rem; color: var(--nes-secondary); margin-bottom: 8px;">Pet Spa & Bark Park</h3>
+          <p style="font-size: 0.9rem; color: #64748b;">Fully fenced turf agility course and heated dog wash station with organic grooming supplies.</p>
+        </div>
+
+        <div class="community-amenity-card">
+          <div class="amenity-icon-circle" style="background: #fef3c7; color: #d97706;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          </div>
+          <h3 style="font-size: 1.2rem; color: var(--nes-secondary); margin-bottom: 8px;">Rooftop Garden & BBQ</h3>
+          <p style="font-size: 0.9rem; color: #64748b;">360-degree territorial views, outdoor pizza oven, fire pit lounges, and community herb garden.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Neighborhood & Transit Guide Section -->
+  <section class="section" id="neighborhood" style="background: #ffffff;">
+    <div class="container">
+      <div class="grid grid-cols-2 items-center gap-8">
+        <div>
+          <span class="section-subtitle" style="color: var(--nes-primary);">Greenlake Community</span>
+          <h2 class="section-title">Everything You Need Within A 5-Minute Walk</h2>
+          <p style="color: #64748b; line-height: 1.7; margin-bottom: 24px;">
+            Located right across from Greenlake park trails, artisan bakeries, organic markets, and rapid light rail transit connecting to downtown in 12 minutes.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px;">
+            <div class="neighborhood-score-card">
+              <div>
+                <h4 style="font-size: 1rem; margin-bottom: 2px;">Walk Score®</h4>
+                <p style="font-size: 0.8rem; color: #64748b; margin: 0;">Daily errands do not require a car</p>
+              </div>
+              <div class="score-badge">92</div>
+            </div>
+
+            <div class="neighborhood-score-card">
+              <div>
+                <h4 style="font-size: 1rem; margin-bottom: 2px;">Transit Score®</h4>
+                <p style="font-size: 0.8rem; color: #64748b; margin: 0;">Direct access to rapid light rail lines</p>
+              </div>
+              <div class="score-badge">88</div>
+            </div>
+
+            <div class="neighborhood-score-card">
+              <div>
+                <h4 style="font-size: 1rem; margin-bottom: 2px;">Bike Score®</h4>
+                <p style="font-size: 0.8rem; color: #64748b; margin: 0;">Flat terrain with protected cycle tracks</p>
+              </div>
+              <div class="score-badge">95</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="Neighborhood Streetscape" style="border-radius: 20px; box-shadow: var(--shadow-xl); width: 100%;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: var(--nes-primary);">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked Resident Questions</h2>
+      </div>
+
+      <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px;" class="accordion">
+        <div class="accordion-item is-open" style="background: #ffffff; border: 1px solid var(--nes-border); border-radius: 12px; padding: 18px 24px;">
+          <div class="accordion-header" style="cursor: pointer; display: flex; justify-content: space-between; font-weight: 700; color: var(--nes-secondary);">
+            <span>What is the pet policy at Nestora Living?</span>
+            <span>+</span>
+          </div>
+          <div class="accordion-content" style="margin-top: 10px; font-size: 0.9rem; color: #64748b;">
+            We love pets! We allow up to 2 cats or dogs per residence with no breed restrictions. A one-time refundable pet deposit of $250 applies.
+          </div>
+        </div>
+
+        <div class="accordion-item" style="background: #ffffff; border: 1px solid var(--nes-border); border-radius: 12px; padding: 18px 24px;">
+          <div class="accordion-header" style="cursor: pointer; display: flex; justify-content: space-between; font-weight: 700; color: var(--nes-secondary);">
+            <span>What are the lease duration options?</span>
+            <span>+</span>
+          </div>
+          <div class="accordion-content" style="margin-top: 10px; font-size: 0.9rem; color: #64748b;">
+            We offer flexible lease terms ranging from 6 to 18 months, with standard 12-month leases offering the best monthly rate.
+          </div>
+        </div>
+
+        <div class="accordion-item" style="background: #ffffff; border: 1px solid var(--nes-border); border-radius: 12px; padding: 18px 24px;">
+          <div class="accordion-header" style="cursor: pointer; display: flex; justify-content: space-between; font-weight: 700; color: var(--nes-secondary);">
+            <span>Is parking included with the residence?</span>
+            <span>+</span>
+          </div>
+          <div class="accordion-content" style="margin-top: 10px; font-size: 0.9rem; color: #64748b;">
+            Reserved underground heated parking is available with EV charging stations for $120/month per vehicle.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule Tour / Lease Application Form -->
+  <section class="section" id="tour" style="background: #ffffff; border-top: 1px solid var(--nes-border);">
+    <div class="container">
+      <div class="container-narrow text-center">
+        <span class="section-subtitle" style="color: var(--nes-primary);">Experience Nestora</span>
+        <h2 class="section-title">Schedule an In-Person or Guided Virtual Tour</h2>
+        <p class="section-desc">Our leasing advisors are on-site daily to show model units and community amenities.</p>
+
+        <div style="background: #fdfbf7; padding: var(--space-8); border-radius: var(--radius-2xl); border: 1px solid var(--nes-border); margin-top: var(--space-8); text-align: left;">
+          <form class="inquiry-form" novalidate>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="form-group">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-control" placeholder="Maya Jensen" required>
+                <span class="form-error-msg">Please enter your name</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control" placeholder="maya@example.com" required>
+                <span class="form-error-msg">Valid email required</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div class="form-group">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" placeholder="(206) 555-0100" required>
+                <span class="form-error-msg">Phone number required</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Preferred Floor Plan</label>
+                <select class="form-control">
+                  <option>Cedar Grove 2BHK ($2,450/mo)</option>
+                  <option>Willow Creek 3BHK ($3,400/mo)</option>
+                  <option>The Studio Loft ($1,750/mo)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div class="form-group">
+                <label class="form-label">Target Move-in Date</label>
+                <input type="date" class="form-control" value="2026-09-01">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Tour Type</label>
+                <select class="form-control">
+                  <option>In-Person Guided Tour</option>
+                  <option>Live Video Virtual Tour</option>
+                  <option>Self-Guided Smart Lock Tour</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-success-banner">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Tour booked! A calendar invitation has been sent to your email.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 10px; background: var(--nes-primary); border-color: var(--nes-primary);">
+              Confirm Tour Reservation
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-nestora" style="font-size: 1.3rem; margin-bottom: 12px; color: #fff;">
+            <span style="color: var(--nes-primary);">NESTORA</span> LIVING
+          </div>
+          <p class="footer-desc">
+            Modern residential communities crafted for connection, comfort, and sustainable neighborhood living.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Residences</h4>
+          <ul class="footer-links">
+            <li><a href="#floorplans" class="footer-link">Studio Lofts</a></li>
+            <li><a href="#floorplans" class="footer-link">2-Bedroom Havens</a></li>
+            <li><a href="#floorplans" class="footer-link">3-Bedroom Suites</a></li>
+            <li><a href="#community" class="footer-link">Community Amenities</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Residents</h4>
+          <ul class="footer-links">
+            <li><a href="#tour" class="footer-link">Schedule a Visit</a></li>
+            <li><a href="#faq" class="footer-link">Pet Policies</a></li>
+            <li><a href="#neighborhood" class="footer-link">Neighborhood Map</a></li>
+            <li><a href="#tour" class="footer-link">Lease Application</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Leasing Office</h4>
+          <ul class="footer-links" style="font-size: 0.875rem;">
+            <li style="color: #94a3b8;">Address: 1420 Greenlake Way N, Seattle, WA</li>
+            <li style="color: #94a3b8;">Phone: (206) 555-0143</li>
+            <li style="color: #94a3b8;">Hours: Mon - Sun 9 AM - 6 PM</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 NESTORA LIVING Communities. SQ Studio Showcase.</div>
+        <div style="display: flex; gap: 16px;">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Equal Housing Opportunity</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Architecture -->
+  <script src="../js/property-data.js"></script>
+  <script src="../js/notifications.js"></script>
+  <script src="../js/favorites.js"></script>
+  <script src="../js/property-modal.js"></script>
+  <script src="../js/filters.js"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/main.js"></script>
+
+  <script>
+    // Initialize Residential properties
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof PropertyEngine !== 'undefined') {
+        PropertyEngine.init('residential');
+      }
+    });
+  </script>
+</body>
+</html>

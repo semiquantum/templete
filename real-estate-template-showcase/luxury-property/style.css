@@ -1,0 +1,195 @@
+/* ============================================================
+   AURELIA ESTATES — ULTRA-LUXURY REAL ESTATE THEME STYLES
+   Visual Identity: Sophisticated Dark & Champagne Gold Aesthetic
+   ============================================================ */
+
+:root {
+  --aur-bg: #07090e;              /* Deep Midnight Obsidian */
+  --aur-surface: #10141e;         /* Elevated Surface */
+  --aur-surface-hover: #171d2b;
+  --aur-gold: #d4af37;            /* Champagne Gold */
+  --aur-gold-light: #f3e5ab;
+  --aur-gold-gradient: linear-gradient(135deg, #d4af37 0%, #aa7c11 100%);
+  --aur-text-muted: #94a3b8;
+  --aur-border: rgba(212, 175, 55, 0.2);
+}
+
+body.luxury-theme {
+  background-color: var(--aur-bg);
+  color: #f1f5f9;
+  font-family: var(--font-sans);
+}
+
+.luxury-theme h1, 
+.luxury-theme h2, 
+.luxury-theme h3, 
+.luxury-theme h4,
+.luxury-theme .brand-aurelia {
+  font-family: var(--font-serif);
+  letter-spacing: 0.02em;
+}
+
+/* Header */
+.luxury-header {
+  background: rgba(7, 9, 14, 0.92);
+  border-bottom: 1px solid var(--aur-border);
+}
+
+.brand-aurelia {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.brand-aurelia span {
+  background: var(--aur-gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.luxury-nav-link {
+  color: #cbd5e1 !important;
+  font-size: 0.85rem !important;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.luxury-nav-link:hover, .luxury-nav-link.active {
+  color: var(--aur-gold) !important;
+}
+
+.luxury-nav-link::after {
+  background-color: var(--aur-gold) !important;
+}
+
+/* Cinematic Hero */
+.luxury-hero {
+  min-height: 95vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(7, 9, 14, 0.6) 0%, rgba(7, 9, 14, 0.9) 100%),
+              url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=80') center/cover no-repeat;
+  text-align: center;
+  padding: 120px 0 80px;
+}
+
+.luxury-hero-tagline {
+  font-size: 0.85rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--aur-gold);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.luxury-hero-title {
+  font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+/* Luxury Property Cards Override */
+.luxury-theme .property-card {
+  background: var(--aur-surface);
+  border: 1px solid var(--aur-border);
+  color: #ffffff;
+}
+
+.luxury-theme .property-card:hover {
+  border-color: var(--aur-gold);
+  box-shadow: 0 15px 35px -5px rgba(212, 175, 55, 0.15);
+  transform: translateY(-8px);
+}
+
+.luxury-theme .property-title a {
+  color: #ffffff;
+  font-family: var(--font-serif);
+}
+
+.luxury-theme .property-title a:hover {
+  color: var(--aur-gold);
+}
+
+.luxury-theme .property-location {
+  color: var(--aur-text-muted);
+}
+
+.luxury-theme .property-meta-row {
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #e2e8f0;
+}
+
+.luxury-theme .property-meta-item svg {
+  color: var(--aur-gold);
+}
+
+.luxury-theme .property-card-price-overlay {
+  background: rgba(7, 9, 14, 0.9);
+  border: 1px solid var(--aur-border);
+  color: var(--aur-gold-light);
+  font-family: var(--font-serif);
+}
+
+/* Luxury Amenities Grid */
+.luxury-amenity-card {
+  background: var(--aur-surface);
+  border: 1px solid var(--aur-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.luxury-amenity-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--aur-gold);
+  box-shadow: 0 10px 25px -5px rgba(212, 175, 55, 0.2);
+}
+
+.luxury-amenity-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid var(--aur-border);
+  color: var(--aur-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-4);
+}
+
+/* VIP Private Concierge Box */
+.vip-concierge-card {
+  background: linear-gradient(135deg, #131824 0%, #0a0d14 100%);
+  border: 1px solid var(--aur-border);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-12);
+  box-shadow: var(--shadow-2xl);
+}
+
+.luxury-theme .form-control {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.luxury-theme .form-control:focus {
+  border-color: var(--aur-gold);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+.luxury-theme .form-label {
+  color: #cbd5e1;
+}
+
+.luxury-theme .site-footer {
+  background: #040508;
+  border-top: 1px solid var(--aur-border);
+}

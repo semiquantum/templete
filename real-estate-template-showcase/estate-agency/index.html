@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ESTATELY — Premier Real Estate Agency & Advisory</title>
+  <meta name="description" content="ESTATELY is a premier modern real estate agency providing expert residential sales, luxury acquisitions, and property management with trusted advisors.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Shared CSS Architecture -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  
+  <!-- Template Specific CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating Link Back to Master Showcase -->
+  <a href="../index.html" class="showcase-hub-nav" aria-label="Return to Master Showcase Portfolio">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+    <span>Master Showcase</span>
+  </a>
+
+  <!-- Header / Navbar -->
+  <header class="site-header agency-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo brand-estately">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <span>ESTATELY</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#properties" class="nav-link">Properties</a></li>
+          <li><a href="#about" class="nav-link">About Agency</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#agents" class="nav-link">Advisors</a></li>
+          <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+          <li><a href="#valuation" class="nav-link">Valuation</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#properties" class="nav-action-btn" title="Saved Properties" aria-label="Saved properties">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <span class="nav-badge-count favorites-count-badge" style="display: none;">0</span>
+          </a>
+          <a href="#valuation" class="btn btn-sm btn-primary">Free Valuation</a>
+          <button class="hamburger-btn" aria-label="Toggle mobile menu">
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop"></div>
+  <div class="mobile-nav-drawer">
+    <div class="mobile-nav-header">
+      <div class="brand-logo brand-estately">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="width: 24px; height: 24px;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <span>ESTATELY</span>
+      </div>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#properties" class="mobile-nav-link">Featured Properties</a></li>
+      <li><a href="#about" class="mobile-nav-link">About Agency</a></li>
+      <li><a href="#services" class="mobile-nav-link">Our Services</a></li>
+      <li><a href="#agents" class="mobile-nav-link">Expert Advisors</a></li>
+      <li><a href="#testimonials" class="mobile-nav-link">Client Reviews</a></li>
+      <li><a href="#valuation" class="mobile-nav-link">Request Valuation</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Get in Touch</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 20px;">
+      <a href="#valuation" class="btn btn-primary btn-block">Book Consultation</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="agency-hero">
+    <div class="container">
+      <div class="container-narrow text-center">
+        <span class="section-subtitle" style="color: #38bdf8; background: rgba(56, 189, 248, 0.15); padding: 6px 14px; border-radius: 9999px; border: 1px solid rgba(56, 189, 248, 0.3);">
+          Trusted Real Estate Agency Since 2001
+        </span>
+        <h1 style="margin: 16px 0; color: #ffffff;">Guiding You Home with Unrivaled Market Expertise</h1>
+        <p style="font-size: 1.2rem; color: #e2e8f0; max-width: 680px; margin: 0 auto;">
+          ESTATELY represents the gold standard in residential real estate, luxury estates, and bespoke advisory services.
+        </p>
+
+        <!-- Quick Multi-Criteria Search -->
+        <div class="hero-search-box text-left">
+          <form id="heroSearchForm">
+            <div class="search-form-grid">
+              <div class="form-group" style="margin: 0;">
+                <label class="form-label" style="font-size: 0.75rem;">Location or Keyword</label>
+                <input type="text" class="form-control" placeholder="Austin, Newport, Dallas..." name="keyword">
+              </div>
+              <div class="form-group" style="margin: 0;">
+                <label class="form-label" style="font-size: 0.75rem;">Property Type</label>
+                <select class="form-control" name="type">
+                  <option value="">All Types</option>
+                  <option value="Villa">Villa</option>
+                  <option value="House">Single Family</option>
+                  <option value="Apartment">Apartment / Condo</option>
+                </select>
+              </div>
+              <div class="form-group" style="margin: 0;">
+                <label class="form-label" style="font-size: 0.75rem;">Purpose</label>
+                <select class="form-control" name="purpose">
+                  <option value="">Buy & Rent</option>
+                  <option value="buy">For Sale</option>
+                  <option value="rent">For Rent</option>
+                </select>
+              </div>
+              <div class="form-group" style="margin: 0;">
+                <button type="submit" class="btn btn-primary btn-block" style="height: 44px; margin-top: 20px;">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  <span>Search</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Stats Banner -->
+        <div class="hero-stats-banner">
+          <div class="stat-item">
+            <h3>$820M+</h3>
+            <p>Transaction Volume</p>
+          </div>
+          <div class="stat-item">
+            <h3>1,450+</h3>
+            <p>Properties Closed</p>
+          </div>
+          <div class="stat-item">
+            <h3>99.4%</h3>
+            <p>Client Satisfaction</p>
+          </div>
+          <div class="stat-item">
+            <h3>18</h3>
+            <p>Industry Awards</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Properties Section -->
+  <section class="section" id="properties">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: var(--agency-primary);">Exclusive Listings</span>
+        <h2 class="section-title">Featured Agency Properties</h2>
+        <p class="section-desc">Handpicked residential estates and luxury homes curated by our senior broker team.</p>
+      </div>
+
+      <!-- Catalog Controls & Filters -->
+      <div class="catalog-toolbar">
+        <div class="filter-pills-wrap">
+          <button class="filter-pill active" data-filter="type" data-value="all">All Properties</button>
+          <button class="filter-pill" data-filter="type" data-value="Villa">Villas</button>
+          <button class="filter-pill" data-filter="type" data-value="House">Single Family</button>
+          <button class="filter-pill" data-filter="type" data-value="Apartment">Apartments</button>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span class="results-count-label" id="resultsCount">Loading listings...</span>
+          <select class="filter-select" id="sortBySelect" aria-label="Sort properties">
+            <option value="featured">Sort: Featured First</option>
+            <option value="price-low">Price: Low to High</option>
+            <option value="price-high">Price: High to Low</option>
+            <option value="sqft-high">Area: Largest First</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Properties Grid (Dynamic) -->
+      <div class="grid grid-cols-3" id="propertiesGrid">
+        <!-- Rendered by PropertyEngine -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Agency Section -->
+  <section class="section" id="about" style="background: var(--agency-bg-light);">
+    <div class="container">
+      <div class="grid grid-cols-2 items-center gap-8">
+        <div>
+          <span class="section-subtitle" style="color: var(--agency-primary);">About ESTATELY Agency</span>
+          <h2 class="section-title">25 Years of Integrity, Discretion & Exceptional Client Outcomes</h2>
+          <p style="color: #475569; margin-bottom: 16px;">
+            Founded with a vision to redefine real estate advisory, ESTATELY combines hyper-local market intelligence with world-class marketing infrastructure. We serve discerning buyers, sellers, and investors across premier metropolitan and coastal markets.
+          </p>
+          <p style="color: #475569; margin-bottom: 24px;">
+            Our boutique agency approach ensures that every client receives personalized senior partner attention, rigorous property underwriting, and seamless closing management.
+          </p>
+
+          <div class="grid grid-cols-2 gap-4" style="margin-bottom: 28px;">
+            <div style="background: #ffffff; padding: 16px; border-radius: 10px; border-left: 4px solid var(--agency-primary);">
+              <h4 style="font-size: 1rem; margin-bottom: 4px;">Direct Representation</h4>
+              <p style="font-size: 0.85rem; color: #64748b; margin: 0;">Dedicated senior advisors at every transaction phase.</p>
+            </div>
+            <div style="background: #ffffff; padding: 16px; border-radius: 10px; border-left: 4px solid #0284c7;">
+              <h4 style="font-size: 1rem; margin-bottom: 4px;">Off-Market Network</h4>
+              <p style="font-size: 0.85rem; color: #64748b; margin: 0;">Exclusive access to private luxury listings.</p>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary">Schedule Consultation</a>
+        </div>
+
+        <div style="position: relative;">
+          <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80" alt="Estately Agency Office" style="border-radius: 20px; box-shadow: var(--shadow-2xl); width: 100%;">
+          <div style="position: absolute; bottom: -20px; right: -20px; background: #0f172a; color: #ffffff; padding: 24px; border-radius: 16px; box-shadow: var(--shadow-xl); max-width: 220px;">
+            <div style="font-size: 2rem; font-weight: 800; color: #38bdf8;">25+</div>
+            <div style="font-size: 0.85rem; font-weight: 600;">Years of Award-Winning Brokerage Leadership</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agency Services Section -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: var(--agency-primary);">Comprehensive Services</span>
+        <h2 class="section-title">End-to-End Real Estate Advisory</h2>
+        <p class="section-desc">Tailored real estate solutions for home buyers, sellers, property owners, and private wealth portfolios.</p>
+      </div>
+
+      <div class="grid grid-cols-4">
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Residential Sales</h3>
+          <p style="font-size: 0.9rem; color: #64748b;">Strategic property marketing, professional staging, high-impact digital exposure, and expert price negotiation.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-wrap" style="background: #ecfdf5; color: #059669;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="m17 5-5-3-5 3"/><path d="m17 19-5 3-5-3"/><circle cx="12" cy="12" r="4"/></svg>
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Luxury Acquisitions</h3>
+          <p style="font-size: 0.9rem; color: #64748b;">Confidential buyer representation, off-market property sourcing, and comprehensive contract due diligence.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-wrap" style="background: #fef3c7; color: #d97706;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Property Valuation</h3>
+          <p style="font-size: 0.9rem; color: #64748b;">Advanced comparative market analytics, asset appraisals, and investment yield projections.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon-wrap" style="background: #f3e8ff; color: #7c3aed;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 8px;">Asset Management</h3>
+          <p style="font-size: 0.9rem; color: #64748b;">Full-service tenant placement, luxury rental management, property maintenance, and financial reporting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Top Agents Section -->
+  <section class="section" id="agents" style="background: var(--agency-bg-light);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: var(--agency-primary);">Senior Broker Team</span>
+        <h2 class="section-title">Meet Our Leading Real Estate Advisors</h2>
+        <p class="section-desc">Seasoned industry professionals committed to achieving your property goals with precision and care.</p>
+      </div>
+
+      <div class="grid grid-cols-3">
+        <div class="agent-card">
+          <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80" alt="Marcus Vance" class="agent-card-img">
+          <div class="agent-card-body">
+            <h3 class="agent-name">Marcus Vance</h3>
+            <p class="agent-role">Senior Partner & Luxury Specialist</p>
+            <div style="font-size: 0.85rem; color: #64748b; margin-bottom: 12px;">14+ Years Experience • $140M+ Closed</div>
+            <div class="agent-contacts">
+              <a href="tel:5128842190" class="btn btn-sm btn-outline">Call (512) 884-2190</a>
+              <a href="#contact" class="btn btn-sm btn-primary">Message</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="agent-card">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80" alt="Elena Rostova" class="agent-card-img">
+          <div class="agent-card-body">
+            <h3 class="agent-name">Elena Rostova</h3>
+            <p class="agent-role">Principal Broker & Coastal Director</p>
+            <div style="font-size: 0.85rem; color: #64748b; margin-bottom: 12px;">12+ Years Experience • $210M+ Closed</div>
+            <div class="agent-contacts">
+              <a href="tel:9497154420" class="btn btn-sm btn-outline">Call (949) 715-4420</a>
+              <a href="#contact" class="btn btn-sm btn-primary">Message</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="agent-card">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80" alt="Sophia Chen" class="agent-card-img">
+          <div class="agent-card-body">
+            <h3 class="agent-name">Sophia Chen</h3>
+            <p class="agent-role">Estates Director & Investment Advisor</p>
+            <div style="font-size: 0.85rem; color: #64748b; margin-bottom: 12px;">10+ Years Experience • $95M+ Closed</div>
+            <div class="agent-contacts">
+              <a href="tel:2035948833" class="btn btn-sm btn-outline">Call (203) 594-8833</a>
+              <a href="#contact" class="btn btn-sm btn-primary">Message</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: var(--agency-primary);">Client Success Stories</span>
+        <h2 class="section-title">What Our Clients Say</h2>
+        <p class="section-desc">Real experiences from homeowners and investors who partnered with ESTATELY.</p>
+      </div>
+
+      <div class="grid grid-cols-2">
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"ESTATELY's representation was second to none. Marcus helped us navigate multiple bids and secured our Austin dream home under asking. Their attention to detail was stellar."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" alt="Sarah Sterling" class="testimonial-avatar">
+            <div>
+              <div class="testimonial-name">Jonathan & Sarah Sterling</div>
+              <div class="testimonial-location">Austin, Texas • Verified Buyer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div>
+            <div class="testimonial-rating">★★★★★</div>
+            <p class="testimonial-text">"Elena marketed our Newport Beach residence with cinematic video and private showings that yielded 4 qualified offers in 10 days. The smoothest closing we've ever experienced."</p>
+          </div>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="David Sterling" class="testimonial-avatar">
+            <div>
+              <div class="testimonial-name">David & Karen Sterling</div>
+              <div class="testimonial-location">Newport Beach, CA • Verified Seller</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Valuation & Instant Inquiry Section -->
+  <section class="section valuation-section" id="valuation">
+    <div class="container">
+      <div class="grid grid-cols-2 items-center gap-8">
+        <div>
+          <span class="section-subtitle" style="color: #38bdf8;">Curious About Your Property Value?</span>
+          <h2 style="color: #ffffff; margin: 12px 0 20px;">Request a Complimentary Professional Property Valuation</h2>
+          <p style="color: #cbd5e1; line-height: 1.7; margin-bottom: 24px;">
+            Receive a detailed, data-backed market analysis prepared by our senior brokerage team. We assess recent comparable sales, active buyer demand, and enhancement opportunities.
+          </p>
+          <ul style="color: #e2e8f0; display: flex; flex-direction: column; gap: 12px; font-size: 0.95rem;">
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>100% Confidential & No Obligation</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Custom Comparative Market Analysis (CMA)</span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 10px;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#38bdf8" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Delivered Within 24 Business Hours</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="valuation-box" id="contact">
+          <h3 style="font-size: 1.4rem; margin-bottom: 16px; color: #0f172a;">Request Your Valuation Report</h3>
+          
+          <form class="inquiry-form" novalidate>
+            <div class="form-group">
+              <label class="form-label">Your Full Name</label>
+              <input type="text" class="form-control" placeholder="Johnathan Doe" required>
+              <span class="form-error-msg">Please enter your name</span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-3">
+              <div class="form-group">
+                <label class="form-label">Email Address</label>
+                <input type="email" class="form-control" placeholder="john@example.com" required>
+                <span class="form-error-msg">Valid email required</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" placeholder="(555) 000-0000" required>
+                <span class="form-error-msg">Phone number required</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Property Address</label>
+              <input type="text" class="form-control" placeholder="1234 Ocean Ave, City, State" required>
+              <span class="form-error-msg">Please provide property address</span>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label">Service Interest</label>
+              <select class="form-control">
+                <option>Selling in 1-3 Months</option>
+                <option>Selling in 3-6 Months</option>
+                <option>Curiosity / Annual Appraisal</option>
+                <option>Refinancing Analysis</option>
+              </select>
+            </div>
+
+            <div class="form-success-banner">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Thank you! Your valuation request has been submitted. An advisor will contact you shortly.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 8px;">
+              Submit Valuation Request
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Designed Map Section -->
+  <section class="section" style="padding-bottom: 0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: var(--agency-primary);">Agency Headquarters</span>
+        <h2 class="section-title">Visit Our Premier Advisory Office</h2>
+        <p class="section-desc">Located in the central business district, welcoming clients Monday through Saturday.</p>
+      </div>
+
+      <div class="map-container-mock">
+        <div class="map-grid-lines"></div>
+        <div class="map-pin-pulse">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span style="color: #ffffff; font-weight: 700; font-size: 0.85rem; background: rgba(15, 23, 42, 0.8); padding: 2px 10px; border-radius: 9999px; margin-top: 4px;">ESTATELY HQ</span>
+        </div>
+        <div class="map-overlay-card">
+          <h4 style="font-size: 1rem; margin-bottom: 4px; color: #38bdf8;">ESTATELY Advisory Group</h4>
+          <p style="font-size: 0.825rem; color: #cbd5e1; margin-bottom: 8px;">750 Continental Plaza, Suite 1200, Austin, TX 78701</p>
+          <div style="font-size: 0.8rem; color: #94a3b8;">Mon - Sat: 8:30 AM - 6:30 PM</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" style="margin-top: 60px;">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand brand-estately">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="width: 26px; height: 26px;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            <span style="color: #ffffff;">ESTATELY</span>
+          </div>
+          <p class="footer-desc">
+            The premier real estate agency delivering sophisticated property representation, unmatched market research, and bespoke advisory services.
+          </p>
+          <div style="display: flex; gap: 12px;">
+            <a href="#" class="btn-icon-sm btn-secondary" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" class="btn-icon-sm btn-secondary" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="btn-icon-sm btn-secondary" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#properties" class="footer-link">Featured Properties</a></li>
+            <li><a href="#about" class="footer-link">About Agency</a></li>
+            <li><a href="#services" class="footer-link">Brokerage Services</a></li>
+            <li><a href="#agents" class="footer-link">Our Advisors</a></li>
+            <li><a href="#valuation" class="footer-link">Free Valuation</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Property Types</h4>
+          <ul class="footer-links">
+            <li><a href="#properties" class="footer-link">Luxury Villas</a></li>
+            <li><a href="#properties" class="footer-link">Single Family Homes</a></li>
+            <li><a href="#properties" class="footer-link">Urban Condos</a></li>
+            <li><a href="#properties" class="footer-link">Waterfront Properties</a></li>
+            <li><a href="#properties" class="footer-link">Estate Lands</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Advisory Contact</h4>
+          <ul class="footer-links" style="font-size: 0.875rem;">
+            <li style="color: #94a3b8;">HQ: 750 Continental Plaza, Austin, TX</li>
+            <li style="color: #94a3b8;">Phone: (512) 884-2100</li>
+            <li style="color: #94a3b8;">Email: advisory@estately-agency.com</li>
+            <li style="color: #94a3b8;">License: RE-BROKER-992014</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ESTATELY Real Estate Agency. All rights reserved. SQ Studio Showcase.</div>
+        <div style="display: flex; gap: 16px;">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <a href="#" class="footer-link">Equal Housing Opportunity</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Architecture -->
+  <script src="../js/property-data.js"></script>
+  <script src="../js/notifications.js"></script>
+  <script src="../js/favorites.js"></script>
+  <script src="../js/property-modal.js"></script>
+  <script src="../js/filters.js"></script>
+  <script src="../js/search.js"></script>
+  <script src="../js/navigation.js"></script>
+  <script src="../js/main.js"></script>
+
+  <script>
+    // Initialize Agency properties
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof PropertyEngine !== 'undefined') {
+        PropertyEngine.init('agency');
+      }
+    });
+  </script>
+</body>
+</html>

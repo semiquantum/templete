@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SQ Studio — Real Estate Website Template Showcase Suite</title>
+  <meta name="description" content="Explore 5 complete, visually distinct, and production-ready real estate website templates engineered with Vanilla HTML5, CSS3, and modern ES6 JavaScript.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+
+  <!-- Shared CSS Architecture -->
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <!-- Showcase Hub CSS -->
+  <link rel="stylesheet" href="css/showcase.css">
+</head>
+<body class="showcase-body">
+
+  <!-- Showcase Navbar -->
+  <header class="site-header showcase-header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo brand-sqstudio">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          <span>SQ STUDIO</span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#templates" class="nav-link" style="color: #cbd5e1;">5 Templates</a></li>
+          <li><a href="#matrix" class="nav-link" style="color: #cbd5e1;">Comparison Matrix</a></li>
+          <li><a href="#architecture" class="nav-link" style="color: #cbd5e1;">Frontend Stack</a></li>
+          <li><a href="#contact-agency" class="nav-link" style="color: #cbd5e1;">Custom Development</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="#templates" class="btn btn-sm btn-primary" style="background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);">
+            Explore Templates
+          </a>
+          <button class="hamburger-btn" style="background: rgba(255,255,255,0.08); color: #fff;" aria-label="Toggle mobile menu">
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop"></div>
+  <div class="mobile-nav-drawer" style="background: #090d16; color: #fff; border-left: 1px solid var(--showcase-border);">
+    <div class="mobile-nav-header" style="border-color: var(--showcase-border);">
+      <div class="brand-logo brand-sqstudio" style="font-size: 1.2rem;">
+        <span>SQ STUDIO</span>
+      </div>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#templates" class="mobile-nav-link" style="color: #cbd5e1;">Explore 5 Templates</a></li>
+      <li><a href="#matrix" class="mobile-nav-link" style="color: #cbd5e1;">Feature Comparison Matrix</a></li>
+      <li><a href="#architecture" class="mobile-nav-link" style="color: #cbd5e1;">Frontend Engineering Stack</a></li>
+      <li><a href="#contact-agency" class="mobile-nav-link" style="color: #cbd5e1;">Custom Inquiries</a></li>
+    </ul>
+    <div style="margin-top: auto; padding-top: 20px;">
+      <a href="#templates" class="btn btn-primary btn-block">Launch Showcase</a>
+    </div>
+  </div>
+
+  <!-- Showcase Hero Section -->
+  <section class="showcase-hero">
+    <div class="container">
+      <div class="container-narrow">
+        <h1 class="showcase-hero-title">
+          Real Estate Website<br>
+          <span>Template Showcase Suite</span>
+        </h1>
+        
+        <p class="showcase-hero-desc">
+          Five completely distinct, client-ready real estate website templates engineered with Vanilla HTML5, CSS3, and modern ES6 JavaScript. Zero frameworks. Zero dependencies. 100% production-ready.
+        </p>
+
+        <!-- Tech Badges -->
+        <div class="tech-badges-row">
+          <div class="tech-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            <span>HTML5 Semantic</span>
+          </div>
+          <div class="tech-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+            <span>CSS3 Variables & Grid</span>
+          </div>
+          <div class="tech-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <span>Vanilla ES6 JavaScript</span>
+          </div>
+          <div class="tech-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2.5"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+            <span>LocalStorage Favorites</span>
+          </div>
+          <div class="tech-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2.5"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+            <span>Multi-Device Responsive</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Five Templates Showcase Section -->
+  <section class="section" id="templates">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: #60a5fa;">The Showcase Portfolio</span>
+        <h2 class="section-title" style="color: #ffffff;">Five Distinct Real Estate Templates</h2>
+        <p class="section-desc" style="color: #94a3b8;">
+          Each template is designed with a unique visual identity, distinct layout structure, bespoke color palette, and dedicated functional features.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: var(--space-10);">
+        
+        <!-- TEMPLATE 1: ESTATELY -->
+        <article class="template-showcase-card">
+          <div class="showcase-card-preview">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80" alt="ESTATELY Template Preview">
+          </div>
+          <div class="showcase-card-content">
+            <div class="template-number-tag">Template 01 • Real Estate Agency</div>
+            <h3 class="template-title">ESTATELY</h3>
+            <div class="template-type-label">Corporate & Trustworthy Brokerage</div>
+            <p class="template-desc">
+              Tailored for established real estate brokerages and advisory firms. Focuses on agency credibility, transaction metrics, senior agent bios, and instant home valuation requests.
+            </p>
+
+            <ul class="template-features-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Agency Metrics Banner</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Multi-Param Search Box</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Senior Advisor Cards</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Free Valuation Form</li>
+            </ul>
+
+            <div class="palette-dots">
+              <span style="font-size: 0.8rem; color: #94a3b8; margin-right: 6px;">Palette:</span>
+              <div class="palette-dot" style="background: #1e40af;" title="Deep Blue"></div>
+              <div class="palette-dot" style="background: #0f172a;" title="Navy Slate"></div>
+              <div class="palette-dot" style="background: #0284c7;" title="Sky Blue"></div>
+              <div class="palette-dot" style="background: #f8fafc;" title="Light Slate"></div>
+            </div>
+
+            <div>
+              <a href="estate-agency/index.html" class="btn btn-primary" style="background: #1e40af; border-color: #1e40af;">
+                <span>View ESTATELY Template</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- TEMPLATE 2: HOMEHUB -->
+        <article class="template-showcase-card">
+          <div class="showcase-card-preview">
+            <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80" alt="HOMEHUB Template Preview">
+          </div>
+          <div class="showcase-card-content">
+            <div class="template-number-tag" style="color: #818cf8;">Template 02 • Property Discovery Marketplace</div>
+            <h3 class="template-title">HOMEHUB</h3>
+            <div class="template-type-label">Interactive Marketplace & Comparison Engine</div>
+            <p class="template-desc">
+              Built as a modern, high-volume real estate discovery platform. Features a prominent search engine, category discovery cards, and an interactive side-by-side comparison system.
+            </p>
+
+            <ul class="template-features-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Side-by-Side Comparison</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Multi-Criteria Filters</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Category Explorations</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Instant Price Drop Alerts</li>
+            </ul>
+
+            <div class="palette-dots">
+              <span style="font-size: 0.8rem; color: #94a3b8; margin-right: 6px;">Palette:</span>
+              <div class="palette-dot" style="background: #4f46e5;" title="Indigo"></div>
+              <div class="palette-dot" style="background: #10b981;" title="Emerald"></div>
+              <div class="palette-dot" style="background: #0f172a;" title="Slate"></div>
+              <div class="palette-dot" style="background: #f8fafc;" title="Off White"></div>
+            </div>
+
+            <div>
+              <a href="property-listing/index.html" class="btn btn-primary" style="background: #4f46e5; border-color: #4f46e5;">
+                <span>View HOMEHUB Template</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- TEMPLATE 3: AURELIA ESTATES -->
+        <article class="template-showcase-card">
+          <div class="showcase-card-preview">
+            <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1200&q=80" alt="AURELIA ESTATES Template Preview">
+          </div>
+          <div class="showcase-card-content">
+            <div class="template-number-tag" style="color: #fbbf24;">Template 03 • Ultra-Luxury Real Estate</div>
+            <h3 class="template-title">AURELIA ESTATES</h3>
+            <div class="template-type-label">Dark, Sophisticated Obsidian & Champagne Gold</div>
+            <p class="template-desc">
+              Dedicated to high-net-worth private estates, mega-mansions, and trophy penthouses. Features serif typography, full-screen cinematic hero, and private VIP showing requests.
+            </p>
+
+            <ul class="template-features-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Cinematic Fullscreen Hero</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Curated Private Portfolio</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Bespoke Amenities Grid</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Confidential VIP Concierge</li>
+            </ul>
+
+            <div class="palette-dots">
+              <span style="font-size: 0.8rem; color: #94a3b8; margin-right: 6px;">Palette:</span>
+              <div class="palette-dot" style="background: #07090e;" title="Midnight Obsidian"></div>
+              <div class="palette-dot" style="background: #d4af37;" title="Champagne Gold"></div>
+              <div class="palette-dot" style="background: #171d2b;" title="Elevated Surface"></div>
+              <div class="palette-dot" style="background: #f3e5ab;" title="Gold Light"></div>
+            </div>
+
+            <div>
+              <a href="luxury-property/index.html" class="btn btn-gold">
+                <span>View AURELIA ESTATES Template</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- TEMPLATE 4: NESTORA LIVING -->
+        <article class="template-showcase-card">
+          <div class="showcase-card-preview">
+            <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1200&q=80" alt="NESTORA LIVING Template Preview">
+          </div>
+          <div class="showcase-card-content">
+            <div class="template-number-tag" style="color: #f87171;">Template 04 • Residential Communities</div>
+            <h3 class="template-title">NESTORA LIVING</h3>
+            <div class="template-type-label">Warm Residential, Terracotta & Organic Sand</div>
+            <p class="template-desc">
+              Created for modern residential communities, multi-family developments, and apartments. Highlights include an interactive floor plans explorer, neighborhood guide, and resident tour scheduler.
+            </p>
+
+            <ul class="template-features-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Interactive Floor Plans</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Community Amenities</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Walk & Transit Scores</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Resident Tour Scheduler</li>
+            </ul>
+
+            <div class="palette-dots">
+              <span style="font-size: 0.8rem; color: #94a3b8; margin-right: 6px;">Palette:</span>
+              <div class="palette-dot" style="background: #e07a5f;" title="Terracotta"></div>
+              <div class="palette-dot" style="background: #3d405b;" title="Slate Forest"></div>
+              <div class="palette-dot" style="background: #81b29a;" title="Sage Green"></div>
+              <div class="palette-dot" style="background: #fdfbf7;" title="Warm Sand"></div>
+            </div>
+
+            <div>
+              <a href="residential/index.html" class="btn btn-primary" style="background: #e07a5f; border-color: #e07a5f;">
+                <span>View NESTORA LIVING Template</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- TEMPLATE 5: URBANEDGE COMMERCIAL -->
+        <article class="template-showcase-card">
+          <div class="showcase-card-preview">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80" alt="URBANEDGE COMMERCIAL Template Preview">
+          </div>
+          <div class="showcase-card-content">
+            <div class="template-number-tag" style="color: #60a5fa;">Template 05 • Commercial & Corporate Spaces</div>
+            <h3 class="template-title">URBANEDGE COMMERCIAL</h3>
+            <div class="template-type-label">Corporate Modern Steel Blue & Titanium</div>
+            <p class="template-desc">
+              Engineered for institutional commercial real estate, Class-A office towers, logistics hubs, and retail flagships. Features an interactive commercial lease and OPEX estimator.
+            </p>
+
+            <ul class="template-features-list">
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Interactive Lease Estimator</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> LEED & Data Infrastructure</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Corporate RFP Portal</li>
+              <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> High-Contrast Technical Data</li>
+            </ul>
+
+            <div class="palette-dots">
+              <span style="font-size: 0.8rem; color: #94a3b8; margin-right: 6px;">Palette:</span>
+              <div class="palette-dot" style="background: #2563eb;" title="Steel Blue"></div>
+              <div class="palette-dot" style="background: #0f172a;" title="Titanium Slate"></div>
+              <div class="palette-dot" style="background: #0284c7;" title="Tech Cyan"></div>
+              <div class="palette-dot" style="background: #cbd5e1;" title="Silver Border"></div>
+            </div>
+
+            <div>
+              <a href="commercial/index.html" class="btn btn-primary" style="background: #2563eb; border-color: #2563eb;">
+                <span>View URBANEDGE Template</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Comparison Matrix Section -->
+  <section class="section" id="matrix" style="background: var(--showcase-surface); border-top: 1px solid var(--showcase-border); border-bottom: 1px solid var(--showcase-border);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: #60a5fa;">Technical Matrix</span>
+        <h2 class="section-title" style="color: #ffffff;">Feature Comparison Across All 5 Templates</h2>
+        <p class="section-desc" style="color: #94a3b8;">
+          Inspect how each template satisfies distinct business needs and client industry verticals.
+        </p>
+      </div>
+
+      <div style="overflow-x: auto;">
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th>Functional Feature</th>
+              <th>ESTATELY (Agency)</th>
+              <th>HOMEHUB (Marketplace)</th>
+              <th>AURELIA (Luxury)</th>
+              <th>NESTORA (Residential)</th>
+              <th>URBANEDGE (Commercial)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Visual Identity</td>
+              <td>Corporate Navy / Blue</td>
+              <td>Modern Indigo / Emerald</td>
+              <td>Dark Obsidian / Gold</td>
+              <td>Warm Terracotta / Sand</td>
+              <td>Steel Blue / Titanium</td>
+            </tr>
+            <tr>
+              <td>Search & Filter System</td>
+              <td><span class="check-icon">✓</span> Purpose & Type</td>
+              <td><span class="check-icon">✓</span> Multi-Param Engine</td>
+              <td><span class="check-icon">✓</span> Curated Portfolio</td>
+              <td><span class="check-icon">✓</span> Beds & Move-in</td>
+              <td><span class="check-icon">✓</span> RSF & Space Type</td>
+            </tr>
+            <tr>
+              <td>Side-by-Side Comparison</td>
+              <td>—</td>
+              <td><span class="check-icon">✓</span> 4-Property Matrix</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Interactive Floor Plans</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+              <td><span class="check-icon">✓</span> Interactive Tabs</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Lease & ROI Calculator</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+              <td>—</td>
+              <td><span class="check-icon">✓</span> Monthly / Annual</td>
+            </tr>
+            <tr>
+              <td>Details Modal + Gallery</td>
+              <td><span class="check-icon">✓</span> Included</td>
+              <td><span class="check-icon">✓</span> Included</td>
+              <td><span class="check-icon">✓</span> Included</td>
+              <td><span class="check-icon">✓</span> Included</td>
+              <td><span class="check-icon">✓</span> Included</td>
+            </tr>
+            <tr>
+              <td>LocalStorage Favorites</td>
+              <td><span class="check-icon">✓</span> Enabled</td>
+              <td><span class="check-icon">✓</span> Enabled</td>
+              <td><span class="check-icon">✓</span> Enabled</td>
+              <td><span class="check-icon">✓</span> Enabled</td>
+              <td><span class="check-icon">✓</span> Enabled</td>
+            </tr>
+            <tr>
+              <td>Form Validation & Toasts</td>
+              <td><span class="check-icon">✓</span> Valuation Form</td>
+              <td><span class="check-icon">✓</span> Alert Form</td>
+              <td><span class="check-icon">✓</span> VIP Concierge</td>
+              <td><span class="check-icon">✓</span> Tour Booking</td>
+              <td><span class="check-icon">✓</span> Corporate RFP</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Frontend Architecture Section -->
+  <section class="section" id="architecture">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle" style="color: #60a5fa;">Frontend Engineering</span>
+        <h2 class="section-title" style="color: #ffffff;">Pure Vanilla Web Technologies</h2>
+        <p class="section-desc" style="color: #94a3b8;">
+          Engineered for blazing fast speed, complete cross-browser compatibility, and zero dependency friction.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-3">
+        <div style="background: var(--showcase-surface-card); padding: var(--space-6); border-radius: var(--radius-xl); border: 1px solid var(--showcase-border);">
+          <div style="font-size: 1.3rem; font-weight: 700; color: #60a5fa; margin-bottom: 8px;">1. Modular CSS Architecture</div>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
+            Organized into shared tokens (<code>global.css</code>), reusable components (<code>components.css</code>), smooth keyframes (<code>animations.css</code>), and robust responsive queries (<code>responsive.css</code>).
+          </p>
+        </div>
+
+        <div style="background: var(--showcase-surface-card); padding: var(--space-6); border-radius: var(--radius-xl); border: 1px solid var(--showcase-border);">
+          <div style="font-size: 1.3rem; font-weight: 700; color: #a78bfa; margin-bottom: 8px;">2. ES6 State & Storage</div>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
+            Persistent wishlist favorites, side-by-side comparison arrays, and modal gallery state all managed via modern ES6 arrow functions, array methods, and safe localStorage.
+          </p>
+        </div>
+
+        <div style="background: var(--showcase-surface-card); padding: var(--space-6); border-radius: var(--radius-xl); border: 1px solid var(--showcase-border);">
+          <div style="font-size: 1.3rem; font-weight: 700; color: #34d399; margin-bottom: 8px;">3. Multi-Device Verified</div>
+          <p style="color: #94a3b8; font-size: 0.9rem; line-height: 1.6;">
+            Tested across 320px, 375px, 390px, 414px, 768px, 1024px, 1280px, and 1440px+ displays with zero horizontal overflow and seamless mobile navigation drawers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Development / Contact Consultation Form -->
+  <section class="section" id="contact-agency" style="background: var(--showcase-surface); border-top: 1px solid var(--showcase-border);">
+    <div class="container">
+      <div class="container-narrow text-center">
+        <span class="section-subtitle" style="color: #60a5fa;">SQ Studio Custom Services</span>
+        <h2 class="section-title" style="color: #ffffff;">Need a Custom Real Estate Template or Integration?</h2>
+        <p class="section-desc" style="color: #94a3b8;">
+          Connect with SQ Studio frontend engineers for custom template development, CRM integrations, or MLS/IDX mapping.
+        </p>
+
+        <div style="background: var(--showcase-surface-card); padding: var(--space-8); border-radius: var(--radius-2xl); border: 1px solid var(--showcase-border); margin-top: var(--space-8); text-align: left;">
+          <form class="inquiry-form" novalidate>
+            <div class="grid grid-cols-2 gap-4">
+              <div class="form-group">
+                <label class="form-label" style="color: #cbd5e1;">Your Name</label>
+                <input type="text" class="form-control" style="background: #090d16; border-color: var(--showcase-border); color: #fff;" placeholder="Alex Mercer" required>
+                <span class="form-error-msg">Please enter your name</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" style="color: #cbd5e1;">Work Email</label>
+                <input type="email" class="form-control" style="background: #090d16; border-color: var(--showcase-border); color: #fff;" placeholder="alex@company.com" required>
+                <span class="form-error-msg">Valid email required</span>
+              </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4">
+              <div class="form-group">
+                <label class="form-label" style="color: #cbd5e1;">Preferred Template Base</label>
+                <select class="form-control" style="background: #090d16; border-color: var(--showcase-border); color: #fff;">
+                  <option>ESTATELY (Agency Website)</option>
+                  <option>HOMEHUB (Marketplace / Discovery)</option>
+                  <option>AURELIA ESTATES (Luxury Portfolio)</option>
+                  <option>NESTORA LIVING (Residential Apartments)</option>
+                  <option>URBANEDGE COMMERCIAL (Corporate Commercial)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label class="form-label" style="color: #cbd5e1;">Project Timeline</label>
+                <select class="form-control" style="background: #090d16; border-color: var(--showcase-border); color: #fff;">
+                  <option>Immediate / Next 2 Weeks</option>
+                  <option>1 - 2 Months</option>
+                  <option>Exploratory / Budget Phase</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" style="color: #cbd5e1;">Project Requirements & Goals</label>
+              <textarea class="form-control" style="background: #090d16; border-color: var(--showcase-border); color: #fff;" rows="3" placeholder="Describe your branding, custom features, or timeline needs..."></textarea>
+            </div>
+
+            <div class="form-success-banner">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Thank you! Your custom development inquiry has been received. An SQ Studio engineer will respond within 24 hours.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 10px; background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);">
+              Submit Custom Development Inquiry
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Showcase Footer -->
+  <footer class="site-footer" style="background: #060910; border-top: 1px solid var(--showcase-border);">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand-sqstudio" style="font-size: 1.3rem; margin-bottom: 12px;">
+            <span>SQ STUDIO</span>
+          </div>
+          <p class="footer-desc">
+            SQ Studio Professional Website Templates & Custom Development. Production-ready Real Estate Showcase Suite.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading" style="color: #60a5fa;">Real Estate Templates</h4>
+          <ul class="footer-links">
+            <li><a href="estate-agency/index.html" class="footer-link">01. ESTATELY Agency</a></li>
+            <li><a href="property-listing/index.html" class="footer-link">02. HOMEHUB Marketplace</a></li>
+            <li><a href="luxury-property/index.html" class="footer-link">03. AURELIA ESTATES</a></li>
+            <li><a href="residential/index.html" class="footer-link">04. NESTORA LIVING</a></li>
+            <li><a href="commercial/index.html" class="footer-link">05. URBANEDGE COMMERCIAL</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading" style="color: #60a5fa;">Technical Stack</h4>
+          <ul class="footer-links">
+            <li><a href="#architecture" class="footer-link">Vanilla HTML5 & CSS3</a></li>
+            <li><a href="#architecture" class="footer-link">Modern ES6 JavaScript</a></li>
+            <li><a href="#matrix" class="footer-link">Side-by-Side Comparison</a></li>
+            <li><a href="#architecture" class="footer-link">LocalStorage System</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading" style="color: #60a5fa;">Production Quality</h4>
+          <ul class="footer-links" style="font-size: 0.875rem;">
+            <li style="color: #94a3b8;">Category: Real Estate Website Templates</li>
+            <li style="color: #94a3b8;">Status: 100% Production Ready</li>
+            <li style="color: #94a3b8;">Zero Dependencies • Zero Frameworks</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom" style="border-color: var(--showcase-border);">
+        <div>&copy; 2026 SQ Studio. All Real Estate Templates Engineered for Production Client Delivery.</div>
+        <div style="display: flex; gap: 16px;">
+          <a href="#" class="footer-link">Codebase Verification</a>
+          <a href="#" class="footer-link">Terms & Guidelines</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Architecture -->
+  <script src="js/notifications.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+/* ============================================================
+   NESTORA LIVING — RESIDENTIAL & APARTMENT COMMUNITY STYLES
+   Visual Identity: Warm Terracotta, Sand, Deep Forest & Modern Organic
+   ============================================================ */
+
+:root {
+  --nes-primary: #e07a5f;         /* Warm Terracotta */
+  --nes-primary-hover: #cc674c;
+  --nes-secondary: #3d405b;       /* Deep Slate Forest */
+  --nes-accent: #81b29a;          /* Sage Green */
+  --nes-warm-bg: #fdfbf7;         /* Warm Sand Background */
+  --nes-card-bg: #ffffff;
+  --nes-border: #ebd9cc;
+}
+
+body.residential-theme {
+  background-color: var(--nes-warm-bg);
+  color: #2b2d42;
+}
+
+/* Header & Brand */
+.residential-header {
+  border-bottom: 1px solid var(--nes-border);
+  background: rgba(253, 251, 247, 0.98);
+}
+
+.brand-nestora {
+  color: var(--nes-secondary);
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.brand-nestora span {
+  color: var(--nes-primary);
+}
+
+/* Hero Section */
+.nestora-hero {
+  position: relative;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(61, 64, 91, 0.8) 0%, rgba(224, 122, 95, 0.7) 100%),
+              url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1800&q=80') center/cover no-repeat;
+  color: var(--color-white);
+  padding: 100px 0 80px;
+}
+
+/* Floor Plans Component */
+.floor-plans-box {
+  background: #ffffff;
+  border-radius: var(--radius-2xl);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--nes-border);
+}
+
+.floor-plan-tabs-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: var(--space-6);
+  border-bottom: 2px solid #f1e6dc;
+  padding-bottom: var(--space-3);
+  overflow-x: auto;
+}
+
+.floor-plan-tab-btn {
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--nes-secondary);
+  background: transparent;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.floor-plan-tab-btn:hover {
+  background: #fdf0e9;
+  color: var(--nes-primary);
+}
+
+.floor-plan-tab-btn.active {
+  background: var(--nes-primary);
+  color: #ffffff;
+}
+
+.floor-plan-panel {
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+.floor-plan-panel.active {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.floor-plan-mockup {
+  background: #fdfbf7;
+  border: 2px dashed #d1c0b4;
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  position: relative;
+}
+
+/* Community Amenity Cards */
+.community-amenity-card {
+  background: #ffffff;
+  border: 1px solid var(--nes-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  transition: all var(--transition-normal);
+}
+
+.community-amenity-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--nes-primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.amenity-icon-circle {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #fdf0e9;
+  color: var(--nes-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-4);
+}
+
+/* Neighborhood Guide Box */
+.neighborhood-score-card {
+  background: #ffffff;
+  border-radius: var(--radius-xl);
+  padding: var(--space-6);
+  border: 1px solid var(--nes-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.score-badge {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--nes-primary);
+}
+
+@media (max-width: 900px) {
+  .floor-plan-panel.active {
+    grid-template-columns: 1fr;
+  }
+}
