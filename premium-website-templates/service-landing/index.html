@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanguard Services — Service Landing Page Template</title>
+    <meta name="description" content="Vanguard Services offers enterprise digital strategy, custom software engineering, and cloud security consulting.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <span class="logo-icon">💼</span>
+                <span class="logo-name">Vanguard<span class="blue">Services</span></span>
+            </a>
+            <nav class="nav-links" id="navMenu">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#quote" class="nav-link">Quote Estimator</a>
+                <a href="#process" class="nav-link">Our Process</a>
+                <a href="#contact" class="nav-link btn-blue open-consult-modal-btn">Book Consultation 📅</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="hero-tag">🌟 RATED #1 B2B SERVICE PROVIDER 2026</span>
+                <h1 class="hero-title">ELEVATE YOUR BUSINESS WITH <span class="gradient-text">EXPERT SERVICES</span></h1>
+                <p class="hero-sub">We provide high-impact digital consulting, software engineering, and cloud security management tailored to your exact business goals.</p>
+
+                <div class="hero-actions">
+                    <button class="btn btn-blue open-consult-modal-btn">Request Free Consultation &rarr;</button>
+                    <a href="#quote" class="btn btn-outline">Calculate Instant Quote ↓</a>
+                </div>
+            </div>
+
+            <div class="hero-card-box">
+                <div class="service-highlight-card">
+                    <span class="hl-badge">EXPRESS DISCOVERY</span>
+                    <h3>Schedule a 30-Min Strategy Call</h3>
+                    <p>Connect directly with our Principal Technical Director to map out your service scope.</p>
+                    <button class="btn btn-blue btn-block open-consult-modal-btn">Pick Date &amp; Time &rarr;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="section services-section" id="services">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-blue">OUR CAPABILITIES</span>
+                <h2 class="section-title">SPECIALIZED SERVICE SOLUTIONS</h2>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-box">
+                    <span class="s-icon">🎯</span>
+                    <h3>Digital Product Strategy</h3>
+                    <p>User research, market validation, and technical roadmap architecture for ambitious companies.</p>
+                </div>
+
+                <div class="service-box">
+                    <span class="s-icon">💻</span>
+                    <h3>Custom Software Engineering</h3>
+                    <p>Full-stack web &amp; mobile app development with clean modular code and sub-second response times.</p>
+                </div>
+
+                <div class="service-box">
+                    <span class="s-icon">☁️</span>
+                    <h3>Cloud Architecture &amp; DevOps</h3>
+                    <p>AWS/GCP infrastructure setup, Kubernetes cluster orchestration, and 24/7 SLA uptime monitoring.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Service Quote Estimator -->
+    <section class="section quote-section" id="quote">
+        <div class="container">
+            <div class="quote-box">
+                <div class="quote-header text-center">
+                    <span class="sub-blue">TRANSPARENT PRICING</span>
+                    <h2 class="section-title">INSTANT SERVICE QUOTE ESTIMATOR</h2>
+                    <p>Select your required service parameters to calculate instant estimated project pricing.</p>
+                </div>
+
+                <div class="quote-grid">
+                    <div class="quote-inputs">
+                        <div class="q-group">
+                            <label>1. Service Tier</label>
+                            <div class="q-chips">
+                                <label class="q-chip"><input type="radio" name="tier" value="5000" checked> <span>Essential ($5,000)</span></label>
+                                <label class="q-chip"><input type="radio" name="tier" value="12000"> <span>Professional ($12,000)</span></label>
+                                <label class="q-chip"><input type="radio" name="tier" value="25000"> <span>Enterprise ($25,000)</span></label>
+                            </div>
+                        </div>
+
+                        <div class="q-group">
+                            <label>2. Additional Service Modules</label>
+                            <div class="q-cbs">
+                                <label class="q-cb"><input type="checkbox" class="s-module" value="2500"> <span>UI/UX Wireframing (+$2,500)</span></label>
+                                <label class="q-cb"><input type="checkbox" class="s-module" value="3500"> <span>Security Audit &amp; SOC2 (+$3,500)</span></label>
+                                <label class="q-cb"><input type="checkbox" class="s-module" value="2000"> <span>24/7 SLA Support (+$2,000)</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quote-result">
+                        <span class="res-tag">ESTIMATED PRICE</span>
+                        <div class="res-val" id="quoteVal">$5,000</div>
+                        <p class="res-sub">Includes 100% Dedicated Senior Account Lead</p>
+                        <button class="btn btn-blue btn-block open-consult-modal-btn">Lock In Quote &rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Modal -->
+    <div class="modal" id="consultModal" role="dialog" aria-hidden="true">
+        <div class="modal-overlay" id="consultOverlay"></div>
+        <div class="modal-card">
+            <button class="modal-close" id="consultClose">&times;</button>
+            <h3 class="modal-title">Book Free Strategy Consultation</h3>
+            <p class="modal-sub">Select your preferred date and time slot for a 30-minute discovery call.</p>
+
+            <form id="consultForm">
+                <div class="form-group">
+                    <label for="cName">Your Name</label>
+                    <input type="text" id="cName" required placeholder="e.g. David Miller">
+                </div>
+                <div class="form-group">
+                    <label for="cEmail">Email Address</label>
+                    <input type="email" id="cEmail" required placeholder="david@company.com">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cDate">Preferred Date</label>
+                        <input type="date" id="cDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cTime">Time Slot</label>
+                        <select id="cTime">
+                            <option value="10:00">10:00 AM EST</option>
+                            <option value="14:00" selected>2:00 PM EST</option>
+                            <option value="16:00">4:00 PM EST</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-blue btn-block">Confirm Booking Request &rarr;</button>
+                <div class="form-status" id="consultStatus"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <span class="logo-name">Vanguard<span class="blue">Services</span> © 2026</span>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

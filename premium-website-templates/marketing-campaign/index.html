@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUMMIT 2026 — Marketing Campaign Landing Page Template</title>
+    <meta name="description" content="Official 2026 Growth Marketing & AI Summit. Claim your early-bird 50% discount pass before the countdown timer expires.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Campaign Alert Header Ticker -->
+    <div class="campaign-ticker-bar">
+        <span>⚡ SPECIAL LAUNCH PROMO: SAVE 50% ON VIP SUMMIT PASSES • OFFER EXPIRES SOON!</span>
+    </div>
+
+    <!-- Header & Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <span class="logo-icon">🔥</span>
+                <span class="logo-name">SUMMIT<span class="coral">2026</span></span>
+            </a>
+            <nav class="nav-links" id="navMenu">
+                <a href="#countdown" class="nav-link">Offer Countdown</a>
+                <a href="#passes" class="nav-link">Summit Passes</a>
+                <a href="#bonuses" class="nav-link">Bonus Package</a>
+                <button class="btn-claim open-claim-modal-btn">Claim 50% Off Pass ↗</button>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section with Live Countdown -->
+    <section class="hero" id="countdown">
+        <div class="container hero-content text-center">
+            <span class="hero-badge">🎟️ LIMITED TIME CAMPAIGN OFFER • ONLY 48 PASSES REMAIN</span>
+            <h1 class="hero-title">THE WORLD'S #1 <span class="gradient-text">GROWTH MARKETING</span> &amp; AI SUMMIT</h1>
+            <p class="hero-sub">Join 5,000+ marketing directors, growth founders, and CMOs for 3 days of actionable growth playbooks and AI automation secrets.</p>
+
+            <!-- Live Countdown Timer Component -->
+            <div class="timer-box">
+                <span class="timer-label">SPECIAL LAUNCH OFFER EXPIRES IN:</span>
+                <div class="timer-grid">
+                    <div class="time-unit"><span id="tDays">02</span><label>DAYS</label></div>
+                    <div class="time-unit"><span id="tHours">14</span><label>HOURS</label></div>
+                    <div class="time-unit"><span id="tMins">38</span><label>MINS</label></div>
+                    <div class="time-unit"><span id="tSecs">45</span><label>SECS</label></div>
+                </div>
+            </div>
+
+            <div class="hero-actions">
+                <button class="btn btn-coral open-claim-modal-btn">Claim 50% Discount Pass Now &rarr;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campaign Pass Tiers Section -->
+    <section class="section passes-section" id="passes">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-coral">SELECT YOUR ACCESS TIER</span>
+                <h2 class="section-title">CAMPAIGN OFFER PASSES</h2>
+            </div>
+
+            <div class="passes-grid">
+                <!-- Pass 1 -->
+                <div class="pass-card">
+                    <div class="card-badge">STANDARD ACCESS</div>
+                    <h3>Virtual Summit Pass</h3>
+                    <p class="pass-sub">Full access to 30+ virtual keynote streams.</p>
+                    <div class="pass-price">
+                        <span class="old-price">$399</span>
+                        <span class="cur-price">$199</span>
+                    </div>
+                    <ul class="pass-feats">
+                        <li>✓ Live Virtual Stream Access</li>
+                        <li>✓ HD Session Replays (30 Days)</li>
+                        <li>✓ Digital Event Resource Pack</li>
+                    </ul>
+                    <button class="btn btn-outline btn-block open-claim-modal-btn">Claim Virtual Pass</button>
+                </div>
+
+                <!-- Pass 2 (Popular) -->
+                <div class="pass-card popular">
+                    <div class="pop-tag">BEST VALUE • 50% OFF</div>
+                    <h3>VIP All-Access Pass</h3>
+                    <p class="pass-sub">In-person NYC attendance + VIP networking.</p>
+                    <div class="pass-price">
+                        <span class="old-price">$999</span>
+                        <span class="cur-price">$499</span>
+                    </div>
+                    <ul class="pass-feats">
+                        <li>✓ In-Person NYC Venue Seat</li>
+                        <li>✓ VIP Speaker Reception &amp; Dinner</li>
+                        <li>✓ Lifetime HD Recordings Access</li>
+                        <li>✓ $1,200 Bonus Workshop Suite</li>
+                    </ul>
+                    <button class="btn btn-coral btn-block open-claim-modal-btn">Claim VIP All-Access Pass &rarr;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonus Package Accordion Section -->
+    <section class="section bonus-section" id="bonuses">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-coral">INCLUDED FREE TODAY</span>
+                <h2 class="section-title">$1,200 BONUS PACKAGE INCLUDED</h2>
+            </div>
+
+            <div class="bonus-grid">
+                <div class="bonus-box">
+                    <span class="b-icon">🎁</span>
+                    <h3>Bonus #1: AI Growth Automation Templates ($499 Value)</h3>
+                    <p>Pre-built Zapier and OpenAI scripts to automate your lead enrichment and campaign reporting.</p>
+                </div>
+
+                <div class="bonus-box">
+                    <span class="b-icon">📊</span>
+                    <h3>Bonus #2: CMO Playbook Vault ($399 Value)</h3>
+                    <p>Exclusive case study breakdowns of 10 campaigns that generated over $10M+ in pipeline ARR.</p>
+                </div>
+
+                <div class="bonus-box">
+                    <span class="b-icon">🤝</span>
+                    <h3>Bonus #3: Private Founders Network Access ($302 Value)</h3>
+                    <p>1-Year membership in our private Slack community of 3,500+ growth leaders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Claim Modal -->
+    <div class="modal" id="claimModal" role="dialog" aria-hidden="true">
+        <div class="modal-overlay" id="claimOverlay"></div>
+        <div class="modal-card">
+            <button class="modal-close" id="claimClose">&times;</button>
+            <span class="promo-tag">PROMO CODE AUTO-APPLIED: SUMMIT2026</span>
+            <h3 class="modal-title">Claim Your 50% Off Pass</h3>
+            <p class="modal-sub">Lock in your special launch price before spots run out.</p>
+
+            <form id="claimForm">
+                <div class="form-group">
+                    <label for="clName">Full Name</label>
+                    <input type="text" id="clName" required placeholder="e.g. Sarah Jenkins">
+                </div>
+                <div class="form-group">
+                    <label for="clEmail">Work Email</label>
+                    <input type="email" id="clEmail" required placeholder="sarah@growthcompany.com">
+                </div>
+                <div class="form-group">
+                    <label for="clPass">Select Pass Tier</label>
+                    <select id="clPass">
+                        <option value="vip">VIP All-Access Pass ($499 - 50% Off)</option>
+                        <option value="virtual">Virtual Pass ($199 - 50% Off)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-coral btn-block">Confirm 50% Off Pass &rarr;</button>
+                <div class="form-status" id="claimStatus"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <span class="logo-name">SUMMIT<span class="coral">2026</span> © 2026</span>
+            <div class="footer-links">
+                <a href="#">Campaign Terms</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

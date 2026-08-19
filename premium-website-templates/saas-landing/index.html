@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synthetix AI — SaaS Landing Page Template</title>
+    <meta name="description" content="Synthetix AI is the all-in-one workflow automation platform for high-velocity software teams and modern enterprises.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">Synthetix<span class="violet">.ai</span></span>
+            </a>
+            <nav class="nav-links" id="navMenu">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#roi" class="nav-link">ROI Calculator</a>
+                <a href="#pricing" class="nav-link">Pricing</a>
+                <a href="#integrations" class="nav-link">Integrations</a>
+                <a href="#signup" class="nav-link btn-trial">Start Free Trial ↗</a>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-mesh"></div>
+        <div class="container hero-content">
+            <span class="hero-badge">✨ SYNTHETIX 3.0 RELEASED • AI WORKFLOW ENGINE</span>
+            <h1 class="hero-title">AUTOMATE YOUR PRODUCT WORKFLOWS WITH <span class="gradient-text">INTELLIGENT AI</span></h1>
+            <p class="hero-sub">Connect your stack, automate repetitive engineering tasks, and gain real-time predictive analytics in one unified workspace.</p>
+
+            <div class="hero-actions">
+                <a href="#signup" class="btn btn-violet">Start 14-Day Free Trial (No Card) &rarr;</a>
+                <a href="#features" class="btn btn-outline">Watch 2-Min Demo ▶</a>
+            </div>
+
+            <!-- App Mockup Frame -->
+            <div class="app-frame">
+                <div class="frame-bar">
+                    <span class="f-dot red"></span>
+                    <span class="f-dot yellow"></span>
+                    <span class="f-dot green"></span>
+                    <span class="f-url">app.synthetix.ai/dashboard</span>
+                </div>
+                <div class="frame-body">
+                    <div class="app-sidebar">
+                        <div class="sb-item active">📊 Analytics</div>
+                        <div class="sb-item">⚡ Automations</div>
+                        <div class="sb-item">🔗 Connectors</div>
+                        <div class="sb-item">⚙️ Settings</div>
+                    </div>
+                    <div class="app-main">
+                        <div class="metric-row">
+                            <div class="m-card">
+                                <span>Active Pipelines</span>
+                                <strong>1,420</strong>
+                            </div>
+                            <div class="m-card">
+                                <span>Hours Saved / Wk</span>
+                                <strong style="color:#10b981;">340 hrs</strong>
+                            </div>
+                            <div class="m-card">
+                                <span>AI Accuracy</span>
+                                <strong style="color:#8b5cf6;">99.8%</strong>
+                            </div>
+                        </div>
+                        <div class="app-chart-placeholder">
+                            <div class="chart-bar h-40"></div>
+                            <div class="chart-bar h-60"></div>
+                            <div class="chart-bar h-80"></div>
+                            <div class="chart-bar h-100"></div>
+                            <div class="chart-bar h-75"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Walkthrough Tabs -->
+    <section class="section features-section" id="features">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-violet">POWERFUL CAPABILITIES</span>
+                <h2 class="section-title">THE ULTIMATE PRODUCTIVITY ENGINE</h2>
+            </div>
+
+            <div class="feature-tabs">
+                <button class="feat-tab active" data-feat="analytics">AI Analytics</button>
+                <button class="feat-tab" data-feat="auto">Auto Pipelines</button>
+                <button class="feat-tab" data-feat="team">Team Collaboration</button>
+            </div>
+
+            <div class="feature-display" id="featureDisplay">
+                <div class="feat-info">
+                    <h3 id="featTitle">Predictive Real-Time Analytics</h3>
+                    <p id="featDesc">Synthetix continuously monitors pipeline health, detects code anomalies, and forecasts delivery bottlenecks before they impact production.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ROI Savings Calculator -->
+    <section class="section roi-section" id="roi">
+        <div class="container">
+            <div class="roi-box">
+                <div class="roi-header text-center">
+                    <span class="sub-violet">MEASURABLE VALUE</span>
+                    <h2 class="section-title">ESTIMATE YOUR TEAM'S ROI</h2>
+                    <p>Slide to select your team size and see estimated monthly time &amp; cost savings.</p>
+                </div>
+
+                <div class="roi-calculator">
+                    <div class="slider-group">
+                        <label for="teamSize">Number of Engineers / Staff: <span id="teamVal">25</span> People</label>
+                        <input type="range" id="teamSize" min="5" max="200" value="25" class="roi-slider">
+                    </div>
+
+                    <div class="roi-metrics">
+                        <div class="roi-card">
+                            <span class="roi-label">Hours Saved / Month</span>
+                            <span class="roi-num" id="roiHours">500 hrs</span>
+                        </div>
+                        <div class="roi-card">
+                            <span class="roi-label">Estimated Monthly Savings</span>
+                            <span class="roi-num" id="roiCost">$37,500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section pricing-section" id="pricing">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-violet">FLEXIBLE PLANS</span>
+                <h2 class="section-title">SIMPLE, TRANSPARENT PRICING</h2>
+                
+                <!-- Pricing Toggle -->
+                <div class="pricing-toggle">
+                    <span class="toggle-lbl">Monthly</span>
+                    <label class="switch">
+                        <input type="checkbox" id="pricingSwitch">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="toggle-lbl">Annual <span class="discount-badge">Save 20%</span></span>
+                </div>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Plan 1 -->
+                <div class="plan-card">
+                    <h3>Starter</h3>
+                    <p class="plan-sub">For small teams getting started.</p>
+                    <div class="plan-price"><span class="price-val" data-monthly="29" data-annual="23">$29</span><span class="price-period">/mo</span></div>
+                    <ul class="plan-feats">
+                        <li>✓ Up to 5 Team Members</li>
+                        <li>✓ 100 AI Automations / Mo</li>
+                        <li>✓ Standard Slack Connector</li>
+                    </ul>
+                    <a href="#signup" class="btn btn-outline btn-block">Start Starter Trial</a>
+                </div>
+
+                <!-- Plan 2 (Popular) -->
+                <div class="plan-card popular">
+                    <span class="pop-badge">MOST POPULAR</span>
+                    <h3>Pro</h3>
+                    <p class="plan-sub">For scaling engineering teams.</p>
+                    <div class="plan-price"><span class="price-val" data-monthly="79" data-annual="63">$79</span><span class="price-period">/mo</span></div>
+                    <ul class="plan-feats">
+                        <li>✓ Up to 25 Team Members</li>
+                        <li>✓ Unlimited AI Automations</li>
+                        <li>✓ Custom Webhook Connectors</li>
+                        <li>✓ Priority 24/7 Support</li>
+                    </ul>
+                    <a href="#signup" class="btn btn-violet btn-block">Start Pro Trial</a>
+                </div>
+
+                <!-- Plan 3 -->
+                <div class="plan-card">
+                    <h3>Enterprise</h3>
+                    <p class="plan-sub">For global organizations.</p>
+                    <div class="plan-price"><span class="price-val" data-monthly="199" data-annual="159">$199</span><span class="price-period">/mo</span></div>
+                    <ul class="plan-feats">
+                        <li>✓ Unlimited Team Members</li>
+                        <li>✓ Custom AI Fine-Tuning</li>
+                        <li>✓ Dedicated Account Manager</li>
+                        <li>✓ SOC2 &amp; HIPAA Compliance</li>
+                    </ul>
+                    <a href="#signup" class="btn btn-outline btn-block">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integrations Ecosystem -->
+    <section class="section integrations-section" id="integrations">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-violet">PLUG &amp; PLAY</span>
+                <h2 class="section-title">INTEGRATES WITH YOUR FAVORITE TOOLS</h2>
+            </div>
+
+            <div class="integ-grid">
+                <div class="integ-card">⚡ Slack</div>
+                <div class="integ-card">🐙 GitHub</div>
+                <div class="integ-card">🎨 Figma</div>
+                <div class="integ-card">💳 Stripe</div>
+                <div class="integ-card">📝 Notion</div>
+                <div class="integ-card">⚙️ Zapier</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Trial CTA Bar -->
+    <section class="section cta-section" id="signup">
+        <div class="container">
+            <div class="cta-box text-center">
+                <h2 class="section-title">READY TO TRANSFORM YOUR WORKFLOW?</h2>
+                <p>Join over 10,000+ teams automating their daily work with Synthetix.ai.</p>
+                <form class="cta-form" id="trialForm">
+                    <input type="email" required placeholder="Enter your work email..." class="cta-input">
+                    <button type="submit" class="btn btn-violet">Get Started Free &rarr;</button>
+                </form>
+                <div class="form-status" id="trialStatus"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <span class="logo-text">Synthetix<span class="violet">.ai</span> © 2026</span>
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Security</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

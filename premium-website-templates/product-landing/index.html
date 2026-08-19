@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA PRO — Next-Gen Spatial Audio Headphones</title>
+    <meta name="description" content="AURA PRO ANC Wireless Headphones featuring 40mm titanium drivers, 45-hour battery life, and lossless spatial audio.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="brand-logo">
+                <span class="logo-icon">🎧</span>
+                <span class="logo-name">AURA<span class="cyan">PRO</span></span>
+            </a>
+            <nav class="nav-links" id="navMenu">
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#specs" class="nav-link">Specifications</a>
+                <a href="#features" class="nav-link">Hotspot Inspector</a>
+                <a href="#configurator" class="nav-link">Configurator</a>
+                <button class="btn-buy open-buy-modal-btn">Buy Now — $299</button>
+            </nav>
+            <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="overview">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <span class="hero-tag">✨ SOUND WITHOUT COMPROMISE</span>
+                <h1 class="hero-title">IMMERSE IN <span class="gradient-text">SPATIAL AUDIO</span> PURITY</h1>
+                <p class="hero-sub">Engineered with custom 40mm titanium drivers, adaptive active noise cancellation, and 45-hour battery performance.</p>
+
+                <!-- Color Variant Picker -->
+                <div class="color-picker-box">
+                    <span class="picker-label">Select Color Finish:</span>
+                    <div class="color-options">
+                        <button class="color-dot active" data-color="obsidian" title="Obsidian Black" style="background:#0f172a;"></button>
+                        <button class="color-dot" data-color="silver" title="Alpine Silver" style="background:#e2e8f0;"></button>
+                        <button class="color-dot" data-color="cyan" title="Electric Cyan" style="background:#06b6d4;"></button>
+                    </div>
+                    <span class="selected-color-name" id="colorName">Obsidian Black Edition</span>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="btn btn-cyan open-buy-modal-btn">Pre-Order Now — $299 &rarr;</button>
+                    <a href="#specs" class="btn btn-outline">Explore Tech Specs ↓</a>
+                </div>
+            </div>
+
+            <!-- Product Visual Mockup Container -->
+            <div class="hero-visual">
+                <div class="product-render-card" id="renderCard">
+                    <div class="product-headset-mock">
+                        <div class="headband"></div>
+                        <div class="earcup left"><span class="brand-ring">AURA</span></div>
+                        <div class="earcup right"><span class="brand-ring">AURA</span></div>
+                    </div>
+                    <span class="edition-badge" id="editionBadge">OBSIDIAN EDITION</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Specifications Section -->
+    <section class="section specs-section" id="specs">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-cyan">PRECISION ENGINEERING</span>
+                <h2 class="section-title">HARDWARE SPECIFICATIONS</h2>
+            </div>
+
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <span class="spec-icon">🔋</span>
+                    <h3>45 Hours Battery</h3>
+                    <p>Listen for days with fast USB-C charging (15 mins charge = 5 hrs playback).</p>
+                </div>
+
+                <div class="spec-card">
+                    <span class="spec-icon">🔇</span>
+                    <h3>Hybrid ANC</h3>
+                    <p>Adaptive noise cancellation blocks out 99.4% of ambient environmental noise.</p>
+                </div>
+
+                <div class="spec-card">
+                    <span class="spec-icon">🎵</span>
+                    <h3>Lossless Spatial Audio</h3>
+                    <p>360° head-tracking soundstage powered by ultra-low latency Bluetooth 5.4.</p>
+                </div>
+
+                <div class="spec-card">
+                    <span class="spec-icon">💧</span>
+                    <h3>IP68 Sweat Proof</h3>
+                    <p>Durable aluminum construction built to withstand intense workouts and travel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Feature Hotspot Inspector -->
+    <section class="section hotspots-section" id="features">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="sub-cyan">INTERACTIVE DISCOVERY</span>
+                <h2 class="section-title">FEATURE HOTSPOT INSPECTOR</h2>
+                <p>Click on any hotspot badge below to inspect hardware components.</p>
+            </div>
+
+            <div class="hotspots-container">
+                <div class="hotspot-buttons">
+                    <button class="hotspot-btn active" data-spot="driver">1. 40mm Titanium Driver</button>
+                    <button class="hotspot-btn" data-spot="cushion">2. Memory Foam Cushions</button>
+                    <button class="hotspot-btn" data-spot="mic">3. 6-Mic Beamforming Array</button>
+                </div>
+
+                <div class="hotspot-display" id="hotspotDisplay">
+                    <h3 id="spotTitle">40mm Titanium Acoustic Drivers</h3>
+                    <p id="spotDesc">Custom-tuned diaphragms delivering crystal clear highs, rich midranges, and deep resonant bass with zero distortion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Package Configurator & Add-ons -->
+    <section class="section config-section" id="configurator">
+        <div class="container">
+            <div class="config-box">
+                <div class="config-header text-center">
+                    <span class="sub-cyan">BUILD YOUR SET</span>
+                    <h2 class="section-title">PACKAGE CONFIGURATOR</h2>
+                </div>
+
+                <div class="config-grid">
+                    <div class="config-options">
+                        <label class="config-label">Included Accessories &amp; Add-ons:</label>
+                        <div class="add-on-list">
+                            <label class="addon-item">
+                                <input type="checkbox" class="config-addon" value="39" checked>
+                                <span>Hard Shell Travel Case (+$39)</span>
+                            </label>
+                            <label class="addon-item">
+                                <input type="checkbox" class="config-addon" value="49">
+                                <span>Walnut Wooden Headphone Stand (+$49)</span>
+                            </label>
+                            <label class="addon-item">
+                                <input type="checkbox" class="config-addon" value="29">
+                                <span>Braided 3.5mm Gold-Plated Cable (+$29)</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="config-summary">
+                        <span class="summary-tag">TOTAL ESTIMATE</span>
+                        <div class="total-price" id="configTotal">$338</div>
+                        <p class="shipping-note">Free Global Express Shipping Included</p>
+                        <button class="btn btn-cyan btn-block open-buy-modal-btn">Proceed to Express Checkout &rarr;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buy Now Express Checkout Modal -->
+    <div class="modal" id="buyModal" role="dialog" aria-hidden="true">
+        <div class="modal-overlay" id="buyOverlay"></div>
+        <div class="modal-card">
+            <button class="modal-close" id="buyClose">&times;</button>
+            <h3 class="modal-title">Express Checkout — AURA PRO</h3>
+            <p class="modal-sub">Confirm your shipping information to reserve your headset.</p>
+
+            <form id="buyForm">
+                <div class="form-group">
+                    <label for="bName">Full Name</label>
+                    <input type="text" id="bName" required placeholder="e.g. Alex Mercer">
+                </div>
+                <div class="form-group">
+                    <label for="bEmail">Email Address</label>
+                    <input type="email" id="bEmail" required placeholder="alex@example.com">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="bQty">Quantity</label>
+                        <select id="bQty">
+                            <option value="1">1 Unit</option>
+                            <option value="2">2 Units (Save 10%)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="bColor">Color Edition</label>
+                        <select id="bColor">
+                            <option value="obsidian">Obsidian Black</option>
+                            <option value="silver">Alpine Silver</option>
+                            <option value="cyan">Electric Cyan</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-cyan btn-block">Confirm Order &rarr;</button>
+                <div class="form-status" id="buyStatus"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <span class="logo-name">AURA<span class="cyan">PRO</span> © 2026</span>
+            <div class="footer-links">
+                <a href="#">Warranty &amp; Returns</a>
+                <a href="#">User Manual</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">↑</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
