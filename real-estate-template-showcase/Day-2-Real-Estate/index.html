@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VERA LUXURY ESTATES — Discover Exceptional Living & Prime Properties</title>
+  <meta name="description" content="Discover extraordinary luxury estates, waterfront villas, modern penthouses, and prime commercial investments with Vera Luxury Estates. Premier white-glove real estate advisory.">
+  <meta name="keywords" content="luxury real estate, villas, penthouses, modern mansions, commercial real estate, Vera Estates, Beverly Hills properties, prime properties">
+  
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:title" content="VERA LUXURY ESTATES — Discover Exceptional Living">
+  <meta property="og:description" content="Premier white-glove luxury real estate agency for discerning buyers, investors, and homeowners.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. NAVBAR SECTION
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo" aria-label="Vera Luxury Estates Home">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <span>
+            <strong class="logo-main">VERA</strong>
+            <small class="logo-sub">LUXURY ESTATES</small>
+          </span>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="properties.html" class="nav-link">Properties</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="agents.html" class="nav-link">Advisors</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="properties.html?filter=favorites" class="favorites-pill" id="favorites-nav-trigger" title="View Saved Properties">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#EF4444" stroke="#EF4444" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            <span class="favorites-count">2</span>
+          </a>
+          <a href="contact.html" class="btn btn-gold btn-sm">List Your Property</a>
+          <button class="hamburger-btn" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer" aria-label="Mobile Navigation">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <div class="brand-icon" style="width:30px; height:30px;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+        </div>
+        <span>
+          <strong class="logo-main" style="font-size:1.1rem;">VERA</strong>
+        </span>
+      </div>
+      <button class="mobile-drawer-close" aria-label="Close mobile menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link active">Home <span>→</span></a></li>
+      <li><a href="properties.html" class="mobile-nav-link">Exclusive Properties <span>→</span></a></li>
+      <li><a href="about.html" class="mobile-nav-link">About Company <span>→</span></a></li>
+      <li><a href="agents.html" class="mobile-nav-link">Our Advisors <span>→</span></a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact & Concierge <span>→</span></a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="properties.html?filter=favorites" class="btn btn-outline-gold btn-sm btn-block">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="#EF4444" stroke="#EF4444" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        <span>Saved Properties (<span class="favorites-count">2</span>)</span>
+      </a>
+      <a href="contact.html" class="btn btn-gold btn-block">List Your Property</a>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       2. HERO SECTION
+       ========================================================================= -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-content fade-in-up">
+        <div class="hero-badge-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <span>Ultra-Luxury Architectural Brokerage</span>
+        </div>
+        <h1 class="hero-title">
+          Find a Place You’ll Be<br>
+          <span>Proud to Call Home.</span>
+        </h1>
+        <p class="hero-desc">
+          Vera Luxury Estates represents the world's most prestigious residences, private waterfront villas, and bespoke skyline penthouses with unmatched discretion and white-glove advisory.
+        </p>
+        <div class="hero-actions">
+          <a href="properties.html" class="btn btn-gold btn-lg">
+            <span>Explore Properties</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="contact.html" class="btn btn-outline-white btn-lg">Schedule Private Showing</a>
+        </div>
+      </div>
+
+      <!-- =======================================================================
+           3. PROPERTY SEARCH UI (HERO OVERLAY)
+           ======================================================================= -->
+      <div class="search-card-wrapper hero-search-container fade-in-up">
+        <div class="search-tabs">
+          <button class="search-tab-btn active" type="button">For Sale</button>
+          <button class="search-tab-btn" type="button" onclick="window.location.href='properties.html?type=penthouses'">For Lease</button>
+          <button class="search-tab-btn" type="button" onclick="window.location.href='properties.html?type=commercial'">Commercial</button>
+        </div>
+
+        <form id="hero-search-form" class="search-grid-form" action="properties.html" method="GET">
+          <div class="form-group">
+            <label class="form-label" for="search-location">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Location
+            </label>
+            <input type="text" id="search-location" class="form-control" placeholder="e.g. Bel-Air, Manhattan, Aspen">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="search-type">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+              Property Type
+            </label>
+            <select id="search-type" class="form-control">
+              <option value="all">All Architectural Types</option>
+              <option value="villas">Luxury Villas</option>
+              <option value="penthouses">Skyline Penthouses</option>
+              <option value="mansions">Modern Mansions</option>
+              <option value="waterfront">Waterfront Estates</option>
+              <option value="commercial">Commercial Assets</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="search-price">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v12"/><path d="M17 10h-7.5a2.5 2.5 0 0 0 0 5H15a2.5 2.5 0 0 1 0 5H7"/></svg>
+              Price Range
+            </label>
+            <select id="search-price" class="form-control">
+              <option value="">Any Luxury Budget</option>
+              <option value="15000000">Up to $15,000,000</option>
+              <option value="25000000">Up to $25,000,000</option>
+              <option value="50000000">$25,000,000 - $50,000,000+</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="search-beds">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
+              Bedrooms
+            </label>
+            <select id="search-beds" class="form-control">
+              <option value="">Any Bedrooms</option>
+              <option value="4">4+ Bedrooms</option>
+              <option value="5">5+ Bedrooms</option>
+              <option value="6">6+ Bedrooms</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-gold" style="height: 48px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <span>Search</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Hero Key Highlights -->
+      <div class="hero-highlights-row fade-in-up">
+        <div class="hero-highlight-item">
+          <div class="hero-highlight-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="hero-highlight-text">
+            <div class="h-title">$1.8B+</div>
+            <div class="h-desc">Private Transaction Volume</div>
+          </div>
+        </div>
+        <div class="hero-highlight-item">
+          <div class="hero-highlight-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="hero-highlight-text">
+            <div class="h-title">100% Confidential</div>
+            <div class="h-desc">Strict NDA Off-Market Representation</div>
+          </div>
+        </div>
+        <div class="hero-highlight-item">
+          <div class="hero-highlight-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <div class="hero-highlight-text">
+            <div class="h-title">Global Network</div>
+            <div class="h-desc">Offices in LA, NYC, London & Dubai</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. ABOUT COMPANY & STATS SECTION
+       ========================================================================= -->
+  <section class="section" id="about-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual-stack fade-in-up">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=85" alt="Vera Luxury Estates Architecture" class="about-img-main">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=85" alt="Luxury Interior Living" class="about-img-secondary">
+          <div class="about-experience-badge">
+            <div class="exp-number">14+</div>
+            <div class="exp-label">Years of<br>Excellence</div>
+          </div>
+        </div>
+
+        <div class="about-text-content fade-in-up">
+          <div class="section-tag">About Vera Luxury Estates</div>
+          <h2 class="section-title">Architectural Mastery & Discreet Private Representation.</h2>
+          <p class="section-subtitle">
+            Founded with a steadfast commitment to discretion, architectural integrity, and bespoke client advisory, Vera Luxury Estates curates the top tier of international residential and commercial properties.
+          </p>
+
+          <div class="about-pillars">
+            <div class="pillar-item">
+              <div class="pillar-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <div class="pillar-text">
+                <h5>Discretion & Privacy</h5>
+                <p>Confidential representations protected by robust legal NDAs.</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <div class="pillar-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m4.93 4.93 4.24 4.24"/><path d="m14.83 9.17 4.24-4.24"/><path d="m14.83 14.83 4.24 4.24"/><path d="m9.17 14.83-4.24 4.24"/></svg>
+              </div>
+              <div class="pillar-text">
+                <h5>Architectural Curation</h5>
+                <p>Properties selected for structural brilliance and rare provenance.</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <div class="pillar-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div class="pillar-text">
+                <h5>Analytical Valuation</h5>
+                <p>Proprietary financial modeling for capital appreciation and yield.</p>
+              </div>
+            </div>
+            <div class="pillar-item">
+              <div class="pillar-icon">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div class="pillar-text">
+                <h5>White-Glove Concierge</h5>
+                <p>Private aviation transfers, interior curation, and legal escrow.</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">
+            <a href="about.html" class="btn btn-primary">Discover Our Heritage</a>
+            <a href="contact.html" class="btn btn-outline-dark">Consult an Advisor</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Animated Stats Banner -->
+      <div class="stats-banner fade-in-up">
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-number" data-target="14" data-suffix="+">0</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number" data-target="1.8" data-prefix="$" data-suffix="B+">0</div>
+            <div class="stat-label">Volume Sold</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number" data-target="2400" data-suffix="+">0</div>
+            <div class="stat-label">Discerning Clients</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number" data-target="99.4" data-suffix="%">0</div>
+            <div class="stat-label">Satisfaction Rate</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number" data-target="35" data-suffix="+">0</div>
+            <div class="stat-label">Elite Advisors</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. PROPERTY CATEGORIES SECTION
+       ========================================================================= -->
+  <section class="section section-muted" id="categories-section">
+    <div class="container">
+      <div class="section-header text-center fade-in-up">
+        <div class="section-tag">Curated Collections</div>
+        <h2 class="section-title">Explore by Architectural Category</h2>
+        <p class="section-subtitle">
+          Browse our tailored portfolios of world-class estates, sky-high duplexes, and prestigious commercial flagships.
+        </p>
+      </div>
+
+      <div class="categories-grid">
+        <a href="properties.html?type=villas" class="category-card fade-in-up">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80" alt="Luxury Villas" class="category-card-img" loading="lazy">
+          <div class="category-card-overlay">
+            <span class="category-count-badge">24 Properties</span>
+            <h3 class="category-title">Luxury Villas</h3>
+            <p class="category-desc">Expansive private estates with landscaped grounds and infinity pools.</p>
+          </div>
+        </a>
+
+        <a href="properties.html?type=penthouses" class="category-card fade-in-up">
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="Penthouses" class="category-card-img" loading="lazy">
+          <div class="category-card-overlay">
+            <span class="category-count-badge">18 Properties</span>
+            <h3 class="category-title">Penthouses</h3>
+            <p class="category-desc">Sky-high duplexes with 360-degree city views and private elevator access.</p>
+          </div>
+        </a>
+
+        <a href="properties.html?type=mansions" class="category-card fade-in-up">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Modern Mansions" class="category-card-img" loading="lazy">
+          <div class="category-card-overlay">
+            <span class="category-count-badge">15 Properties</span>
+            <h3 class="category-title">Modern Mansions</h3>
+            <p class="category-desc">Contemporary architectural compounds with smart home automation.</p>
+          </div>
+        </a>
+
+        <a href="properties.html?type=waterfront" class="category-card fade-in-up">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Waterfront Estates" class="category-card-img" loading="lazy">
+          <div class="category-card-overlay">
+            <span class="category-count-badge">12 Properties</span>
+            <h3 class="category-title">Waterfront Estates</h3>
+            <p class="category-desc">Oceanfront and lakeside sanctuaries featuring private yacht docks.</p>
+          </div>
+        </a>
+
+        <a href="properties.html?type=commercial" class="category-card fade-in-up">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Commercial & Towers" class="category-card-img" loading="lazy">
+          <div class="category-card-overlay">
+            <span class="category-count-badge">9 Properties</span>
+            <h3 class="category-title">Commercial & Towers</h3>
+            <p class="category-desc">Grade-A corporate headquarters and luxury retail flagships.</p>
+          </div>
+        </a>
+
+        <a href="properties.html?type=land" class="category-card fade-in-up">
+          <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80" alt="Private Land & Estates" class="category-card-img" loading="lazy">
+          <div class="category-card-overlay">
+            <span class="category-count-badge">7 Properties</span>
+            <h3 class="category-title">Private Land & Ranches</h3>
+            <p class="category-desc">Exclusive development acreage, vineyards, and equestrian parcels.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. FEATURED PROPERTIES SECTION
+       ========================================================================= -->
+  <section class="section section-dark" id="featured-section">
+    <div class="container">
+      <div class="section-header text-center fade-in-up">
+        <div class="section-tag tag-light">Spotlight Collection</div>
+        <h2 class="section-title text-white">Featured Architectural Highlights</h2>
+        <p class="section-subtitle light">
+          Hand-picked trophy assets offering extraordinary craftsmanship, prime positioning, and unmatched lifestyle amenities.
+        </p>
+      </div>
+
+      <!-- Dynamic Featured Grid rendered by JS -->
+      <div id="home-featured-grid" class="featured-grid">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. PROPERTY LISTINGS SECTION (FILTERABLE CATALOG)
+       ========================================================================= -->
+  <section class="section" id="listings-section">
+    <div class="container">
+      <div class="section-header text-center fade-in-up">
+        <div class="section-tag">Available Catalog</div>
+        <h2 class="section-title">Explore Current Prime Listings</h2>
+        <p class="section-subtitle">
+          Filter through our premier portfolio of residences currently available for acquisition or private lease.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs-row fade-in-up">
+        <button class="filter-pill-btn home-filter-pill active" data-filter="all">All Residences</button>
+        <button class="filter-pill-btn home-filter-pill" data-filter="villas">Villas</button>
+        <button class="filter-pill-btn home-filter-pill" data-filter="penthouses">Penthouses</button>
+        <button class="filter-pill-btn home-filter-pill" data-filter="mansions">Mansions</button>
+        <button class="filter-pill-btn home-filter-pill" data-filter="waterfront">Waterfront</button>
+        <button class="filter-pill-btn home-filter-pill" data-filter="commercial">Commercial</button>
+      </div>
+
+      <!-- Dynamic Property Cards Grid -->
+      <div id="home-properties-grid" class="properties-grid">
+        <!-- Rendered via script.js -->
+      </div>
+
+      <div class="text-center" style="margin-top: 50px;">
+        <a href="properties.html" class="btn btn-primary btn-lg">
+          <span>View All 10+ Properties in Full Catalog</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. VIRTUAL TOUR & PROPERTY DETAILS PREVIEW SECTION
+       ========================================================================= -->
+  <section class="section section-cream" id="virtual-tour-section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text-content fade-in-up">
+          <div class="section-tag">Interactive Preview</div>
+          <h2 class="section-title">Immersive 4K Cinematic Walkthroughs</h2>
+          <p class="section-subtitle">
+            Experience our exclusive residences through high-definition 4K virtual tours, drone cinematography, and detailed floor plan architectural layouts before your private on-site inspection.
+          </p>
+          <ul style="margin: 24px 0 30px; display:flex; flex-direction:column; gap:12px;">
+            <li style="display:flex; align-items:center; gap:10px; font-weight:600; color:var(--color-text-main);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold-dark)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>3D Spatial Dimension Scans & Exact Cadastral Dimensions</span>
+            </li>
+            <li style="display:flex; align-items:center; gap:10px; font-weight:600; color:var(--color-text-main);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold-dark)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Private Chauffeur & Jet Transit Arranged Upon Request</span>
+            </li>
+            <li style="display:flex; align-items:center; gap:10px; font-weight:600; color:var(--color-text-main);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold-dark)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Interactive Real-Time Mortgage & Acquisition Financial Modeling</span>
+            </li>
+          </ul>
+          <div style="display:flex; gap:16px; flex-wrap:wrap;">
+            <a href="property-details.html?id=1" class="btn btn-gold">Launch 3D Tour Demo</a>
+            <a href="contact.html" class="btn btn-outline-dark">Book Private Viewing</a>
+          </div>
+        </div>
+
+        <div class="about-visual-stack fade-in-up">
+          <div style="position:relative; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-xl);">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=85" alt="Virtual Tour Experience" style="width:100%; height:440px; object-fit:cover;">
+            <div style="position:absolute; inset:0; background:rgba(7,13,31,0.4); display:flex; align-items:center; justify-content:center;">
+              <a href="property-details.html?id=1" class="btn-icon" style="width:72px; height:72px; background:var(--color-gold); color:#070D1F; box-shadow:var(--shadow-gold);" aria-label="Play virtual tour">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </a>
+            </div>
+            <div style="position:absolute; bottom:20px; left:20px; background:rgba(7,13,31,0.85); backdrop-filter:blur(8px); padding:10px 18px; border-radius:var(--radius-pill); border:1px solid var(--color-border-gold); color:#FFFFFF; font-size:0.85rem; font-weight:600;">
+              Live Preview: The Bel-Air Crown Villa
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. OUR AGENTS & TEAM SECTION
+       ========================================================================= -->
+  <section class="section" id="agents-section">
+    <div class="container">
+      <div class="section-header text-center fade-in-up">
+        <div class="section-tag">Elite Advisory</div>
+        <h2 class="section-title">Meet Our Managing Directors</h2>
+        <p class="section-subtitle">
+          Our senior partners bring decades of institutional expertise, nuanced market intelligence, and global relationships to every transaction.
+        </p>
+      </div>
+
+      <div class="agents-grid">
+        <!-- Agent 1 -->
+        <div class="agent-card fade-in-up">
+          <div class="agent-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Sophia Williams" loading="lazy">
+          </div>
+          <div class="agent-card-body">
+            <h3 class="agent-name">Sophia Williams</h3>
+            <div class="agent-role">Managing Director & Luxury Advisor</div>
+            <div class="agent-specialty">Bel-Air & Beverly Hills Estates</div>
+            <div class="agent-contact-actions">
+              <a href="tel:+13105558921" class="agent-action-btn" title="Call Sophia"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+              <a href="mailto:sophia.williams@veraestates.com" class="agent-action-btn" title="Email Sophia"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+              <a href="agents.html" class="btn btn-sm btn-outline-dark" style="flex-grow:1; margin-left:8px;">Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Agent 2 -->
+        <div class="agent-card fade-in-up">
+          <div class="agent-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80" alt="Daniel Carter" loading="lazy">
+          </div>
+          <div class="agent-card-body">
+            <h3 class="agent-name">Daniel Carter</h3>
+            <div class="agent-role">Senior Waterfront Specialist</div>
+            <div class="agent-specialty">Coastal & Skyline Penthouses</div>
+            <div class="agent-contact-actions">
+              <a href="tel:+12125554309" class="agent-action-btn" title="Call Daniel"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+              <a href="mailto:daniel.carter@veraestates.com" class="agent-action-btn" title="Email Daniel"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+              <a href="agents.html" class="btn btn-sm btn-outline-dark" style="flex-grow:1; margin-left:8px;">Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Agent 3 -->
+        <div class="agent-card fade-in-up">
+          <div class="agent-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80" alt="Emma Wilson" loading="lazy">
+          </div>
+          <div class="agent-card-body">
+            <h3 class="agent-name">Emma Wilson</h3>
+            <div class="agent-role">Director of International Residential</div>
+            <div class="agent-specialty">Historic & European Properties</div>
+            <div class="agent-contact-actions">
+              <a href="tel:+442079460833" class="agent-action-btn" title="Call Emma"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+              <a href="mailto:emma.wilson@veraestates.com" class="agent-action-btn" title="Email Emma"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+              <a href="agents.html" class="btn btn-sm btn-outline-dark" style="flex-grow:1; margin-left:8px;">Profile</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Agent 4 -->
+        <div class="agent-card fade-in-up">
+          <div class="agent-photo-wrap">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=800&q=80" alt="James Anderson" loading="lazy">
+          </div>
+          <div class="agent-card-body">
+            <h3 class="agent-name">James Anderson</h3>
+            <div class="agent-role">Head of Commercial & Investments</div>
+            <div class="agent-specialty">Prime Towers & Mixed-Use Assets</div>
+            <div class="agent-contact-actions">
+              <a href="tel:+97143129055" class="agent-action-btn" title="Call James"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+              <a href="mailto:james.anderson@veraestates.com" class="agent-action-btn" title="Email James"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+              <a href="agents.html" class="btn btn-sm btn-outline-dark" style="flex-grow:1; margin-left:8px;">Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. CLIENT TESTIMONIALS SECTION
+       ========================================================================= -->
+  <section class="section section-muted" id="testimonials-section">
+    <div class="container">
+      <div class="section-header text-center fade-in-up">
+        <div class="section-tag">Client Acclaim</div>
+        <h2 class="section-title">Trusted by Discerning Homeowners</h2>
+        <p class="section-subtitle">
+          Read authentic reflections from institutional investors, collectors, and families who partnered with Vera Estates.
+        </p>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card fade-in-up">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "Working with Sophia and the Vera Estates team was a masterclass in discretion and architectural expertise. They secured our family's Bel-Air sanctuary off-market with zero friction."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Marcus Sterling" class="author-avatar">
+            <div class="author-info">
+              <h5>Marcus Sterling</h5>
+              <p>Managing Director, Equity Fund</p>
+              <span class="author-property-tag">Acquired Bel-Air Villa ($14.8M)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card fade-in-up">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "Vera Estates redefines luxury advisory. Daniel Carter’s deep understanding of structural valuation helped us land a Manhattan penthouse that exceeded all our expectations."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Elena Rostova" class="author-avatar">
+            <div class="author-info">
+              <h5>Elena Rostova</h5>
+              <p>Tech Entrepreneur & Investor</p>
+              <span class="author-property-tag">Acquired Manhattan Penthouse ($22.5M)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card fade-in-up">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-quote">
+            "The global reach of Vera Estates is truly peerless. Emma Wilson orchestrated an ultra-discreet campaign connecting us with the right qualified buyer in fewer than 45 days."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80" alt="Sir Arthur Kensington" class="author-avatar">
+            <div class="author-info">
+              <h5>Sir Arthur Kensington</h5>
+              <p>Private Family Office Chairman</p>
+              <span class="author-property-tag">Sold Mayfair Residence (£22.4M)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. HIGH IMPACT CTA SECTION
+       ========================================================================= -->
+  <section class="section" style="padding-top:40px; padding-bottom:40px;">
+    <div class="container">
+      <div class="cta-banner fade-in-up">
+        <div class="cta-content">
+          <div class="section-tag tag-light" style="margin-bottom:16px;">Exclusive Representation</div>
+          <h2 class="cta-title">Your Next Chapter Starts Here.</h2>
+          <p class="cta-subtitle">
+            Whether acquiring a trophy architectural residence or discreetly placing your property on the global private market, partner with Vera Estates.
+          </p>
+          <div class="cta-buttons">
+            <a href="properties.html" class="btn btn-gold btn-lg">Explore Available Estates</a>
+            <a href="contact.html" class="btn btn-outline-white btn-lg">Schedule Private Consultation</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. CONTACT & MAP SECTION
+       ========================================================================= -->
+  <section class="section" id="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info-card fade-in-up">
+          <div class="section-tag tag-light">Global Headquarters</div>
+          <h3 style="color:#FFFFFF; font-size:1.8rem; margin-bottom:10px;">Beverly Hills Flagship</h3>
+          <p style="color:#CBD5E1; font-size:0.92rem; line-height:1.6;">
+            Our private client lounge is available by appointment for confidential property consultations, escrow structuring, and portfolio reviews.
+          </p>
+
+          <div class="contact-channel-list">
+            <div class="contact-channel-item">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div class="channel-text">
+                <h5>Office Location</h5>
+                <p>9460 Wilshire Blvd, Suite 800, Beverly Hills, CA 90212</p>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div class="channel-text">
+                <h5>Concierge Telephone</h5>
+                <a href="tel:+18008372378">+1 (800) 837-2378 / +1 (310) 555-0192</a>
+              </div>
+            </div>
+
+            <div class="contact-channel-item">
+              <div class="channel-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div class="channel-text">
+                <h5>Private Correspondence</h5>
+                <a href="mailto:concierge@veraestates.com">concierge@veraestates.com</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Stylized Map Placeholder UI -->
+          <div class="map-placeholder-ui">
+            <div class="map-pin-pulse">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" stroke-width="2.5"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div class="map-pin-label">Beverly Hills Flagship</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-form-card fade-in-up">
+          <h3 style="font-size:1.75rem; margin-bottom:8px;">Send a Private Inquiry</h3>
+          <p style="color:var(--color-text-muted); font-size:0.92rem; margin-bottom:28px;">
+            Fill out the form below and a managing director will get in touch with you promptly.
+          </p>
+
+          <form data-validate="true" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="home-contact-name">Full Name *</label>
+                <input type="text" id="home-contact-name" class="form-control" placeholder="e.g. Eleanor Vance" required>
+                <span class="form-error">Please enter your full name.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="home-contact-email">Email Address *</label>
+                <input type="email" id="home-contact-email" class="form-control" placeholder="e.g. eleanor@vance.com" required>
+                <span class="form-error">Please enter a valid email address.</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="home-contact-phone">Phone Number *</label>
+                <input type="tel" id="home-contact-phone" class="form-control" placeholder="e.g. +1 (310) 555-0123" required>
+                <span class="form-error">Please enter your phone number.</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="home-contact-interest">Area of Interest</label>
+                <select id="home-contact-interest" class="form-control">
+                  <option value="buying">Acquiring a Luxury Property</option>
+                  <option value="selling">Listing / Selling an Estate</option>
+                  <option value="commercial">Commercial Investment Advisory</option>
+                  <option value="offmarket">Private Off-Market Portfolio Access</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group form-group-full">
+              <label class="form-label" for="home-contact-message">Message / Specifications *</label>
+              <textarea id="home-contact-message" class="form-control" rows="4" placeholder="Describe your property requirements, desired location, or listing details..." required></textarea>
+              <span class="form-error">Please enter your message.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-lg">
+              <span>Submit Confidential Request</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       13. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Brand Info -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <span>
+              <strong class="logo-main">VERA</strong>
+              <small class="logo-sub">LUXURY ESTATES</small>
+            </span>
+          </a>
+          <p>
+            Vera Luxury Estates is a premier private brokerage representing the world's most distinguished residential, waterfront, and architectural properties with white-glove advisory.
+          </p>
+          <div class="footer-social-row">
+            <a href="#" class="footer-social-btn" aria-label="LinkedIn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg></a>
+            <a href="#" class="footer-social-btn" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" class="footer-social-btn" aria-label="YouTube"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">All Properties</a></li>
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="agents.html">Elite Advisors</a></li>
+            <li><a href="contact.html">Contact & Concierge</a></li>
+          </ul>
+        </div>
+
+        <!-- Property Types -->
+        <div>
+          <h4 class="footer-title">Categories</h4>
+          <ul class="footer-nav-list">
+            <li><a href="properties.html?type=villas">Luxury Villas</a></li>
+            <li><a href="properties.html?type=penthouses">Manhattan Penthouses</a></li>
+            <li><a href="properties.html?type=mansions">Modern Mansions</a></li>
+            <li><a href="properties.html?type=waterfront">Waterfront Residences</a></li>
+            <li><a href="properties.html?type=commercial">Commercial Assets</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div>
+          <h4 class="footer-title">Private Gazette</h4>
+          <p style="font-size:0.88rem; line-height:1.6; margin-bottom:14px;">
+            Subscribe to receive our weekly curated digest of exclusive off-market listings and architectural insights.
+          </p>
+          <form id="footer-newsletter-form" class="footer-newsletter-form">
+            <input type="email" id="footer-newsletter-email" class="footer-newsletter-input" placeholder="Your email address..." required>
+            <button type="submit" class="btn btn-gold btn-sm" aria-label="Subscribe">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Bottom Legal -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Vera Luxury Estates. All Rights Reserved. Equal Housing Opportunity.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Ethics & Compliance</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       MODALS & TOAST NOTIFICATIONS
+       ========================================================================= -->
+  <!-- Quick Inquiry Modal -->
+  <div id="inquiry-modal" class="modal-overlay" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close modal">✕</button>
+      <div class="modal-header">
+        <h3 style="font-size:1.4rem;">Inquire About Property</h3>
+        <p style="font-size:0.85rem; color:var(--color-text-muted); margin-top:4px;">Direct advisory inquiry with a Vera Senior Advisor.</p>
+      </div>
+      <div class="modal-body">
+        <form data-validate="true" novalidate>
+          <div class="form-group form-group-full">
+            <label class="form-label" for="modal-inquiry-property">Property</label>
+            <input type="text" id="modal-inquiry-property" class="form-control" readonly style="background:#F1F5F9; font-weight:600;">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="modal-inq-name">Full Name *</label>
+              <input type="text" id="modal-inq-name" class="form-control" placeholder="Your name" required>
+              <span class="form-error">Required</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="modal-inq-email">Email Address *</label>
+              <input type="email" id="modal-inq-email" class="form-control" placeholder="name@domain.com" required>
+              <span class="form-error">Valid email required</span>
+            </div>
+          </div>
+          <div class="form-group form-group-full">
+            <label class="form-label" for="modal-inq-phone">Phone Number *</label>
+            <input type="tel" id="modal-inq-phone" class="form-control" placeholder="+1 (555) 000-0000" required>
+            <span class="form-error">Required</span>
+          </div>
+          <div class="form-group form-group-full">
+            <label class="form-label" for="modal-inq-msg">Private Note</label>
+            <textarea id="modal-inq-msg" class="form-control" rows="3" placeholder="I would like to request the full architectural brochure and arrange a private viewing..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold btn-block btn-lg">Submit Confidential Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" aria-label="Scroll back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <!-- JavaScript Modules -->
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Details | VERA LUXURY ESTATES</title>
+  <meta name="description" content="Detailed architectural overview, 4K gallery, floor plans, and advisory inquiry for luxury estate.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="property-details-container">
+
+  <!-- =========================================================================
+       NAVBAR
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          </div>
+          <span>
+            <strong class="logo-main">VERA</strong>
+            <small class="logo-sub">LUXURY ESTATES</small>
+          </span>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="properties.html" class="nav-link active">Properties</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="agents.html" class="nav-link">Advisors</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="properties.html?filter=favorites" class="favorites-pill" title="View Saved Properties">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#EF4444" stroke="#EF4444" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            <span class="favorites-count">2</span>
+          </a>
+          <a href="contact.html" class="btn btn-gold btn-sm">List Your Property</a>
+          <button class="hamburger-btn" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <div class="brand-icon" style="width:30px; height:30px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+        <span><strong class="logo-main" style="font-size:1.1rem;">VERA</strong></span>
+      </div>
+      <button class="mobile-drawer-close" aria-label="Close mobile menu">✕</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home <span>→</span></a></li>
+      <li><a href="properties.html" class="mobile-nav-link active">Exclusive Properties <span>→</span></a></li>
+      <li><a href="about.html" class="mobile-nav-link">About Company <span>→</span></a></li>
+      <li><a href="agents.html" class="mobile-nav-link">Our Advisors <span>→</span></a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact & Concierge <span>→</span></a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="properties.html?filter=favorites" class="btn btn-outline-gold btn-sm btn-block">
+        Saved Properties (<span class="favorites-count">2</span>)
+      </a>
+      <a href="contact.html" class="btn btn-gold btn-block">List Your Property</a>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       PROPERTY DETAILS HEADER & BREADCRUMB
+       ========================================================================= -->
+  <section class="property-details-header">
+    <div class="container">
+      <div style="font-size:0.85rem; color:var(--color-text-muted); margin-bottom:12px;">
+        <a href="index.html" style="color:var(--color-text-muted);">Home</a> &nbsp;/&nbsp; 
+        <a href="properties.html" style="color:var(--color-text-muted);">Properties</a> &nbsp;/&nbsp; 
+        <span id="detail-type-badge" style="color:var(--color-gold-dark); font-weight:600;">Luxury Villa</span>
+      </div>
+
+      <div class="details-title-row">
+        <div>
+          <div style="display:flex; gap:8px; margin-bottom:8px;">
+            <span class="badge badge-featured">Exclusive Residence</span>
+            <span class="badge badge-sale" id="detail-status-badge">For Sale</span>
+          </div>
+          <h1 id="detail-title" style="font-size:clamp(1.8rem, 3.5vw, 2.75rem); color:var(--color-text-main); margin-bottom:6px;">
+            Loading Property...
+          </h1>
+          <div style="display:flex; align-items:center; gap:8px; color:var(--color-text-muted); font-size:1rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span id="detail-location">Bel-Air, CA</span>
+          </div>
+        </div>
+
+        <div class="details-price-box">
+          <div class="details-price-sub">Offered At</div>
+          <div class="details-price-main" id="detail-price">$0</div>
+        </div>
+      </div>
+
+      <!-- =======================================================================
+           INTERACTIVE GALLERY SHOWCASE
+           ======================================================================= -->
+      <div class="details-gallery-wrap">
+        <div class="gallery-main-frame">
+          <img id="detail-main-image" src="" alt="Property Main Image">
+          <div class="gallery-expand-pill">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6"/><path d="M9 21H3v-6"/><path d="M21 3l-7 7"/><path d="M3 21l7-7"/></svg>
+            <span>View Fullscreen Lightbox (5 Photos)</span>
+          </div>
+        </div>
+
+        <div class="gallery-thumbnails-row" id="detail-thumbs-row">
+          <!-- Populated by script.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       MAIN CONTENT & STICKY SIDEBAR
+       ========================================================================= -->
+  <section class="section" style="padding-top: 40px;">
+    <div class="container">
+      <div class="details-content-grid">
+        <!-- Main Specifications Column -->
+        <div>
+          <!-- Quick Overview Cards -->
+          <div class="details-overview-cards">
+            <div class="overview-stat-pill">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>
+              <div class="ov-value" id="detail-beds">0</div>
+              <div class="ov-label">Bedrooms</div>
+            </div>
+            <div class="overview-stat-pill">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6 6.5 3.5a1.5 1.5 0 0 0-1-1C4.7 2.5 4 3.2 4 4.5V7"/><path d="M4 11h16a1 1 0 0 1 1 1v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4v-3a1 1 0 0 1 1-1Z"/><path d="m5 19-1 3"/><path d="m19 19 1 3"/></svg>
+              <div class="ov-value" id="detail-baths">0</div>
+              <div class="ov-label">Bathrooms</div>
+            </div>
+            <div class="overview-stat-pill">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+              <div class="ov-value" id="detail-sqft">0</div>
+              <div class="ov-label">Square Feet</div>
+            </div>
+            <div class="overview-stat-pill">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="12" x="3" y="6" rx="2"/><path d="M9 18v3"/><path d="M15 18v3"/></svg>
+              <div class="ov-value" id="detail-garages">0</div>
+              <div class="ov-label">Garage Bays</div>
+            </div>
+            <div class="overview-stat-pill">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 2v4"/><path d="M16 2v4"/></svg>
+              <div class="ov-value" id="detail-year">2023</div>
+              <div class="ov-label">Year Built</div>
+            </div>
+          </div>
+
+          <!-- Description Block -->
+          <div class="details-section-block">
+            <h3>Architectural Statement</h3>
+            <p id="detail-description" style="line-height:1.8; color:var(--color-text-body); font-size:1.05rem; margin-bottom:24px;"></p>
+            
+            <h4 style="margin-bottom:14px; color:var(--color-text-main);">Key Highlights</h4>
+            <ul id="detail-highlights" style="list-style:none;">
+              <!-- Highlights rendered via JS -->
+            </ul>
+          </div>
+
+          <!-- Amenities Block -->
+          <div class="details-section-block">
+            <h3>Luxury Amenities & Inclusions</h3>
+            <div class="amenities-checklist" id="detail-amenities-grid">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- Floor Plans Block -->
+          <div class="details-section-block">
+            <h3>Architectural Floor Layouts</h3>
+            <div id="detail-floorplans-list">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- Real-Time Mortgage Calculator Block -->
+          <div class="details-section-block">
+            <h3>Mortgage & Acquisition Calculator</h3>
+            <p style="font-size:0.9rem; color:var(--color-text-muted); margin-bottom:24px;">
+              Estimate your monthly investment breakdown including principal, interest, property tax, and insurance.
+            </p>
+
+            <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
+              <div class="calc-field-group">
+                <div class="calc-field-label">
+                  <span>Home Price</span>
+                  <strong id="calc-price-val">$14,850,000</strong>
+                </div>
+                <input type="range" id="calc-price" class="calc-range-slider" min="1000000" max="40000000" step="250000" value="14850000">
+              </div>
+
+              <div class="calc-field-group">
+                <div class="calc-field-label">
+                  <span>Down Payment (%)</span>
+                  <strong id="calc-down-val">20%</strong>
+                </div>
+                <input type="range" id="calc-downpayment" class="calc-range-slider" min="10" max="60" step="5" value="20">
+              </div>
+
+              <div class="calc-field-group">
+                <div class="calc-field-label">
+                  <span>Loan Term (Years)</span>
+                  <strong id="calc-term-val">30 Years</strong>
+                </div>
+                <input type="range" id="calc-term" class="calc-range-slider" min="15" max="30" step="15" value="30">
+              </div>
+
+              <div class="calc-field-group">
+                <div class="calc-field-label">
+                  <span>Interest Rate (%)</span>
+                  <strong id="calc-rate-val">6.25%</strong>
+                </div>
+                <input type="range" id="calc-rate" class="calc-range-slider" min="3.5" max="10" step="0.25" value="6.25">
+              </div>
+            </div>
+
+            <!-- Calculated Monthly Card -->
+            <div class="calc-results-card">
+              <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; margin-bottom:16px;">
+                <div>
+                  <div style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--color-gold-hover);">Estimated Monthly Investment</div>
+                  <div class="calc-monthly-total" id="calc-monthly-total">$86,920</div>
+                </div>
+                <button class="btn btn-sm btn-outline-white" onclick="showToast('Mortgage Pre-Approval', 'Our private wealth partner has been notified to send you a rate quote.');">
+                  Apply for Financing
+                </button>
+              </div>
+
+              <div class="calc-breakdown-row">
+                <span>Principal & Interest</span>
+                <strong id="calc-pi-val">$73,280</strong>
+              </div>
+              <div class="calc-breakdown-row">
+                <span>Estimated Property Tax (~1.1%)</span>
+                <strong id="calc-tax-val">$13,612</strong>
+              </div>
+              <div class="calc-breakdown-row" style="border-bottom:none;">
+                <span>Home Insurance</span>
+                <strong id="calc-ins-val">$4,331</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sticky Agent & Inquiry Sidebar -->
+        <div class="agent-inquiry-sidebar">
+          <div class="agent-card-sticky">
+            <div style="display:flex; align-items:center; gap:16px; margin-bottom:20px; padding-bottom:18px; border-bottom:1px solid var(--color-border);">
+              <img id="detail-agent-photo" src="" alt="Agent Photo" style="width:64px; height:64px; border-radius:50%; object-fit:cover; border:2px solid var(--color-gold);">
+              <div>
+                <h4 id="detail-agent-name" style="font-size:1.15rem; color:var(--color-text-main); margin-bottom:2px;">Sophia Williams</h4>
+                <div id="detail-agent-role" style="font-size:0.82rem; color:var(--color-gold-dark); font-weight:600;">Managing Director</div>
+              </div>
+            </div>
+
+            <div style="display:flex; flex-direction:column; gap:10px; margin-bottom:24px; font-size:0.88rem;">
+              <a id="detail-agent-phone" href="#" style="display:flex; align-items:center; gap:8px; font-weight:600; color:var(--color-text-main);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold-dark)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>+1 (310) 555-8921</span>
+              </a>
+              <a id="detail-agent-email" href="#" style="display:flex; align-items:center; gap:8px; color:var(--color-text-muted);">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold-dark)" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <span>sophia.williams@veraestates.com</span>
+              </a>
+            </div>
+
+            <!-- Direct Property Inquiry Form -->
+            <form data-validate="true" novalidate>
+              <input type="hidden" id="inquiry-property-input" name="property_title" value="">
+              
+              <div class="form-group" style="margin-bottom:14px;">
+                <label class="form-label" for="side-inq-name">Your Full Name *</label>
+                <input type="text" id="side-inq-name" class="form-control" placeholder="Eleanor Vance" required>
+                <span class="form-error">Required field</span>
+              </div>
+
+              <div class="form-group" style="margin-bottom:14px;">
+                <label class="form-label" for="side-inq-email">Email Address *</label>
+                <input type="email" id="side-inq-email" class="form-control" placeholder="name@domain.com" required>
+                <span class="form-error">Valid email required</span>
+              </div>
+
+              <div class="form-group" style="margin-bottom:14px;">
+                <label class="form-label" for="side-inq-phone">Phone Number *</label>
+                <input type="tel" id="side-inq-phone" class="form-control" placeholder="+1 (310) 000-0000" required>
+                <span class="form-error">Required field</span>
+              </div>
+
+              <div class="form-group" style="margin-bottom:18px;">
+                <label class="form-label" for="side-inq-msg">Confidential Message</label>
+                <textarea id="side-inq-msg" class="form-control" rows="3" placeholder="I would like to arrange a private walkthrough and receive the property monograph."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-gold btn-block btn-lg">
+                Schedule Private Showing
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Similar Properties Row -->
+      <div style="margin-top: 80px; padding-top: 60px; border-top: 1px solid var(--color-border);">
+        <div class="section-header text-center">
+          <div class="section-tag">Curated Alternatives</div>
+          <h2 class="section-title">Similar Exclusive Residences</h2>
+        </div>
+        <div id="similar-properties-grid" class="properties-grid">
+          <!-- Rendered via script.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div id="lightbox-modal" class="modal-overlay">
+    <div class="modal-dialog-lightbox">
+      <button class="modal-close-btn lightbox-close" style="color:#FFFFFF; background:rgba(255,255,255,0.2);">✕</button>
+      <div class="lightbox-img-wrapper">
+        <img id="lightbox-active-img" src="" alt="Enlarged Photo">
+      </div>
+      <button class="lightbox-nav-btn lightbox-prev" aria-label="Previous image">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="lightbox-nav-btn lightbox-next" aria-label="Next image">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+            <span><strong class="logo-main">VERA</strong><small class="logo-sub">LUXURY ESTATES</small></span>
+          </a>
+          <p>Premier white-glove luxury real estate brokerage representing trophy residences across Beverly Hills, Manhattan, London, and Dubai.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">All Properties</a></li>
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="agents.html">Elite Advisors</a></li>
+            <li><a href="contact.html">Contact & Concierge</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Categories</h4>
+          <ul class="footer-nav-list">
+            <li><a href="properties.html?type=villas">Luxury Villas</a></li>
+            <li><a href="properties.html?type=penthouses">Manhattan Penthouses</a></li>
+            <li><a href="properties.html?type=mansions">Modern Mansions</a></li>
+            <li><a href="properties.html?type=waterfront">Waterfront Residences</a></li>
+            <li><a href="properties.html?type=commercial">Commercial Assets</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Private Gazette</h4>
+          <p style="font-size:0.88rem; line-height:1.6; margin-bottom:14px;">Receive our curated weekly catalog of off-market acquisitions.</p>
+          <form id="footer-newsletter-form" class="footer-newsletter-form">
+            <input type="email" id="footer-newsletter-email" class="footer-newsletter-input" placeholder="Your email..." required>
+            <button type="submit" class="btn btn-gold btn-sm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vera Luxury Estates. All Rights Reserved. Equal Housing Opportunity.</div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Ethics & Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top-btn" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

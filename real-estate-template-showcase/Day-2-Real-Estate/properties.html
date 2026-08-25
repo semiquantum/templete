@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exclusive Properties Portfolio | VERA LUXURY ESTATES</title>
+  <meta name="description" content="Explore luxury villas, modern penthouses, waterfront sanctuaries, and prime commercial real estate with Vera Luxury Estates.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       NAVBAR
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+          </div>
+          <span>
+            <strong class="logo-main">VERA</strong>
+            <small class="logo-sub">LUXURY ESTATES</small>
+          </span>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="properties.html" class="nav-link active">Properties</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="agents.html" class="nav-link">Advisors</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <a href="properties.html?filter=favorites" class="favorites-pill" title="View Saved Properties">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="#EF4444" stroke="#EF4444" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            <span class="favorites-count">2</span>
+          </a>
+          <a href="contact.html" class="btn btn-gold btn-sm">List Your Property</a>
+          <button class="hamburger-btn" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-backdrop"></div>
+  <aside class="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <div class="brand-icon" style="width:30px; height:30px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+        <span><strong class="logo-main" style="font-size:1.1rem;">VERA</strong></span>
+      </div>
+      <button class="mobile-drawer-close" aria-label="Close mobile menu">✕</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link">Home <span>→</span></a></li>
+      <li><a href="properties.html" class="mobile-nav-link active">Exclusive Properties <span>→</span></a></li>
+      <li><a href="about.html" class="mobile-nav-link">About Company <span>→</span></a></li>
+      <li><a href="agents.html" class="mobile-nav-link">Our Advisors <span>→</span></a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact & Concierge <span>→</span></a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <a href="properties.html?filter=favorites" class="btn btn-outline-gold btn-sm btn-block">
+        Saved Properties (<span class="favorites-count">2</span>)
+      </a>
+      <a href="contact.html" class="btn btn-gold btn-block">List Your Property</a>
+    </div>
+  </aside>
+
+  <!-- Page Header Banner -->
+  <section class="section-dark" style="padding-top: calc(var(--header-height) + 50px); padding-bottom: 50px;">
+    <div class="container text-center">
+      <div class="section-tag tag-light">Curated Portfolio</div>
+      <h1 class="catalog-title" style="color: #FFFFFF; margin-bottom: 12px;">Exclusive Luxury Properties</h1>
+      <p class="section-subtitle light" style="max-width: 680px; margin: 0 auto;">
+        Browse our comprehensive catalog of prime residential sanctuaries, trophy penthouses, and high-yield commercial assets.
+      </p>
+    </div>
+  </section>
+
+  <!-- Search & Catalog Suite -->
+  <section class="section" style="padding-top: 50px;">
+    <div class="container">
+      <!-- Search & Filter Controls Bar -->
+      <div class="search-card-wrapper" style="margin-bottom: 40px;">
+        <div style="display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 16px; margin-bottom: 20px;">
+          <!-- Keyword -->
+          <div class="form-group">
+            <label class="form-label" for="catalog-search-input">Search Title / Location</label>
+            <input type="text" id="catalog-search-input" class="form-control" placeholder="e.g. Bel-Air, Manhattan, Waterfront...">
+          </div>
+
+          <!-- Type Filter -->
+          <div class="form-group">
+            <label class="form-label" for="catalog-type-filter">Property Type</label>
+            <select id="catalog-type-filter" class="form-control">
+              <option value="all">All Architectural Types</option>
+              <option value="villas">Luxury Villas</option>
+              <option value="penthouses">Skyline Penthouses</option>
+              <option value="mansions">Modern Mansions</option>
+              <option value="waterfront">Waterfront Estates</option>
+              <option value="commercial">Commercial Assets</option>
+            </select>
+          </div>
+
+          <!-- Status Filter -->
+          <div class="form-group">
+            <label class="form-label" for="catalog-status-filter">Listing Status</label>
+            <select id="catalog-status-filter" class="form-control">
+              <option value="all">All Statuses</option>
+              <option value="For Sale">For Sale</option>
+              <option value="For Rent">For Lease / Rent</option>
+            </select>
+          </div>
+
+          <!-- Sort Select -->
+          <div class="form-group">
+            <label class="form-label" for="catalog-sort-select">Sort By</label>
+            <select id="catalog-sort-select" class="form-control">
+              <option value="featured">Featured First</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="sqft-desc">Largest Area (sqft)</option>
+              <option value="newest">Year Built: Newest</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Price Range Slider & Reset -->
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 16px; border-top: 1px solid var(--color-border); flex-wrap: wrap;">
+          <div style="flex-grow: 1; max-width: 450px;">
+            <div style="display: flex; justify-content: space-between; font-size: 0.82rem; font-weight: 700; color: var(--color-text-main); margin-bottom: 6px;">
+              <span>Max Price Cap</span>
+              <span id="catalog-price-output" style="color: var(--color-gold-dark);">Any Price</span>
+            </div>
+            <input type="range" id="catalog-price-slider" class="calc-range-slider" min="5000000" max="50000000" step="1000000" value="50000000">
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 14px;">
+            <button id="catalog-reset-btn" class="btn btn-sm btn-outline-dark" type="button">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+              <span>Reset Filters</span>
+            </button>
+            <span id="catalog-results-count" style="font-size: 0.88rem; font-weight: 700; color: var(--color-gold-dark); background: var(--color-gold-light); padding: 8px 16px; border-radius: var(--radius-pill);">
+              Loading...
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Properties Grid Container -->
+      <div id="properties-catalog-grid" class="properties-grid">
+        <!-- Rendered dynamically via script.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <div class="brand-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+            <span><strong class="logo-main">VERA</strong><small class="logo-sub">LUXURY ESTATES</small></span>
+          </a>
+          <p>Premier white-glove luxury real estate brokerage representing trophy residences across Beverly Hills, Manhattan, London, and Dubai.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="properties.html">All Properties</a></li>
+            <li><a href="about.html">About Company</a></li>
+            <li><a href="agents.html">Elite Advisors</a></li>
+            <li><a href="contact.html">Contact & Concierge</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Categories</h4>
+          <ul class="footer-nav-list">
+            <li><a href="properties.html?type=villas">Luxury Villas</a></li>
+            <li><a href="properties.html?type=penthouses">Manhattan Penthouses</a></li>
+            <li><a href="properties.html?type=mansions">Modern Mansions</a></li>
+            <li><a href="properties.html?type=waterfront">Waterfront Residences</a></li>
+            <li><a href="properties.html?type=commercial">Commercial Assets</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-title">Private Gazette</h4>
+          <p style="font-size:0.88rem; line-height:1.6; margin-bottom:14px;">Receive our curated weekly catalog of off-market acquisitions.</p>
+          <form id="footer-newsletter-form" class="footer-newsletter-form">
+            <input type="email" id="footer-newsletter-email" class="footer-newsletter-input" placeholder="Your email..." required>
+            <button type="submit" class="btn btn-gold btn-sm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vera Luxury Estates. All Rights Reserved. Equal Housing Opportunity.</div>
+        <div class="footer-legal-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Ethics & Compliance</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Quick Inquiry Modal -->
+  <div id="inquiry-modal" class="modal-overlay">
+    <div class="modal-dialog">
+      <button class="modal-close-btn">✕</button>
+      <div class="modal-header">
+        <h3 style="font-size:1.4rem;">Inquire About Property</h3>
+        <p style="font-size:0.85rem; color:var(--color-text-muted);">Direct advisory consultation with a Vera Senior Advisor.</p>
+      </div>
+      <div class="modal-body">
+        <form data-validate="true" novalidate>
+          <div class="form-group form-group-full">
+            <label class="form-label" for="modal-inquiry-property">Property</label>
+            <input type="text" id="modal-inquiry-property" class="form-control" readonly style="background:#F1F5F9; font-weight:600;">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="modal-p-name">Full Name *</label>
+              <input type="text" id="modal-p-name" class="form-control" placeholder="Your name" required>
+              <span class="form-error">Required</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="modal-p-email">Email Address *</label>
+              <input type="email" id="modal-p-email" class="form-control" placeholder="name@domain.com" required>
+              <span class="form-error">Valid email required</span>
+            </div>
+          </div>
+          <div class="form-group form-group-full">
+            <label class="form-label" for="modal-p-phone">Phone Number *</label>
+            <input type="tel" id="modal-p-phone" class="form-control" placeholder="+1 (555) 000-0000" required>
+            <span class="form-error">Required</span>
+          </div>
+          <button type="submit" class="btn btn-gold btn-block btn-lg">Submit Confidential Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <button class="back-to-top-btn" aria-label="Scroll to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/data.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
