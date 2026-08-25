@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Meridian &amp; Holt — Objects &amp; Living Forms | Curated E-Commerce</title>
+  <meta name="description" content="Meridian &amp; Holt Atelier: Handcrafted architectural furniture, sculptural lighting, fine ceramics, and archival leather goods engineered for the contemplative interior.">
+  <meta name="keywords" content="luxury furniture, architectural lighting, handmade ceramics, leather goods, minimalist interior design, artisan home decor">
+  <meta name="theme-color" content="#131514">
+  <meta name="robots" content="index, follow">
+
+  <!-- OpenGraph / Social Meta -->
+  <meta property="og:title" content="Meridian &amp; Holt — Objects &amp; Living Forms">
+  <meta property="og:description" content="Meticulously crafted objects where structural rigor meets artisanal material discipline.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/hero-collection.jpg">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23131514'/><path d='M25 75 L25 25 L50 60 L75 25 L75 75' stroke='%23A8532B' stroke-width='8' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>">
+
+  <!-- Google Fonts: Newsreader (Serif) & Plus Jakarta Sans (Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Structured Data JSON-LD for E-Commerce Store -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "OnlineStore",
+    "name": "Meridian & Holt — Objects & Living Forms",
+    "description": "Artisanal architectural furniture, lighting, and living objects.",
+    "url": "https://meridian-holt.example.com",
+    "currenciesAccepted": "USD, EUR, GBP",
+    "paymentAccepted": "Credit Card, Apple Pay, Wire Transfer",
+    "priceRange": "$$$$"
+  }
+  </script>
+</head>
+<body>
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip directly to store catalog</a>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar" role="region" aria-label="Store Announcement">
+    <div class="container announcement-inner">
+      <p class="announcement-text">
+        <span class="announcement-badge">Edition N° 08</span>
+        <span>Complimentary insured shipping on all orders over $150</span>
+        <span class="announcement-divider" aria-hidden="true">•</span>
+        <span class="announcement-highlight">Use code <strong>MERIDIAN10</strong> for 10% off</span>
+      </p>
+      <div class="announcement-actions">
+        <span class="currency-tag">USD ($)</span>
+        <a href="#newsletter" class="announcement-link">Join Atelier Club</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header / Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <!-- Mobile Menu Toggle Button -->
+      <button type="button" class="mobile-toggle" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+        <span class="hamburger-line line-1" aria-hidden="true"></span>
+        <span class="hamburger-line line-2" aria-hidden="true"></span>
+        <span class="hamburger-line line-3" aria-hidden="true"></span>
+      </button>
+
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-logo" aria-label="Meridian and Holt Home">
+        <div class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" width="34" height="34" fill="none">
+            <rect width="40" height="40" rx="3" fill="#131514" />
+            <path d="M10 30L10 10L20 24L30 10L30 30" stroke="#A8532B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="logo-text-group">
+          <span class="brand-title">MERIDIAN &amp; HOLT</span>
+          <span class="brand-subtitle">OBJECTS &amp; LIVING FORMS</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#catalog" class="nav-link active" data-category="all">All Editions</a></li>
+          <li class="nav-item"><a href="#catalog" class="nav-link" data-category="furniture">Furniture</a></li>
+          <li class="nav-item"><a href="#catalog" class="nav-link" data-category="lighting">Lighting</a></li>
+          <li class="nav-item"><a href="#catalog" class="nav-link" data-category="ceramics">Ceramics</a></li>
+          <li class="nav-item"><a href="#catalog" class="nav-link" data-category="leather">Leather &amp; Paper</a></li>
+          <li class="nav-item"><a href="#spotlight" class="nav-link">Spotlight</a></li>
+          <li class="nav-item"><a href="#story" class="nav-link">Provenance</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Utilities (Search, Wishlist, Cart) -->
+      <div class="header-actions">
+        <!-- Search Toggle -->
+        <button type="button" class="header-icon-btn" id="search-toggle-btn" aria-label="Toggle search bar" aria-expanded="false" aria-controls="header-search-bar">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+
+        <!-- Wishlist Button -->
+        <button type="button" class="header-icon-btn" id="wishlist-btn" aria-label="View saved wishlist">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+          <span class="badge-count" id="wishlist-count-badge">0</span>
+        </button>
+
+        <!-- Cart Button -->
+        <button type="button" class="header-cart-btn" id="cart-drawer-toggle" aria-label="Open shopping cart" aria-expanded="false" aria-controls="cart-drawer">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-label">Bag</span>
+          <span class="cart-badge" id="cart-count-badge">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Dropdown / Expandable Search Bar -->
+    <div class="header-search-bar" id="header-search-bar" hidden>
+      <div class="container search-inner">
+        <form class="search-form" id="header-search-form" role="search">
+          <label for="global-search-input" class="sr-only">Search catalog by product name, material, or category</label>
+          <div class="search-input-wrapper">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="search" id="global-search-input" class="search-input" placeholder="Search handcrafted walnut, brass lamps, stoneware vessels..." autocomplete="off">
+            <button type="button" class="clear-search-btn" id="clear-search-btn" aria-label="Clear search query" hidden>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+          <button type="button" class="close-search-btn" id="close-search-btn" aria-label="Close search">Close</button>
+        </form>
+        <div class="search-suggestions" id="search-suggestions">
+          <span class="suggestions-label">Popular Searches:</span>
+          <button type="button" class="suggestion-chip" data-search="walnut">Walnut Lounge Chair</button>
+          <button type="button" class="suggestion-chip" data-search="brass">Brushed Brass</button>
+          <button type="button" class="suggestion-chip" data-search="terracotta">Ceramic Vessel</button>
+          <button type="button" class="suggestion-chip" data-search="leather">Full-Grain Leather</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer-backdrop" id="mobile-drawer-backdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation Drawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="mobile-brand">
+        <span class="brand-title">MERIDIAN &amp; HOLT</span>
+        <span class="brand-subtitle">OBJECTS &amp; LIVING FORMS</span>
+      </div>
+      <button type="button" class="close-drawer-btn" id="close-mobile-menu-btn" aria-label="Close navigation menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-content">
+      <nav class="mobile-nav">
+        <ul class="mobile-nav-list">
+          <li><a href="#catalog" class="mobile-nav-link active" data-category="all">All Editions <span class="nav-count">(10)</span></a></li>
+          <li><a href="#catalog" class="mobile-nav-link" data-category="furniture">Architectural Furniture <span class="nav-count">(3)</span></a></li>
+          <li><a href="#catalog" class="mobile-nav-link" data-category="lighting">Sculptural Lighting <span class="nav-count">(2)</span></a></li>
+          <li><a href="#catalog" class="mobile-nav-link" data-category="ceramics">Handcrafted Ceramics <span class="nav-count">(3)</span></a></li>
+          <li><a href="#catalog" class="mobile-nav-link" data-category="leather">Leather &amp; Stationery <span class="nav-count">(2)</span></a></li>
+          <li><a href="#spotlight" class="mobile-nav-link">Edition Spotlight</a></li>
+          <li><a href="#story" class="mobile-nav-link">Artisanal Provenance</a></li>
+          <li><a href="#newsletter" class="mobile-nav-link">Atelier Newsletter</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-drawer-footer">
+        <div class="mobile-trust-badges">
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <span>Certified Material Provenance</span>
+          </div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            <span>Hand-numbered limited runs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content">
+    
+    <!-- Hero / Promotional Banner Section -->
+    <section class="hero-section" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tagline">
+            <span class="tagline-dot" aria-hidden="true"></span>
+            <span class="tagline-text">AUTUMN / WINTER 2026 EDITION</span>
+          </div>
+          <h1 id="hero-title" class="hero-heading">
+            Architectural Objects &amp; Living Forms.
+          </h1>
+          <p class="hero-description">
+            A curated release of tactile furniture, solid brass luminaires, and stoneware vessels. Meticulously engineered for the contemplative interior where structural rigor meets artisanal warmth.
+          </p>
+          <div class="hero-cta-group">
+            <a href="#catalog" class="btn btn-primary" id="hero-primary-cta">
+              <span>Explore Collection</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#spotlight" class="btn btn-secondary" id="hero-secondary-cta">
+              <span>Featured Spotlight</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics / Trust Points -->
+          <div class="hero-trust-bar">
+            <div class="trust-stat">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Sustainable Solid Hardwood</span>
+            </div>
+            <div class="trust-stat-divider" aria-hidden="true"></div>
+            <div class="trust-stat">
+              <span class="stat-number">30-Day</span>
+              <span class="stat-label">In-Home Evaluation</span>
+            </div>
+            <div class="trust-stat-divider" aria-hidden="true"></div>
+            <div class="trust-stat">
+              <span class="stat-number">Lifetime</span>
+              <span class="stat-label">Structural Guarantee</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-card">
+            <img src="assets/hero-collection.jpg" alt="Minimalist interior featuring the Meridian &amp; Holt solid walnut lounge chair and sculptural brass floor lamp" class="hero-img" width="1200" height="675" fetchpriority="high">
+            <div class="hero-floating-card">
+              <div class="floating-badge">Featured in Edition 08</div>
+              <p class="floating-title">Atelier Walnut &amp; Saddle Leather Lounge Chair</p>
+              <div class="floating-meta">
+                <span class="floating-price">$890 USD</span>
+                <button type="button" class="btn-text-link" id="hero-quick-view-btn" data-product-id="1">Quick View &rarr;</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Propositions / Feature Highlights Bar -->
+    <section class="value-props-section" aria-label="Key Service Benefits">
+      <div class="container value-props-grid">
+        <div class="value-card">
+          <div class="value-icon-box" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="1" y="3" width="15" height="13"></rect>
+              <polygon points="16 8 20 8 23 11 23 16 16 16 8"></polygon>
+              <circle cx="5.5" cy="18.5" r="2.5"></circle>
+              <circle cx="18.5" cy="18.5" r="2.5"></circle>
+            </svg>
+          </div>
+          <div class="value-text">
+            <h2 class="value-title">Insured White-Glove Delivery</h2>
+            <p class="value-desc">Complimentary shipping on orders over $150 with protective custom crating.</p>
+          </div>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon-box" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+            </svg>
+          </div>
+          <div class="value-text">
+            <h2 class="value-title">Numbered Artisan Provenance</h2>
+            <p class="value-desc">Every piece is laser-engraved with edition number and workshop registry stamp.</p>
+          </div>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon-box" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+          </div>
+          <div class="value-text">
+            <h2 class="value-title">Conscious Material Sourcing</h2>
+            <p class="value-desc">FSC-certified American walnut, solid spun brass, and natural vegetable-tanned leathers.</p>
+          </div>
+        </div>
+
+        <div class="value-card">
+          <div class="value-icon-box" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M2.5 2v6h6M21.5 22v-6h-6"/>
+              <path d="M22 11.5A10 10 0 0 0 3.2 7.2M2 12.5a10 10 0 0 0 18.8 4.2"/>
+            </svg>
+          </div>
+          <div class="value-text">
+            <h2 class="value-title">30-Day Effortless Trial</h2>
+            <p class="value-desc">Experience in your living space with prepaid return collection guarantee.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Catalog & Filter Section -->
+    <section class="catalog-section" id="catalog" aria-labelledby="catalog-heading">
+      <div class="container">
+        <!-- Catalog Header & Filter Controls -->
+        <div class="catalog-header">
+          <div class="catalog-title-group">
+            <div class="section-badge">CURATED RELEASES</div>
+            <h2 id="catalog-heading" class="section-title">The Complete Catalog</h2>
+            <p class="section-subtitle">Tactile design editions made in limited batches. Filter by discipline or search specific materials.</p>
+          </div>
+
+          <!-- Catalog Toolbar (Categories, Search, Sort) -->
+          <div class="catalog-toolbar">
+            <!-- Category Filter Tabs -->
+            <div class="category-tabs" role="tablist" aria-label="Filter products by category">
+              <button type="button" role="tab" class="cat-tab active" data-category="all" aria-selected="true" id="tab-all">
+                All Editions <span class="tab-badge" id="count-all">10</span>
+              </button>
+              <button type="button" role="tab" class="cat-tab" data-category="furniture" aria-selected="false" id="tab-furniture">
+                Furniture <span class="tab-badge" id="count-furniture">3</span>
+              </button>
+              <button type="button" role="tab" class="cat-tab" data-category="lighting" aria-selected="false" id="tab-lighting">
+                Lighting <span class="tab-badge" id="count-lighting">2</span>
+              </button>
+              <button type="button" role="tab" class="cat-tab" data-category="ceramics" aria-selected="false" id="tab-ceramics">
+                Ceramics <span class="tab-badge" id="count-ceramics">3</span>
+              </button>
+              <button type="button" role="tab" class="cat-tab" data-category="leather" aria-selected="false" id="tab-leather">
+                Leather &amp; Paper <span class="tab-badge" id="count-leather">2</span>
+              </button>
+            </div>
+
+            <!-- Search, Sort & View Controls -->
+            <div class="catalog-controls">
+              <!-- Inline Filter Search -->
+              <div class="catalog-search-wrap">
+                <svg class="search-icon-sm" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" id="catalog-search-input" class="catalog-search-input" placeholder="Filter by keyword..." aria-label="Filter products by name or material">
+                <button type="button" class="catalog-clear-btn" id="catalog-clear-search" aria-label="Clear filter search" hidden>&times;</button>
+              </div>
+
+              <!-- Sorting Dropdown -->
+              <div class="sort-wrapper">
+                <label for="catalog-sort" class="sort-label">Sort by:</label>
+                <select id="catalog-sort" class="sort-select" aria-label="Sort product catalog">
+                  <option value="featured">Featured Edition</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="rating">Highest Rated</option>
+                  <option value="name">Alphabetical</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Active Filter Pill Bar (shown when filter or search is applied) -->
+          <div class="active-filter-bar" id="active-filter-bar" hidden>
+            <div class="active-filter-chips" id="active-filter-chips">
+              <!-- Dynamically populated chips -->
+            </div>
+            <button type="button" class="btn-clear-all" id="btn-clear-filters">Reset All Filters</button>
+          </div>
+        </div>
+
+        <!-- Product Grid Container -->
+        <div class="product-grid" id="product-grid" aria-live="polite" aria-busy="false">
+          <!-- Dynamically Rendered by script.js with SSR fallback items -->
+        </div>
+
+        <!-- Empty Results State -->
+        <div class="catalog-empty-state" id="catalog-empty-state" hidden>
+          <div class="empty-icon-circle">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              <line x1="8" y1="11" x2="14" y2="11"></line>
+            </svg>
+          </div>
+          <h3 class="empty-title">No matching objects found</h3>
+          <p class="empty-desc">We couldn't find any objects matching your criteria. Try adjusting your search keywords or switching category filters.</p>
+          <button type="button" class="btn btn-secondary" id="btn-reset-empty-search">View All 10 Editions</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Spotlight / Editorial Deep Dive Section -->
+    <section class="spotlight-section" id="spotlight" aria-labelledby="spotlight-heading">
+      <div class="container spotlight-container">
+        <div class="spotlight-card">
+          <div class="spotlight-grid">
+            <div class="spotlight-image-col">
+              <div class="spotlight-image-wrap">
+                <img src="assets/product-walnut-chair.jpg" alt="Artisanal Walnut &amp; Saddle Leather Lounge Chair" class="spotlight-img" width="800" height="600" loading="lazy">
+                <div class="spotlight-stamp">
+                  <span>ATELIER</span>
+                  <strong>HANDMADE</strong>
+                  <span>EDITION 08</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="spotlight-info-col">
+              <div class="spotlight-badge">EDITION SPOTLIGHT</div>
+              <h2 id="spotlight-heading" class="spotlight-title">Atelier Walnut &amp; Saddle Leather Lounge Chair</h2>
+              <div class="spotlight-rating">
+                <div class="stars" aria-label="5 out of 5 stars">
+                  ★★★★★
+                </div>
+                <span class="rating-text">5.0 (42 reviews)</span>
+                <span class="dot">•</span>
+                <span class="stock-status in-stock">In Stock (Limited Batch)</span>
+              </div>
+              <p class="spotlight-price-row">
+                <span class="current-price">$890.00</span>
+                <span class="original-price">$980.00</span>
+                <span class="save-badge">Save $90</span>
+              </p>
+              <p class="spotlight-desc">
+                Sculpted from sustainably harvested American black walnut with hand-woven full-grain bridle leather webbing. Angled at an ergonomic 108° recline, providing profound lumbar support and timeless architectural character.
+              </p>
+
+              <!-- Interactive Spotlight Variant Selection -->
+              <div class="spotlight-options">
+                <div class="option-group">
+                  <label class="option-label">Finish / Wood Grain: <span id="spotlight-finish-text" class="selected-val">Smoked Walnut</span></label>
+                  <div class="swatch-group" role="radiogroup" aria-label="Select wood finish">
+                    <button type="button" class="swatch-btn active" data-finish="Smoked Walnut" style="background-color: #3b281c;" aria-label="Smoked Walnut"></button>
+                    <button type="button" class="swatch-btn" data-finish="Natural White Oak" style="background-color: #cbb493;" aria-label="Natural White Oak"></button>
+                    <button type="button" class="swatch-btn" data-finish="Ebonized Ash" style="background-color: #1a1a1a;" aria-label="Ebonized Ash"></button>
+                  </div>
+                </div>
+
+                <div class="option-group">
+                  <label class="option-label">Leather Weave: <span id="spotlight-leather-text" class="selected-val">Cognac Bridle</span></label>
+                  <div class="swatch-group" role="radiogroup" aria-label="Select leather color">
+                    <button type="button" class="swatch-btn active" data-leather="Cognac Bridle" style="background-color: #a8532b;" aria-label="Cognac Bridle"></button>
+                    <button type="button" class="swatch-btn" data-leather="Espresso Brown" style="background-color: #2b1f1d;" aria-label="Espresso Brown"></button>
+                    <button type="button" class="swatch-btn" data-leather="Natural Vachetta" style="background-color: #d8b28a;" aria-label="Natural Vachetta"></button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Add Action Bar -->
+              <div class="spotlight-action-row">
+                <div class="quantity-stepper" aria-label="Quantity selector">
+                  <button type="button" class="step-btn" id="spotlight-qty-minus" aria-label="Decrease quantity">&minus;</button>
+                  <input type="number" id="spotlight-qty" class="qty-input" value="1" min="1" max="5" aria-label="Quantity">
+                  <button type="button" class="step-btn" id="spotlight-qty-plus" aria-label="Increase quantity">&plus;</button>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-add-spotlight" id="spotlight-add-cart-btn" data-product-id="1">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                  </svg>
+                  <span>Add to Bag — $890.00</span>
+                </button>
+
+                <button type="button" class="btn-wishlist-spotlight" id="spotlight-wishlist-btn" data-product-id="1" aria-label="Save to Wishlist">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </button>
+              </div>
+
+              <!-- Accordion Specifications -->
+              <div class="spotlight-specs">
+                <details class="spec-accordion" open>
+                  <summary class="spec-title">Dimensions &amp; Weight</summary>
+                  <div class="spec-content">
+                    <p>Width: 28.5" (72cm) &bull; Depth: 32.0" (81cm) &bull; Height: 30.5" (77cm) &bull; Seat Height: 15.5" (39cm) &bull; Weight: 26 lbs (11.8 kg)</p>
+                  </div>
+                </details>
+                <details class="spec-accordion">
+                  <summary class="spec-title">Care &amp; Provenance</summary>
+                  <div class="spec-content">
+                    <p>Hand-finished with natural beeswax and organic linseed oils. Wipe leather with a soft dry cloth. Condition annually with natural leather balm.</p>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Provenance & Atelier Story Section -->
+    <section class="story-section" id="story" aria-labelledby="story-heading">
+      <div class="container story-grid">
+        <div class="story-content">
+          <div class="section-badge">OUR PROVENANCE</div>
+          <h2 id="story-heading" class="section-title">Built for Generations, Not Seasons.</h2>
+          <p class="story-lead">
+            Every object in the Meridian &amp; Holt catalog is conceived through our architectural discipline: structural honesty, natural patinating materials, and zero disposable components.
+          </p>
+          <p class="story-body">
+            We partner with fourth-generation joiners in Oregon, heritage brass spin-casters in Birmingham, and master ceramicists in Kyoto. Each production run is intentionally capped to maintain uncompromising quality control.
+          </p>
+          <div class="story-quote-card">
+            <blockquote class="story-quote">
+              "True luxury is not ornament, but the silent perfection of joinery and the tactile warmth of honest materials."
+            </blockquote>
+            <cite class="story-cite">— Alistair Holt, Head of Design &amp; Craft</cite>
+          </div>
+        </div>
+        <div class="story-visual">
+          <img src="assets/about-studio.jpg" alt="Artisan hand-crafting furniture in the Meridian and Holt workshop" class="story-img" width="700" height="500" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter & Atelier Club Section -->
+    <section class="newsletter-section" id="newsletter" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="newsletter-card">
+          <div class="newsletter-content">
+            <div class="section-badge">ATELIER PRIVILEGE</div>
+            <h2 id="newsletter-heading" class="newsletter-title">Receive Private Release Invitations</h2>
+            <p class="newsletter-desc">
+              Subscribers receive early access to numbered editions 48 hours prior to public release, alongside our seasonal architectural dispatch.
+            </p>
+            <form class="newsletter-form" id="newsletter-form" novalidate>
+              <div class="form-group">
+                <label for="newsletter-email" class="sr-only">Your email address</label>
+                <input type="email" id="newsletter-email" class="newsletter-input" placeholder="Enter your email for private access..." autocomplete="email" required>
+                <button type="submit" class="btn btn-primary newsletter-submit-btn">
+                  <span>Join Atelier</span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+              </div>
+              <div class="form-feedback" id="newsletter-feedback" role="alert" aria-live="polite"></div>
+            </form>
+            <p class="newsletter-disclaimer">We respect your privacy. Unsubscribe at any moment. Zero promotional clutter.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container footer-top-grid">
+      <!-- Footer Brand Column -->
+      <div class="footer-brand-col">
+        <a href="index.html" class="footer-logo">
+          <span class="brand-title">MERIDIAN &amp; HOLT</span>
+          <span class="brand-subtitle">OBJECTS &amp; LIVING FORMS</span>
+        </a>
+        <p class="footer-tagline">
+          Tactile architectural objects, handcrafted furniture, and artisanal living forms engineered for longevity and contemplative living.
+        </p>
+        <div class="footer-location">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>Studio &amp; Workshop: 18 Grosvenor Square, London</span>
+        </div>
+      </div>
+
+      <!-- Navigation Columns -->
+      <div class="footer-nav-col">
+        <h3 class="footer-heading">Collections</h3>
+        <ul class="footer-links">
+          <li><a href="#catalog" data-category="furniture">Architectural Furniture</a></li>
+          <li><a href="#catalog" data-category="lighting">Sculptural Lighting</a></li>
+          <li><a href="#catalog" data-category="ceramics">Handcrafted Ceramics</a></li>
+          <li><a href="#catalog" data-category="leather">Leather &amp; Archival Paper</a></li>
+          <li><a href="#catalog" data-category="all">Complete Edition Archive</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-col">
+        <h3 class="footer-heading">Client Services</h3>
+        <ul class="footer-links">
+          <li><a href="#main-content" id="footer-link-shipping">Insured Shipping &amp; Crating</a></li>
+          <li><a href="#main-content" id="footer-link-returns">30-Day Evaluation Policy</a></li>
+          <li><a href="#main-content" id="footer-link-care">Material Care &amp; Restoration</a></li>
+          <li><a href="#main-content" id="footer-link-trade">Trade &amp; Interior Architecture</a></li>
+          <li><a href="#main-content" id="footer-link-faq">Frequently Asked Questions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-col">
+        <h3 class="footer-heading">Atelier &amp; Ethics</h3>
+        <ul class="footer-links">
+          <li><a href="#story">Craftsmanship &amp; Provenance</a></li>
+          <li><a href="#story">FSC Hardwood Sourcing</a></li>
+          <li><a href="#newsletter">Private Dispatch Club</a></li>
+          <li><a href="#main-content">Sustainability Manifesto</a></li>
+          <li><a href="#main-content">Contact Senior Curators</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom Bar -->
+    <div class="container footer-bottom">
+      <div class="footer-copyright">
+        &copy; <span id="current-year">2026</span> Meridian &amp; Holt Atelier Ltd. All rights reserved. Registered in England &amp; Wales.
+      </div>
+      <div class="footer-payment-badges" aria-label="Accepted payment methods">
+        <span class="pay-chip">Visa</span>
+        <span class="pay-chip">Mastercard</span>
+        <span class="pay-chip">American Express</span>
+        <span class="pay-chip">Apple Pay</span>
+        <span class="pay-chip">Wire Transfer</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       MODALS & DRAWERS
+       ========================================================================= -->
+
+  <!-- Slide-Over Shopping Cart Drawer -->
+  <div class="drawer-backdrop" id="cart-backdrop" aria-hidden="true"></div>
+  <div class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true">
+    <div class="cart-drawer-header">
+      <div class="cart-header-title-group">
+        <h2 id="cart-title" class="cart-heading">Your Shopping Bag</h2>
+        <span class="cart-item-count" id="cart-drawer-count">(0 items)</span>
+      </div>
+      <button type="button" class="close-cart-btn" id="close-cart-btn" aria-label="Close shopping bag">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Free Shipping Progress Indicator -->
+    <div class="shipping-progress-box" id="shipping-progress-box">
+      <div class="shipping-progress-text" id="shipping-progress-text">
+        Add <strong>$150.00</strong> more to qualify for <strong>Free Insured Shipping</strong>
+      </div>
+      <div class="progress-bar-track">
+        <div class="progress-bar-fill" id="shipping-progress-bar" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items Scrollable Body -->
+    <div class="cart-drawer-body" id="cart-items-container">
+      <!-- Dynamic list injected by JS -->
+    </div>
+
+    <!-- Cart Drawer Footer & Subtotal -->
+    <div class="cart-drawer-footer" id="cart-drawer-footer">
+      <!-- Promo Code Input -->
+      <div class="promo-code-wrap">
+        <div class="promo-input-group">
+          <input type="text" id="promo-input" class="promo-input" placeholder="Promo code (e.g. MERIDIAN10)" autocomplete="off">
+          <button type="button" class="btn-apply-promo" id="btn-apply-promo">Apply</button>
+        </div>
+        <div class="promo-feedback" id="promo-feedback" aria-live="polite"></div>
+      </div>
+
+      <!-- Financial Totals -->
+      <div class="cart-summary-table">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal-price">$0.00</span>
+        </div>
+        <div class="summary-row" id="cart-discount-row" hidden>
+          <span class="discount-label">Discount (<span id="promo-code-applied"></span>)</span>
+          <span class="discount-amount" id="cart-discount-amount">-$0.00</span>
+        </div>
+        <div class="summary-row">
+          <span>Estimated Shipping</span>
+          <span id="cart-shipping-price">Calculated at checkout</span>
+        </div>
+        <div class="summary-row summary-total">
+          <span>Estimated Total</span>
+          <span id="cart-total-price" class="total-amount">$0.00</span>
+        </div>
+      </div>
+
+      <!-- Checkout Actions -->
+      <button type="button" class="btn btn-primary btn-checkout" id="btn-checkout">
+        <span>Proceed to Secure Checkout</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="5" y1="12" x2="19" y2="12"></line>
+          <polyline points="12 5 19 12 12 19"></polyline>
+        </svg>
+      </button>
+
+      <p class="cart-security-note">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        <span>256-Bit SSL Encrypted &bull; 30-Day Guarantee</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Product Details Quick-View Modal -->
+  <div class="modal-backdrop" id="product-modal-backdrop" aria-hidden="true"></div>
+  <div class="product-modal" id="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-product-title" aria-hidden="true">
+    <button type="button" class="close-modal-btn" id="close-product-modal-btn" aria-label="Close product preview">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+
+    <div class="modal-inner" id="modal-product-content">
+      <!-- Dynamic product view injected by script.js -->
+    </div>
+  </div>
+
+  <!-- Interactive Mock Checkout Modal -->
+  <div class="modal-backdrop" id="checkout-modal-backdrop" aria-hidden="true"></div>
+  <div class="checkout-modal" id="checkout-modal" role="dialog" aria-modal="true" aria-labelledby="checkout-modal-title" aria-hidden="true">
+    <div class="checkout-modal-inner">
+      <div class="checkout-modal-header">
+        <div class="checkout-logo">
+          <span class="brand-title">MERIDIAN &amp; HOLT</span>
+          <span class="brand-subtitle">SECURE ORDER CHECKOUT</span>
+        </div>
+        <button type="button" class="close-modal-btn" id="close-checkout-btn" aria-label="Close checkout">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Checkout Step 1: Form & Review -->
+      <div class="checkout-step" id="checkout-step-form">
+        <div class="checkout-order-summary-box">
+          <div class="summary-header">
+            <h4>Order Summary</h4>
+            <span id="checkout-item-count">0 items</span>
+          </div>
+          <div class="checkout-items-preview" id="checkout-items-preview"></div>
+          <div class="checkout-total-row">
+            <span>Total to Pay:</span>
+            <strong id="checkout-final-total">$0.00</strong>
+          </div>
+        </div>
+
+        <form class="checkout-form" id="checkout-form" novalidate>
+          <h4 class="checkout-section-title">Shipping Information</h4>
+          <div class="form-row">
+            <div class="form-col">
+              <label for="co-firstname">First Name</label>
+              <input type="text" id="co-firstname" class="form-input" placeholder="Eleanor" required>
+            </div>
+            <div class="form-col">
+              <label for="co-lastname">Last Name</label>
+              <input type="text" id="co-lastname" class="form-input" placeholder="Vance" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-col">
+              <label for="co-email">Email Address</label>
+              <input type="email" id="co-email" class="form-input" placeholder="eleanor.vance@example.com" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-col">
+              <label for="co-address">Delivery Address</label>
+              <input type="text" id="co-address" class="form-input" placeholder="14 Berkeley Gardens, Apt 4B" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-col">
+              <label for="co-city">City</label>
+              <input type="text" id="co-city" class="form-input" placeholder="London / New York" required>
+            </div>
+            <div class="form-col">
+              <label for="co-postal">Postal Code</label>
+              <input type="text" id="co-postal" class="form-input" placeholder="W8 4JW / 10001" required>
+            </div>
+          </div>
+
+          <h4 class="checkout-section-title">Payment Method (Frontend Simulation)</h4>
+          <div class="payment-mock-options">
+            <label class="pay-radio-card active">
+              <input type="radio" name="paymethod" value="card" checked>
+              <div class="pay-radio-label">
+                <strong>Credit Card</strong>
+                <span>Instant SSL Simulation</span>
+              </div>
+            </label>
+            <label class="pay-radio-card">
+              <input type="radio" name="paymethod" value="wire">
+              <div class="pay-radio-label">
+                <strong>Atelier Wire Transfer</strong>
+                <span>Private Client Invoice</span>
+              </div>
+            </label>
+          </div>
+
+          <div class="checkout-form-feedback" id="checkout-feedback" role="alert"></div>
+
+          <button type="submit" class="btn btn-primary btn-submit-order" id="btn-place-order">
+            <span>Complete Order</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Checkout Step 2: Confirmation Receipt -->
+      <div class="checkout-step" id="checkout-step-success" hidden>
+        <div class="order-success-card">
+          <div class="success-icon-circle">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#A8532B" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <h3 class="success-title">Order Confirmed</h3>
+          <p class="success-order-num">Order Reference: <strong id="confirmed-order-id">MH-892410</strong></p>
+          <p class="success-msg">
+            Thank you for acquiring from Meridian &amp; Holt. A formal receipt and crate tracking dispatch will be sent to <span id="confirmed-email">your email</span>.
+          </p>
+          <div class="success-actions">
+            <button type="button" class="btn btn-primary" id="btn-done-shopping">Continue Exploring Catalog</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
