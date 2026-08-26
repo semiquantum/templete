@@ -1,0 +1,437 @@
+/* ==========================================================================
+   Template 03: University Website - St. Augustine Global University
+   Visual Style: Premium Institutional, Prestigious, Editorial, Research-Centric
+   Palette: Heritage Blue (#0B192C), Royal Gold (#D97706), Ivory (#FFFBEB), Dark Slate (#1E293B)
+   ========================================================================== */
+
+:root {
+  --primary: #0B192C;
+  --primary-light: #1E3E62;
+  --gold: #D97706;
+  --gold-hover: #B45309;
+  --gold-light: #FEF3C7;
+  --ivory: #FFFBEB;
+  --dark: #070F1E;
+  --slate: #334155;
+  --muted: #64748B;
+  --light-bg: #FAFAF9;
+  --card-bg: #FFFFFF;
+  --border: #E7E5E4;
+  
+  --font-heading: 'Georgia', 'Playfair Display', serif;
+  --font-body: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  
+  --shadow-sm: 0 2px 5px rgba(11, 25, 44, 0.05);
+  --shadow-md: 0 12px 28px -6px rgba(11, 25, 44, 0.12);
+  --shadow-lg: 0 20px 40px -10px rgba(7, 15, 30, 0.2);
+
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--slate);
+  background-color: var(--light-bg);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--primary);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+h1 { font-size: clamp(2.4rem, 5vw, 3.8rem); }
+h2 { font-size: clamp(1.8rem, 3.5vw, 2.6rem); }
+h3 { font-size: clamp(1.3rem, 2.5vw, 1.8rem); }
+
+a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  padding: 5.5rem 0;
+}
+
+.section-bg {
+  background-color: #FFFFFF;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 3.5rem auto;
+}
+
+.gold-badge {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  background: var(--gold-light);
+  color: var(--gold-hover);
+  border: 1px solid rgba(217, 119, 6, 0.3);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.85rem;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: #FFFFFF;
+}
+.btn-gold:hover {
+  background: var(--gold-hover);
+  box-shadow: 0 4px 15px rgba(217, 119, 6, 0.35);
+}
+
+.btn-navy {
+  background: var(--primary);
+  color: #FFFFFF;
+}
+.btn-navy:hover {
+  background: var(--primary-light);
+}
+
+.btn-outline-gold {
+  background: transparent;
+  border-color: var(--gold);
+  color: var(--gold);
+}
+.btn-outline-gold:hover {
+  background: var(--gold);
+  color: #FFFFFF;
+}
+
+/* Header & Crest */
+.top-crest-bar {
+  background: var(--dark);
+  color: #CBD5E1;
+  font-size: 0.85rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid rgba(217, 119, 6, 0.2);
+}
+.crest-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(11, 25, 44, 0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  height: 84px;
+  display: flex;
+  align-items: center;
+}
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.uni-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  color: #FFFFFF;
+}
+.uni-crest {
+  width: 48px;
+  height: 48px;
+  background: var(--gold);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  font-weight: 700;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.uni-name {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+}
+.uni-name span {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.nav-links a {
+  color: #E2E8F0;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: #FFFFFF;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(180deg, var(--primary) 0%, var(--dark) 100%);
+  color: #FFFFFF;
+  padding: 6rem 0 7rem 0;
+  position: relative;
+  border-bottom: 4px solid var(--gold);
+}
+.hero-content {
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: center;
+}
+.hero h1 {
+  color: #FFFFFF;
+  margin: 1rem 0;
+}
+.hero p {
+  color: #CBD5E1;
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.hero-stats-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 4.5rem;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(217, 119, 6, 0.25);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+.stat-val {
+  font-family: var(--font-heading);
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+}
+.stat-lbl {
+  font-size: 0.88rem;
+  color: #94A3B8;
+  margin-top: 0.4rem;
+}
+
+/* Faculties Section */
+.faculty-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+}
+.faculty-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--gold);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+.faculty-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Research Spotlight */
+.research-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+}
+.research-card-main {
+  background: var(--primary);
+  color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+  position: relative;
+  box-shadow: var(--shadow-lg);
+}
+.research-card-main h3 { color: #FFFFFF; margin: 1rem 0; }
+
+/* Nobel & Distinguished Faculty */
+.laureate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.75rem;
+}
+.laureate-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+.laureate-avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  margin: 0 auto 1.25rem auto;
+  border: 2px solid var(--gold);
+}
+
+/* International Exchange */
+.global-banner {
+  background: linear-gradient(135deg, #1E3E62, #0B192C);
+  color: #FFFFFF;
+  border-radius: var(--radius-lg);
+  padding: 3.5rem 2.5rem;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+/* Events & Conferences */
+.conf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+.conf-card {
+  background: #FFFFFF;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Admissions Portal Outline */
+.adm-step-box {
+  background: #FFFFFF;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 2.5rem;
+}
+.adm-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+.adm-step-item {
+  border-left: 3px solid var(--gold);
+  padding-left: 1rem;
+}
+
+/* Global Offices Contact */
+.offices-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.office-card {
+  background: var(--primary);
+  color: #FFFFFF;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+}
+.office-card h4 { color: var(--gold); }
+
+/* Footer */
+.footer {
+  background: var(--dark);
+  color: #94A3B8;
+  padding: 4.5rem 0 2.5rem 0;
+  border-top: 1px solid rgba(217, 119, 6, 0.2);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+.footer h4 { color: #FFFFFF; font-family: var(--font-heading); margin-bottom: 1.25rem; }
+.footer ul { list-style: none; }
+.footer ul li { margin-bottom: 0.6rem; }
+.footer a { color: #94A3B8; }
+.footer a:hover { color: var(--gold); }
+
+@media (max-width: 992px) {
+  .research-grid, .global-banner { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  .hamburger { display: block; }
+}

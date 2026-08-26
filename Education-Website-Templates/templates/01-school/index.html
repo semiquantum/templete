@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oakridge International Academy — Premier K-12 School</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-info">
+        <span class="top-info-item">📍 145 Campus Drive, Oakridge Heights</span>
+        <span class="top-info-item">📞 +1 (800) 555-OAKR</span>
+        <span class="top-info-item">✉️ admissions@oakridge.edu</span>
+      </div>
+      <div class="top-links">
+        <a href="#admission">Admissions Open 2026-27</a>
+        <span>•</span>
+        <a href="#">Parent Portal</a>
+        <span>•</span>
+        <a href="#">School Calendar</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="brand-icon">🏫</div>
+        <span>Oakridge <span style="color: var(--primary);">Academy</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#facilities">Facilities</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="#admission" class="btn btn-primary btn-sm">Apply Now</a>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open Navigation">☰</button>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <div class="mobile-nav-drawer" id="mobileDrawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="brand-icon">🏫</div>
+        <span>Oakridge</span>
+      </div>
+      <button class="drawer-close" id="drawerCloseBtn">&times;</button>
+    </div>
+    <ul class="mobile-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#programs">Programs & Curriculum</a></li>
+      <li><a href="#facilities">Campus Facilities</a></li>
+      <li><a href="#events">School Events</a></li>
+      <li><a href="#testimonials">Parent Testimonials</a></li>
+      <li><a href="#faq">Frequently Asked Questions</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <a href="#admission" class="btn btn-primary" style="width: 100%;">Apply for Admission</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content reveal">
+        <div class="badge-tag amber">✨ Admissions Open 2026–2027</div>
+        <h1>Where Every Student Discovers Their Potential & Passion</h1>
+        <p>At Oakridge International Academy, we empower young minds from Pre-K through Grade 12 with inquiry-based learning, world-class STEAM facilities, and holistic character development.</p>
+        <div class="hero-actions">
+          <a href="#admission" class="btn btn-primary">Apply for 2026–27 🚀</a>
+          <a href="#facilities" class="btn btn-outline">Explore Campus 🏛️</a>
+        </div>
+        <div class="hero-stats-pills">
+          <div class="stat-pill-item">
+            <div class="stat-pill-icon">🏆</div>
+            <div>
+              <strong style="display: block; color: var(--dark);">Ranked #1</strong>
+              <span style="font-size: 0.8rem; color: var(--muted);">Best Regional K-12</span>
+            </div>
+          </div>
+          <div style="width: 1px; height: 35px; background: var(--border);"></div>
+          <div class="stat-pill-item">
+            <div class="stat-pill-icon">🎓</div>
+            <div>
+              <strong style="display: block; color: var(--dark);">100%</strong>
+              <span style="font-size: 0.8rem; color: var(--muted);">College Acceptance</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-image-card">
+          <div class="hero-img-placeholder">
+            <div style="font-size: 4rem; margin-bottom: 0.5rem;">🎒</div>
+            <h2>Oakridge Campus Life</h2>
+            <p style="font-size: 0.9rem; opacity: 0.9;">Inquiring Minds • Creative Hands • Global Leaders</p>
+          </div>
+          <div class="hero-floating-badge">
+            <div style="font-size: 1.8rem; color: var(--secondary);">⭐</div>
+            <div>
+              <strong style="display: block; color: var(--dark);">4.9 / 5.0 Rating</strong>
+              <span style="font-size: 0.8rem; color: var(--slate);">Over 850 Parent Reviews</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Principal's Message Section -->
+  <section class="section section-bg" id="about">
+    <div class="container principal-grid">
+      <div class="principal-card reveal">
+        <div class="principal-img">
+          <div style="text-align: center;">
+            <div style="font-size: 3.5rem; margin-bottom: 0.5rem;">👨‍🏫</div>
+            <h3>Dr. Arthur Pendelton</h3>
+            <span style="font-size: 0.85rem; color: #CBD5E1;">Principal & Educational Director</span>
+          </div>
+        </div>
+        <p style="font-size: 0.9rem; color: var(--muted);">Ph.D. in Educational Leadership, Oxford University</p>
+      </div>
+
+      <div class="reveal">
+        <div class="badge-tag">School Vision & Leadership</div>
+        <h2>Welcome to Oakridge International Academy</h2>
+        <p>For over 25 years, our mission has been simple yet profound: to nurture resilient, compassionate, and intellectually curious young individuals ready to excel in a rapidly changing world.</p>
+        
+        <div class="quote-box">
+          "Education is not merely the filling of a bucket, but the lighting of a fire that illuminates a child's lifelong journey of discovery."
+        </div>
+
+        <p>We blend traditional academic rigor with modern STEAM innovation, athletic programs, and social-emotional growth. Every child at Oakridge is seen, valued, and encouraged to reach their full potential.</p>
+        <a href="#programs" class="btn btn-secondary" style="margin-top: 1rem;">Discover Our Curriculum</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic Programs Section -->
+  <section class="section" id="programs">
+    <div class="container">
+      <div class="section-title-wrap reveal">
+        <div class="badge-tag">Academic Excellence</div>
+        <h2>Our K-12 Academic Pathways</h2>
+        <p class="section-subtitle">Tailored curriculum frameworks designed to ignite curiosity at every developmental milestone.</p>
+      </div>
+
+      <div class="programs-grid">
+        <div class="program-card reveal">
+          <div class="program-icon">🌱</div>
+          <div class="program-age">Ages 3 – 5 • Pre-K to Kindergarten</div>
+          <h3>Early Years Foundation</h3>
+          <p>Play-based, child-centered early learning that builds foundational literacy, numeracy, social skills, and creative curiosity.</p>
+          <ul class="program-features">
+            <li>✓ Play-Based Inquiry Learning</li>
+            <li>✓ Phonics & Early Reading</li>
+            <li>✓ Sensory & Fine Motor Labs</li>
+            <li>✓ Dual Language Introduction</li>
+          </ul>
+          <a href="#admission" class="btn btn-outline btn-sm" style="margin-top: auto;">Learn More</a>
+        </div>
+
+        <div class="program-card secondary reveal">
+          <div class="program-icon">📘</div>
+          <div class="program-age">Ages 6 – 10 • Grades 1 to 5</div>
+          <h3>Primary School</h3>
+          <p>Developing core academic mastery alongside critical thinking, problem-solving, artistic expression, and team collaboration.</p>
+          <ul class="program-features">
+            <li>✓ Integrated STEAM Projects</li>
+            <li>✓ Singapore Mathematics</li>
+            <li>✓ Environmental Sciences</li>
+            <li>✓ Performing Arts & Music</li>
+          </ul>
+          <a href="#admission" class="btn btn-outline btn-sm" style="margin-top: auto;">Learn More</a>
+        </div>
+
+        <div class="program-card reveal">
+          <div class="program-icon">🔬</div>
+          <div class="program-age">Ages 11 – 14 • Grades 6 to 8</div>
+          <h3>Middle School</h3>
+          <p>Fostering independence, analytical inquiry, scientific exploration, and digital literacy in a supportive environment.</p>
+          <ul class="program-features">
+            <li>✓ Robotics & Coding Track</li>
+            <li>✓ Scientific Research Projects</li>
+            <li>✓ Global Studies & Debate</li>
+            <li>✓ Leadership & Athletics</li>
+          </ul>
+          <a href="#admission" class="btn btn-outline btn-sm" style="margin-top: auto;">Learn More</a>
+        </div>
+
+        <div class="program-card secondary reveal">
+          <div class="program-icon">🎓</div>
+          <div class="program-age">Ages 15 – 18 • Grades 9 to 12</div>
+          <h3>Senior High School</h3>
+          <p>Rigorous college preparatory program with Advanced Placement (AP) courses, career counseling, and university placement.</p>
+          <ul class="program-features">
+            <li>✓ 18+ Advanced Placement (AP) Courses</li>
+            <li>✓ University Admissions Guidance</li>
+            <li>✓ Senior Capstone Thesis</li>
+            <li>✓ Global Internship Pathways</li>
+          </ul>
+          <a href="#admission" class="btn btn-outline btn-sm" style="margin-top: auto;">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Counter Section -->
+  <section class="section" id="statsCounterSection">
+    <div class="container">
+      <div class="counter-box reveal">
+        <div class="counter-grid">
+          <div>
+            <div class="counter-number" data-target="1500" data-suffix="+">0</div>
+            <div class="counter-label">Active K-12 Students</div>
+          </div>
+          <div>
+            <div class="counter-number" data-target="100" data-suffix="%">0</div>
+            <div class="counter-label">Graduation Rate</div>
+          </div>
+          <div>
+            <div class="counter-number" data-target="45" data-suffix="+">0</div>
+            <div class="counter-label">Clubs & Student Societies</div>
+          </div>
+          <div>
+            <div class="counter-number" data-target="25" data-suffix="+">0</div>
+            <div class="counter-label">Years of Educational Leadership</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section class="section section-bg" id="facilities">
+    <div class="container">
+      <div class="section-title-wrap reveal">
+        <div class="badge-tag">World-Class Campus</div>
+        <h2>State-of-the-Art School Facilities</h2>
+        <p class="section-subtitle">Our 30-acre green campus is engineered to inspire learning, safety, creativity, and athletic growth.</p>
+      </div>
+
+      <div class="facilities-grid">
+        <div class="facility-card reveal">
+          <div class="facility-thumb">
+            <div style="font-size: 3.5rem;">🤖</div>
+          </div>
+          <div class="facility-body">
+            <h3>STEAM & Robotics Innovation Hub</h3>
+            <p>Equipped with 3D printers, IoT kits, coding suites, and robotics arenas for hands-on scientific experimentation.</p>
+          </div>
+        </div>
+
+        <div class="facility-card reveal">
+          <div class="facility-thumb" style="background: linear-gradient(135deg, #F59E0B, #FBBF24);">
+            <div style="font-size: 3.5rem;">🏊‍♂️</div>
+          </div>
+          <div class="facility-body">
+            <h3>Olympic Athletic & Aquatic Complex</h3>
+            <p>Heated 50-meter swimming pool, indoor basketball courts, FIFA-standard turf soccer pitch, and athletics track.</p>
+          </div>
+        </div>
+
+        <div class="facility-card reveal">
+          <div class="facility-thumb" style="background: linear-gradient(135deg, #10B981, #34D399);">
+            <div style="font-size: 3.5rem;">📚</div>
+          </div>
+          <div class="facility-body">
+            <h3>Modern Digital Media Library</h3>
+            <p>Over 40,000 physical volumes, interactive audio-book pods, e-learning research stations, and quiet study zones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="section" id="events">
+    <div class="container">
+      <div class="section-title-wrap reveal">
+        <div class="badge-tag amber">Campus Life</div>
+        <h2>Upcoming School Events</h2>
+        <p class="section-subtitle">Join our vibrant school community for upcoming celebrations, competitions, and open days.</p>
+      </div>
+
+      <div class="events-grid">
+        <div class="event-card reveal">
+          <div class="event-date">
+            <div class="day">15</div>
+            <div class="month">OCT</div>
+          </div>
+          <div>
+            <h4>Annual STEAM Innovation Exhibition</h4>
+            <p style="font-size: 0.85rem; color: var(--muted); margin: 0.3rem 0;">📍 Main Auditorium • 09:00 AM – 03:00 PM</p>
+            <p style="font-size: 0.9rem;">Students present working prototypes in robotics, AI ethics, renewable energy, and bio-tech.</p>
+          </div>
+        </div>
+
+        <div class="event-card reveal">
+          <div class="event-date" style="background: var(--secondary-light); color: var(--secondary-hover);">
+            <div class="day">28</div>
+            <div class="month">OCT</div>
+          </div>
+          <div>
+            <h4>Inter-School Sports Carnival</h4>
+            <p style="font-size: 0.85rem; color: var(--muted); margin: 0.3rem 0;">📍 Athletics Complex • All Day</p>
+            <p style="font-size: 0.9rem;">Track & field, swimming relays, soccer finals, and gymnastics showcases across regional schools.</p>
+          </div>
+        </div>
+
+        <div class="event-card reveal">
+          <div class="event-date">
+            <div class="day">12</div>
+            <div class="month">NOV</div>
+          </div>
+          <div>
+            <h4>Fall Open House & Campus Tour</h4>
+            <p style="font-size: 0.85rem; color: var(--muted); margin: 0.3rem 0;">📍 Welcome Pavilion • 10:00 AM – 01:00 PM</p>
+            <p style="font-size: 0.9rem;">Prospective parents and students meet faculty, tour facilities, and explore 2026 admissions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section section-bg" id="testimonials">
+    <div class="container">
+      <div class="section-title-wrap reveal">
+        <div class="badge-tag">Parent & Student Voices</div>
+        <h2>What Our Community Says</h2>
+        <p class="section-subtitle">Real experiences from parents and students who thrive at Oakridge International Academy.</p>
+      </div>
+
+      <div class="testimonial-card reveal">
+        <div class="testimonial-avatar" id="testiAvatar">EV</div>
+        <p class="quote-box" id="testiText" style="border: none; padding: 0; font-size: 1.15rem; color: var(--dark);">
+          "Oakridge International Academy has provided a truly nurturing and stimulating environment for my daughter. The teachers treat every child with individual care and encouragement."
+        </p>
+        <h4 id="testiName" style="margin-top: 1rem;">Eleanor Vance</h4>
+        <span id="testiRole" style="font-size: 0.85rem; color: var(--muted);">Parent of Grade 5 Student</span>
+
+        <div class="testimonial-dots" id="testiDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Accordion Section -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-title-wrap reveal">
+        <div class="badge-tag">Got Questions?</div>
+        <h2>Frequently Asked Questions</h2>
+        <p class="section-subtitle">Everything you need to know about admissions, school transport, and campus life.</p>
+      </div>
+
+      <div class="faq-container reveal">
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span>What are the admission requirements for the 2026-27 academic year?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-body">
+            <p>Admissions require a completed application form, previous academic report cards, a student interaction session, and a basic aptitude assessment depending on the grade applied for.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span>Does Oakridge provide safe school bus transportation?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-body">
+            <p>Yes! We operate a fleet of air-conditioned GPS-tracked school buses equipped with real-time tracking apps for parents and trained bus attendants on all routes.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span>What extra-curricular activities are available for primary students?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-body">
+            <p>Primary students can participate in robotics, junior chess, swimming, choir, drama, martial arts, gardening, and junior science exploration clubs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-header" aria-expanded="false">
+            <span>Are financial aid and merit scholarships available?</span>
+            <span class="faq-icon">▼</span>
+          </button>
+          <div class="faq-body">
+            <p>Oakridge offers merit-based academic scholarships for high school applicants as well as need-based financial assistance for qualifying families.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Admission Form Section -->
+  <section class="section section-bg" id="admission">
+    <div class="container">
+      <div class="section-title-wrap reveal">
+        <div class="badge-tag amber">Start Your Journey</div>
+        <h2>Apply for Admission 2026–2027</h2>
+        <p class="section-subtitle">Fill out the inquiry form below and our admissions team will contact you within 24 hours.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card reveal">
+          <h3 style="color: #FFFFFF; margin-bottom: 1rem;">Admissions Office</h3>
+          <p style="color: #94A3B8;">We invite prospective families to visit our campus, observe our classrooms in action, and meet our faculty.</p>
+          
+          <div style="margin: 2rem 0; display: flex; flex-direction: column; gap: 1rem;">
+            <div>📍 <strong>Address:</strong><br><span style="color: #94A3B8;">145 Campus Drive, Oakridge Heights, NY 10549</span></div>
+            <div>📞 <strong>Hotline:</strong><br><span style="color: #94A3B8;">+1 (800) 555-OAKR / (555) 019-2831</span></div>
+            <div>✉️ <strong>Email:</strong><br><span style="color: #94A3B8;">admissions@oakridge.edu</span></div>
+            <div>🕒 <strong>Office Hours:</strong><br><span style="color: #94A3B8;">Monday – Friday: 8:00 AM – 4:30 PM</span></div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <form id="admissionForm" style="background: var(--light-bg); padding: 2rem; border-radius: var(--radius-lg); border: 1px solid var(--border);">
+            <div class="form-group">
+              <label for="parentName">Parent / Guardian Full Name *</label>
+              <input type="text" id="parentName" class="form-control" placeholder="e.g. Sarah Jenkins">
+              <div class="error-msg" id="parentNameError">Required field</div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label for="parentEmail">Email Address *</label>
+                <input type="email" id="parentEmail" class="form-control" placeholder="sarah@example.com">
+                <div class="error-msg" id="emailError">Invalid email</div>
+              </div>
+              <div class="form-group">
+                <label for="parentPhone">Phone Number *</label>
+                <input type="tel" id="parentPhone" class="form-control" placeholder="+1 (555) 000-0000">
+                <div class="error-msg" id="phoneError">Required field</div>
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label for="studentGrade">Applying For Grade *</label>
+                <select id="studentGrade" class="form-control">
+                  <option value="">Select Grade Level...</option>
+                  <option value="Pre-K">Pre-K / Kindergarten</option>
+                  <option value="Primary">Primary School (Grades 1-5)</option>
+                  <option value="Middle">Middle School (Grades 6-8)</option>
+                  <option value="High">Senior High School (Grades 9-12)</option>
+                </select>
+                <div class="error-msg" id="gradeError">Please select grade</div>
+              </div>
+              <div class="form-group">
+                <label for="entryYear">Academic Entry Year</label>
+                <input type="text" id="entryYear" class="form-control" value="2026 – 2027" readonly>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Additional Questions / Notes</label>
+              <textarea id="message" class="form-control" rows="3" placeholder="Tell us about your child's interests or specific inquiry..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Admission Inquiry ✉️</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Success Modal -->
+  <div class="modal-overlay" id="successModal">
+    <div class="modal-box">
+      <div style="font-size: 3.5rem; color: #10B981; margin-bottom: 1rem;">🎉</div>
+      <h2>Inquiry Received!</h2>
+      <p style="color: var(--slate); margin: 1rem 0;">Thank you for your interest in Oakridge International Academy. Our admissions counselor will contact you within 24 business hours.</p>
+      <button class="btn btn-primary" id="closeModalBtn">Close Window</button>
+    </div>
+  </div>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Scroll to top">↑</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand-logo" style="color: #FFFFFF; margin-bottom: 1rem;">
+            <div class="brand-icon">🏫</div>
+            <span>Oakridge</span>
+          </div>
+          <p>Inspiring young minds through academic excellence, character building, and innovative inquiry since 1999.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About Our Vision</a></li>
+            <li><a href="#programs">Academic Pathways</a></li>
+            <li><a href="#facilities">Campus Facilities</a></li>
+            <li><a href="#events">School Calendar</a></li>
+            <li><a href="#admission">Admissions 2026</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Divisions</h4>
+          <ul class="footer-links">
+            <li><a href="#programs">Early Learning Center</a></li>
+            <li><a href="#programs">Primary Academy</a></li>
+            <li><a href="#programs">Middle School</a></li>
+            <li><a href="#programs">Senior High & AP</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact & Hours</h4>
+          <p>145 Campus Drive, Oakridge Heights</p>
+          <p>Phone: +1 (800) 555-OAKR</p>
+          <p>Hours: Mon–Fri, 8am–4:30pm</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Oakridge International Academy. All Rights Reserved. Production-Ready Education Template Collection.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

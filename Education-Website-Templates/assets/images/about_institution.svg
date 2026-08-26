@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620">
+<rect width="800" height="620" rx="40" fill="#2A1A43"/>
+<path d="M70 150h660M70 300h660M70 450h660" stroke="#E9DFFF" stroke-width="3" opacity=".35"/>
+<circle cx="400" cy="290" r="105" fill="none" stroke="#7B4DFF" stroke-width="9"/>
+<circle cx="400" cy="290" r="90" fill="#FFF8EA"/>
+<rect x="330" y="235" width="140" height="110" rx="12" fill="#F0E6FF"/>
+<path d="M400 235v110" stroke="#7B4DFF" stroke-width="7"/>
+<path d="M330 235l70 15 70-15" fill="none" stroke="#7B4DFF" stroke-width="7"/>
+<rect x="205" y="110" width="55" height="95" rx="5" fill="#7B4DFF"/>
+<rect x="275" y="80" width="55" height="125" rx="5" fill="#A06BFF"/>
+<rect x="470" y="105" width="55" height="100" rx="5" fill="#C39AFF"/>
+<rect x="540" y="70" width="55" height="135" rx="5" fill="#E9DFFF"/>
+<text x="400" y="525" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700" fill="#FFF8EA">COLLABORATIVE LEARNING HUB</text>
+<text x="400" y="560" text-anchor="middle" font-family="Arial" font-size="20" fill="#D8C2FF">Academia Digital Resource Center</text>
+</svg>

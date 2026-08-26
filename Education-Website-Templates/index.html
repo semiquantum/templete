@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academia Institute of Science & Technology — Premier higher education institution offering world-class undergraduate and graduate programs in Technology, Business, and Applied Sciences.">
+  <meta name="keywords" content="Education Website, University, College, Degrees, Admission 2026, Faculty, Academic Excellence">
+  <meta name="author" content="Academia Institute">
+  <title>Academia Institute of Science & Technology — Shaping Tomorrow's Leaders</title>
+
+  <!-- Favicon Mockup -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-announcement">
+    <div class="container top-announcement-flex">
+      <div class="top-contacts">
+        <span class="top-contact-item">
+          <span>📍</span> 450 Academic Boulevard, University Park, CA 94107
+        </span>
+        <span class="top-contact-item">
+          <span>📞</span> <a href="tel:+18005552223">+1 (800) 555-ACAD</a>
+        </span>
+        <span class="top-contact-item">
+          <span>✉️</span> <a href="mailto:admissions@academia.edu">admissions@academia.edu</a>
+        </span>
+      </div>
+      <div>
+        <span class="badge badge-amber">✨ Admissions Open for Fall 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Academia Institute Homepage">
+        <div class="brand-icon">🎓</div>
+        <span>ACADEMIA <span style="color: var(--accent); font-weight: 600;">INSTITUTE</span></span>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <ul class="nav-menu">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#courses" class="nav-link">Courses</a></li>
+        <li><a href="#facilities" class="nav-link">Facilities</a></li>
+        <li><a href="#faculty" class="nav-link">Faculty</a></li>
+        <li><a href="#contact" class="nav-link">Admission & Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">Apply Now 🚀</a>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <div class="brand-icon">🎓</div>
+        <span>ACADEMIA</span>
+      </div>
+      <button class="drawer-close" id="drawerCloseBtn" aria-label="Close Mobile Menu">&times;</button>
+    </div>
+    <nav class="mobile-links">
+      <a href="#hero" class="mobile-link active">Home</a>
+      <a href="#about" class="mobile-link">About Institution</a>
+      <a href="#courses" class="mobile-link">Courses & Programs</a>
+      <a href="#facilities" class="mobile-link">Facilities & Features</a>
+      <a href="#faculty" class="mobile-link">Faculty & Instructors</a>
+      <a href="#contact" class="mobile-link">Admission & Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary" style="width: 100%;">Apply for Admission 🚀</a>
+  </aside>
+
+  <!-- ==========================================================================
+       SECTION 1: HOME / HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <span>🏆</span> Ranked #1 Regional Innovation Institution
+        </div>
+        <h1 class="hero-title">
+          Empowering Minds, <span>Shaping Tomorrow’s</span> Global Leaders
+        </h1>
+        <p class="hero-desc">
+          Academia Institute provides world-class higher education, interdisciplinary research opportunities, and industry-backed degree programs designed to turn your passion into purposeful achievement.
+        </p>
+        <div class="hero-actions">
+          <a href="#courses" class="btn btn-primary btn-lg">Explore Programs 🎓</a>
+          <a href="#about" class="btn btn-outline btn-lg">Learn About Us 🏛️</a>
+        </div>
+        <div class="hero-metrics">
+          <div class="metric-item">
+            <span class="metric-value">98%</span>
+            <span class="metric-label">Graduate Employment</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">14:1</span>
+            <span class="metric-label">Student-Faculty Ratio</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-value">45+</span>
+            <span class="metric-label">Global Degree Options</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <img src="assets/images/hero_campus.svg" alt="Modern Academia Institute Campus Building with students" width="600" height="480">
+        </div>
+        <div class="hero-card-float">
+          <div class="float-icon">💡</div>
+          <div>
+            <strong style="display: block; font-size: 1rem; color: var(--primary);">$45M+ Grants</strong>
+            <span style="font-size: 0.85rem; color: var(--text-muted);">Annual Student & Research Funding</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 2: ABOUT INSTITUTION
+       ========================================================================== -->
+  <section class="section section-bg-subtle" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-card">
+          <img src="assets/images/about_institution.svg" alt="Academia Institute Collaborative Library and Learning Environment" width="600" height="460">
+          <div class="about-experience-badge">
+            <strong>35+</strong>
+            <span>Years of Excellence</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <div class="section-badge">About Academia Institute</div>
+          <h2 class="section-title">A Legacy of Intellectual Rigor & Inclusive Innovation</h2>
+          <p class="about-text">
+            Founded in 1991, Academia Institute of Science & Technology stands as a beacon of academic rigor, discovery, and social impact. We synthesize theoretical knowledge with immersive practical experience, fostering an environment where curiosity thrives.
+          </p>
+
+          <div class="values-grid">
+            <div class="value-item">
+              <div class="value-icon">🎯</div>
+              <div>
+                <h3 class="value-title">Academic Precision</h3>
+                <p class="value-desc">Rigorous curriculum aligned with current industry and scientific developments.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">🔬</div>
+              <div>
+                <h3 class="value-title">Pioneering Research</h3>
+                <p class="value-desc">State-of-the-art laboratories and undergraduate research fellowships.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">🌐</div>
+              <div>
+                <h3 class="value-title">Global Perspective</h3>
+                <p class="value-desc">International exchange agreements with top institutions worldwide.</p>
+              </div>
+            </div>
+            <div class="value-item">
+              <div class="value-icon">🌱</div>
+              <div>
+                <h3 class="value-title">Holistic Growth</h3>
+                <p class="value-desc">Robust career incubation, leadership training, and student wellness programs.</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-secondary">Schedule Campus Tour 🚶‍♂️</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 3: COURSES / PROGRAMS
+       ========================================================================== -->
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Degree Programs & Courses</div>
+        <h2 class="section-title">Choose Your Path to Professional Mastery</h2>
+        <p class="section-desc">
+          Explore our accredited undergraduate and postgraduate degree programs engineered to prepare scholars for high-impact careers in emerging global industries.
+        </p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="course-filters">
+        <button class="filter-btn active" data-filter="all">All Programs</button>
+        <button class="filter-btn" data-filter="tech">Technology & AI</button>
+        <button class="filter-btn" data-filter="business">Business & Management</button>
+        <button class="filter-btn" data-filter="science">Applied Sciences</button>
+        <button class="filter-btn" data-filter="arts">Design & Humanities</button>
+      </div>
+
+      <!-- Courses Grid -->
+      <div class="courses-grid">
+        <!-- Course 1 -->
+        <article class="course-card" data-category="tech">
+          <div class="course-header">
+            <div class="course-icon-badge">💻</div>
+            <span class="badge badge-indigo">B.S. Degree</span>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Computer Science & Artificial Intelligence</h3>
+            <p class="course-desc">
+              Master algorithm design, deep neural networks, cloud architecture, and full-stack software development with hands-on capstone projects.
+            </p>
+            <div class="course-meta">
+              <span class="course-meta-item">⏱️ 4 Years Full-Time</span>
+              <span class="course-meta-item">🎓 128 Credit Hours</span>
+            </div>
+          </div>
+          <div class="course-footer">
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--accent);">School of Engineering</span>
+            <a href="#contact" class="btn btn-outline btn-sm">Apply Program</a>
+          </div>
+        </article>
+
+        <!-- Course 2 -->
+        <article class="course-card" data-category="business">
+          <div class="course-header">
+            <div class="course-icon-badge">📊</div>
+            <span class="badge badge-teal">M.B.A. Degree</span>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Global Executive Business Administration</h3>
+            <p class="course-desc">
+              Develop strategic leadership, global venture capital insights, corporate finance analytics, and cross-border negotiation skills.
+            </p>
+            <div class="course-meta">
+              <span class="course-meta-item">⏱️ 2 Years Full-Time</span>
+              <span class="course-meta-item">🎓 60 Credit Hours</span>
+            </div>
+          </div>
+          <div class="course-footer">
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--secondary);">School of Business</span>
+            <a href="#contact" class="btn btn-outline btn-sm">Apply Program</a>
+          </div>
+        </article>
+
+        <!-- Course 3 -->
+        <article class="course-card" data-category="tech">
+          <div class="course-header">
+            <div class="course-icon-badge">⚡</div>
+            <span class="badge badge-indigo">B.S. Degree</span>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Data Science & Predictive Analytics</h3>
+            <p class="course-desc">
+              Transform raw complex data into actionable intelligence through statistical modeling, machine learning algorithms, and big data systems.
+            </p>
+            <div class="course-meta">
+              <span class="course-meta-item">⏱️ 4 Years Full-Time</span>
+              <span class="course-meta-item">🎓 120 Credit Hours</span>
+            </div>
+          </div>
+          <div class="course-footer">
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--accent);">School of Computing</span>
+            <a href="#contact" class="btn btn-outline btn-sm">Apply Program</a>
+          </div>
+        </article>
+
+        <!-- Course 4 -->
+        <article class="course-card" data-category="science">
+          <div class="course-header">
+            <div class="course-icon-badge">🧬</div>
+            <span class="badge badge-amber">B.S. Degree</span>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Biotechnology & Molecular Sciences</h3>
+            <p class="course-desc">
+              Investigate genomic editing, cellular biology, pharmaceutical development, and bioengineering techniques in research labs.
+            </p>
+            <div class="course-meta">
+              <span class="course-meta-item">⏱️ 4 Years Full-Time</span>
+              <span class="course-meta-item">🎓 132 Credit Hours</span>
+            </div>
+          </div>
+          <div class="course-footer">
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--amber);">School of Life Sciences</span>
+            <a href="#contact" class="btn btn-outline btn-sm">Apply Program</a>
+          </div>
+        </article>
+
+        <!-- Course 5 -->
+        <article class="course-card" data-category="arts">
+          <div class="course-header">
+            <div class="course-icon-badge">🎨</div>
+            <span class="badge badge-indigo">B.F.A. Degree</span>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Digital Media & Interactive UX Design</h3>
+            <p class="course-desc">
+              Combine human-centered design principles with modern front-end prototyping, 3D interactive graphics, and digital product strategy.
+            </p>
+            <div class="course-meta">
+              <span class="course-meta-item">⏱️ 4 Years Full-Time</span>
+              <span class="course-meta-item">🎓 124 Credit Hours</span>
+            </div>
+          </div>
+          <div class="course-footer">
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--accent);">School of Design</span>
+            <a href="#contact" class="btn btn-outline btn-sm">Apply Program</a>
+          </div>
+        </article>
+
+        <!-- Course 6 -->
+        <article class="course-card" data-category="science">
+          <div class="course-header">
+            <div class="course-icon-badge">🌍</div>
+            <span class="badge badge-teal">M.S. Degree</span>
+          </div>
+          <div class="course-body">
+            <h3 class="course-title">Environmental Engineering & Sustainability</h3>
+            <p class="course-desc">
+              Address global climate challenges through clean energy technology, renewable resource management, and environmental policy research.
+            </p>
+            <div class="course-meta">
+              <span class="course-meta-item">⏱️ 2 Years Full-Time</span>
+              <span class="course-meta-item">🎓 48 Credit Hours</span>
+            </div>
+          </div>
+          <div class="course-footer">
+            <span style="font-size: 0.85rem; font-weight: 700; color: var(--secondary);">School of Ecology</span>
+            <a href="#contact" class="btn btn-outline btn-sm">Apply Program</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 4: FEATURES / FACILITIES
+       ========================================================================== -->
+  <section class="section section-bg-subtle" id="facilities">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">World-Class Campus Infrastructure</div>
+        <h2 class="section-title">Designed for Innovation, Collaboration & Well-being</h2>
+        <p class="section-desc">
+          Our 120-acre modern campus provides cuting-edge educational facilities created to inspire breakthrough research, creative expression, and holistic student development.
+        </p>
+      </div>
+
+      <div class="facilities-grid">
+        <!-- Facility 1 -->
+        <div class="facility-card">
+          <div class="facility-icon">🔬</div>
+          <h3 class="facility-title">STEAM & AI Supercomputing Labs</h3>
+          <p class="facility-desc">
+            High-performance GPU computing clusters, robotic fabrication workshops, and dedicated bio-molecular labs open 24/7 for student research projects.
+          </p>
+        </div>
+
+        <!-- Facility 2 -->
+        <div class="facility-card">
+          <div class="facility-icon">📚</div>
+          <h3 class="facility-title">Next-Gen Digital Resource Library</h3>
+          <p class="facility-desc">
+            Over 2 million academic journals, silent focus pods, collaborative multimedia suites, and 24/7 online database access for all scholars.
+          </p>
+        </div>
+
+        <!-- Facility 3 -->
+        <div class="facility-card">
+          <div class="facility-icon">🌐</div>
+          <h3 class="facility-title">Global Study & Exchange Network</h3>
+          <p class="facility-desc">
+            Partnered with 85 leading universities across Europe, Asia, and the Americas, providing fully funded semester exchange opportunities.
+          </p>
+        </div>
+
+        <!-- Facility 4 -->
+        <div class="facility-card">
+          <div class="facility-icon">💼</div>
+          <h3 class="facility-title">Venture Incubator & Career Hub</h3>
+          <p class="facility-desc">
+            Dedicated career counseling, quarterly corporate hiring expos, resume workshops, and startup seed funding for student entrepreneurs.
+          </p>
+        </div>
+
+        <!-- Facility 5 -->
+        <div class="facility-card">
+          <div class="facility-icon">🏟️</div>
+          <h3 class="facility-title">Athletic & Recreation Complex</h3>
+          <p class="facility-desc">
+            NCAA-standard indoor swimming pool, multi-court gymnasium, rock climbing wall, and holistic mental wellness counseling centers.
+          </p>
+        </div>
+
+        <!-- Facility 6 -->
+        <div class="facility-card">
+          <div class="facility-icon">🏫</div>
+          <h3 class="facility-title">Smart Hybrid Amphitheaters</h3>
+          <p class="facility-desc">
+            Acoustically tuned lecture halls equipped with automated lecture capture, interactive audience displays, and high-speed Wi-Fi 6E coverage.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 5: FACULTY / INSTRUCTORS
+       ========================================================================== -->
+  <section class="section" id="faculty">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Distinguished Educators</div>
+        <h2 class="section-title">Learn from Renowned Scholars & Industry Pioneers</h2>
+        <p class="section-desc">
+          Our faculty members combine deep academic expertise with active industry experience, providing dedicated mentorship to shape your success.
+        </p>
+      </div>
+
+      <div class="faculty-grid">
+        <!-- Faculty Card 1 -->
+        <article class="faculty-card">
+          <div class="faculty-img-container">
+            <img src="assets/images/faculty_dr_chen.svg" alt="Portrait of Dr. Elena Chen" width="300" height="300" loading="lazy">
+          </div>
+          <div class="faculty-content">
+            <h3 class="faculty-name">Dr. Elena Chen</h3>
+            <span class="faculty-designation">Department Chair & Senior Professor</span>
+            <span class="faculty-expertise">Artificial Intelligence & Deep Learning</span>
+            <p class="faculty-bio">
+              Former Principal AI Researcher with 15+ years of experience in neural networks and ethical machine learning architectures.
+            </p>
+            <div class="faculty-socials">
+              <a href="#" class="faculty-social-link" aria-label="Elena Chen LinkedIn">in</a>
+              <a href="#" class="faculty-social-link" aria-label="Elena Chen Academic Profile">🎓</a>
+              <a href="#" class="faculty-social-link" aria-label="Elena Chen Email">✉️</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Faculty Card 2 -->
+        <article class="faculty-card">
+          <div class="faculty-img-container">
+            <img src="assets/images/faculty_dr_marcus.svg" alt="Portrait of Dr. Marcus Vance" width="300" height="300" loading="lazy">
+          </div>
+          <div class="faculty-content">
+            <h3 class="faculty-name">Dr. Marcus Vance</h3>
+            <span class="faculty-designation">Professor of Global Economics</span>
+            <span class="faculty-expertise">Corporate Finance & Macroeconomics</span>
+            <p class="faculty-bio">
+              Former World Bank financial advisor specializing in international trade policy, monetary systems, and quantitative risk management.
+            </p>
+            <div class="faculty-socials">
+              <a href="#" class="faculty-social-link" aria-label="Marcus Vance LinkedIn">in</a>
+              <a href="#" class="faculty-social-link" aria-label="Marcus Vance Academic Profile">🎓</a>
+              <a href="#" class="faculty-social-link" aria-label="Marcus Vance Email">✉️</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Faculty Card 3 -->
+        <article class="faculty-card">
+          <div class="faculty-img-container">
+            <img src="assets/images/faculty_prof_sarah.svg" alt="Portrait of Prof. Sarah Jenkins" width="300" height="300" loading="lazy">
+          </div>
+          <div class="faculty-content">
+            <h3 class="faculty-name">Prof. Sarah Jenkins</h3>
+            <span class="faculty-designation">Associate Professor of Biotech</span>
+            <span class="faculty-expertise">Genomics & Bio-Molecular Engineering</span>
+            <p class="faculty-bio">
+              Lead investigator in cellular gene therapies with multiple patented biomedical inventions and published papers in Nature Biotech.
+            </p>
+            <div class="faculty-socials">
+              <a href="#" class="faculty-social-link" aria-label="Sarah Jenkins LinkedIn">in</a>
+              <a href="#" class="faculty-social-link" aria-label="Sarah Jenkins Academic Profile">🎓</a>
+              <a href="#" class="faculty-social-link" aria-label="Sarah Jenkins Email">✉️</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Faculty Card 4 -->
+        <article class="faculty-card">
+          <div class="faculty-img-container">
+            <img src="assets/images/faculty_prof_david.svg" alt="Portrait of Prof. David Thorne" width="300" height="300" loading="lazy">
+          </div>
+          <div class="faculty-content">
+            <h3 class="faculty-name">Prof. David Thorne</h3>
+            <span class="faculty-designation">Head of Digital Design Studio</span>
+            <span class="faculty-expertise">Human-Computer Interaction & UX</span>
+            <p class="faculty-bio">
+              Award-winning digital product architect with extensive background directing UX strategy for global tech brands.
+            </p>
+            <div class="faculty-socials">
+              <a href="#" class="faculty-social-link" aria-label="David Thorne LinkedIn">in</a>
+              <a href="#" class="faculty-social-link" aria-label="David Thorne Portfolio">🎨</a>
+              <a href="#" class="faculty-social-link" aria-label="David Thorne Email">✉️</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 6: CONTACT / ADMISSION SECTION
+       ========================================================================== -->
+  <section class="section section-bg-subtle" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-badge">Admissions & Inquiries</div>
+        <h2 class="section-title">Start Your Academic Journey With Us Today</h2>
+        <p class="section-desc">
+          Have questions about degree requirements, scholarships, or campus life? Submit an admission inquiry or visit our admissions office.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info Side Card -->
+        <div class="contact-info-card">
+          <div>
+            <div class="contact-info-header">
+              <h3>Admissions Office</h3>
+              <p>We are here to assist prospective students and families through every step of the enrollment process.</p>
+            </div>
+
+            <div class="contact-details-list">
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">📍</div>
+                <div class="contact-detail-text">
+                  <strong>Campus Location</strong>
+                  <span>450 Academic Boulevard, Suite 100, University Park, CA 94107</span>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">📞</div>
+                <div class="contact-detail-text">
+                  <strong>Direct Admissions Hotline</strong>
+                  <span>+1 (800) 555-ACAD / +1 (415) 890-1234</span>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-detail-icon">✉️</div>
+                <div class="contact-detail-text">
+                  <strong>Email Inquiry</strong>
+                  <span>admissions@academia.edu</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-hours-badge">
+            <strong style="display: block; color: #FFFFFF; margin-bottom: 0.25rem;">⏰ Office Visiting Hours</strong>
+            <span>Monday – Friday: 8:00 AM – 5:00 PM PST<br>Saturday: 9:00 AM – 1:00 PM PST</span>
+          </div>
+        </div>
+
+        <!-- Admission Inquiry Form -->
+        <div class="admission-form-card">
+          <h3 style="font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 1.5rem;">
+            Submit Admission Inquiry
+          </h3>
+
+          <form id="admissionForm" novalidate>
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="fullName" class="form-label">Full Name *</label>
+                <input type="text" id="fullName" name="fullName" class="form-input" placeholder="e.g. Alexander Hamilton" autocomplete="name" required>
+                <span class="form-error-msg">Please enter your full name.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="emailAddress" class="form-label">Email Address *</label>
+                <input type="email" id="emailAddress" name="emailAddress" class="form-input" placeholder="alexander@example.com" autocomplete="email" required>
+                <span class="form-error-msg">Please enter a valid email address.</span>
+              </div>
+            </div>
+
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="phoneNumber" class="form-label">Phone Number *</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" class="form-input" placeholder="+1 (555) 000-0000" autocomplete="tel" required>
+                <span class="form-error-msg">Please enter a valid phone number.</span>
+              </div>
+
+              <div class="form-group">
+                <label for="programInterest" class="form-label">Program of Interest *</label>
+                <select id="programInterest" name="programInterest" class="form-select" required>
+                  <option value="">Select a Program...</option>
+                  <option value="cs-ai">B.S. Computer Science & Artificial Intelligence</option>
+                  <option value="mba">Global Executive M.B.A.</option>
+                  <option value="data-science">B.S. Data Science & Predictive Analytics</option>
+                  <option value="biotech">B.S. Biotechnology & Molecular Sciences</option>
+                  <option value="ux-design">B.F.A. Digital Media & Interactive UX Design</option>
+                  <option value="env-eng">M.S. Environmental Engineering</option>
+                </select>
+                <span class="form-error-msg">Please select a program.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="inquiryMessage" class="form-label">Admission Inquiry / Message *</label>
+              <textarea id="inquiryMessage" name="inquiryMessage" class="form-textarea" placeholder="Please mention your background, target enrollment term (e.g. Fall 2026), and any questions..." required></textarea>
+              <span class="form-error-msg">Please provide message details.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-lg" id="admissionSubmitBtn" style="width: 100%;">
+              Submit Application Inquiry 🚀
+            </button>
+            <div id="admissionSuccess" class="form-success" role="status" aria-live="polite" hidden>
+              <strong>Application inquiry submitted successfully!</strong>
+              <span>Thank you. The admissions team can follow up using the details you provided.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       SECTION 7: FOOTER
+       ========================================================================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Column 1: Brand & Purpose -->
+        <div>
+          <a href="#hero" class="brand-logo" style="color: #FFFFFF;">
+            <div class="brand-icon">🎓</div>
+            <span>ACADEMIA <span style="color: var(--border-focus); font-weight: 600;">INSTITUTE</span></span>
+          </a>
+          <p class="footer-brand-desc">
+            Academia Institute of Science & Technology is dedicated to providing transformative higher education, pioneering research, and inclusive opportunity for global scholars.
+          </p>
+          <div class="footer-socials">
+            <a href="#" class="footer-social-icon" aria-label="Facebook">fb</a>
+            <a href="#" class="footer-social-icon" aria-label="Twitter X">x</a>
+            <a href="#" class="footer-social-icon" aria-label="LinkedIn">in</a>
+            <a href="#" class="footer-social-icon" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#hero" class="footer-link">Home</a></li>
+            <li><a href="#about" class="footer-link">About Institution</a></li>
+            <li><a href="#courses" class="footer-link">Degree Programs</a></li>
+            <li><a href="#facilities" class="footer-link">Campus Facilities</a></li>
+            <li><a href="#faculty" class="footer-link">Faculty & Experts</a></li>
+            <li><a href="#contact" class="footer-link">Admission Inquiry</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Academics & Research -->
+        <div>
+          <h4 class="footer-heading">Schools & Research</h4>
+          <ul class="footer-links">
+            <li><a href="#courses" class="footer-link">School of Engineering</a></li>
+            <li><a href="#courses" class="footer-link">School of Business</a></li>
+            <li><a href="#courses" class="footer-link">School of Life Sciences</a></li>
+            <li><a href="#courses" class="footer-link">School of Digital Design</a></li>
+            <li><a href="#facilities" class="footer-link">Research Fellowships</a></li>
+            <li><a href="#facilities" class="footer-link">International Exchange</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div>
+          <h4 class="footer-heading">Stay Informed</h4>
+          <p class="footer-newsletter-text">Subscribe to receive campus news, research publications, and admission deadlines.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to Academia Institute updates!'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Your email address" required>
+            <button type="submit" class="btn btn-primary btn-sm">Join</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <div>
+          © 2026 Academia Institute of Science & Technology. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#" class="footer-link">Privacy Policy</a>
+          <a href="#" class="footer-link">Terms of Service</a>
+          <a href="#" class="footer-link">Accessibility Statement</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

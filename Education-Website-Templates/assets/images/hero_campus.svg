@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 620">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3A245C"/><stop offset="1" stop-color="#7B4DFF"/></linearGradient></defs>
+<rect width="800" height="620" rx="40" fill="#F7EEDF"/>
+<rect x="75" y="130" width="650" height="360" rx="28" fill="url(#g)"/>
+<rect x="125" y="185" width="170" height="220" rx="12" fill="#FFF8EA" opacity=".96"/>
+<rect x="315" y="160" width="170" height="245" rx="12" fill="#E9DFFF"/>
+<rect x="505" y="205" width="145" height="200" rx="12" fill="#FFF8EA"/>
+<path d="M95 490h610" stroke="#3A245C" stroke-width="18" stroke-linecap="round"/>
+<circle cx="400" cy="95" r="48" fill="#7B4DFF"/><path d="M375 95l20 20 35-42" fill="none" stroke="#FFF8EA" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="400" y="555" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700" fill="#3A245C">ACADEMIA LEARNING CAMPUS</text>
+</svg>

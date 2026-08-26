@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Institute of Arts & Sciences — Higher Education & Career Leadership</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Top Announcement -->
+  <div class="top-marquee">
+    <div class="container marquee-flex">
+      <span>🏛️ <strong>Accreditation Notice:</strong> Apex Institute awarded NAAC A++ Grade & ABET Engineering Accreditation.</span>
+      <span>Fall 2026 Early Application Deadline: <strong>November 30</strong></span>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <div class="brand-mark">A</div>
+        <span>APEX <span style="font-weight: 400; color: var(--slate);">INSTITUTE</span></span>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#about">Overview</a></li>
+        <li><a href="#degrees">Degrees & Majors</a></li>
+        <li><a href="#placements">Career Placement</a></li>
+        <li><a href="#departments">Departments</a></li>
+        <li><a href="#campus-life">Campus Life</a></li>
+        <li><a href="#admissions">Admissions</a></li>
+        <li><a href="#contact">Inquire</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="tag-badge" style="background: rgba(5, 150, 105, 0.25); color: #6EE7B7;">Accredited Higher Education</span>
+        <h1>Shape Your Future Through Industry-Driven Education</h1>
+        <p class="hero-desc">Empowering over 8,500 undergraduate and graduate scholars with hands-on research, global internships, and 98% career placement success.</p>
+        
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#degrees" class="btn btn-accent">Explore Degree Programs 🎓</a>
+          <a href="#admissions" class="btn btn-outline" style="border-color: #FFFFFF; color: #FFFFFF;">Apply for Fall 2026</a>
+        </div>
+
+        <div class="metrics-ribbon">
+          <div>
+            <div class="metric-val">98%</div>
+            <div class="metric-lbl">Graduate Placement Rate</div>
+          </div>
+          <div>
+            <div class="metric-val">$42M+</div>
+            <div class="metric-lbl">Annual Research Grants</div>
+          </div>
+          <div>
+            <div class="metric-val">120+</div>
+            <div class="metric-lbl">Global University Partners</div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="hero-card">
+          <h3 style="color: #FFFFFF; margin-bottom: 1rem;">Fall 2026 Admissions Quick Check</h3>
+          <p style="font-size: 0.9rem; color: #94A3B8; margin-bottom: 1.5rem;">Select your area of interest to view department requirements and scholarship opportunities.</p>
+          
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <select class="form-field" style="background: #1E293B; color: #FFFFFF; border-color: rgba(255,255,255,0.15);">
+              <option>Select School of Interest...</option>
+              <option>School of Engineering & Computing</option>
+              <option>School of Business & Economics</option>
+              <option>School of Applied Life Sciences</option>
+              <option>School of Design & Liberal Arts</option>
+            </select>
+            <a href="#admissions" class="btn btn-accent" style="width: 100%;">Check Admission Steps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Accreditation Bar -->
+  <div class="accred-bar">
+    <div class="container accred-flex">
+      <div class="accred-item">📜 NAAC A++ Grade Institutional Rating</div>
+      <div class="accred-item">🔬 ABET Accredited Engineering Programs</div>
+      <div class="accred-item">💼 AACSB Accredited School of Business</div>
+      <div class="accred-item">🌐 World Top 200 Higher Ed Ranking</div>
+    </div>
+  </div>
+
+  <!-- Overview Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag-badge">Institution Overview</span>
+        <h2>Building Future Technologists, Scholars & Business Leaders</h2>
+        <p style="color: var(--muted); font-size: 1.1rem; max-width: 720px; margin-top: 0.5rem;">
+          Founded in 1982, Apex Institute combines academic rigor, interdisciplinary lab work, and direct industry mentorship to ensure our graduates lead industries across the globe.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Degree Programs Section -->
+  <section class="section section-bg" id="degrees">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag-badge">Academic Programs</span>
+        <h2>Undergraduate & Graduate Degrees</h2>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="program-tabs">
+        <button class="tab-btn active" data-filter="all">All Degrees</button>
+        <button class="tab-btn" data-filter="engineering">Engineering & Tech</button>
+        <button class="tab-btn" data-filter="business">Business & Finance</button>
+        <button class="tab-btn" data-filter="science">Applied Sciences</button>
+      </div>
+
+      <div class="degree-grid">
+        <div class="degree-card" data-category="engineering">
+          <div class="degree-tag">B.Sc. • 4 Years</div>
+          <h3>Computer Science & Artificial Intelligence</h3>
+          <p style="font-size: 0.9rem; color: var(--slate); margin: 0.75rem 0;">Focusing on machine learning architectures, distributed systems, cybersecurity, and cloud engineering.</p>
+          <div style="font-size: 0.85rem; color: var(--muted);">Avg. Starting Salary: <strong>$105,000 / yr</strong></div>
+        </div>
+
+        <div class="degree-card" data-category="business">
+          <div class="degree-tag">B.B.A. • 3 Years</div>
+          <h3>International Business & Finance</h3>
+          <p style="font-size: 0.9rem; color: var(--slate); margin: 0.75rem 0;">Equipping future corporate leaders with financial modeling, fintech, global supply chain, and venture strategy.</p>
+          <div style="font-size: 0.85rem; color: var(--muted);">Avg. Starting Salary: <strong>$88,000 / yr</strong></div>
+        </div>
+
+        <div class="degree-card" data-category="engineering">
+          <div class="degree-tag">B.Tech • 4 Years</div>
+          <h3>Robotics & Autonomous Systems</h3>
+          <p style="font-size: 0.9rem; color: var(--slate); margin: 0.75rem 0;">Hands-on training in mechatronics, embedded sensors, computer vision, and industrial automation.</p>
+          <div style="font-size: 0.85rem; color: var(--muted);">Avg. Starting Salary: <strong>$98,000 / yr</strong></div>
+        </div>
+
+        <div class="degree-card" data-category="science">
+          <div class="degree-tag">M.Sc. • 2 Years</div>
+          <h3>Biotechnology & Molecular Genomics</h3>
+          <p style="font-size: 0.9rem; color: var(--slate); margin: 0.75rem 0;">Advanced laboratory research in gene editing, biopharmaceuticals, and computational bio-data analysis.</p>
+          <div style="font-size: 0.85rem; color: var(--muted);">Avg. Starting Salary: <strong>$92,000 / yr</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placement Section -->
+  <section class="section" id="placements">
+    <div class="container">
+      <div class="placement-box" id="placementSec">
+        <div class="placement-grid">
+          <div>
+            <span class="tag-badge" style="background: rgba(255,255,255,0.15); color: #A7F3D0;">Career & Placement Center</span>
+            <h2 style="color: #FFFFFF; margin: 0.75rem 0 1.25rem 0;">Industry Leadership & Campus Recruiting</h2>
+            <p style="color: #94A3B8; margin-bottom: 2rem;">Our dedicated placement cell maintains partnerships with over 450 global Fortune 500 corporations, tech innovators, and financial institutions.</p>
+
+            <div class="stats-counter-grid">
+              <div>
+                <div style="font-size: 2.5rem; font-weight: 800; color: #34D399;" class="placement-counter" data-target="98" data-suffix="%">0</div>
+                <div style="font-size: 0.85rem; color: #CBD5E1;">Graduate Placement Rate</div>
+              </div>
+              <div>
+                <div style="font-size: 2.5rem; font-weight: 800; color: #34D399;" class="placement-counter" data-target="450" data-suffix="+">0</div>
+                <div style="font-size: 0.85rem; color: #CBD5E1;">Annual Campus Recruiters</div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h4 style="color: #FFFFFF; margin-bottom: 1rem;">Top Recruiting Partners</h4>
+            <div class="recruiter-logos">
+              <div class="logo-badge">MICROSOFT</div>
+              <div class="logo-badge">GOOGLE</div>
+              <div class="logo-badge">DELOITTE</div>
+              <div class="logo-badge">AMAZON</div>
+              <div class="logo-badge">GOLDMAN SACHS</div>
+              <div class="logo-badge">SIEMENS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Departments Section -->
+  <section class="section section-bg" id="departments">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag-badge">Academic Departments</span>
+        <h2>Faculties & Research Centers</h2>
+      </div>
+
+      <div class="dept-grid">
+        <div class="dept-card">
+          <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">💻</div>
+          <h3>Department of Computer Science</h3>
+          <p style="font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem;">Housing 4 specialized research labs in Cyber Security, AI Ethics, Quantum Computing, and VR/AR Design.</p>
+        </div>
+
+        <div class="dept-card">
+          <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">⚡</div>
+          <h3>Department of Electrical Engineering</h3>
+          <p style="font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem;">Focusing on renewable grid integration, microelectronics, semiconductor design, and robotics.</p>
+        </div>
+
+        <div class="dept-card">
+          <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">📈</div>
+          <h3>School of Business & Economics</h3>
+          <p style="font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem;">AACSB-accredited business incubator fostering student startups, fintech research, and venture capital networking.</p>
+        </div>
+
+        <div class="dept-card">
+          <div style="font-size: 2.2rem; margin-bottom: 0.5rem;">🧬</div>
+          <h3>Department of Life Sciences</h3>
+          <p style="font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem;">State-of-the-art gene sequencing suites and bio-chemical analysis centers supporting pharmaceutical innovation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Campus Life Section -->
+  <section class="section" id="campus-life">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag-badge">Student Life</span>
+        <h2>Vibrant Campus Environment</h2>
+      </div>
+
+      <div class="life-grid">
+        <div class="life-card">
+          <div class="life-img-box">🚀</div>
+          <div style="padding: 1.25rem;">
+            <h4>Student Innovation Hackathons</h4>
+            <p style="font-size: 0.88rem; color: var(--slate); margin-top: 0.5rem;">Annual 48-hour hardware and software challenges with seed funding for winning student prototypes.</p>
+          </div>
+        </div>
+
+        <div class="life-card">
+          <div class="life-img-box" style="background: linear-gradient(135deg, #059669, #34D399);">⚽</div>
+          <div style="padding: 1.25rem;">
+            <h4>Intercollegiate Athletics</h4>
+            <p style="font-size: 0.88rem; color: var(--slate); margin-top: 0.5rem;">Championship varsity teams in soccer, basketball, track & field, swimming, and tennis.</p>
+          </div>
+        </div>
+
+        <div class="life-card">
+          <div class="life-img-box" style="background: linear-gradient(135deg, #D97706, #FBBF24);">🏢</div>
+          <div style="padding: 1.25rem;">
+            <h4>Modern On-Campus Residence</h4>
+            <p style="font-size: 0.88rem; color: var(--slate); margin-top: 0.5rem;">Fully air-conditioned student dormitories with high-speed fiber internet, dining halls, and 24/7 security.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Admissions Section & Fee Estimator -->
+  <section class="section section-bg" id="admissions">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag-badge">Admissions 2026</span>
+        <h2>4-Step Application Process</h2>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-num">01</div>
+          <h4>Online Application</h4>
+          <p style="font-size: 0.88rem; color: var(--slate);">Submit your academic transcripts and choice of degree major online.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">02</div>
+          <h4>Aptitude & Interview</h4>
+          <p style="font-size: 0.88rem; color: var(--slate);">Complete the online institutional aptitude test and faculty interaction.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">03</div>
+          <h4>Scholarship Evaluation</h4>
+          <p style="font-size: 0.88rem; color: var(--slate);">Automatic evaluation for merit-based tuition waivers up to 50%.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-num">04</div>
+          <h4>Enrollment & Housing</h4>
+          <p style="font-size: 0.88rem; color: var(--slate);">Confirm your offer letter and reserve your residence room.</p>
+        </div>
+      </div>
+
+      <!-- Interactive Fee Estimator Widget -->
+      <div class="calc-card">
+        <h3>🧮 Interactive Tuition & Fee Estimator</h3>
+        <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 1.5rem;">Select program criteria below to estimate annual tuition after potential scholarship waivers.</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; align-items: flex-end;">
+          <div>
+            <label style="font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 0.3rem;">Degree Program</label>
+            <select id="calcDegree" class="form-field">
+              <option value="12000">B.Sc. Computer Science ($12,000/yr)</option>
+              <option value="11000">B.B.A. Business Admin ($11,000/yr)</option>
+              <option value="13500">B.Tech Robotics ($13,500/yr)</option>
+              <option value="14000">M.Sc. Biotechnology ($14,000/yr)</option>
+            </select>
+          </div>
+
+          <div>
+            <label style="font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 0.3rem;">Campus Housing</label>
+            <select id="calcHousing" class="form-field">
+              <option value="0">Day Scholar (No Housing)</option>
+              <option value="3500">Standard Shared Room (+$3,500/yr)</option>
+              <option value="5000">Single Suite Residence (+$5,000/yr)</option>
+            </select>
+          </div>
+
+          <div>
+            <label style="font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 0.3rem;">Merit Scholarship Tier</label>
+            <select id="calcScholarship" class="form-field">
+              <option value="0">Standard Tuition (0% Waiver)</option>
+              <option value="0.25">Merit Tier 2 (25% Waiver)</option>
+              <option value="0.50">Dean's Honor Tier 1 (50% Waiver)</option>
+            </select>
+          </div>
+
+          <div style="background: var(--primary); color: #FFFFFF; padding: 1rem; border-radius: var(--radius-sm); text-align: center;">
+            <div style="font-size: 0.8rem; text-transform: uppercase;">Estimated Fee</div>
+            <div id="calcOutput" style="font-size: 1.4rem; font-weight: 800;">$12,000 / year</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Campus Inquiry Section -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag-badge">Get In Touch</span>
+        <h2>Admissions Inquiry & Campus Visit</h2>
+      </div>
+
+      <div class="form-box">
+        <form id="collegeInquiryForm">
+          <div class="form-row">
+            <div>
+              <label style="display: block; font-weight: 600; font-size: 0.85rem; margin-bottom: 0.3rem;">Full Name *</label>
+              <input type="text" id="cName" class="form-field" placeholder="e.g. David Miller">
+            </div>
+            <div>
+              <label style="display: block; font-weight: 600; font-size: 0.85rem; margin-bottom: 0.3rem;">Email Address *</label>
+              <input type="email" id="cEmail" class="form-field" placeholder="david@example.com">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div>
+              <label style="display: block; font-weight: 600; font-size: 0.85rem; margin-bottom: 0.3rem;">Phone Number</label>
+              <input type="tel" class="form-field" placeholder="+1 (555) 019-2831">
+            </div>
+            <div>
+              <label style="display: block; font-weight: 600; font-size: 0.85rem; margin-bottom: 0.3rem;">Target Degree Major</label>
+              <select class="form-field">
+                <option>Computer Science & AI</option>
+                <option>International Business</option>
+                <option>Robotics Engineering</option>
+                <option>Biotechnology</option>
+              </select>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit Application Inquiry ✉️</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="collegeModal" style="position: fixed; inset: 0; background: rgba(0,0,0,0.6); backdrop-filter: blur(4px); display: none; align-items: center; justify-content: center; z-index: 2000;">
+    <div style="background: #FFFFFF; padding: 2.5rem; border-radius: var(--radius-md); max-width: 450px; text-align: center;">
+      <div style="font-size: 3rem; color: var(--accent); margin-bottom: 1rem;">✅</div>
+      <h3>Inquiry Submitted!</h3>
+      <p style="color: var(--slate); margin: 1rem 0;">Our College Admissions Office will email you the official prospectus and campus tour itinerary.</p>
+      <button class="btn btn-primary" id="closeCollegeModal">Close</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="brand" style="color: #FFFFFF; margin-bottom: 1rem;">
+            <div class="brand-mark">A</div>
+            <span>APEX INSTITUTE</span>
+          </div>
+          <p>An accredited institution of higher learning dedicated to academic rigor, groundbreaking research, and career leadership.</p>
+        </div>
+
+        <div>
+          <h4>Degrees & Schools</h4>
+          <ul>
+            <li><a href="#degrees">School of Engineering</a></li>
+            <li><a href="#degrees">School of Business</a></li>
+            <li><a href="#degrees">School of Life Sciences</a></li>
+            <li><a href="#degrees">Department of Humanities</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Admissions</h4>
+          <ul>
+            <li><a href="#admissions">Application Portal</a></li>
+            <li><a href="#admissions">Scholarships & Grants</a></li>
+            <li><a href="#admissions">Fee Structure</a></li>
+            <li><a href="#admissions">International Admissions</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Campus Address</h4>
+          <p>850 Academic Boulevard, Metro City, NY 10001</p>
+          <p>Phone: +1 (888) 555-APEX</p>
+          <p>Email: admissions@apex.edu</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; font-size: 0.85rem;">
+        © 2026 Apex Institute of Arts & Sciences. All Rights Reserved. Production-Ready Education Template Collection.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

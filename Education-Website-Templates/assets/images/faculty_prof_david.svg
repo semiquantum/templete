@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Prof. David Thorne, Digital UX Design">
+<defs>
+  <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#3A245C"/>
+    <stop offset="100%" stop-color="#6B4BB5"/>
+  </linearGradient>
+</defs>
+<rect width="600" height="600" rx="34" fill="url(#g)"/>
+<circle cx="470" cy="115" r="90" fill="#FFFFFF" opacity=".10"/>
+<circle cx="125" cy="475" r="135" fill="#FFFFFF" opacity=".08"/>
+<circle cx="300" cy="215" r="88" fill="#F3C9A8"/>
+<path d="M212 212c7-92 51-133 88-133 62 0 101 48 102 133-29-37-65-50-101-50-36 0-67 15-89 50z" fill="#2A1A43"/>
+<path d="M185 515c10-128 68-179 115-179s106 51 115 179z" fill="#E8D9FF"/>
+<path d="M230 337l70 78 70-78" fill="none" stroke="#D8C2FF" stroke-width="12"/>
+<rect x="110" y="470" width="380" height="70" rx="35" fill="#2E2140" opacity=".94"/>
+<text x="300" y="515" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#FFF8EA">DT</text>
+</svg>
