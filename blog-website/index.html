@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MONOGRAPH — Technology &amp; Culture Blog</title>
+  <meta name="description" content="MONOGRAPH is a modern, readable technology and culture blog covering software, artificial intelligence, design, and digital culture.">
+  <meta name="keywords" content="technology blog, software architecture, artificial intelligence, product design, engineering essays, digital culture">
+  <meta name="author" content="Monograph Editorial Board">
+  
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MONOGRAPH — Technology &amp; Culture Blog">
+  <meta property="og:description" content="A modern technology and culture blog covering software, artificial intelligence, design, and digital culture.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#FBF9F5" id="meta-theme-color">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top Anchor Target for Smooth Scroll -->
+  <div id="top" tabindex="-1"></div>
+
+  <!-- Reading Progress Bar (Fixed Top) -->
+  <div id="reading-progress-bar" class="reading-progress-bar" aria-hidden="true"></div>
+
+  <!-- Announcement & Utility Strip -->
+  <aside class="utility-bar" aria-label="Edition and utility information">
+    <div class="container utility-bar__inner">
+      <div class="utility-bar__left">
+        <span class="utility-badge utility-badge--static" aria-label="Blog website">BLOG JOURNAL</span>
+        <span class="utility-divider" aria-hidden="true">•</span>
+        <time id="current-date" class="utility-date">August 2026</time>
+        <span class="utility-motto-group">
+          <span class="utility-divider" aria-hidden="true">•</span>
+          <span class="utility-motto">Stories, ideas &amp; practical perspectives on technology</span>
+        </span>
+      </div>
+      <div class="utility-bar__right">
+        <!-- Font Size Quick Switcher -->
+        <div class="font-resizer" role="group" aria-label="Text size adjustment">
+          <button type="button" id="font-decrease" class="font-resize-btn" title="Decrease text size (A-)" aria-label="Decrease text size">A-</button>
+          <span class="font-size-label" id="font-size-indicator" aria-live="polite">100%</span>
+          <button type="button" id="font-increase" class="font-resize-btn" title="Increase text size (A+)" aria-label="Increase text size">A+</button>
+        </div>
+        
+        <span class="utility-divider" aria-hidden="true">|</span>
+
+        <!-- Theme Mode Switcher -->
+        <div class="theme-switcher" role="group" aria-label="Color theme selector">
+          <button type="button" class="theme-btn active" data-theme-set="light" title="Light Theme" aria-pressed="true" aria-label="Light mode">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <span>Light</span>
+          </button>
+          <button type="button" class="theme-btn" data-theme-set="sepia" title="Sepia Reading Theme" aria-pressed="false" aria-label="Sepia reading mode">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            <span>Sepia</span>
+          </button>
+          <button type="button" class="theme-btn" data-theme-set="dark" title="Dark Theme" aria-pressed="false" aria-label="Dark mode">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <span>Dark</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Site Header & Masthead -->
+  <header class="site-header" id="site-header">
+    <div class="container site-header__inner">
+      <!-- Mobile Menu Toggle Button -->
+      <button type="button" id="mobile-menu-toggle" class="header-icon-btn mobile-menu-btn" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+        <svg class="icon-hamburger" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg class="icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <!-- Brand Masthead -->
+      <div class="site-brand">
+        <a href="#top" class="brand-link" aria-label="MONOGRAPH Home">
+          <span class="brand-glyph" aria-hidden="true">¶</span>
+          <span class="brand-name">MONOGRAPH</span>
+        </a>
+        <span class="brand-tagline">Systems, Intelligence &amp; Contemporary Culture</span>
+      </div>
+
+      <!-- Desktop Main Navigation -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#cover-story" class="nav-link active" data-nav-target="home">Lead Essay</a></li>
+          <li class="nav-item"><a href="#topics" class="nav-link" data-nav-target="topics">Topics</a></li>
+          <li class="nav-item"><a href="#featured-stories" class="nav-link" data-nav-target="featured">Spotlight</a></li>
+          <li class="nav-item"><a href="#latest-dispatches" class="nav-link" data-nav-target="latest">Dispatches</a></li>
+          <li class="nav-item"><a href="#collections" class="nav-link" data-nav-target="collections">Series</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Action Controls -->
+      <div class="header-actions">
+        <!-- Search Trigger Button -->
+        <button type="button" id="search-modal-trigger" class="search-trigger-btn" aria-label="Search articles (Shortcut: Ctrl + K)" title="Search articles">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span class="search-trigger-text">Search...</span>
+          <kbd class="search-kbd" aria-hidden="true">⌘K</kbd>
+        </button>
+
+        <!-- Bookmarks / Reading List Drawer Trigger -->
+        <button type="button" id="bookmarks-trigger" class="header-icon-btn bookmarks-btn" aria-label="Saved reading list" title="View your saved reading list" aria-controls="bookmarks-drawer" aria-expanded="false">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <span class="bookmark-count-badge" id="bookmark-count-badge" aria-label="0 saved articles">0</span>
+        </button>
+
+        <!-- Subscribe CTA Button -->
+        <a href="#newsletter" class="btn btn--primary header-subscribe-btn">
+          <span>Subscribe</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-nav-drawer" class="mobile-nav-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="mobile-nav-title">
+    <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <div class="mobile-nav-brand" id="mobile-nav-title">
+          <span class="brand-glyph" aria-hidden="true">¶</span>
+          <span>MONOGRAPH</span>
+        </div>
+        <button type="button" id="mobile-nav-close" class="header-icon-btn" aria-label="Close navigation menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="mobile-search-wrapper">
+        <button type="button" id="mobile-search-trigger" class="mobile-search-btn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <span>Search dispatches and authors...</span>
+        </button>
+      </div>
+
+      <nav class="mobile-nav-links" aria-label="Mobile Main Links">
+        <ul>
+          <li><a href="#cover-story" class="mobile-nav-link">Lead Essay</a></li>
+          <li><a href="#topics" class="mobile-nav-link">Topics &amp; Taxonomy</a></li>
+          <li><a href="#featured-stories" class="mobile-nav-link">Spotlight Stories</a></li>
+          <li><a href="#latest-dispatches" class="mobile-nav-link">Latest Dispatches</a></li>
+          <li><a href="#collections" class="mobile-nav-link">Editorial Series</a></li>
+          <li><a href="#newsletter" class="mobile-nav-link">Subscribe to Dispatch</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-nav-footer">
+        <p class="mobile-nav-note">Dispatches published bi-weekly on systems design and the modern intellect.</p>
+        <div class="mobile-theme-picker">
+          <span class="picker-label">Reading Mode:</span>
+          <div class="theme-switcher">
+            <button type="button" class="theme-btn active" data-theme-set="light">Light</button>
+            <button type="button" class="theme-btn" data-theme-set="sepia">Sepia</button>
+            <button type="button" class="theme-btn" data-theme-set="dark">Dark</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Main Content -->
+  <main id="main-content">
+    
+    <!-- Hero / Lead Cover Story Section -->
+    <section id="cover-story" class="hero-section" aria-labelledby="hero-title">
+      <div class="container hero-container" id="hero-story-container">
+        <!-- Dynamically Rendered by script.js with rich fallback -->
+        <article class="hero-card" id="hero-card-element">
+          <div class="hero-card__content">
+            <div class="hero-card__meta-top">
+              <span class="pill pill--accent">COVER ESSAY</span>
+              <span class="pill pill--outline" id="hero-category">Artificial Intelligence</span>
+              <span class="hero-issue-no">Featured Story • August 2026</span>
+            </div>
+            
+            <h1 class="hero-card__title" id="hero-title">
+              The Architecture of Autonomous Thought: What Happens When Software Understands Intent?
+            </h1>
+            
+            <p class="hero-card__excerpt" id="hero-excerpt">
+              As algorithmic foundations transition from static retrieval models to goal-seeking cognitive loops, engineering teams are dismantling decades of abstraction to build systems that anticipate, critique, and self-correct.
+            </p>
+
+            <!-- Audio Dispatch Teaser -->
+            <div class="hero-audio-bar" role="region" aria-label="Audio dispatch preview">
+              <button type="button" class="hero-audio-btn" id="hero-audio-toggle" aria-label="Play audio version preview (9 min duration)">
+                <svg class="audio-play-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <svg class="audio-pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="display:none;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+                <span>Listen to Dispatch</span>
+                <span class="audio-duration-tag">9:14 min</span>
+              </button>
+              <div class="audio-waveform-visual" aria-hidden="true">
+                <span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span><span class="wave-bar"></span>
+              </div>
+            </div>
+
+            <div class="hero-card__footer">
+              <div class="author-meta">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Dr. Elena Vance" class="author-avatar" width="44" height="44" loading="eager">
+                <div class="author-info">
+                  <span class="author-name">Dr. Elena Vance</span>
+                  <span class="author-role">Principal Systems Architect &amp; Research Fellow</span>
+                </div>
+              </div>
+              
+              <div class="hero-reading-stats">
+                <time datetime="2026-08-24">Aug 24, 2026</time>
+                <span class="stat-bullet" aria-hidden="true">•</span>
+                <span>8 min read</span>
+              </div>
+
+              <div class="hero-actions">
+                <button type="button" class="btn btn--primary read-article-btn" data-article-id="art-1" id="hero-read-btn">
+                  <span>Read Full Essay</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </button>
+                <button type="button" class="bookmark-action-btn" data-article-id="art-1" title="Save to reading list" aria-label="Bookmark cover essay">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-card__image-wrapper">
+            <figure class="hero-figure">
+              <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1400&q=80" alt="Abstract fluid architectural visual representing cognitive computing models" class="hero-image" fetchpriority="high" width="800" height="520">
+              <figcaption class="hero-figcaption">Fig 1.1 — Continuous latent vector topology and emergent multi-agent feedback systems. Photograph by Monograph Visual Labs.</figcaption>
+            </figure>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Topics & Category Interactive Filter Strip -->
+    <section id="topics" class="topics-section" aria-labelledby="topics-heading">
+      <div class="container">
+        <div class="topics-bar-header">
+          <div class="topics-bar-title-wrap">
+            <h2 id="topics-heading" class="section-kicker">DISPATCH TAXONOMY</h2>
+            <p class="topics-subtext">Filter articles by domain expertise or explore all curated subjects</p>
+          </div>
+
+          <!-- Inline Quick Filter Search -->
+          <div class="inline-search-wrap">
+            <label for="inline-search-input" class="sr-only">Filter articles by keyword</label>
+            <div class="inline-search-box">
+              <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="search" id="inline-search-input" class="inline-search-input" placeholder="Search keywords, authors, or topics..." autocomplete="off">
+              <button type="button" id="inline-search-clear" class="inline-search-clear" aria-label="Clear search query" style="display:none;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scrollable Category Filter Pills -->
+        <div class="category-nav-wrapper">
+          <nav class="category-pills" id="category-pills-list" role="tablist" aria-label="Filter articles by category">
+            <button type="button" role="tab" class="cat-pill active" data-category="All" aria-selected="true" id="tab-all">
+              <span class="cat-pill__name">All Topics</span>
+              <span class="cat-pill__count" id="count-all">12</span>
+            </button>
+            <button type="button" role="tab" class="cat-pill" data-category="Artificial Intelligence" aria-selected="false" id="tab-ai">
+              <span class="cat-pill__name">Artificial Intelligence</span>
+              <span class="cat-pill__count" id="count-ai">3</span>
+            </button>
+            <button type="button" role="tab" class="cat-pill" data-category="Systems & Architecture" aria-selected="false" id="tab-systems">
+              <span class="cat-pill__name">Systems &amp; Architecture</span>
+              <span class="cat-pill__count" id="count-systems">3</span>
+            </button>
+            <button type="button" role="tab" class="cat-pill" data-category="Design & Craft" aria-selected="false" id="tab-design">
+              <span class="cat-pill__name">Design &amp; Craft</span>
+              <span class="cat-pill__count" id="count-design">2</span>
+            </button>
+            <button type="button" role="tab" class="cat-pill" data-category="Future of Work" aria-selected="false" id="tab-work">
+              <span class="cat-pill__name">Future of Work</span>
+              <span class="cat-pill__count" id="count-work">2</span>
+            </button>
+            <button type="button" role="tab" class="cat-pill" data-category="Digital Culture" aria-selected="false" id="tab-culture">
+              <span class="cat-pill__name">Digital Culture</span>
+              <span class="cat-pill__count" id="count-culture">2</span>
+            </button>
+          </nav>
+        </div>
+
+        <!-- Active Filter State Indicator Bar -->
+        <div class="filter-status-bar" id="filter-status-bar" aria-live="polite">
+          <div class="filter-status-info">
+            <span class="status-indicator-dot"></span>
+            <span id="filter-status-text">Displaying all 12 dispatches</span>
+          </div>
+          <div class="filter-status-actions">
+            <button type="button" id="view-filter-results-btn" class="view-filter-results-btn">
+              <span>View results</span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <button type="button" id="reset-filter-btn" class="reset-filter-btn" style="display: none;">
+              <span>Reset filters</span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Spotlight / Featured Stories Section -->
+    <section id="featured-stories" class="editorial-spotlight-section" aria-labelledby="spotlight-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-kicker">EDITORIAL SELECTION</span>
+            <h2 id="spotlight-heading" class="section-title">Spotlight Dispatches</h2>
+            <p id="spotlight-filter-note" class="spotlight-filter-note">Curated highlights from the full editorial archive.</p>
+          </div>
+          <div class="section-header-rule"></div>
+        </div>
+
+        <!-- Asymmetric Editorial Grid -->
+        <div class="editorial-grid" id="featured-stories-grid">
+          <!-- Populated via JavaScript dynamically for real-time reactivity -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Curated Editorial Series / Collections Banner -->
+    <section id="collections" class="series-banner-section" aria-labelledby="series-heading">
+      <div class="container">
+        <div class="series-card">
+          <div class="series-card__content">
+            <span class="pill pill--accent pill--sm">CURATED RESEARCH DOSSIER</span>
+            <h2 id="series-heading" class="series-card__title">The Post-Cloud Infrastructure: Reclaiming Local Compute &amp; Edge Determinism</h2>
+            <p class="series-card__desc">
+              A 4-part investigative series examining how latency constraints, data sovereignty mandates, and on-device neural accelerators are restructuring global software topology.
+            </p>
+            <div class="series-stats">
+              <span class="stat-item"><strong>4</strong> In-Depth Chapters</span>
+              <span class="stat-divider">•</span>
+              <span class="stat-item"><strong>38</strong> Case Studies</span>
+              <span class="stat-divider">•</span>
+              <span class="stat-item"><strong>Free</strong> Editorial Access</span>
+            </div>
+            <div class="series-actions">
+              <button type="button" class="btn btn--white read-article-btn" data-article-id="art-2">
+                <span>Explore Series Dossier</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+            </div>
+          </div>
+          <div class="series-card__visual" aria-hidden="true">
+            <div class="series-graphic-grid">
+              <div class="grid-box box-1"><span>01</span> Latency</div>
+              <div class="grid-box box-2"><span>02</span> Local DBs</div>
+              <div class="grid-box box-3"><span>03</span> Edge AI</div>
+              <div class="grid-box box-4"><span>04</span> Protocol</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Articles Feed & Scan Feed -->
+    <section id="latest-dispatches" class="latest-feed-section" aria-labelledby="latest-heading">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-title-wrap">
+            <span class="section-kicker">LATEST / POPULAR POSTS</span>
+            <h2 id="latest-heading" class="section-title">Latest &amp; Popular Dispatches</h2>
+          </div>
+          <div class="feed-sort-wrap">
+            <label for="feed-sort-select" class="sr-only">Sort articles by</label>
+            <span class="sort-label">Sort:</span>
+            <select id="feed-sort-select" class="feed-sort-select">
+              <option value="latest">Latest Published</option>
+              <option value="popular">Most Read / Discussed</option>
+              <option value="reading-time">Shortest Read Time</option>
+              <option value="alphabetical">Title (A–Z)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Article List Grid / Feed Container -->
+        <div class="articles-feed" id="articles-feed-container">
+          <!-- Populated dynamically by script.js -->
+        </div>
+
+        <!-- Empty State Container (Hidden by default) -->
+        <div id="articles-empty-state" class="empty-state-card" style="display: none;" role="alert">
+          <div class="empty-state-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
+          <h3 class="empty-state-title">No matching dispatches found</h3>
+          <p class="empty-state-desc">We couldn't find any articles matching your search query or selected topic filter. Try broadening your keywords or resetting filters.</p>
+          <button type="button" class="btn btn--secondary" id="empty-state-reset-btn">
+            Clear all filters &amp; search
+          </button>
+        </div>
+
+        <!-- Pagination / Load More -->
+        <div class="feed-pagination" id="feed-pagination">
+          <button type="button" id="load-more-btn" class="btn btn--outline load-more-btn">
+            <span>Load More Dispatches</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <p class="feed-count-summary" id="feed-count-summary">Showing 6 of 12 dispatches</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Editorial Opinion & Letters Section (Thought Leadership) -->
+    <section class="perspective-strip-section" aria-labelledby="perspective-heading">
+      <div class="container">
+        <div class="perspective-grid">
+          <div class="perspective-intro">
+            <span class="section-kicker">ESSAY CORNER</span>
+            <h2 id="perspective-heading" class="perspective-title">Short Reflections &amp; Provocations</h2>
+            <p class="perspective-sub">Bi-weekly micro-essays from practicing designers, systems researchers, and founding engineers.</p>
+          </div>
+
+          <div class="perspective-cards-row">
+            <article class="perspective-card">
+              <span class="perspective-card__quote-mark">“</span>
+              <p class="perspective-card__body">
+                The most resilient software systems are not those designed to resist all failure, but those that accept entropy as a natural condition and degrade with graceful poise.
+              </p>
+              <div class="perspective-card__author">
+                <span class="author-name">Marcus Vance-Gao</span>
+                <span class="author-affiliation">Staff Infrastructure Engineer, Monograph Labs</span>
+              </div>
+            </article>
+
+            <article class="perspective-card">
+              <span class="perspective-card__quote-mark">“</span>
+              <p class="perspective-card__body">
+                Interfaces that attempt to be invisible often end up being incomprehensible. Great tools cultivate confidence by offering tactile conceptual metaphors.
+              </p>
+              <div class="perspective-card__author">
+                <span class="author-name">Clara Danvers</span>
+                <span class="author-affiliation">Design Director, Kinetic Interfaces</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter & Dispatch Subscription Section -->
+    <section id="newsletter" class="newsletter-section" aria-labelledby="newsletter-heading">
+      <div class="container">
+        <div class="newsletter-card">
+          <div class="newsletter-card__left">
+            <span class="pill pill--accent pill--sm">THE WEEKLY DISPATCH</span>
+            <h2 id="newsletter-heading" class="newsletter-title">Intelligence for Curious Builders &amp; Systems Thinkers</h2>
+            <p class="newsletter-desc">
+              Every Tuesday morning, we publish an essay on software engineering craft, AI systems, and product design. No spam, no hype—just rigorous editorial analysis delivered directly to your inbox.
+            </p>
+
+            <ul class="newsletter-perks">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Curated deep-dive essays and technical retrospectives</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Early access to quarterly research whitepapers</span>
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>One-click unsubscribe at any time</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="newsletter-card__right">
+            <form id="newsletter-form" class="newsletter-form" novalidate aria-label="Newsletter Subscription Form">
+              <div class="form-topics-group">
+                <span class="form-topics-label">Select your reading topics:</span>
+                <div class="topics-checkboxes">
+                  <label class="custom-checkbox">
+                    <input type="checkbox" name="topics" value="ai" checked>
+                    <span class="checkbox-box"></span>
+                    <span class="checkbox-label">Artificial Intelligence</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" name="topics" value="systems" checked>
+                    <span class="checkbox-box"></span>
+                    <span class="checkbox-label">Systems &amp; Tech</span>
+                  </label>
+                  <label class="custom-checkbox">
+                    <input type="checkbox" name="topics" value="design">
+                    <span class="checkbox-box"></span>
+                    <span class="checkbox-label">Design &amp; Craft</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-field-group">
+                <label for="newsletter-email" class="form-label">Work or Personal Email <span class="required" aria-hidden="true">*</span></label>
+                <div class="newsletter-input-wrap">
+                  <svg class="mail-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  <input 
+                    type="email" 
+                    id="newsletter-email" 
+                    name="email" 
+                    class="newsletter-input" 
+                    placeholder="name@company.com" 
+                    required 
+                    autocomplete="email"
+                    aria-describedby="newsletter-feedback-msg"
+                  >
+                </div>
+              </div>
+
+              <!-- Form Submit Button -->
+              <button type="submit" id="newsletter-submit-btn" class="btn btn--primary btn--full newsletter-submit-btn">
+                <span class="btn-text">Join 48,000+ Readers</span>
+                <span class="btn-spinner" aria-hidden="true" style="display:none;"></span>
+                <svg class="btn-arrow" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </button>
+
+              <!-- Live Validation & Success Feedback Message -->
+              <div id="newsletter-feedback-msg" class="form-feedback-msg" role="status" aria-live="polite"></div>
+
+              <p class="form-privacy-note">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                Your privacy is respected. No third-party tracking. Read our <a href="#privacy" class="inline-link footer-info-trigger" data-info="privacy">editorial privacy guarantee</a>.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer" id="site-footer">
+    <div class="container site-footer__inner">
+      <div class="footer-top-row">
+        <div class="footer-brand-col">
+          <div class="footer-brand">
+            <span class="brand-glyph" aria-hidden="true">¶</span>
+            <span class="brand-name">MONOGRAPH</span>
+          </div>
+          <p class="footer-brand-desc">
+            A modern technology and culture blog for clear ideas, useful perspectives, and thoughtful stories from the digital world.
+          </p>
+          <div class="footer-meta-pill">
+            <span>Technology &amp; Culture</span>
+            <span>•</span>
+            <span>Independent &amp; Reader Focused</span>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h3 class="footer-col-title">Editorial Sections</h3>
+          <ul class="footer-nav-list">
+            <li><a href="#topics" data-category="Artificial Intelligence" class="footer-cat-link">Artificial Intelligence</a></li>
+            <li><a href="#topics" data-category="Systems & Architecture" class="footer-cat-link">Systems &amp; Architecture</a></li>
+            <li><a href="#topics" data-category="Design & Craft" class="footer-cat-link">Design &amp; Craftsmanship</a></li>
+            <li><a href="#topics" data-category="Future of Work" class="footer-cat-link">Future of Work</a></li>
+            <li><a href="#topics" data-category="Digital Culture" class="footer-cat-link">Digital Culture &amp; Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h3 class="footer-col-title">Publication</h3>
+          <ul class="footer-nav-list">
+            <li><a href="#about" class="footer-info-trigger" data-info="about">About MONOGRAPH</a></li>
+            <li><a href="#editorial-board" class="footer-info-trigger" data-info="editorial-board">Editorial Standards</a></li>
+            <li><a href="#masthead" class="footer-info-trigger" data-info="masthead">Masthead &amp; Contributors</a></li>
+            <li><a href="#submissions" class="footer-info-trigger" data-info="submissions">Author Submissions</a></li>
+            <li><a href="#rss" class="footer-info-trigger" data-info="rss">RSS / Atom Feeds</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h3 class="footer-col-title">Legal &amp; Access</h3>
+          <ul class="footer-nav-list">
+            <li><a href="#privacy" class="footer-info-trigger" data-info="privacy">Privacy Guarantee</a></li>
+            <li><a href="#terms" class="footer-info-trigger" data-info="terms">Terms of Service</a></li>
+            <li><a href="#accessibility" class="footer-info-trigger" data-info="accessibility">Accessibility Statement</a></li>
+            <li><a href="#licensing" class="footer-info-trigger" data-info="licensing">Open Licensing</a></li>
+            <li><a href="#press" class="footer-info-trigger" data-info="press">Press Kit</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <div class="footer-bottom-links">
+          <button type="button" class="back-to-top-btn" id="back-to-top-btn" aria-label="Back to top of page">
+            <span>Back to top</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================================================================= -->
+  <!-- MODALS & DRAWERS (Accessible, Focus-Trapped, Esc-Closeable)      -->
+  <!-- ================================================================= -->
+
+  <!-- Full Article Reader Modal / Drawer -->
+  <div id="article-reader-modal" class="article-reader-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="reader-toolbar-title">
+    <div class="reader-backdrop" id="reader-backdrop"></div>
+    <div class="reader-container" id="reader-container">
+      
+      <!-- Sticky Reader Control Bar -->
+      <header class="reader-toolbar" id="reader-toolbar">
+        <div class="reader-toolbar__left">
+          <button type="button" id="reader-close-btn" class="reader-control-btn reader-back-btn" aria-label="Close article reader (Escape)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            <span>Back to Dispatches</span>
+          </button>
+        </div>
+
+        <div class="reader-toolbar__center">
+          <span class="reader-toolbar-title" id="reader-toolbar-title">Monograph Dispatch</span>
+        </div>
+
+        <div class="reader-toolbar__right">
+          <!-- Text Size Controls in Reader -->
+          <div class="font-resizer" role="group" aria-label="Article text size adjustment">
+            <button type="button" id="reader-font-decrease" class="font-resize-btn" title="Decrease font size">A-</button>
+            <button type="button" id="reader-font-increase" class="font-resize-btn" title="Increase font size">A+</button>
+          </div>
+
+          <!-- Listen to Article Voice Button -->
+          <button type="button" id="reader-audio-toggle" class="reader-control-btn reader-audio-btn" title="Listen to article narration (Voice Read Aloud)" aria-label="Listen to article narration">
+            <svg class="reader-audio-play-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+            <svg class="reader-audio-pause-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+            <span class="sr-only">Listen to article</span>
+          </button>
+
+          <!-- Bookmark Toggle inside reader -->
+          <button type="button" id="reader-bookmark-btn" class="reader-control-btn" title="Save to reading list" aria-label="Bookmark this article">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+            <span class="sr-only">Save article</span>
+          </button>
+
+          <!-- Share / Copy Link Button -->
+          <button type="button" id="reader-share-btn" class="reader-control-btn" title="Copy article link to clipboard" aria-label="Share article link">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+            <span class="sr-only">Copy link</span>
+          </button>
+
+          <!-- Close 'X' Button -->
+          <button type="button" id="reader-close-x" class="reader-control-btn reader-close-btn" aria-label="Close reader">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Reader Scrollable Content Area -->
+      <article class="reader-content-body" id="reader-content-body">
+        <!-- Dynamically injected with rich typography, subheads, blockquotes, author bios, etc. -->
+      </article>
+
+      <!-- Reader Footer / Next Article Recommendation -->
+      <div class="reader-footer-nav" id="reader-footer-nav">
+        <!-- Next article suggestion -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Search Modal Overlay -->
+  <div id="search-modal" class="search-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="search-modal-heading">
+    <div class="search-modal__backdrop" id="search-modal-backdrop"></div>
+    <div class="search-modal__container">
+      <div class="search-modal__header">
+        <h2 id="search-modal-heading" class="sr-only">Search Publication Archive</h2>
+        <div class="search-input-field">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input 
+            type="search" 
+            id="modal-search-input" 
+            class="modal-search-input" 
+            placeholder="Type to search essays, authors, architecture, or design..."
+            autocomplete="off"
+            spellcheck="false"
+          >
+          <button type="button" class="esc-kbd" id="search-modal-close-kbd" aria-label="Close search (Escape)">ESC</button>
+        </div>
+      </div>
+
+      <div class="search-modal__quick-filters">
+        <span class="quick-filter-label">Quick topics:</span>
+        <div class="quick-filter-tags">
+          <button type="button" class="quick-tag" data-tag="Artificial Intelligence">#Artificial Intelligence</button>
+          <button type="button" class="quick-tag" data-tag="Systems & Architecture">#Systems</button>
+          <button type="button" class="quick-tag" data-tag="Design & Craft">#Design Systems</button>
+          <button type="button" class="quick-tag" data-tag="Future of Work">#Future of Work</button>
+        </div>
+      </div>
+
+      <!-- Search Results Area -->
+      <div class="search-modal__results" id="search-modal-results" role="region" aria-live="polite">
+        <!-- Live search matches populated here -->
+      </div>
+
+      <div class="search-modal__footer">
+        <div class="search-hints">
+          <span><kbd>↑</kbd><kbd>↓</kbd> to navigate</span>
+          <span><kbd>ESC</kbd> to close</span>
+          <span><kbd>↵</kbd> to read</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bookmarks & Reading List Drawer -->
+  <div id="bookmarks-drawer" class="bookmarks-drawer" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="bookmarks-drawer-title">
+    <div class="bookmarks-drawer__backdrop" id="bookmarks-drawer-backdrop"></div>
+    <div class="bookmarks-drawer__panel">
+      <div class="bookmarks-drawer__header">
+        <div class="bookmarks-header-title-wrap">
+          <h2 id="bookmarks-drawer-title" class="bookmarks-title">Saved Reading List</h2>
+          <span class="bookmarks-counter" id="drawer-bookmark-counter">0 items</span>
+        </div>
+        <button type="button" id="bookmarks-drawer-close" class="header-icon-btn" aria-label="Close reading list">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <div class="bookmarks-drawer__body" id="bookmarks-list-container">
+        <!-- Bookmarked items injected dynamically -->
+      </div>
+
+      <div class="bookmarks-drawer__footer">
+        <button type="button" id="clear-all-bookmarks-btn" class="btn btn--outline btn--sm" style="display:none;">
+          Clear All Saved Dispatches
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Publication Info / Policy Modal -->
+  <div id="info-modal" class="info-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="info-modal-title">
+    <div class="info-modal__backdrop" id="info-modal-backdrop"></div>
+    <div class="info-modal__container">
+      <div class="info-modal__header">
+        <h2 id="info-modal-title" class="info-modal__title">Publication Details</h2>
+        <button type="button" id="info-modal-close" class="header-icon-btn" aria-label="Close dialog">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <div class="info-modal__body" id="info-modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification System (Live Feedback) -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
